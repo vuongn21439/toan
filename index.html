@@ -957,7 +957,7 @@ esc=s=>String(s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';'),
 nk=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]/g,''),
 shell=h=>{app.innerHTML=`<header><h1>Toán 6 Vui Vẻ</h1><p>Luyện đủ chương trình Toán 6, từ cơ bản đến nâng cao</p></header>${h}`;scrollTo(0,0)},
 et=e=>{if(e&&e.code=='auth/popup-closed-by-user')return'';console.warn('[Firebase]',e);return e&&e.code=='auth/network-request-failed'?'Mạng đang yếu, em thử lại nhé!':'Ôi, chưa vào được rồi. Em thử lại nhé!'},
-meChip=()=>U?`<div class="me"><div class="av">${esc([...U.name][0].toUpperCase())}</div><b>${esc(U.name)}${U.guest?' <small>(khách)</small>':''}</b><button onclick="lb()">🏆 Xếp hạng</button>${U.guest?'<button onclick="linkAcc()">Liên Kết TK</button>':'<button onclick="out()">Thoát</button>'}</div><div id="mini"></div>`:'',
+meChip=()=>U?`<div class="me"><div class="av">${esc([...U.name][0].toUpperCase())}</div><b>${esc(U.name)}${U.guest?' <small>(khách)</small>':''}</b><button onclick="lb()">🏆 Xếp hạng</button>${U.guest?'<button onclick="linkAcc()">Liên Kết TK</button>':''}</div><div id="mini"></div>`:'',
 rows=r=>r.map((p,i)=>`<div class="lbr${U&&p.id==U.uid?' me1':''}${i<3?' t'+(i+1):''}"><span class="rk">${['🥇','🥈','🥉'][i]||i+1}</span><span class="nm">${esc(p.name)}</span><span class="xp">${p.xp|0} XP</span></div>`).join('')||'<p class="hint">Chưa có ai trên bảng. Em hãy là người đầu tiên!</p>';
 
 const getTop=async n=>{if(Date.now()-lbc.t<45e3&&lbc.n>=n)return lbc.r.slice(0,n);const r=await FB.top(n);lbc={t:Date.now(),n,r};return r};
