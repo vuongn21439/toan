@@ -189,6 +189,16 @@ input:disabled{opacity:1;color:var(--tx)}
 .ins .later{flex:none;min-height:46px;padding:0 14px;border-radius:14px;font-size:14px;font-weight:700;color:var(--mut)}
 .st{display:flex;gap:12px;align-items:center;margin:12px 0;text-align:left}
 .st i{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--pr);font:800 18px "Baloo 2",sans-serif;font-style:normal}
+.st span{flex:1;min-width:0}.st span b{color:#fff}.st small{display:block;margin-top:2px;font-size:12.5px;color:var(--mut)}
+.mk{display:flex;align-items:center;gap:8px;width:fit-content;max-width:100%;margin-top:7px;padding:8px 13px;border-radius:12px;background:#f2f2f7;color:#1c1c1e;font:600 14px/1.2 "Be Vietnam Pro",system-ui,sans-serif;font-style:normal;box-shadow:0 2px 0 rgba(0,0,0,.3)}
+.mk svg{flex:none;width:21px;height:21px;fill:none;stroke:#0a84ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.gd{padding-bottom:12px}
+.nt{margin:10px 0 6px;padding:10px 12px;border-radius:14px;background:rgba(255,210,94,.14);font-size:14px;line-height:1.4;text-align:left}
+.pt{position:fixed;left:0;right:0;z-index:60;display:flex;flex-direction:column;align-items:center;gap:2px;pointer-events:none;font:800 14px/1.2 "Baloo 2",sans-serif;color:var(--sun);text-shadow:0 2px 6px rgba(0,0,0,.7)}
+.pt b{font-size:30px;line-height:1;animation:bob 1s ease-in-out infinite}
+.pt.dn{bottom:calc(8px + env(safe-area-inset-bottom,0px))}.pt.up{top:calc(8px + env(safe-area-inset-top,0px));align-items:flex-end;padding-right:24px}
+.tst{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:70;width:max-content;max-width:min(92vw,420px);padding:12px 18px;border-radius:16px;background:#fff;color:#1b1740;font:700 15px/1.35 "Be Vietnam Pro",system-ui,sans-serif;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+@keyframes bob{50%{transform:translateY(7px)}}
 @keyframes pop{0%{transform:scale(.94)}55%{transform:scale(1.05)}100%{transform:scale(1)}}
 @keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
 @keyframes up{from{transform:translateY(40%);opacity:0}}
@@ -782,26 +792,94 @@ tabMock=()=>`<button class="big" onclick="go('all','m')">🎯 Đề tổng hợp
 tabDaily=()=>{const dn=dcDone();return `<div class="card soft"><div class="cap">⚡</div><h2>Thử thách hôm nay</h2><p class="sub">5 câu, cả lớp cùng một đề. ${XQ.daily} XP/câu, đúng cả 5 câu thưởng thêm 20 XP.</p>${dn?`<div class="xpc">Hôm nay: ${D.dc.ok}/5 ✅</div>`:''}</div>`+(dn?`<button class="big alt" onclick="start('daily',dailyQs())">🔁 Làm lại cho vui<small>Không tính XP</small></button><p class="hint">Ngày mai có đề mới. Quay lại để giữ chuỗi ngày 🔥</p>`:`<button class="big" onclick="start('daily')">Bắt đầu thử thách 🚀</button>`)},
 tabRank=()=>(U?meChip():`<div class="card soft"><div class="cap">🏆</div><p class="sub">Đăng nhập để lưu điểm và lên bảng xếp hạng.</p></div><button class="big" onclick="loginScreen()">Đăng nhập</button>`)+insRow();
 let TAB=TABS.some(x=>x[0]==new URLSearchParams(location.search).get('tab'))?new URLSearchParams(location.search).get('tab'):'learn',GI=0;
-/* ===== Cài app lên máy (PWA): Android/Chrome có nút cài thẳng, iPhone/iPad hiện hướng dẫn 3 bước ===== */
-let DP=null;
-const isApp=()=>matchMedia('(display-mode: standalone)').matches||navigator.standalone===true,
-isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform=='MacIntel'&&navigator.maxTouchPoints>1),
-canIns=()=>!isApp()&&(!!DP||isIOS),
+/* ===== Cài app lên máy: Android bấm là cài luôn · iPhone/iPad có hướng dẫn từng bước bằng hình ===== */
+let DP=null,INS_BUSY=0,INS_W=null,INS_D=0,INS_T=0;
+const iUA=navigator.userAgent||'',
+isApp=()=>matchMedia('(display-mode: standalone)').matches||matchMedia('(display-mode: fullscreen)').matches||navigator.standalone===true,
+isAnd=/android/i.test(iUA),
+isIOS=!isAnd&&(/iphone|ipad|ipod/i.test(iUA)||(navigator.platform=='MacIntel'&&navigator.maxTouchPoints>1&&'standalone' in navigator)),
+isPad=isIOS&&!/iphone|ipod/i.test(iUA),
+isMob=isAnd||isIOS||(matchMedia('(pointer:coarse)').matches&&!matchMedia('(hover:hover)').matches),
+iApp=(isAnd&&/; wv\)|FBAN|FBAV|FB_IAB|Instagram|Zalo|Line\/|MicroMessenger|TikTok|musical_ly|Snapchat/i.test(iUA))||(isIOS&&!/Safari\//.test(iUA)),
+isSaf=isIOS&&!iApp&&!/CriOS|FxiOS|EdgiOS|OPiOS|GSA\//.test(iUA),
+isChr=isAnd&&!iApp&&/Chrome\/\d/.test(iUA)&&!/EdgA|OPR\/|SamsungBrowser|MiuiBrowser|HeyTap|VivoBrowser|HuaweiBrowser|UCBrowser|Firefox|Vivaldi|Coc/i.test(iUA),
+hasEv='onbeforeinstallprompt' in window||'BeforeInstallPromptEvent' in window,
+insHas=()=>{try{return localStorage.getItem('t6inst')=='1'}catch(e){return false}},
+canIns=()=>!isApp()&&!insHas()&&(!!DP||isMob),
 hasNav=()=>!!document.querySelector('.nav'),
-insNow=async()=>{if(!DP)return iosGuide();DP.prompt();let r;try{r=await DP.userChoice}catch(e){}DP=null;if(!(r&&r.outcome=='accepted')){D.ins=Date.now()+3*864e5;save()}if(hasNav())home()},
-insLater=()=>{D.ins=Date.now()+7*864e5;save();home()},
-insCard=()=>canIns()&&D.xp>0&&!(D.ins>Date.now())?`<div class="ins"><img src="icon-192.png" alt="" width="52" height="52"><div class="tx"><b>Cài Toán 6 lên máy nhé!</b><small>Mở như app thật, chơi được cả khi mất mạng</small></div><div class="ib"><button class="go" onclick="insNow()">${DP?'📲 Cài ngay':'📲 Xem cách cài'}</button><button class="later" onclick="insLater()">Để sau</button></div></div>`:'',
-insRow=()=>canIns()?`<button class="big alt" onclick="insNow()">📲 Cài app lên máy<small>Mở nhanh từ màn hình chính, chơi cả khi mất mạng</small></button>`:'';
-addEventListener('beforeinstallprompt',e=>{e.preventDefault();DP=e;if(hasNav())home(TAB)});
-addEventListener('appinstalled',()=>{DP=null;cf('burst',innerWidth/2,innerHeight*.4,70);if(hasNav())home(TAB)});
-function iosGuide(){
- app.innerHTML=`<div class="top"><button class="x" aria-label="Quay lại" onclick="home()">←</button><b class="lvl">Cài lên màn hình chính</b></div>
- <div class="card soft"><img src="icon-192.png" alt="" width="84" height="84" style="border-radius:22px"><h2 style="margin-top:10px">3 bước là xong!</h2>
- <div class="st"><i>1</i><span>Bấm nút <b>Chia sẻ</b> ⬆️ (ô vuông có mũi tên) trên thanh công cụ của Safari</span></div>
- <div class="st"><i>2</i><span>Kéo xuống, chọn <b>Thêm vào Màn hình chính</b> ➕</span></div>
- <div class="st"><i>3</i><span>Bấm <b>Thêm</b>. Biểu tượng Toán 6 sẽ hiện ra trên màn hình chính 🎉</span></div>
- <p class="hint">Không thấy mục này? Em mở trang bằng Safari rồi làm lại nhé.</p></div>
- <button class="big" onclick="home()">Đã hiểu 👍</button>`;scrollTo(0,0);
+insRedo=()=>{if(!hasNav())return;const y=scrollY;home(TAB);scrollTo(0,y)},
+insBusy=on=>document.querySelectorAll('[data-ins]').forEach(b=>{if(on){b.dataset.h=b.innerHTML;b.innerHTML='⏳ Đang chuẩn bị…';b.disabled=true}else if(b.dataset.h){b.innerHTML=b.dataset.h;b.disabled=false}}),
+insWait=ms=>DP?Promise.resolve():new Promise(r=>{const t=setTimeout(()=>{INS_W=null;r()},ms);INS_W=()=>{clearTimeout(t);INS_W=null;r()}}),
+insLater=()=>{D.ins=Date.now()+7*864e5;save();insRedo()},
+insBtn=(c,h)=>`<button class="${c}" data-ins onclick="insNow()">${h}</button>`,
+insCard=()=>canIns()&&D.xp>0&&!(D.ins>Date.now())?`<div class="ins"><img src="icon-192.png" alt="" width="52" height="52"><div class="tx"><b>Cài Toán 6 lên máy nhé!</b><small>Mở như app thật, chơi được cả khi mất mạng</small></div><div class="ib">${insBtn('go','📲 Cài ngay')}<button class="later" onclick="insLater()">Để sau</button></div></div>`:'',
+insRow=()=>canIns()?insBtn('big alt','📲 Cài app lên máy<small>Mở nhanh từ màn hình chính, chơi cả khi mất mạng</small>'):'';
+addEventListener('beforeinstallprompt',e=>{e.preventDefault();const was=canIns();DP=e;try{localStorage.removeItem('t6inst')}catch(x){}if(INS_W)INS_W();if(canIns()!=was)insRedo()});
+addEventListener('appinstalled',()=>{DP=null;insDone()});
+function insToast(m){
+ let t=document.getElementById('tst');
+ if(!t){t=document.createElement('div');t.id='tst';t.className='tst';t.setAttribute('role','status');document.body.appendChild(t)}
+ t.textContent=m;t.hidden=false;clearTimeout(INS_T);INS_T=setTimeout(()=>{t.hidden=true},4500);
+}
+function insDone(){
+ try{localStorage.setItem('t6inst','1')}catch(e){}
+ if(INS_D)return;INS_D=1;setTimeout(()=>{INS_D=0},4000);
+ cf('burst',innerWidth/2,innerHeight*.4,70);
+ insToast('Cài xong rồi! Em ra màn hình chính tìm biểu tượng Toán 6 nhé 🎉');insRedo();
+}
+/* Bấm "Cài": Android/Chrome hiện hộp cài đặt luôn; chưa sẵn sàng thì chờ vài giây; không cài thẳng được thì mở hướng dẫn */
+async function insNow(){
+ if(INS_BUSY)return;
+ if(!DP&&!isIOS&&hasEv&&performance.now()<30000){INS_BUSY=1;insBusy(1);await insWait(3000);INS_BUSY=0;insBusy(0)}
+ DP?insGo():insGuide();
+}
+async function insGo(){
+ const p=DP;DP=null;
+ try{await p.prompt()}catch(e){return insGuide()}
+ let r;try{r=await p.userChoice}catch(e){}
+ if(r&&r.outcome=='accepted')insDone();
+ else{D.ins=Date.now()+3*864e5;save();insRedo()}
+}
+function insChrome(){
+ const s=location.protocol.slice(0,-1);
+ location.href='intent://'+location.host+location.pathname+location.search+'#Intent;scheme='+s+';package=com.android.chrome;S.browser_fallback_url='+encodeURIComponent(location.href.split('#')[0])+';end';
+}
+async function insCopy(){
+ const u=location.href.split('#')[0];let ok=0;
+ try{await navigator.clipboard.writeText(u);ok=1}catch(e){
+  try{const t=document.createElement('textarea');t.value=u;t.style.cssText='position:fixed;opacity:0';document.body.appendChild(t);t.select();ok=document.execCommand('copy');t.remove()}catch(x){}
+ }
+ insToast(ok?'Đã sao chép! Em dán vào '+(isIOS?'Safari':'Chrome')+' để mở nhé 👍':'Em bấm giữ vào thanh địa chỉ để sao chép liên kết nhé');
+}
+function insGuide(){
+ const sv=p=>`<svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`,
+ SH=sv('<path d="M12 15V3M8 7l4-4 4 4M7 11H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-1"/>'),
+ PL=sv('<rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M12 8v8M8 12h8"/>'),
+ st=(n,t,m)=>`<div class="st"><i>${n}</i><span>${t}${m?`<em class="mk">${m}</em>`:''}</span></div>`,
+ chrome=c=>`<button class="${c}" onclick="insChrome()">🌐 Mở bằng Chrome<small>Cài được ngay chỉ với một chạm</small></button>`,
+ copy=`<button class="big alt" onclick="insCopy()">🔗 Sao chép liên kết<small>Rồi dán vào ${isIOS?'Safari':'Chrome'} để mở</small></button>`,
+ head=`<div class="top"><button class="x" aria-label="Quay lại" onclick="home()">←</button><b class="lvl">Cài lên màn hình chính</b></div>`,
+ icon=`<img src="icon-192.png" alt="" width="84" height="84" style="border-radius:22px">`;
+ let body='',after='',arrow='';
+ if(isIOS){
+  if(iApp)body+=`<p class="nt">Em đang mở trong một ứng dụng khác (Zalo, Facebook...). Em mở trang này bằng <b>Safari</b> trước nhé.</p>`;
+  else if(!isSaf)body+=`<p class="nt">Dùng <b>Safari</b> thì cài dễ nhất nhé.</p>`;
+  body+=st(1,isPad?'Bấm nút <b>Chia sẻ</b> ở góc trên của Safari':'Bấm nút <b>Chia sẻ</b> ở thanh dưới cùng của Safari<small>Chỉ thấy nút ⋯ thì bấm ⋯ rồi chọn Chia sẻ</small>',SH+'Chia sẻ')
+   +st(2,'Kéo xuống, chọn <b>Thêm vào Màn hình chính</b><small>Không thấy thì kéo lên hết danh sách hoặc bấm Xem thêm</small>',PL+'Thêm vào Màn hình chính')
+   +st(3,'Bấm <b>Thêm</b>. Biểu tượng Toán 6 sẽ hiện ra trên màn hình chính 🎉','<b style="color:#0a84ff">Thêm</b>');
+  after=iApp?copy:'';
+  if(isSaf)arrow=isPad?`<div class="pt up"><b>⬆</b>Nút Chia sẻ ở trên này</div>`:`<div class="pt dn">Thanh công cụ của Safari ở dưới này<b>⬇</b></div>`;
+ }else if(iApp){
+  body=`<p class="nt">Em đang mở trong một ứng dụng khác nên chưa cài được. Em mở bằng <b>Chrome</b> là cài được ngay nhé!</p>`;
+  after=chrome('big')+copy;
+ }else{
+  body=st(1,'Bấm nút menu của trình duyệt ở góc màn hình','⋮ hoặc ≡')
+   +st(2,'Chọn <b>Cài đặt ứng dụng</b> hoặc <b>Thêm vào Màn hình chính</b>',PL+'Cài đặt ứng dụng')
+   +st(3,'Bấm <b>Cài đặt</b> (hoặc <b>Thêm</b>). Biểu tượng Toán 6 sẽ hiện ra trên màn hình chính 🎉','<b style="color:#0a84ff">Cài đặt</b>');
+  after=isChr?'':chrome('big alt');
+ }
+ app.innerHTML=head+`<div class="card soft gd">${icon}<h2 style="margin-top:10px">${iApp?'Gần xong rồi!':'3 bước là xong!'}</h2>${body}${iApp?'':'<p class="hint" style="margin:12px 0 0">Đã cài rồi? Em mở Toán 6 ở màn hình chính để chơi như app thật nhé!</p>'}</div>${after}${iApp?'':'<button class="big" onclick="home()">Đã hiểu 👍</button>'}${arrow}`;
+ scrollTo(0,0);
 }
 function home(t){
  if(t)TAB=t;
@@ -862,7 +940,7 @@ function end(){
   else xp=S.ok*S.m+(isT?Math.max(0,st-(D.b[S.k]||0))*20:0);
   const L0=lvOf(D.xp);D.xp+=xp;up=lvOf(D.xp)>L0?lvOf(D.xp):0;if(isT)D.b[S.k]=Math.max(D.b[S.k]||0,st);const d=new Date().toDateString();if(D.day!=d){D.st=(D.day==new Date(Date.now()-864e5).toDateString()?(D.st||0):0)+1;D.day=d}save();
   /* FIREBASE: gán window.T6_SYNC=d=>{...đẩy d lên Firestore...} trước đoạn script này */
-  try{window.T6_SYNC&&window.T6_SYNC({gain:xp,name:D.name||'',xp:D.xp,stars:Object.values(D.b).reduce((a,b)=>a+b,0),streak:D.st||0,mode:S.id,level:D.lv,score:S.ok,total:n,at:Date.now()})}catch(e){}}
+  try{window.T6_SYNC&&window.T6_SYNC({gain:xp,name:D.name||'',xp:D.xp,stars:Object.values(D.b).reduce((a,b)=>a+b,0),streak:D.st||0,mode:S.id,level:D.lv,score:S.ok,total:n,at:Date.now(),prog:progOf()})}catch(e){}}
  const m=st==3?'Xuất sắc!':st==2?'Giỏi lắm!':st==1?'Khá rồi, luyện thêm nhé!':'Đừng nản, xem lại mẹo rồi thử lại nhé!';
  lbc.t=0;gx('win',st);gx('tint','#ffd25e');Snd.music('home');Snd.win(st);for(let k=0;k<st;k++)setTimeout(()=>Snd.sfx('star',k),350+k*280);if(up)setTimeout(()=>Snd.sfx('lvl'),1500);else if(xp>0)setTimeout(()=>Snd.sfx('coin'),1000);
  app.innerHTML=`<div class="card res"><div class="sc" style="--p:${Math.round(S.ok/n*100)}"><b>${(Math.round(S.ok/n*100)/10).toString().replace('.',',')}</b></div><h2>${m}</h2><div class="s">${[0,1,2].map(k=>`<i style="--k:${k}"${k<st?' class="on"':''}>★</i>`).join('')}</div>${S.rev?'':`<div class="xpc">+${xp} XP</div>`}${up?`<div class="xpc" style="display:block;width:max-content;margin:8px auto 0;background:var(--ok);color:#06352a">🎊 Lên cấp ${up}!</div>`:''}<p class="sub">Đúng ${S.ok}/${n} câu</p></div>
@@ -879,7 +957,7 @@ esc=s=>String(s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';'),
 nk=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]/g,''),
 shell=h=>{app.innerHTML=`<header><h1>Toán 6 Vui Vẻ</h1><p>Luyện đủ chương trình Toán 6, từ cơ bản đến nâng cao</p></header>${h}`;scrollTo(0,0)},
 et=e=>{if(e&&e.code=='auth/popup-closed-by-user')return'';console.warn('[Firebase]',e);return e&&e.code=='auth/network-request-failed'?'Mạng đang yếu, em thử lại nhé!':'Ôi, chưa vào được rồi. Em thử lại nhé!'},
-meChip=()=>U?`<div class="me"><div class="av">${esc([...U.name][0].toUpperCase())}</div><b>${esc(U.name)}${U.guest?' <small>(khách)</small>':''}</b><button onclick="lb()">🏆 Xếp hạng</button><button onclick="out()">Thoát</button></div><div id="mini"></div>`:'',
+meChip=()=>U?`<div class="me"><div class="av">${esc([...U.name][0].toUpperCase())}</div><b>${esc(U.name)}${U.guest?' <small>(khách)</small>':''}</b><button onclick="lb()">🏆 Xếp hạng</button>${U.guest?'<button onclick="linkAcc()">Liên Kết TK</button>':'<button onclick="out()">Thoát</button>'}</div><div id="mini"></div>`:'',
 rows=r=>r.map((p,i)=>`<div class="lbr${U&&p.id==U.uid?' me1':''}${i<3?' t'+(i+1):''}"><span class="rk">${['🥇','🥈','🥉'][i]||i+1}</span><span class="nm">${esc(p.name)}</span><span class="xp">${p.xp|0} XP</span></div>`).join('')||'<p class="hint">Chưa có ai trên bảng. Em hãy là người đầu tiên!</p>';
 
 const getTop=async n=>{if(Date.now()-lbc.t<45e3&&lbc.n>=n)return lbc.r.slice(0,n);const r=await FB.top(n);lbc={t:Date.now(),n,r};return r};
@@ -896,15 +974,48 @@ function chkName(){const v=cl(),m=$('msg'),b=$('go');b.disabled=true;clearTimeou
 /* Chốt tên bằng transaction ở server: hai người bấm cùng lúc thì chỉ một người được */
 async function claim(){const v=cl(),b=$('go'),m=$('msg');b.disabled=true;m.className='msg';m.textContent='Đang lưu…';try{await FB.claim(v,nk(v))}catch(e){m.className='msg no';m.textContent=e.message=='taken'?'❌ Vừa có bạn lấy mất tên này, chọn tên khác nhé':et(e);b.disabled=false}}
 
-function enter(p){U=p;D.name=p.name;D.xp=Math.max(D.xp,p.xp|0);save();home()}
+/* ===== Đồng bộ tiến độ giữa các máy (Firestore: progress/{uid}) =====
+   Gộp theo nguyên tắc "bên nào tiến xa hơn thì giữ": sao = lớn nhất, độ chính xác = bên nhiều lượt hơn,
+   thử thách ngày = ngày mới hơn, chuỗi ngày = bên có ngày chơi mới hơn. */
+const PN=(x,lo,hi)=>Math.max(lo,Math.min(hi,+x||0)),
+accOk=a=>Array.isArray(a)&&a[1]>0&&a[0]>=0&&a[0]<=a[1],
+dcOk=d=>!!d&&d.k>0&&d.ok>=0,
+dayMs=s=>{const t=Date.parse(s);return t>0?t:0},
+progOf=()=>{const p={b:D.b,acc:D.acc,st:PN(D.st,0,3650)|0,day:D.day||''};if(D.dc)p.dc=D.dc;return p},
+mergeProg=(a,r)=>{a=a||{};r=r||{};const o={b:{},acc:{}},A=a.b||{},R=r.b||{},Aa=a.acc||{},Ra=r.acc||{};
+ for(const k of new Set([...Object.keys(A),...Object.keys(R)]))o.b[k]=Math.max(PN(A[k],0,3),PN(R[k],0,3))|0;
+ for(const k of new Set([...Object.keys(Aa),...Object.keys(Ra)])){const x=Aa[k],y=Ra[k],g=accOk(x)&&(!accOk(y)||x[1]>=y[1])?x:accOk(y)?y:null;if(g)o.acc[k]=[g[0],g[1]]}
+ const x=a.dc,y=r.dc,dc=dcOk(x)&&(!dcOk(y)||x.k>y.k||(x.k==y.k&&x.ok>=y.ok))?x:dcOk(y)?y:null;
+ if(dc)o.dc={k:dc.k|0,ok:dc.ok|0};
+ const dx=dayMs(a.day),dy=dayMs(r.day),pk=dx>dy||(dx==dy&&PN(a.st,0,3650)>=PN(r.st,0,3650))?a:r;
+ o.st=PN(pk.st,0,3650)|0;o.day=typeof pk.day=='string'?pk.day:'';return o},
+applyProg=m=>{D.b=m.b;D.acc=m.acc;if(m.dc)D.dc=m.dc;D.st=m.st;D.day=m.day;save()};
+function enter(p){
+ /* Máy này đang giữ tiến độ của tài khoản khác thì bỏ đi, tránh lẫn sao/điểm giữa các tài khoản */
+ if(D.uid&&D.uid!==p.uid){D.b={};D.acc={};D.xp=0;delete D.dc;delete D.st;delete D.day}
+ D.uid=p.uid;U=p;D.name=p.name;D.xp=Math.max(D.xp,p.xp|0);
+ applyProg(mergeProg(progOf(),p.prog));
+ home();
+ if(window.FB&&FB.push)FB.push(p.uid,progOf()).catch(()=>{})}
 function offline(){shell(`<div class="card soft"><div class="cap">🌤️</div><h2>Chưa vào được bảng xếp hạng</h2><p>Mạng đang hơi yếu thôi. Em vẫn luyện tập bình thường nhé!</p></div><button class="big" onclick="U=null;home()">▶️ Vào chơi luôn</button><button class="big alt" onclick="location.reload()">🔄 Kết nối lại</button>`)}
 async function lb(){app.innerHTML=`<div class="top"><button class="x" onclick="home()">←</button><h2 style="margin:0">🏆 Bảng xếp hạng</h2></div><div id="lbx" style="margin-top:12px"><p class="hint">Đang tải…</p></div>`;scrollTo(0,0);
  try{const r=await getTop(50);$('lbx')&&($('lbx').innerHTML=rows(r))}catch(e){$('lbx')&&($('lbx').innerHTML='<p class="hint">Không tải được bảng xếp hạng. Kiểm tra mạng rồi thử lại.</p>')}}
 async function mini(){try{const r=await getTop(10),el=$('mini');if(el)el.innerHTML='<div class="mh">🏆 Top 10<button onclick="lb()">Xem top 50 ›</button></div>'+rows(r)}catch(e){}}
+/* Liên kết tài khoản khách với Google: giữ nguyên uid nên điểm/sao/tên đều còn */
+async function linkErr(e,quiet){
+ if(!e)return;
+ if(e.code=='auth/credential-already-in-use'){
+  if(!confirm('Tài khoản Google này đã có tiến độ riêng rồi. Chuyển sang tài khoản Google đó nhé?\n\n⚠️ Điểm của tài khoản khách hiện tại sẽ KHÔNG được gộp sang.'))return;
+  try{await FB.switchTo(e)}catch(x){alert(et(x)||'Chưa chuyển được, em thử lại nhé!')}return}
+ if(quiet||e.code=='auth/cancelled-popup-request'){console.warn('[Firebase]',e);return}
+ const m=et(e);if(m)alert(m)}
+async function linkAcc(){if(!U||!U.guest)return;try{await FB.link()}catch(e){linkErr(e)}}
 function out(){if(U&&U.guest&&!confirm('Tài khoản khách sẽ mất nếu thoát. Thoát thật không?'))return;FB.logout()}
 
 /* Cầu nối cho module Firebase gọi vào */
-window.T6_UI={out:()=>{U=null;loginScreen()},name:nameScreen,in:enter,fail:e=>{e&&console.warn('[Firebase]',e);offline()}};
+window.T6_UI={out:()=>{U=null;loginScreen()},name:nameScreen,in:enter,fail:e=>{e&&console.warn('[Firebase]',e);offline()},
+ merge:mergeProg,apply:m=>applyProg(mergeProg(progOf(),m)),linkErr,
+ linked:()=>{if(U){U.guest=false;home();setTimeout(()=>alert('✅ Đã liên kết với Google! Tiến độ của em được lưu an toàn, đăng nhập Google trên máy khác là chơi tiếp được.'),60)}}};
 const _home=home;home=t=>{_home(t);Snd.music('home');gx('tint','#7a5cff');if(U&&$('mini'))mini()};
 shell('<div class="card soft"><div class="cap">🔌</div><p>Đang kết nối…</p></div>');
 setTimeout(()=>{if(!window.FB)offline()},8000);
@@ -1015,15 +1126,26 @@ document.readyState=='complete'?start():addEventListener('load',start,{once:true
 <script type="module" onerror="T6_UI.fail()">
 /* ===== Firebase v13.1.0 (SDK qua CDN gstatic) ===== */
 import{initializeApp}from"https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
-import{getAuth,onAuthStateChanged,signInAnonymously,signInWithPopup,signInWithRedirect,GoogleAuthProvider,signOut}from"https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js";
+import{getAuth,onAuthStateChanged,signInAnonymously,signInWithPopup,signInWithRedirect,linkWithPopup,linkWithRedirect,signInWithCredential,getRedirectResult,GoogleAuthProvider,signOut}from"https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js";
 import{getFirestore,doc,getDoc,updateDoc,runTransaction,collection,query,orderBy,limit,getDocs,increment,serverTimestamp}from"https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js";
 const app=initializeApp({apiKey:"AIzaSyDirdbod5vGM_brfFFTggfLMGSwnOo_8_s",authDomain:"toan-b44f0.firebaseapp.com",projectId:"toan-b44f0",storageBucket:"toan-b44f0.firebasestorage.app",messagingSenderId:"343263091046",appId:"1:343263091046:web:440418ea6d1155a8e090a7"}),
 auth=getAuth(app),db=getFirestore(app),UI=window.T6_UI,
-gp=()=>new GoogleAuthProvider();
+gp=()=>new GoogleAuthProvider(),
+linked=async u=>{try{await updateDoc(doc(db,'players',u.uid),{guest:false,updatedAt:serverTimestamp()})}catch(e){}UI.linked()};
 window.FB={
  /* Google: thử popup, trình duyệt chặn popup thì chuyển sang redirect */
  login:k=>k=='guest'?signInAnonymously(auth):signInWithPopup(auth,gp()).catch(e=>['auth/popup-blocked','auth/operation-not-supported-in-this-environment'].includes(e.code)?signInWithRedirect(auth,gp()):Promise.reject(e)),
  logout:()=>signOut(auth),
+ /* Liên kết khách -> Google (popup, bị chặn thì chuyển redirect). Giữ nguyên uid nên không mất dữ liệu. */
+ link:async()=>{const u=auth.currentUser;if(!u||!u.isAnonymous)return'';
+  try{await linkWithPopup(u,gp())}catch(e){if(['auth/popup-blocked','auth/operation-not-supported-in-this-environment'].includes(e.code)){await linkWithRedirect(u,gp());return'redirect'}throw e}
+  await linked(u);return'ok'},
+ /* Google đó đã có tài khoản riêng: đăng nhập thẳng vào tài khoản đó (tiến độ khách không gộp được) */
+ switchTo:e=>{const c=GoogleAuthProvider.credentialFromError(e);return c?signInWithCredential(auth,c):signInWithPopup(auth,gp())},
+ /* Gộp tiến độ (sao, độ chính xác, thử thách ngày, chuỗi ngày) với bản trên server rồi ghi lại — transaction nên 2 máy chơi cùng lúc không đè nhau */
+ push:async(uid,p)=>{const r=doc(db,'progress',uid);let m=p;
+  await runTransaction(db,async t=>{const s=await t.get(r);m=UI.merge(p,s.exists()?s.data():null);t.set(r,{...m,updatedAt:serverTimestamp()})});
+  UI.apply(m)},
  free:async k=>!(await getDoc(doc(db,'names',k))).exists(),
  /* names/{tênChuẩnHoá} giữ chỗ tên; players/{uid} là hồ sơ + điểm. Ghi cùng một transaction. */
  claim:async(name,k)=>{const u=auth.currentUser,pr={uid:u.uid,name,nk:k,guest:u.isAnonymous,xp:0,stars:0,streak:0,updatedAt:serverTimestamp()};
@@ -1032,7 +1154,17 @@ window.FB={
  top:async(n=20)=>(await getDocs(query(collection(db,'players'),orderBy('xp','desc'),limit(n)))).docs.map(d=>({id:d.id,...d.data()}))
 };
 /* Hook game gọi sau mỗi lượt chơi: chỉ cộng dồn XP (increment) thay vì ghi đè tổng, Rules chặn cộng quá 250 XP/lượt */
-window.T6_SYNC=d=>{const u=auth.currentUser;if(!u||!(d.gain>0))return;updateDoc(doc(db,'players',u.uid),{xp:increment(Math.min(d.gain|0,250)),stars:Math.min(d.stars|0,120),streak:Math.min(d.streak|0,3650),updatedAt:serverTimestamp()}).catch(()=>{})};
-onAuthStateChanged(auth,async u=>{if(!u)return UI.out();try{const s=await getDoc(doc(db,'players',u.uid));s.exists()?UI.in({...s.data(),uid:u.uid}):UI.name()}catch(e){UI.fail(e)}});
+window.T6_SYNC=d=>{const u=auth.currentUser;if(!u)return;
+ if(d.gain>0)updateDoc(doc(db,'players',u.uid),{xp:increment(Math.min(d.gain|0,250)),stars:Math.min(d.stars|0,120),streak:Math.min(d.streak|0,3650),updatedAt:serverTimestamp()}).catch(()=>{});
+ if(d.prog)FB.push(u.uid,d.prog).catch(()=>{})};
+/* Quay lại từ trang Google (đường redirect): hoàn tất liên kết, hoặc báo nếu Google đó đã có tài khoản riêng */
+getRedirectResult(auth).then(r=>{if(r&&r.user&&!r.user.isAnonymous&&r.operationType=='link')return linked(r.user)}).catch(e=>UI.linkErr(e,true));
+onAuthStateChanged(auth,async u=>{if(!u)return UI.out();
+ try{const[s,g]=await Promise.all([getDoc(doc(db,'players',u.uid)),getDoc(doc(db,'progress',u.uid)).catch(()=>null)]);
+  if(!s.exists())return UI.name();
+  /* guest lấy theo trạng thái đăng nhập thật; hồ sơ lệch thì sửa lại */
+  if(s.data().guest!==u.isAnonymous)updateDoc(doc(db,'players',u.uid),{guest:u.isAnonymous,updatedAt:serverTimestamp()}).catch(()=>{});
+  UI.in({...s.data(),uid:u.uid,guest:u.isAnonymous,prog:g&&g.exists()?g.data():null})}
+ catch(e){UI.fail(e)}});
 </script>
 </body></html>
