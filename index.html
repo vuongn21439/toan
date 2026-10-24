@@ -3,6 +3,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Toán 6 Vui Vẻ</title>
 <meta name="theme-color" content="#0e1033">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Toán 6">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Be+Vietnam+Pro:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -157,12 +164,56 @@ input:disabled{opacity:1;color:var(--tx)}
 .lbr .xp{font-weight:800;color:var(--sun);font-variant-numeric:tabular-nums}
 #mini .lbr{padding:7px 12px;font-size:14px}
 
+/* --- v6: hub 5 tab, thanh trên gọn, thanh điều hướng dưới --- */
+.hero{padding:10px 12px;gap:12px;margin-bottom:10px}
+.ring{width:56px;height:56px}.ring::before{inset:6px}.ring b{font-size:21px}
+.seg{margin-bottom:12px}
+.nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);z-index:30;width:100%;max-width:480px;display:grid;grid-template-columns:repeat(5,1fr);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));background:rgba(14,16,51,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--ln);border-radius:20px 20px 0 0}
+.nav button{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;min-height:54px;padding:6px 2px;border-radius:14px;font-size:11.5px;font-weight:700;color:var(--mut)}
+.nav button b{font-size:21px;line-height:1}
+.nav .on{color:#fff;background:rgba(122,92,255,.3)}
+.nav i{position:absolute;top:5px;left:calc(50% + 8px);width:10px;height:10px;border-radius:50%;background:var(--no);border:2px solid var(--ink)}
+.rw{display:flex;align-items:center;gap:12px;width:100%;min-height:58px;margin-bottom:8px;padding:8px 12px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid var(--ln);text-align:left}
+.rw .ic{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:12px;font-size:22px;background:var(--c)}
+.rw b{flex:1;min-width:0;font-size:15px;font-weight:700}
+.rw u{flex:none;width:52px;height:8px;border-radius:9px;background:linear-gradient(90deg,var(--sun) calc(var(--p)*1%),rgba(255,255,255,.14) 0)}
+.rw em{flex:none;width:40px;text-align:right;font-style:normal;font-size:13px;font-weight:800;color:var(--sun)}
+
+/* --- cài app lên máy --- */
+.ins{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-bottom:12px;padding:12px;border-radius:20px;background:linear-gradient(135deg,rgba(122,92,255,.38),rgba(76,201,255,.2));border:1px solid var(--ln)}
+.ins img{flex:none;width:52px;height:52px;border-radius:14px;box-shadow:0 3px 0 rgba(0,0,0,.3)}
+.ins .tx{flex:1;min-width:0;line-height:1.3}.ins .tx b{display:block;font:800 17px "Baloo 2",sans-serif}.ins .tx small{display:block;margin-top:2px}
+.ins .ib{display:flex;gap:8px;width:100%}
+.ins .go{flex:1;min-height:46px;padding:0 14px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;background:linear-gradient(180deg,#8f78ff,var(--pr));box-shadow:0 4px 0 var(--prd)}
+.ins .go:active{transform:translateY(3px);box-shadow:0 1px 0 var(--prd)}
+.ins .later{flex:none;min-height:46px;padding:0 14px;border-radius:14px;font-size:14px;font-weight:700;color:var(--mut)}
+.st{display:flex;gap:12px;align-items:center;margin:12px 0;text-align:left}
+.st i{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--pr);font:800 18px "Baloo 2",sans-serif;font-style:normal}
 @keyframes pop{0%{transform:scale(.94)}55%{transform:scale(1.05)}100%{transform:scale(1)}}
 @keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
 @keyframes up{from{transform:translateY(40%);opacity:0}}
 @keyframes starin{0%{transform:scale(0) rotate(-40deg)}70%{transform:scale(1.35) rotate(8deg)}100%{transform:scale(1)}}
 @keyframes float{50%{transform:translateY(-8px)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+/* --- v7: bảng âm thanh --- */
+@keyframes fadein{from{opacity:0}}
+.sn-a{display:flex;justify-content:flex-end;margin:0 0 8px}
+#snd{position:fixed;inset:0;z-index:70}
+.sn-b{position:absolute;inset:0;background:rgba(5,6,24,.6);animation:fadein .2s}
+.sn-p{position:absolute;left:0;right:0;bottom:0;margin:0 auto;max-width:480px;padding:16px 16px calc(18px + env(safe-area-inset-bottom,0px));border-radius:24px 24px 0 0;background:var(--ink2);border-top:1.5px solid var(--ln);box-shadow:0 -14px 30px rgba(0,0,0,.5);animation:up .3s cubic-bezier(.2,.9,.3,1.08)}
+.sn-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;font:800 21px "Baloo 2",sans-serif}
+.sn-h button{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);font-size:18px}
+.sn-r{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;margin-top:6px}
+.sn-r b{font-size:16px}
+.sn-w{position:relative;flex:none;width:56px;height:32px;border-radius:99px;background:rgba(255,255,255,.18);transition:background .2s}
+.sn-w::before{content:"";position:absolute;inset:-8px}
+.sn-w::after{content:"";position:absolute;top:4px;left:4px;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform .2s}
+.sn-w.on{background:var(--ok)}.sn-w.on::after{transform:translateX(24px)}
+input.sn-v{min-height:36px;height:36px;margin:0 0 4px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;accent-color:var(--sun)}
+input.sn-v:focus{box-shadow:none}
+.sn-g{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sn-g button{min-height:48px;padding:4px;border-radius:14px;background:rgba(255,255,255,.08);border:1.5px solid var(--ln);font-size:13px;font-weight:700}
+.sn-g .on{background:linear-gradient(180deg,#8f78ff,var(--pr));border-color:transparent;color:#fff;box-shadow:0 3px 0 var(--prd)}
 </style></head>
 <body><canvas id="bg" aria-hidden="true"></canvas><div id="app"></div>
 <script>
@@ -460,13 +511,114 @@ xw=(a,k=3)=>sh(a).slice(0,k),
 tly=n=>[...Array(Math.floor(n/5)).fill('|||||'),...(n%5?['|'.repeat(n%5)]:[])].join(' '),
 CD={nat:1,pow:1,set:1,div:2,ub:2,gcd:2,int:3,frac:4,dec:5,pct:5,sym:6,geo:6,cir:6,axis:7,line:8,stat:9},
 PH=[['Phần I: Số học & Đại số',['nat','pow','set','div','ub','gcd','int','frac','dec','pct']],['Phần II: Hình học & Đo lường',['sym','geo','cir','axis','line']],['Phần III: Thống kê & Xác suất',['stat']],['Tổng hợp',['word']]];
-let AC;
-/* Rung + âm báo đúng/sai (tắt được bằng nút 🔊 ở trang chủ) */
-const fx=ok=>{try{navigator.vibrate&&navigator.vibrate(ok?15:[40,40,40])}catch(e){}
- if(D.snd===0)return;
- try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state=='suspended')AC.resume();
-  const t0=AC.currentTime,tone=(f,s,d,ty,v)=>{const o=AC.createOscillator(),g=AC.createGain();o.type=ty;o.frequency.setValueAtTime(f,t0+s);g.gain.setValueAtTime(.0001,t0+s);g.gain.exponentialRampToValueAtTime(v,t0+s+.015);g.gain.exponentialRampToValueAtTime(.0001,t0+s+d);o.connect(g);g.connect(AC.destination);o.start(t0+s);o.stop(t0+s+d+.02)};
-  if(ok){tone(659,0,.13,'sine',.07);tone(988,.09,.2,'sine',.07)}else{tone(196,0,.22,'triangle',.08);tone(147,.12,.26,'triangle',.07)}}catch(e){}};
+/* ===== v7: ÂM THANH — tổng hợp bằng WebAudio, không cần file nhạc (chạy cả khi mất mạng) =====
+   Nhạc nền: 3 phong cách, đổi tông theo chủ đề; đúng liên tiếp càng nhiều nhạc càng "dày" (combo ≥2 thêm nhịp, ≥3 thêm giai điệu, ≥5 lên tông).
+   Hiệu ứng: bấm nút, chuyển tab, vào bài, đúng (cao dần theo combo), sai (nhẹ nhàng), sao, XP, lên cấp, fanfare kết quả. Nhạc tự nhỏ lại khi có hiệu ứng lớn. */
+const Snd=(()=>{
+ const num=(v,d)=>typeof v=='number'&&isFinite(v)?Math.max(0,Math.min(1,v)):d,
+ cfg=()=>({sfx:D.snd!==0,mus:D.mus!==0,mv:num(D.mv,.6),sv:num(D.sv,.8),st:[0,1,2].includes(D.ms)?D.ms:0}),
+ mf=m=>440*2**((m-69)/12),
+ PR=[[0,[0,4,7]],[9,[0,3,7]],[5,[0,4,7]],[7,[0,4,7]]], /* C – Am – F – G */
+ MA=[[7,-1,9,-1,12,-1,9,7],[9,-1,12,-1,16,-1,12,9],[12,-1,9,-1,7,-1,9,12],[14,-1,12,-1,9,7,9,-1]],
+ MB=[[12,-1,14,-1,16,14,12,-1],[9,-1,12,9,7,-1,9,-1],[12,9,-1,12,14,-1,12,-1],[14,-1,12,-1,7,-1,-1,-1]],
+ BPM=[104,84,92],ROOTS=[0,2,3,5,7,-2];
+ let ac,out,sg,mg,tg,dk,rev,nb,timer=0,trk=null,want=null,step=0,nt=0,lvl=0,lf=0,lx=0;
+ const ctx=()=>{
+  if(ac)return ac;
+  const A=window.AudioContext||window.webkitAudioContext;if(!A)return null;
+  try{navigator.audioSession&&(navigator.audioSession.type='playback')}catch(e){}
+  ac=new A();
+  const cp=ac.createDynamicsCompressor(),mk=()=>ac.createGain();
+  cp.threshold.value=-16;cp.ratio.value=4;cp.attack.value=.004;cp.release.value=.2;
+  out=mk();out.connect(cp);cp.connect(ac.destination);
+  sg=mk();mg=mk();tg=mk();dk=mk();
+  sg.connect(out);tg.connect(dk);dk.connect(mg);mg.connect(out);
+  const L=ac.sampleRate*1.3|0,ir=ac.createBuffer(2,L,ac.sampleRate);
+  for(let c=0;c<2;c++){const d=ir.getChannelData(c);for(let i=0;i<L;i++)d[i]=(Math.random()*2-1)*(1-i/L)**3}
+  rev=ac.createConvolver();rev.buffer=ir;const w1=mk(),w2=mk(),wo=mk();w1.gain.value=.3;w2.gain.value=.18;wo.gain.value=.7;
+  sg.connect(w1);w1.connect(rev);tg.connect(w2);w2.connect(rev);rev.connect(wo);wo.connect(out);
+  nb=ac.createBuffer(1,ac.sampleRate,ac.sampleRate);const nd=nb.getChannelData(0);for(let i=0;i<nd.length;i++)nd[i]=Math.random()*2-1;
+  ac.onstatechange=()=>sync();vols();
+  return ac},
+ vols=()=>{if(!ac)return;const c=cfg(),t=ac.currentTime;sg.gain.setTargetAtTime(c.sfx?c.sv*1.5:0,t,.02);mg.gain.setTargetAtTime(c.mus?c.mv*.45:0,t,.05)},
+ env=(g,t,a,d,v)=>{g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(v,t+a);g.gain.exponentialRampToValueAtTime(.0001,t+a+d)},
+ tone=(f,t,d,o={})=>{const s=ac.createOscillator(),g=ac.createGain(),a=o.a||.008;let n=g;
+  s.type=o.ty||'sine';s.frequency.setValueAtTime(f,t);if(o.to)s.frequency.exponentialRampToValueAtTime(o.to,t+d);if(o.det)s.detune.value=o.det;
+  env(g,t,a,d,o.v||.1);s.connect(g);
+  if(o.lp){const l=ac.createBiquadFilter();l.type='lowpass';l.frequency.value=o.lp;g.connect(l);n=l}
+  n.connect(o.bus||sg);s.start(t);s.stop(t+a+d+.05)},
+ nse=(t,d,o={})=>{const s=ac.createBufferSource(),g=ac.createGain(),f=ac.createBiquadFilter(),a=o.a||.002;
+  s.buffer=nb;f.type=o.ty||'highpass';f.frequency.setValueAtTime(o.f||6000,t);if(o.to)f.frequency.exponentialRampToValueAtTime(o.to,t+d);f.Q.value=o.q||.7;
+  env(g,t,a,d,o.v||.05);s.connect(f);f.connect(g);g.connect(o.bus||sg);s.start(t,Math.random()*.4);s.stop(t+a+d+.05)},
+ bell=(m,t,d,v)=>{const f=mf(m);tone(f,t,d,{v});tone(f*2.01,t,d*.5,{v:v*.35});tone(f*3.99,t,d*.2,{v:v*.12})},
+ pad=(ms,t,d,v)=>ms.forEach((m,i)=>tone(mf(m),t,d,{ty:'triangle',v,a:.03,lp:2000,det:i*4-4})),
+ duck=(d,lv=.4)=>{const t=ac.currentTime;dk.gain.cancelScheduledValues(t);dk.gain.setTargetAtTime(lv,t,.02);dk.gain.setTargetAtTime(1,t+d,.3)},
+ SX={
+  tap:t=>tone(1000,t,.05,{ty:'triangle',v:.06,to:650}),
+  tab:t=>{tone(620,t,.07,{v:.07});tone(930,t+.05,.1,{v:.06})},
+  next:t=>nse(t,.14,{ty:'bandpass',f:1000,to:2800,q:1.4,v:.05}),
+  start:t=>{nse(t,.3,{ty:'bandpass',f:350,to:3200,q:2,v:.08,a:.06});[67,72,76].forEach((m,i)=>bell(m,t+.2+i*.07,.4,.09))},
+  ok:(t,c=1)=>{const m=[72,74,76,79,81,84,86,88][Math.min(Math.max(c-1,0),7)];
+   bell(m,t,.45,.12);bell(m+7,t+.09,.55,.11);
+   if(c>=3){bell(m+12,t+.18,.6,.09);nse(t+.1,.3,{f:6000,v:.025})}
+   if(c>=5){bell(m+16,t+.27,.7,.08);tone(110,t,.3,{v:.14,to:50});duck(.7,.5)}},
+  bad:t=>{tone(311,t,.26,{ty:'triangle',v:.12,to:233,lp:900});tone(233,t+.12,.34,{ty:'triangle',v:.11,to:175,lp:800})},
+  star:(t,k=0)=>{bell([79,84,88][k]||88,t,.7,.12);nse(t,.18,{f:7000,v:.03})},
+  coin:t=>{tone(988,t,.08,{ty:'triangle',v:.09});tone(1319,t+.07,.3,{ty:'triangle',v:.09})},
+  lvl:t=>{duck(2);[72,76,79,84,88,91].forEach((m,i)=>bell(m,t+i*.08,.7,.1));pad([60,64,67,72],t+.4,1.4,.07)},
+  win:(t,s=1)=>{duck(2.4,.25);s=Math.min(s,3);const N=[[60,64,67],[60,64,67,72],[67,72,76,79,84],[60,64,67,72,76,79,84,88]][s],g=[.14,.1,.09,.075][s],e=t+N.length*g;
+   N.forEach((m,i)=>bell(m,t+i*g,.7,.1+s*.01));
+   if(s>=2){pad([60,64,67,72,76],e,1.6,.07);nse(e,.5,{f:5000,v:.03})}
+   if(s>=3){tone(110,t,.4,{v:.2,to:45});tone(110,e,.5,{v:.18,to:45})}}
+ },
+ sfx=(n,...a)=>{if(!SX[n]||!cfg().sfx)return;const A=ctx();if(!A)return;const now=performance.now();if(n=='tap'&&now-lx<130)return;lx=now;try{SX[n](A.currentTime+.012,...a)}catch(e){}},
+ /* nhạc nền: lưới 16 bước/ô nhịp, 8 ô nhịp (A rồi B). Lớp nhạc dày dần theo lvl (= số câu đúng liên tiếp) khi đang làm bài */
+ play=(s,t)=>{
+  if(!(s&15))lf=trk.q&&lvl>=5?2:0;
+  const c=cfg(),st=s&15,bar=s>>4&7,ph=bar&3,[b,cs]=PR[ph],q=trk.q,sty=c.st,r=trk.root+lf,cb=b>6?b-12:b,
+   hi=!q||lvl>=2,mel=sty!=2&&(!q||lvl>=3),dr=sty!=2,sd=60/(BPM[sty]+(q?8:0))/4;
+  if([0,6,8,14].includes(st))tone(mf(36+r+b),t,st%8?.18:.5,{ty:'triangle',v:.17,lp:520,bus:tg});
+  if(st==0)cs.forEach((i,k)=>tone(mf(60+r+cb+i),t,sd*15,{ty:'triangle',v:.045,a:.06,lp:1500,bus:tg,det:k*3-3}));
+  if(hi&&!(st&1))tone(mf(72+r+cb+cs[[0,1,2,1][st>>1&3]]),t,.2,{ty:'triangle',v:.04,lp:2400,bus:tg});
+  if(dr){
+   if(st==0||st==8||(sty==0&&st==10))tone(130,t,.16,{v:.22,to:42,bus:tg});
+   if(st==4||st==12)nse(t,.09,{ty:'bandpass',f:1900,q:1,v:q?.04:.05,bus:tg});
+   if(hi&&!(st&1))nse(t,.03,{f:8500,v:.02,bus:tg})}
+  if(mel&&!(st&1)){const n=(bar<4?MA:MB)[ph][st>>1];if(n>=0){tone(mf(60+r+n),t,.4,{ty:'triangle',v:.075,lp:3200,bus:tg});tone(mf(72+r+n),t,.22,{v:.022,bus:tg})}}},
+ tick=()=>{try{if(!ac||!trk||ac.state!='running')return;const sd=60/(BPM[cfg().st]+(trk.q?8:0))/4;while(nt<ac.currentTime+.25){play(step,nt);nt+=sd;step++}}catch(e){}},
+ run=()=>{if(timer)return;nt=ac.currentTime+.08;timer=setInterval(tick,50)},
+ halt=()=>{clearInterval(timer);timer=0},
+ sync=()=>{if(!ac)return;vols();if(cfg().mus&&want&&!document.hidden&&ac.state=='running'){if(!timer){trk=want;step=0;lf=0;run()}}else halt()},
+ music=(name,o={})=>{
+  const w={name,q:name=='quiz',root:ROOTS[(o.k|0)%6]};
+  if(trk&&trk.name==name){trk.root=w.root;want=trk;return}
+  want=w;if(!ac)return;
+  const t=ac.currentTime;tg.gain.cancelScheduledValues(t);
+  if(!timer){trk=null;tg.gain.setValueAtTime(1,t);sync();return}
+  tg.gain.setTargetAtTime(0,t,.07); /* nhạc cũ nhỏ dần rồi mới vào bài mới */
+  setTimeout(()=>{halt();trk=null;const n=ac.currentTime;tg.gain.cancelScheduledValues(n);tg.gain.setValueAtTime(1,n);sync()},260)},
+ unlock=()=>{const a=ctx();if(!a)return;if(a.state=='running'){if(want&&!timer)sync();return}a.resume().then(()=>sync()).catch(()=>{})},
+ icon=()=>{const c=cfg();return!c.mus&&!c.sfx?'🔇':'🎵'},
+ SW=(k,on,t)=>`<div class="sn-r"><b>${t}</b><button class="sn-w${on?' on':''}" data-t="${k}" role="switch" aria-checked="${on}" aria-label="${t}"></button></div>`,
+ menu=()=>{
+  const old=document.getElementById('snd');
+  if(old){old.remove();document.querySelectorAll('.sn-i').forEach(e=>e.textContent=icon());return}
+  const c=cfg(),m=document.createElement('div');m.id='snd';
+  m.innerHTML=`<div class="sn-b"></div><div class="sn-p" role="dialog" aria-label="Âm thanh"><div class="sn-h"><span>🎵 Âm thanh</span><button data-x aria-label="Đóng">✕</button></div>${SW('mus',c.mus,'🎶 Nhạc nền')}<input class="sn-v" type="range" min="0" max="100" value="${Math.round(c.mv*100)}" data-v="mv" aria-label="Âm lượng nhạc nền">${SW('snd',c.sfx,'🔔 Hiệu ứng âm thanh')}<input class="sn-v" type="range" min="0" max="100" value="${Math.round(c.sv*100)}" data-v="sv" aria-label="Âm lượng hiệu ứng"><div class="sn-r"><b>Phong cách nhạc</b></div><div class="sn-g">${['🎈 Vui nhộn','☕ Thư giãn','🧠 Tập trung'].map((n,i)=>`<button data-s="${i}" class="${c.st==i?'on':''}">${n}</button>`).join('')}</div></div>`;
+  m.onclick=e=>{const b=e.target.closest('button');
+   if(e.target.classList.contains('sn-b')||(b&&b.hasAttribute('data-x')))return menu();
+   if(!b)return;
+   if(b.dataset.t){const on=!b.classList.contains('on');D[b.dataset.t]=on?1:0;b.classList.toggle('on',on);b.setAttribute('aria-checked',on);save();unlock();sync();if(b.dataset.t=='snd'&&on)sfx('ok',1)}
+   else if(b.dataset.s){D.ms=+b.dataset.s;save();m.querySelectorAll('[data-s]').forEach(x=>x.classList.toggle('on',x==b));unlock();sync()}};
+  m.oninput=e=>{const k=e.target.dataset.v;if(!k)return;D[k]=e.target.value/100;save();vols()};
+  m.onchange=e=>{if(e.target.dataset.v=='sv')sfx('ok',1)};
+  document.body.appendChild(m)};
+ /* trình duyệt chỉ cho phát tiếng sau khi người dùng chạm: mở khoá ở lần chạm đầu, rồi bật nhạc đang chờ */
+ ['pointerdown','touchend','keydown','click'].forEach(e=>addEventListener(e,unlock,{passive:true,capture:true}));
+ addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('button');if(!b||b.classList.contains('o'))return;sfx(b.closest('.nav')?'tab':b.closest('.fb')?'next':'tap')});
+ document.addEventListener('visibilitychange',()=>{if(!ac)return;if(document.hidden){halt();ac.suspend()}else ac.resume().then(()=>sync()).catch(()=>{})});
+ return{sfx,music,menu,icon,ans:(ok,c)=>{lvl=ok?c|0:0;sfx(ok?'ok':'bad',c)},lvl:n=>{lvl=n|0},win:s=>sfx('win',s)}})();
+const fx=(ok,c)=>{try{navigator.vibrate&&navigator.vibrate(ok?15:[40,40,40])}catch(e){}Snd.ans(ok,c)};
 
 /* Đổi tên cho khớp chương trình + bổ sung mẹo */
 T.find(t=>t.id=='pct').n='Tỉ số & phần trăm';T.find(t=>t.id=='geo').n='Chu vi & diện tích';
@@ -600,37 +752,81 @@ const LV={b:'🌱 Cơ bản',h:'🔥 Nâng cao',m:'🎲 Trộn'},
 fa=a=>H(String(a).replace(/^-/,'−').replace(/^(−?\d+)\.(\d+)$/,'$1,$2')),
 nm=s=>s.trim().replace(/\s/g,'').replace(/[−–]/g,'-').replace(',','.'),
 chk=(s,a)=>{s=nm(s);return a.includes('/')?s===a:s!==''&&Math.abs(Number(s)-Number(a))<1e-9},
-pool=t=>D.lv=='h'&&t.h?t.h:D.lv=='m'?[...t.g,...(t.h||[])]:t.g,
+unl=id=>(D.b[id]||0)>=2,
+pool=t=>D.lv=='h'&&t.h?t.h:D.lv=='m'?[...t.g,...(t.h&&unl(t.id)?t.h:[])]:t.g,
 key=id=>id+(D.lv=='h'?'h':''),
-setLv=l=>{D.lv=l;save();home()};
-function home(){
- const tot=Object.values(D.b).reduce((a,b)=>a+b,0),ds=[new Date().toDateString(),new Date(Date.now()-864e5).toDateString()].includes(D.day)?D.st||0:0,lv=Math.floor(D.xp/100)+1,px=D.xp%100;
- app.innerHTML=`<header><h1>Toán 6 Vui Vẻ</h1><p>Luyện đủ chương trình Toán 6, từ cơ bản đến nâng cao</p></header>
- <div class="hero"><div class="ring" style="--p:${px}"><div><b>${lv}</b><small>cấp</small></div></div><div class="hx"><div class="xl"><b>✨ ${D.xp} XP</b><span>còn ${100-px} XP lên cấp</span></div><div class="xb"><u style="width:${px}%"></u></div><div class="chips"><span class="chip">🔥 ${ds} ngày</span><span class="chip">⭐ ${tot}/${T.length*6}</span><button class="chip" aria-label="Bật tắt âm thanh" onclick="D.snd=D.snd===0?1:0;save();home()">${D.snd===0?'🔇 Tắt tiếng':'🔊 Có tiếng'}</button></div></div></div>
- <div class="seg">${Object.keys(LV).map(k=>`<button class="${D.lv==k?'on':''}" onclick="setLv('${k}')">${LV[k]}</button>`).join('')}</div>
- ${meChip()}
- <button class="big" onclick="start('smart')">🧠 Ôn thông minh<small>Ưu tiên phần em hay sai</small></button>
- <button class="big alt" onclick="start('all')">🎯 Thi thử tổng hợp<small>15 câu, trộn mọi chủ đề</small></button>
- ${PH.map(([h,ids])=>`<h3 class="ph">${h}</h3><div class="grid">${ids.map(i=>T.find(t=>t.id==i)).map(t=>{const b=D.b[key(t.id)]||0,a=D.acc[t.id];return `<button class="tc" style="--c:${t.c};--ci:${ink(t.c)}" onclick="intro('${t.id}')"><span class="ic">${t.e}</span><b class="nm">${t.n}</b><small>${[0,1,2].map(k=>`<i${k<b?' class="on"':''}>★</i>`).join('')}${a?`<em>${Math.round(100*a[0]/a[1])}%</em>`:''}</small></button>`}).join('')}</div>`).join('')}`;
+go=(id,lv)=>{D.lv=lv;save();start(id)};
+/* ===== v6: Hub 5 tab (Học · Ôn tập · Thi thử · Thử thách · Hạng) ===== */
+const GR=[['🔢 Số học',PH[0][1]],['📐 Hình học',PH[1][1]],['📊 Thống kê',[...PH[2][1],...PH[3][1]]]],
+EX={all:0,ex1:GR[0][1],ex2:GR[1][1],ex3:GR[2][1]},
+TABS=[['learn','📚','Học'],['review','🧠','Ôn tập'],['mock','🎯','Thi thử'],['daily','⚡','Thử thách'],['rank','🏆','Hạng']],
+/* XP: cấp n→n+1 cần 100+40(n−1) XP; tối đa cấp 200. XP cộng dồn tới cấp L: CX(L)=20(L−1)(L+3). Không giới hạn XP theo ngày */
+MAXL=200,CX=L=>20*(L-1)*(L+3),
+XQ={b:8,h:14,m:10,mock:12,daily:12},
+lvOf=x=>{let L=1;while(L<MAXL&&x>=CX(L+1))L++;return L},
+dk=()=>{const t=new Date(Date.now()+252e5);return t.getUTCFullYear()*1e4+(t.getUTCMonth()+1)*100+t.getUTCDate()},
+mk=id=>T.some(t=>t.id==id)?D.lv:id=='smart'?'m':id=='daily'?'daily':'mock',
+nq=id=>id=='daily'?5:id in EX?15:id=='smart'?12:10,
+dcDone=()=>D.dc&&D.dc.k==dk(),
+seeded=(seed,f)=>{const r=Math.random;let a=seed>>>0;Math.random=()=>{a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};try{return f()}finally{Math.random=r}},
+/* Đề thử thách: seed theo ngày nên mọi bạn cùng một đề; 5 chủ đề khác nhau, 2 câu cuối lấy mức nâng cao */
+dailyQs=()=>seeded(dk(),()=>{const qs=[],s=new Set();for(const id of sh(T.map(t=>t.id))){if(qs.length>=5)break;const tp=T.find(t=>t.id==id),q=P(qs.length>=3&&tp.h?tp.h:tp.g)();if(!s.has(q.q)&&(q.inp||q.w.length>=3)){s.add(q.q);q.t=tp.id;qs.push(q)}}return qs}),
+bar=()=>{const L=lvOf(D.xp),a=CX(L),b=CX(L+1),mx=L>=MAXL,p=mx?100:Math.round((D.xp-a)/(b-a)*100),ds=[new Date().toDateString(),new Date(Date.now()-864e5).toDateString()].includes(D.day)?D.st||0:0;
+ return `<div class="sn-a"><button class="chip" onclick="Snd.menu()" aria-label="Cài đặt âm thanh"><span class="sn-i">${Snd.icon()}</span> Âm thanh</button></div><div class="hero"><div class="ring" style="--p:${p}"><div><b${L>99?' style="font-size:17px"':''}>${L}</b></div></div><div class="hx"><div class="xl"><b>✨ ${D.xp} XP</b><span>${mx?'Cấp tối đa 👑':'còn '+(b-D.xp)+' XP lên cấp'}</span></div><div class="xb"><u style="width:${p}%"></u></div></div><span class="chip">🔥 ${ds}</span></div>`},
+tcard=t=>{const b=D.b[t.id]||0,a=D.acc[t.id];return `<button class="tc" style="--c:${t.c};--ci:${ink(t.c)}" onclick="intro('${t.id}')"><span class="ic">${t.e}</span><b class="nm">${t.n}</b><small>${[0,1,2].map(k=>`<i${k<b?' class="on"':''}>★</i>`).join('')}<em>${t.h?(unl(t.id)?'🔥'+(D.b[t.id+'h']||0)+'★':'🔒'):''}${a?' '+Math.round(100*a[0]/a[1])+'%':''}</em></small></button>`},
+tabLearn=()=>`${insCard()}<div class="seg">${GR.map((g,i)=>`<button class="${GI==i?'on':''}" onclick="GI=${i};home()">${g[0]}</button>`).join('')}</div><div class="grid">${GR[GI][1].map(i=>tcard(T.find(t=>t.id==i))).join('')}</div>`,
+rw=t=>{const a=D.acc[t.id],p=Math.round(100*a[0]/a[1]);return `<button class="rw" style="--c:${t.c}" onclick="intro('${t.id}')"><span class="ic">${t.e}</span><b>${t.n}</b><u style="--p:${p}"></u><em>${p}%</em></button>`},
+tabReview=()=>{const w=T.filter(t=>D.acc[t.id]&&D.acc[t.id][1]>=5).sort((x,y)=>D.acc[x.id][0]/D.acc[x.id][1]-D.acc[y.id][0]/D.acc[y.id][1]).slice(0,4);
+ return `<button class="big" onclick="go('smart','m')">🧠 Ôn thông minh<small>12 câu · ưu tiên phần em hay sai · ${XQ.m} XP/câu</small></button><h3 class="ph">Cần luyện thêm</h3>${w.length?w.map(rw).join(''):'<p class="hint">Làm vài bài ở tab Học, mình sẽ gợi ý phần em hay sai ở đây.</p>'}`},
+tabMock=()=>`<button class="big" onclick="go('all','m')">🎯 Đề tổng hợp<small>15 câu · mọi chủ đề · ${XQ.mock} XP/câu</small></button>${GR.map((g,i)=>`<button class="big alt" onclick="go('ex${i+1}','m')">${g[0]}<small>Đề 15 câu riêng phần này</small></button>`).join('')}<p class="hint">Làm bao nhiêu đề cũng được.</p>`,
+tabDaily=()=>{const dn=dcDone();return `<div class="card soft"><div class="cap">⚡</div><h2>Thử thách hôm nay</h2><p class="sub">5 câu, cả lớp cùng một đề. ${XQ.daily} XP/câu, đúng cả 5 câu thưởng thêm 20 XP.</p>${dn?`<div class="xpc">Hôm nay: ${D.dc.ok}/5 ✅</div>`:''}</div>`+(dn?`<button class="big alt" onclick="start('daily',dailyQs())">🔁 Làm lại cho vui<small>Không tính XP</small></button><p class="hint">Ngày mai có đề mới. Quay lại để giữ chuỗi ngày 🔥</p>`:`<button class="big" onclick="start('daily')">Bắt đầu thử thách 🚀</button>`)},
+tabRank=()=>(U?meChip():`<div class="card soft"><div class="cap">🏆</div><p class="sub">Đăng nhập để lưu điểm và lên bảng xếp hạng.</p></div><button class="big" onclick="loginScreen()">Đăng nhập</button>`)+insRow();
+let TAB=TABS.some(x=>x[0]==new URLSearchParams(location.search).get('tab'))?new URLSearchParams(location.search).get('tab'):'learn',GI=0;
+/* ===== Cài app lên máy (PWA): Android/Chrome có nút cài thẳng, iPhone/iPad hiện hướng dẫn 3 bước ===== */
+let DP=null;
+const isApp=()=>matchMedia('(display-mode: standalone)').matches||navigator.standalone===true,
+isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform=='MacIntel'&&navigator.maxTouchPoints>1),
+canIns=()=>!isApp()&&(!!DP||isIOS),
+hasNav=()=>!!document.querySelector('.nav'),
+insNow=async()=>{if(!DP)return iosGuide();DP.prompt();let r;try{r=await DP.userChoice}catch(e){}DP=null;if(!(r&&r.outcome=='accepted')){D.ins=Date.now()+3*864e5;save()}if(hasNav())home()},
+insLater=()=>{D.ins=Date.now()+7*864e5;save();home()},
+insCard=()=>canIns()&&D.xp>0&&!(D.ins>Date.now())?`<div class="ins"><img src="icon-192.png" alt="" width="52" height="52"><div class="tx"><b>Cài Toán 6 lên máy nhé!</b><small>Mở như app thật, chơi được cả khi mất mạng</small></div><div class="ib"><button class="go" onclick="insNow()">${DP?'📲 Cài ngay':'📲 Xem cách cài'}</button><button class="later" onclick="insLater()">Để sau</button></div></div>`:'',
+insRow=()=>canIns()?`<button class="big alt" onclick="insNow()">📲 Cài app lên máy<small>Mở nhanh từ màn hình chính, chơi cả khi mất mạng</small></button>`:'';
+addEventListener('beforeinstallprompt',e=>{e.preventDefault();DP=e;if(hasNav())home(TAB)});
+addEventListener('appinstalled',()=>{DP=null;cf('burst',innerWidth/2,innerHeight*.4,70);if(hasNav())home(TAB)});
+function iosGuide(){
+ app.innerHTML=`<div class="top"><button class="x" aria-label="Quay lại" onclick="home()">←</button><b class="lvl">Cài lên màn hình chính</b></div>
+ <div class="card soft"><img src="icon-192.png" alt="" width="84" height="84" style="border-radius:22px"><h2 style="margin-top:10px">3 bước là xong!</h2>
+ <div class="st"><i>1</i><span>Bấm nút <b>Chia sẻ</b> ⬆️ (ô vuông có mũi tên) trên thanh công cụ của Safari</span></div>
+ <div class="st"><i>2</i><span>Kéo xuống, chọn <b>Thêm vào Màn hình chính</b> ➕</span></div>
+ <div class="st"><i>3</i><span>Bấm <b>Thêm</b>. Biểu tượng Toán 6 sẽ hiện ra trên màn hình chính 🎉</span></div>
+ <p class="hint">Không thấy mục này? Em mở trang bằng Safari rồi làm lại nhé.</p></div>
+ <button class="big" onclick="home()">Đã hiểu 👍</button>`;scrollTo(0,0);
+}
+function home(t){
+ if(t)TAB=t;
+ const body={learn:tabLearn,review:tabReview,mock:tabMock,daily:tabDaily,rank:tabRank}[TAB]();
+ app.innerHTML=bar()+body+`<div style="height:84px"></div><nav class="nav" aria-label="Chuyển mục">${TABS.map(([k,e,n])=>`<button class="${TAB==k?'on':''}"${TAB==k?' aria-current="page"':''} onclick="home('${k}')"><b>${e}</b>${n}${k=='daily'&&!dcDone()?'<i></i>':''}</button>`).join('')}</nav>`;
  scrollTo(0,0);
 }
 function intro(id){
- const t=T.find(x=>x.id==id);
- app.innerHTML=`<div class="top"><button class="x" aria-label="Về trang chủ" onclick="home()">←</button><b class="lvl">${LV[D.lv]}</b></div>
+ const t=T.find(x=>x.id==id),ok=!t.h||unl(id),bs=D.b[id]||0;
+ app.innerHTML=`<div class="top"><button class="x" aria-label="Về trang chủ" onclick="home()">←</button></div>
  <div class="card soft intro" style="--c:${t.c};--ci:${ink(t.c)}"><div class="bigic">${t.e}</div><h2>${t.n}</h2><small>${CD[t.id]?'Chủ đề '+CD[t.id]:'Tổng hợp'}</small><div class="tip">💡 ${H(t.tip)}</div></div>
- <button class="big" onclick="start('${id}')">Bắt đầu 10 câu 🚀</button>`;
+ <button class="big" onclick="go('${id}','b')">🌱 Cơ bản · 10 câu<small>${XQ.b} XP/câu${bs?' · đang '+bs+'★':''}</small></button>
+ ${t.h?`<button class="big alt"${ok?'':' disabled'} onclick="go('${id}','h')">${ok?'🔥 Nâng cao · 10 câu':'🔒 Nâng cao'}<small>${ok?XQ.h+' XP/câu':'Mở khi đạt 2★ phần Cơ bản'}</small></button>`:''}`;
  gx('tint',t.c);scrollTo(0,0);
 }
 function start(id,ql){
- const t=T.find(x=>x.id==id),n=id=='all'?15:id=='smart'?12:10;let qs=ql;
- if(!qs){qs=[];const s=new Set();let k=0;while(qs.length<n&&k++<300){const tp=t||(id=='smart'?weak():P(T)),q=P(pool(tp))();if(!s.has(q.q)&&(q.inp||q.w.length>=3)){s.add(q.q);q.t=tp.id;qs.push(q)}}}
- S={id,q:qs,i:0,ok:0,bad:[],rev:!!ql,m:D.lv=='h'?15:10,k:key(id),cb:0};show();
+ const t=T.find(x=>x.id==id),n=nq(id);let qs=ql;
+ if(!qs){if(id=='daily')qs=dailyQs();else{qs=[];const s=new Set();let k=0;while(qs.length<n&&k++<300){const pid=P(EX[id]||T.map(y=>y.id)),tp=t||(id=='smart'?weak():T.find(x=>x.id==pid)),q=P(pool(tp))();if(!s.has(q.q)&&(q.inp||q.w.length>=3)){s.add(q.q);q.t=tp.id;qs.push(q)}}}}
+ S={id,q:qs,i:0,ok:0,bad:[],rev:!!ql,m:XQ[mk(id)],k:key(id),cb:0};Snd.music('quiz',{k:t?T.indexOf(t):id=='daily'?5:id=='smart'?2:3});Snd.lvl(0);Snd.sfx('start');show();
 }
 function show(){
  const q=S.q[S.i],tp=T.find(x=>x.id==q.t),c=tp?tp.c:'#7a5cff';S.o=sh([q.a,...q.w]);S.d=0;
  app.style.setProperty('--c',c);app.style.setProperty('--ci',ink(c));gx('tint',c);
  const two=!q.inp&&S.o.every(v=>String(v).length<=11);
- app.innerHTML=`<div class="top"><button class="x" aria-label="Thoát bài" onclick="quit()">✕</button><div class="pb" role="progressbar" aria-valuemin="0" aria-valuemax="${S.q.length}" aria-valuenow="${S.i}"><u></u></div><span class="cn">${S.i+1}/${S.q.length}</span></div>
+ app.innerHTML=`<div class="top"><button class="x" aria-label="Thoát bài" onclick="quit()">✕</button><div class="pb" role="progressbar" aria-valuemin="0" aria-valuemax="${S.q.length}" aria-valuenow="${S.i}"><u></u></div><button class="x" aria-label="Âm thanh" onclick="Snd.menu()"><span class="sn-i">${Snd.icon()}</span></button><span class="cn">${S.i+1}/${S.q.length}</span></div>
  <div class="card"><div class="qh"><span class="qn">Câu ${S.i+1}</span>${S.cb>=2?`<span class="combo">🔥 Liên tiếp ×${S.cb}</span>`:''}</div><div class="q">${H(q.q)}</div>${q.f||''}</div>`+(q.inp?
  `<input id="in" autocomplete="off" placeholder="Nhập đáp án…" onkeydown="event.key=='Enter'&&sub()"><button class="big" onclick="sub()">Kiểm tra ✓</button><p class="hint">Phân số viết dạng a/b đã rút gọn; số thập phân dùng dấu phẩy.</p>`:
  `<div class="opts${two?' two':''}">${S.o.map((v,k)=>`<button class="o" onclick="pick(${k})"><span class="t">${H(v)}</span></button>`).join('')}</div>`)+`<div id="fb" role="status" aria-live="polite"></div>`;
@@ -650,7 +846,7 @@ function sub(){
 }
 function rs(ok){
  const q=S.q[S.i],last=S.i==S.q.length-1;S.d=1;
- fx(ok);if(ok)S.ok++;else S.bad.push(q);S.cb=ok?S.cb+1:0;
+ if(ok)S.ok++;else S.bad.push(q);S.cb=ok?S.cb+1:0;fx(ok,S.cb);
  if(!S.rev&&q.t){const a=D.acc[q.t]=D.acc[q.t]||[0,0];a[1]++;if(ok)a[0]++;if(a[1]>40){a[0]=Math.round(a[0]/2);a[1]=Math.round(a[1]/2)}save()}
  gx('react',ok,S.cb);if(ok&&S.cb>=3)cf('burst',innerWidth/2,innerHeight*.4,16+Math.min(S.cb,10)*3);
  const f=document.getElementById('fb');f.className='fb '+(ok?'ok':'no');
@@ -659,15 +855,19 @@ function rs(ok){
 }
 function next(){S.i++;show()}
 function end(){
- const n=S.q.length,st=S.ok>=n*.9?3:S.ok>=n*.7?2:S.ok>=n*.5?1:0,xp=S.ok*S.m;
- if(!S.rev){D.xp+=xp;if(T.some(t=>t.id==S.id))D.b[S.k]=Math.max(D.b[S.k]||0,st);const d=new Date().toDateString();if(D.day!=d){D.st=(D.day==new Date(Date.now()-864e5).toDateString()?(D.st||0):0)+1;D.day=d}save();
- /* FIREBASE: gán window.T6_SYNC=d=>{...đẩy d lên Firestore...} trước đoạn script này */
- try{window.T6_SYNC&&window.T6_SYNC({gain:xp,name:D.name||'',xp:D.xp,stars:Object.values(D.b).reduce((a,b)=>a+b,0),streak:D.st||0,mode:S.id,level:D.lv,score:S.ok,total:n,at:Date.now()})}catch(e){}}
+ const n=S.q.length,st=S.ok>=n*.9?3:S.ok>=n*.7?2:S.ok>=n*.5?1:0,isT=T.some(t=>t.id==S.id),dly=S.id=='daily';let xp=0,up=0;
+ if(!S.rev){
+  const today=dk();
+  if(dly){if(!dcDone()){xp=S.ok*S.m+(S.ok==n?20:0);D.dc={k:today,ok:S.ok}}}
+  else xp=S.ok*S.m+(isT?Math.max(0,st-(D.b[S.k]||0))*20:0);
+  const L0=lvOf(D.xp);D.xp+=xp;up=lvOf(D.xp)>L0?lvOf(D.xp):0;if(isT)D.b[S.k]=Math.max(D.b[S.k]||0,st);const d=new Date().toDateString();if(D.day!=d){D.st=(D.day==new Date(Date.now()-864e5).toDateString()?(D.st||0):0)+1;D.day=d}save();
+  /* FIREBASE: gán window.T6_SYNC=d=>{...đẩy d lên Firestore...} trước đoạn script này */
+  try{window.T6_SYNC&&window.T6_SYNC({gain:xp,name:D.name||'',xp:D.xp,stars:Object.values(D.b).reduce((a,b)=>a+b,0),streak:D.st||0,mode:S.id,level:D.lv,score:S.ok,total:n,at:Date.now()})}catch(e){}}
  const m=st==3?'Xuất sắc!':st==2?'Giỏi lắm!':st==1?'Khá rồi, luyện thêm nhé!':'Đừng nản, xem lại mẹo rồi thử lại nhé!';
- lbc.t=0;gx('win',st);gx('tint','#ffd25e');
- app.innerHTML=`<div class="card res"><div class="sc" style="--p:${Math.round(S.ok/n*100)}"><b>${(Math.round(S.ok/n*100)/10).toString().replace('.',',')}</b></div><h2>${m}</h2><div class="s">${[0,1,2].map(k=>`<i style="--k:${k}"${k<st?' class="on"':''}>★</i>`).join('')}</div>${S.rev?'':`<div class="xpc">+${xp} XP</div>`}<p class="sub">Đúng ${S.ok}/${n} câu</p></div>
+ lbc.t=0;gx('win',st);gx('tint','#ffd25e');Snd.music('home');Snd.win(st);for(let k=0;k<st;k++)setTimeout(()=>Snd.sfx('star',k),350+k*280);if(up)setTimeout(()=>Snd.sfx('lvl'),1500);else if(xp>0)setTimeout(()=>Snd.sfx('coin'),1000);
+ app.innerHTML=`<div class="card res"><div class="sc" style="--p:${Math.round(S.ok/n*100)}"><b>${(Math.round(S.ok/n*100)/10).toString().replace('.',',')}</b></div><h2>${m}</h2><div class="s">${[0,1,2].map(k=>`<i style="--k:${k}"${k<st?' class="on"':''}>★</i>`).join('')}</div>${S.rev?'':`<div class="xpc">+${xp} XP</div>`}${up?`<div class="xpc" style="display:block;width:max-content;margin:8px auto 0;background:var(--ok);color:#06352a">🎊 Lên cấp ${up}!</div>`:''}<p class="sub">Đúng ${S.ok}/${n} câu</p></div>
  ${S.bad.length?`<button class="big" onclick="start('${S.id}',S.bad)">🔁 Ôn lại ${S.bad.length} câu sai</button>`:''}
- <button class="big" onclick="start('${S.id}')">🎲 Làm đề mới</button>
+ ${dly?'':`<button class="big" onclick="start('${S.id}')">🎲 Làm đề mới</button>`}
  <button class="big alt" onclick="U?lb():home()">🏆 Bảng xếp hạng</button><button class="big alt" onclick="home()">🏠 Trang chủ</button>`;
  scrollTo(0,0);if(st>=2)setTimeout(()=>cf('burst',innerWidth/2,innerHeight*.32,st==3?90:55),400);
 }
@@ -705,9 +905,10 @@ function out(){if(U&&U.guest&&!confirm('Tài khoản khách sẽ mất nếu tho
 
 /* Cầu nối cho module Firebase gọi vào */
 window.T6_UI={out:()=>{U=null;loginScreen()},name:nameScreen,in:enter,fail:e=>{e&&console.warn('[Firebase]',e);offline()}};
-const _home=home;home=()=>{_home();gx('tint','#7a5cff');if(U)mini()};
+const _home=home;home=t=>{_home(t);Snd.music('home');gx('tint','#7a5cff');if(U&&$('mini'))mini()};
 shell('<div class="card soft"><div class="cap">🔌</div><p>Đang kết nối…</p></div>');
 setTimeout(()=>{if(!window.FB)offline()},8000);
+if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script>
 <script>
 /* ===== Pháo giấy: 90 hạt tái sử dụng (object pool), chỉ chạy rAF khi còn hạt đang bay ===== */
@@ -830,8 +1031,8 @@ window.FB={
   UI.in({...pr,xp:0})},
  top:async(n=20)=>(await getDocs(query(collection(db,'players'),orderBy('xp','desc'),limit(n)))).docs.map(d=>({id:d.id,...d.data()}))
 };
-/* Hook game gọi sau mỗi lượt chơi: chỉ cộng dồn XP (increment) thay vì ghi đè tổng, Rules sẽ chặn cộng quá lớn */
-window.T6_SYNC=d=>{const u=auth.currentUser;if(!u||!(d.gain>0))return;updateDoc(doc(db,'players',u.uid),{xp:increment(Math.min(d.gain|0,300)),stars:Math.min(d.stars|0,120),streak:Math.min(d.streak|0,3650),updatedAt:serverTimestamp()}).catch(()=>{})};
+/* Hook game gọi sau mỗi lượt chơi: chỉ cộng dồn XP (increment) thay vì ghi đè tổng, Rules chặn cộng quá 250 XP/lượt */
+window.T6_SYNC=d=>{const u=auth.currentUser;if(!u||!(d.gain>0))return;updateDoc(doc(db,'players',u.uid),{xp:increment(Math.min(d.gain|0,250)),stars:Math.min(d.stars|0,120),streak:Math.min(d.streak|0,3650),updatedAt:serverTimestamp()}).catch(()=>{})};
 onAuthStateChanged(auth,async u=>{if(!u)return UI.out();try{const s=await getDoc(doc(db,'players',u.uid));s.exists()?UI.in({...s.data(),uid:u.uid}):UI.name()}catch(e){UI.fail(e)}});
 </script>
 </body></html>

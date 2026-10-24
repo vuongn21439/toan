@@ -1,0 +1,50 @@
+{
+ "id": "./",
+ "name": "Toán 6 Vui Vẻ",
+ "short_name": "Toán 6",
+ "description": "Luyện Toán 6 vui như chơi game, học mọi lúc kể cả khi mất mạng",
+ "lang": "vi",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#0e1033",
+ "theme_color": "#0e1033",
+ "categories": [
+  "education"
+ ],
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Thử thách hôm nay",
+   "short_name": "Thử thách",
+   "url": "./?tab=daily",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+    }
+   ]
+  }
+ ]
+}
