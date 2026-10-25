@@ -1,0 +1,227 @@
+/* ===== v5: giao diện "khối đồ chơi" trên nền 3D — một theme tối thống nhất ===== */
+:root{--ink:#0e1033;--ink2:#171a4a;--ink3:#242a68;--ln:rgba(255,255,255,.13);--tx:#f4f2ff;--mut:#aab1e8;--pr:#7a5cff;--prd:#4a2fd0;--ok:#35e0a1;--okd:#14a673;--no:#ff5d73;--nod:#c93349;--sun:#ffd25e;--c:#7a5cff;--ci:#fff;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--ink);-webkit-text-size-adjust:100%;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{margin:0}
+body{min-height:100vh;min-height:100dvh;color:var(--tx);font:500 16px/1.5 "Be Vietnam Pro",system-ui,sans-serif;-webkit-tap-highlight-color:transparent}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(120% 55% at 50% -8%,#3b2bab 0%,transparent 62%),radial-gradient(70% 45% at 100% 100%,rgba(122,31,110,.4),transparent 65%),linear-gradient(180deg,#12144c,#0b0d2e)}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity .9s ease}
+#bg.on{opacity:1}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:50;pointer-events:none}
+#app{position:relative;z-index:1;max-width:480px;min-height:100vh;min-height:100dvh;margin:auto;padding:14px 16px 28px}
+h1,h2,h3{font-family:"Baloo 2","Be Vietnam Pro",system-ui,sans-serif;font-weight:800;margin:0}
+h1{font-size:clamp(38px,11.5vw,52px);line-height:1;text-align:center;color:#fff;text-shadow:0 2px 0 #6a4cf0,0 4px 0 #3f27b0,0 9px 16px rgba(0,0,0,.5)}
+header{text-align:center;padding:10px 0 16px}
+header p{margin:10px 0 0;font-size:14px;color:var(--mut)}
+h2{font-size:26px;line-height:1.15}
+p{margin:8px 0}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0}
+button:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+small{font-size:13px;color:var(--mut)}
+
+/* --- trang chủ: cấp độ, XP, chuỗi ngày --- */
+.hero{display:flex;align-items:center;gap:14px;padding:14px;margin-bottom:12px;border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));border:1px solid var(--ln);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.ring{--p:0;position:relative;flex:none;width:70px;height:70px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--sun) calc(var(--p)*1%),rgba(255,255,255,.14) 0)}
+.ring::before{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--ink2)}
+.ring>div{position:relative;text-align:center;line-height:1}
+.ring b{display:block;font:800 26px/1 "Baloo 2",sans-serif}
+.ring small{font-size:11px}
+.hx{flex:1;min-width:0}
+.xl{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--mut);margin-bottom:6px}
+.xl b{color:var(--sun);font-weight:700}
+.xb{height:10px;border-radius:9px;background:rgba(255,255,255,.14);overflow:hidden}
+.xb u{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#ffa63d,var(--sun));transition:width .6s}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 12px;border-radius:99px;background:rgba(255,255,255,.1);font-size:13px;font-weight:700;color:var(--tx)}
+button.chip{border:1px solid var(--ln)}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px;margin-bottom:14px;border-radius:16px;background:rgba(0,0,0,.3)}
+.seg button{min-height:44px;padding:8px 4px;border-radius:12px;font-size:14px;font-weight:700;color:var(--mut);transition:background .2s,color .2s}
+.seg .on{background:linear-gradient(180deg,var(--prl,#8f78ff),var(--pr));color:var(--bt,#fff);box-shadow:0 3px 0 var(--prd)}
+
+/* --- nút lớn --- */
+.big{display:block;width:100%;min-height:56px;margin-bottom:16px;padding:12px 16px;border-radius:18px;font:800 17px/1.25 "Be Vietnam Pro",sans-serif;color:var(--bt,#fff);background:linear-gradient(180deg,var(--prl,#8f78ff),var(--pr));box-shadow:0 5px 0 var(--prd),0 12px 20px rgba(0,0,0,.25);transition:transform .08s,box-shadow .08s}
+.big:active{transform:translateY(4px);box-shadow:0 1px 0 var(--prd)}
+.big small{display:block;margin-top:2px;font-size:12.5px;font-weight:500;color:inherit;opacity:.82}
+.big.alt{background:rgba(255,255,255,.08);border:1.5px solid var(--ln);color:var(--tx);box-shadow:0 4px 0 rgba(0,0,0,.32)}
+.big.alt:active{box-shadow:0 1px 0 rgba(0,0,0,.32)}
+.big:disabled{opacity:.45;pointer-events:none}
+
+/* --- khối chủ đề: mỗi chủ đề một màu riêng --- */
+.ph{margin:24px 2px 10px;font-size:20px;line-height:1.2}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tc{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-height:116px;padding:12px;text-align:left;border-radius:20px;color:var(--ci);background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0) 58%),var(--c);box-shadow:0 5px 0 rgba(0,0,0,.34),inset 0 1.5px 0 rgba(255,255,255,.42);transition:transform .08s,box-shadow .08s}
+.tc:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(0,0,0,.34),inset 0 1.5px 0 rgba(255,255,255,.42)}
+.tc .ic{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;font-size:25px;line-height:1;background:rgba(255,255,255,.36)}
+.tc .nm{font:700 17px/1.15 "Baloo 2",sans-serif;overflow-wrap:anywhere}
+.tc small{display:flex;align-items:center;gap:2px;width:100%;margin-top:auto;font-size:12px;font-weight:700;color:inherit}
+.tc small i{font-style:normal;font-size:17px;line-height:1;opacity:.35}
+.tc small i.on{opacity:1}
+.tc small em{margin-left:auto;font-style:normal;opacity:.9}
+
+/* --- thẻ, câu hỏi, đáp án --- */
+.card{position:relative;margin:16px 0;padding:18px;border-radius:22px;background:rgba(23,26,74,.84);border:1px solid var(--ln);box-shadow:0 12px 26px rgba(0,0,0,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.card.soft{text-align:center}
+.cap{font-size:60px;line-height:1.1;animation:float 3.2s ease-in-out infinite}
+.sub{color:var(--mut);font-size:15px}
+.top{display:flex;align-items:center;gap:12px}
+.x{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);font-size:18px;color:var(--tx)}
+.lvl{font:700 17px "Baloo 2",sans-serif}
+.pb{flex:1;height:18px;padding:3px;border-radius:99px;background:rgba(0,0,0,.38);box-shadow:inset 0 2px 3px rgba(0,0,0,.4)}
+.pb u{display:block;height:100%;min-width:12px;border-radius:99px;background:linear-gradient(180deg,rgba(255,255,255,.42),transparent 58%),var(--c);transition:width .45s cubic-bezier(.3,1.5,.5,1)}
+.cn{min-width:44px;text-align:right;font:700 16px "Baloo 2",sans-serif;color:var(--mut)}
+.qh{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+.qn{display:inline-block;padding:2px 12px;border-radius:99px;background:var(--c);color:var(--ci);font:700 15px/1.5 "Baloo 2",sans-serif}
+.combo{font:800 16px "Baloo 2",sans-serif;color:var(--sun);animation:pop .4s}
+.q{font-size:20px;line-height:1.5;font-weight:700}
+.opts{display:grid;gap:12px;counter-reset:o}
+.opts.two{grid-template-columns:1fr 1fr}
+.o{counter-increment:o;display:flex;align-items:center;gap:12px;min-height:62px;padding:10px 14px;text-align:left;border-radius:18px;background:var(--ink3);border:2px solid var(--ln);box-shadow:0 5px 0 rgba(0,0,0,.36);font-size:19px;font-weight:700;color:var(--tx);transition:transform .08s,box-shadow .08s,background .15s}
+.o::before{content:counter(o,upper-alpha);flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:var(--c);color:var(--ci);font:800 16px "Baloo 2",sans-serif}
+.o .t{flex:1;min-width:0;overflow-wrap:anywhere}
+.opts.two .o{gap:8px;padding:10px;font-size:17px}
+.opts.two .o::before{width:26px;height:26px;font-size:14px}
+.o:active:not(:disabled){transform:translateY(4px);box-shadow:0 1px 0 rgba(0,0,0,.36)}
+.o:disabled{color:var(--tx);opacity:1;cursor:default}
+.o.ok{background:rgba(53,224,161,.2);border-color:var(--ok);box-shadow:0 5px 0 var(--okd);animation:pop .4s}
+.o.no{background:rgba(255,93,115,.18);border-color:var(--no);box-shadow:0 5px 0 var(--nod);animation:shake .38s}
+.o.ok::before{content:"✓";background:var(--ok);color:#06352a}
+.o.no::before{content:"✕";background:var(--no);color:#fff}
+input{width:100%;min-height:62px;margin-bottom:12px;padding:12px;border-radius:18px;border:2px solid var(--ln);background:var(--ink3);color:var(--tx);font:700 22px "Be Vietnam Pro",sans-serif;text-align:center;box-shadow:inset 0 3px 0 rgba(0,0,0,.28)}
+input::placeholder{color:var(--mut);font-weight:500}
+input:focus{outline:none;border-color:var(--c);box-shadow:inset 0 3px 0 rgba(0,0,0,.28),0 0 0 4px rgba(122,92,255,.32)}
+input:disabled{opacity:1;color:var(--tx)}
+.hint{margin:0 0 12px;font-size:13px;color:var(--mut);text-align:center}
+.fr{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;line-height:1.15;margin:0 3px;font-size:.9em}
+.fr b{padding:0 4px}.fr b:first-child{border-bottom:2px solid currentColor}
+.fg{display:block;width:100%;max-width:260px;margin:12px auto 0;padding:6px;border-radius:14px;background:rgba(255,255,255,.06);color:var(--tx)}
+.fg path,.fg rect{fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.fg text{fill:currentColor;font:700 13px "Be Vietnam Pro",sans-serif}
+
+/* --- khay phản hồi: dính đáy màn hình, luôn thấy nút "Tiếp tục" --- */
+.fb{position:sticky;bottom:0;z-index:20;margin:14px -16px -28px;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px));border-radius:24px 24px 0 0;box-shadow:0 -14px 30px rgba(0,0,0,.45);animation:up .3s cubic-bezier(.2,.9,.3,1.08)}
+.fb.ok{background:linear-gradient(180deg,#10513f,#0c3a31);border-top:3px solid var(--ok)}
+.fb.no{background:linear-gradient(180deg,#5a2434,#3f1824);border-top:3px solid var(--no)}
+.fb h3{font-size:23px;line-height:1.2}
+.fb.ok h3{color:var(--ok)}.fb.no h3{color:#ff90a2}
+.fb p{margin:6px 0 12px;font-size:15px;line-height:1.5}
+.fb .big{margin:0}
+.fb.ok .big{background:linear-gradient(180deg,#5af2b9,var(--ok));color:#06352a;box-shadow:0 5px 0 var(--okd)}
+.fb.ok .big:active{box-shadow:0 1px 0 var(--okd)}
+.fb.no .big{background:linear-gradient(180deg,#ff8aa0,var(--no));box-shadow:0 5px 0 var(--nod)}
+.fb.no .big:active{box-shadow:0 1px 0 var(--nod)}
+
+/* --- giới thiệu chủ đề --- */
+.intro{margin-top:62px;padding-top:0}
+.bigic{display:grid;place-items:center;width:92px;height:92px;margin:-46px auto 8px;border-radius:28px;font-size:50px;line-height:1;background:linear-gradient(180deg,rgba(255,255,255,.32),rgba(255,255,255,0) 58%),var(--c);box-shadow:0 6px 0 rgba(0,0,0,.34),inset 0 2px 0 rgba(255,255,255,.45)}
+.tip{margin-top:14px;padding:12px 14px;border-radius:16px;background:rgba(255,210,94,.12);border:1.5px dashed rgba(255,210,94,.55);text-align:left;font-size:15px}
+
+/* --- kết quả --- */
+.res{padding:22px 16px 18px;text-align:center;overflow:hidden}
+.sc{--p:0;position:relative;display:grid;place-items:center;width:160px;height:160px;margin:4px auto 12px;border-radius:50%;background:conic-gradient(var(--sun) calc(var(--p)*1%),rgba(255,255,255,.14) 0);animation:pop .6s both}
+.sc::before{content:"";position:absolute;inset:11px;border-radius:50%;background:var(--ink2)}
+.sc b{position:relative;font:800 56px/1 "Baloo 2",sans-serif;color:#fff;text-shadow:0 3px 0 rgba(0,0,0,.4)}
+.res .s{display:flex;justify-content:center;gap:6px;margin:10px 0 14px;font-size:46px;line-height:1}
+.res .s i{font-style:normal;color:rgba(255,255,255,.18)}
+.res .s i.on{color:var(--sun);text-shadow:0 3px 0 rgba(0,0,0,.3);animation:starin .55s both;animation-delay:calc(.35s + var(--k)*.28s)}
+.xpc{display:inline-block;padding:4px 18px;border-radius:99px;background:rgba(255,210,94,.16);color:var(--sun);font:800 20px "Baloo 2",sans-serif}
+
+/* --- đăng nhập, đặt tên, bảng xếp hạng --- */
+.gbtn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:56px;margin-bottom:16px;padding:12px;border-radius:18px;background:#fff;color:#1f1f1f;font-weight:800;box-shadow:0 5px 0 rgba(0,0,0,.3)}
+.gbtn:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(0,0,0,.3)}
+.msg{min-height:22px;margin:4px 0 12px;font-size:14px;text-align:center}
+.msg.ok{color:var(--ok)}.msg.no{color:#ff90a2}
+.me{display:flex;align-items:center;gap:8px;margin-bottom:12px;padding:10px 12px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid var(--ln)}
+.me b{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.me b small{font-weight:500}
+.me button{min-height:44px;padding:0 8px;font-size:13px;font-weight:700;color:var(--sun)}
+.av{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--pr),#ff5d9e);color:#fff;font:800 21px "Baloo 2",sans-serif}
+#mini{margin-bottom:6px}
+.mh{display:flex;align-items:center;justify-content:space-between;margin:6px 2px 8px;font:700 19px "Baloo 2",sans-serif}
+.mh button{min-height:44px;padding:0 4px;font:700 13px "Be Vietnam Pro",sans-serif;color:var(--sun)}
+.lbr{display:flex;align-items:center;gap:10px;margin-bottom:6px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.06);border:1.5px solid transparent}
+.lbr.t1{background:linear-gradient(90deg,rgba(255,210,94,.24),rgba(255,255,255,.05))}
+.lbr.t2{background:linear-gradient(90deg,rgba(190,205,255,.2),rgba(255,255,255,.05))}
+.lbr.t3{background:linear-gradient(90deg,rgba(255,150,90,.2),rgba(255,255,255,.05))}
+.lbr.me1{border-color:var(--sun)}
+.lbr .rk{width:32px;text-align:center;font:800 19px "Baloo 2",sans-serif}
+.lbr .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.lbr .xp{font-weight:800;color:var(--sun);font-variant-numeric:tabular-nums}
+#mini .lbr{padding:7px 12px;font-size:14px}
+
+/* --- v6: hub 5 tab, thanh trên gọn, thanh điều hướng dưới --- */
+.hero{padding:10px 12px;gap:12px;margin-bottom:10px}
+.ring{width:56px;height:56px}.ring::before{inset:6px}.ring b{font-size:21px}
+.seg{margin-bottom:12px}
+.nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);z-index:30;width:100%;max-width:480px;display:grid;grid-template-columns:repeat(5,1fr);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));background:rgba(14,16,51,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--ln);border-radius:20px 20px 0 0}
+.nav button{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;min-height:54px;padding:6px 2px;border-radius:14px;font-size:11.5px;font-weight:700;color:var(--mut)}
+.nav button b{font-size:21px;line-height:1}
+.nav .on{color:#fff;background:rgba(122,92,255,.3)}
+.nav i{position:absolute;top:5px;left:calc(50% + 8px);width:10px;height:10px;border-radius:50%;background:var(--no);border:2px solid var(--ink)}
+.rw{display:flex;align-items:center;gap:12px;width:100%;min-height:58px;margin-bottom:8px;padding:8px 12px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid var(--ln);text-align:left}
+.rw .ic{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:12px;font-size:22px;background:var(--c)}
+.rw b{flex:1;min-width:0;font-size:15px;font-weight:700}
+.rw u{flex:none;width:52px;height:8px;border-radius:9px;background:linear-gradient(90deg,var(--sun) calc(var(--p)*1%),rgba(255,255,255,.14) 0)}
+.rw em{flex:none;width:40px;text-align:right;font-style:normal;font-size:13px;font-weight:800;color:var(--sun)}
+
+/* --- cài app lên máy --- */
+.ins{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-bottom:12px;padding:12px;border-radius:20px;background:linear-gradient(135deg,rgba(122,92,255,.38),rgba(76,201,255,.2));border:1px solid var(--ln)}
+.ins img{flex:none;width:52px;height:52px;border-radius:14px;box-shadow:0 3px 0 rgba(0,0,0,.3)}
+.ins .tx{flex:1;min-width:0;line-height:1.3}.ins .tx b{display:block;font:800 17px "Baloo 2",sans-serif}.ins .tx small{display:block;margin-top:2px}
+.ins .ib{display:flex;gap:8px;width:100%}
+.ins .go{flex:1;min-height:46px;padding:0 14px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;background:linear-gradient(180deg,#8f78ff,var(--pr));box-shadow:0 4px 0 var(--prd)}
+.ins .go:active{transform:translateY(3px);box-shadow:0 1px 0 var(--prd)}
+.ins .later{flex:none;min-height:46px;padding:0 14px;border-radius:14px;font-size:14px;font-weight:700;color:var(--mut)}
+.st{display:flex;gap:12px;align-items:center;margin:12px 0;text-align:left}
+.st i{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--pr);font:800 18px "Baloo 2",sans-serif;font-style:normal}
+.st span{flex:1;min-width:0}.st span b{color:#fff}.st small{display:block;margin-top:2px;font-size:12.5px;color:var(--mut)}
+.mk{display:flex;align-items:center;gap:8px;width:fit-content;max-width:100%;margin-top:7px;padding:8px 13px;border-radius:12px;background:#f2f2f7;color:#1c1c1e;font:600 14px/1.2 "Be Vietnam Pro",system-ui,sans-serif;font-style:normal;box-shadow:0 2px 0 rgba(0,0,0,.3)}
+.mk svg{flex:none;width:21px;height:21px;fill:none;stroke:#0a84ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.gd{padding-bottom:12px}
+.nt{margin:10px 0 6px;padding:10px 12px;border-radius:14px;background:rgba(255,210,94,.14);font-size:14px;line-height:1.4;text-align:left}
+.pt{position:fixed;left:0;right:0;z-index:60;display:flex;flex-direction:column;align-items:center;gap:2px;pointer-events:none;font:800 14px/1.2 "Baloo 2",sans-serif;color:var(--sun);text-shadow:0 2px 6px rgba(0,0,0,.7)}
+.pt b{font-size:30px;line-height:1;animation:bob 1s ease-in-out infinite}
+.pt.dn{bottom:calc(8px + env(safe-area-inset-bottom,0px))}.pt.up{top:calc(8px + env(safe-area-inset-top,0px));align-items:flex-end;padding-right:24px}
+.tst{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:70;width:max-content;max-width:min(92vw,420px);padding:12px 18px;border-radius:16px;background:#fff;color:#1b1740;font:700 15px/1.35 "Be Vietnam Pro",system-ui,sans-serif;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+@keyframes bob{50%{transform:translateY(7px)}}
+@keyframes pop{0%{transform:scale(.94)}55%{transform:scale(1.05)}100%{transform:scale(1)}}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@keyframes up{from{transform:translateY(40%);opacity:0}}
+@keyframes starin{0%{transform:scale(0) rotate(-40deg)}70%{transform:scale(1.35) rotate(8deg)}100%{transform:scale(1)}}
+@keyframes float{50%{transform:translateY(-8px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+/* --- v7: bảng âm thanh --- */
+@keyframes fadein{from{opacity:0}}
+.sn-a{display:flex;justify-content:flex-end;margin:0 0 8px}
+#snd{position:fixed;inset:0;z-index:70}
+.sn-b{position:absolute;inset:0;background:rgba(5,6,24,.6);animation:fadein .2s}
+.sn-p{position:absolute;left:0;right:0;bottom:0;margin:0 auto;max-width:480px;padding:16px 16px calc(18px + env(safe-area-inset-bottom,0px));border-radius:24px 24px 0 0;background:var(--ink2);border-top:1.5px solid var(--ln);box-shadow:0 -14px 30px rgba(0,0,0,.5);animation:up .3s cubic-bezier(.2,.9,.3,1.08)}
+.sn-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;font:800 21px "Baloo 2",sans-serif}
+.sn-h button{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);font-size:18px}
+.sn-r{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;margin-top:6px}
+.sn-r b{font-size:16px}
+.sn-w{position:relative;flex:none;width:56px;height:32px;border-radius:99px;background:rgba(255,255,255,.18);transition:background .2s}
+.sn-w::before{content:"";position:absolute;inset:-8px}
+.sn-w::after{content:"";position:absolute;top:4px;left:4px;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform .2s}
+.sn-w.on{background:var(--ok)}.sn-w.on::after{transform:translateX(24px)}
+input.sn-v{min-height:36px;height:36px;margin:0 0 4px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;accent-color:var(--sun)}
+input.sn-v:focus{box-shadow:none}
+.sn-g{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sn-g button{min-height:48px;padding:4px;border-radius:14px;background:rgba(255,255,255,.08);border:1.5px solid var(--ln);font-size:13px;font-weight:700}
+.sn-g .on{background:linear-gradient(180deg,#8f78ff,var(--pr));border-color:transparent;color:#fff;box-shadow:0 3px 0 var(--prd)}
+/* Chọn lớp 6/7 */
+.seg.two{grid-template-columns:repeat(2,1fr)}
+
+/* --- v7: màu theo lớp (Lớp 6 xanh biển, Lớp 7 cam), màn Chọn lớp, banner đổi lớp --- */
+body[data-gr="6"]{--pr:#2f6fe0;--prd:#1b4aa8;--prl:#5a93f2;--bt:#fff}
+body[data-gr="7"]{--pr:#ff8a3d;--prd:#b85412;--prl:#ffad72;--bt:#2a1000}
+.gb{display:flex;align-items:center;gap:12px;width:100%;min-height:60px;margin-bottom:12px;padding:8px 14px;text-align:left;border-radius:18px;color:var(--bt,#fff);background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,0) 60%),var(--pr);box-shadow:0 4px 0 var(--prd)}
+.gb:active{transform:translateY(3px);box-shadow:0 1px 0 var(--prd)}
+.gb .ge{font-size:28px}.gb .gt{flex:1;display:flex;flex-direction:column;line-height:1.25}.gb .gt b{font:800 18px "Baloo 2",sans-serif}
+.gb small{color:inherit;opacity:.88;font-size:12.5px}.gb .gs{display:flex;flex-direction:column;align-items:flex-end;font-size:13px;font-weight:800}.gb .gs i{font-style:normal;font-size:12px;font-weight:600;opacity:.88}
+.gh{margin:6px 0 4px;font:800 28px/1.2 "Baloo 2",sans-serif}.gsub{margin:0 0 18px}
+.gc{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;width:100%;min-height:176px;margin-bottom:18px;padding:18px;text-align:left;border-radius:26px;color:var(--ci);background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0) 58%),var(--c);box-shadow:0 6px 0 rgba(0,0,0,.34),inset 0 1.5px 0 rgba(255,255,255,.42);transition:transform .08s,box-shadow .08s}
+.gc:active{transform:translateY(5px);box-shadow:0 1px 0 rgba(0,0,0,.34)}
+.gc.on{outline:3px solid var(--sun);outline-offset:3px}
+.gc .gi{font-size:40px;line-height:1}.gc b{font:800 30px/1.1 "Baloo 2",sans-serif}.gc em{font-style:normal;font-weight:700}.gc small{color:inherit;opacity:.88}.gc .gp{font-size:13px;font-weight:800}
+.gc u{display:block;width:100%;height:8px;margin-top:6px;border-radius:9px;background:linear-gradient(90deg,var(--ci) calc(var(--p)*1%),var(--tr) 0)}
+.gc.g6{--c:#2f6fe0;--ci:#fff;--tr:rgba(0,0,0,.3)}.gc.g7{--c:#ff8a3d;--ci:#2a1000;--tr:rgba(255,255,255,.5)}
