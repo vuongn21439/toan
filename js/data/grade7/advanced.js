@@ -8,35 +8,35 @@
 
 /* SỐ HỮU TỈ */
 addH('l7sht',
- ()=>{const[a,b]=rt(),[c,d]=rt();return I(`Tính hợp lý (rút gọn): ${fq(a,b)}×${fq(c,d)} + ${fq(a,b)}×(${fq(-c,d)})`,'0',`Đặt ${fq(a,b)} làm thừa số chung: ${fq(a,b)}×(${fq(c,d)}−${fq(c,d)})=0.`)},
- ()=>{const[a,b]=rt(),[c,d]=rt(),[e,f]=rt();return I(`Tìm x: x + ${br(a,b)} = ${br(c,d)} − ${br(e,f)}`,fr(c*b*f-a*d*f-e*b*d,b*d*f),`x = ${fq(c,d)} − ${fq(e,f)} − ${br(a,b)}: quy đồng mẫu ${b*d*f}.`)},
- ()=>{const a=R(2,5),n=R(2,4);return I(`Tính: (${fq(-1,2)})^${2*n}×(−2)^${2*n}`,1,`Nhân từng cặp: (−1/2×−2)^${2*n}=1^${2*n}=1.`)},
- ()=>{const[a,b]=rt();return I(`Số nghịch đảo của ${br(a,b)} là (rút gọn):`,fr(b,a),`Nghịch đảo của a/b là b/a (a≠0).`)}
+ ()=>{const[a,b]=rt(),[c,d]=rt();return I(`Tính hợp lý (rút gọn): ${fq(a,b)}×${fq(c,d)} + ${fq(a,b)}×(${fq(-c,d)})`,'0',`Bước 1: Đặt ${fq(a,b)} làm thừa số chung.\nBước 2: ${fq(a,b)} × (… − …) = 0.\nBước 3: Suy ra một trong hai thừa số bằng 0.`)},
+ ()=>{const[a,b]=rt(),[c,d]=rt(),[e,f]=rt();return I(`Tìm x: x + ${br(a,b)} = ${br(c,d)} − ${br(e,f)}`,fr(c*b*f-a*d*f-e*b*d,b*d*f),`Bước 1: Chuyển các số hạng sang vế phải.\nBước 2: x = ${fq(c,d)} − ${fq(e,f)} − ${br(a,b)}.\nBước 3: Quy đồng mẫu ${b*d*f} rồi tính.`)},
+ ()=>{const a=R(2,5),n=R(2,4);return I(`Tính: (${fq(-1,2)})^${2*n}×(−2)^${2*n}`,1,`Bước 1: Nhân từng cặp số có tích bằng 1 (hoặc −1).\nBước 2: (−1/2 × −2) = 1, lũy thừa vẫn bằng 1.`)},
+ ()=>{const[a,b]=rt();return I(`Số nghịch đảo của ${br(a,b)} là (rút gọn):`,fr(b,a),`Bước 1: Hai số nghịch đảo khi tích bằng 1.\nBước 2: Nghịch đảo của a/b là b/a (với a ≠ 0).`)}
 );
 add('l7sht',
- ()=>{const[a,b]=rt();return Z(`Số đối của ${br(a,b)} là:`,fq(-a,b),[fq(a,-b),fq(b,a),fq(a,b)],'Số đối của x là −x: đổi dấu tử số.')},
+ ()=>{const[a,b]=rt();return Z(`Số đối của ${br(a,b)} là:`,fq(-a,b),[fq(-b,a),fq(b,a),fq(a,b)],'Số đối của x là −x: đổi dấu tử số.')},
  ()=>{let L;do{L=Array.from({length:4},rt)}while(new Set(L.map(([a,b])=>(a/b).toFixed(6))).size<4);const v=L.map(([a,b])=>a/b),k=v.indexOf(Math.min(...v)),s=L.map(([a,b])=>fq(a,b));return Z(`Số nhỏ nhất trong: ${s.join('; ')} là`,s[k],s.filter((_,i)=>i!=k),'Đổi ra số thập phân rồi so sánh; số âm luôn nhỏ hơn số dương.')}
 );
 
 /* SỐ THỰC */
 addH('l7sth',
- ()=>{const a=R(2,9),b=R(2,9);return I(`Tính: √${a*a}×√${b*b}`,a*b,`√${a*a}=${a}, √${b*b}=${b}, tích=${a*b}.`)},
- ()=>{const n=R(2,20);return I(`Tìm x>0 biết x²=${n*n}. x=?`,n,`x=√${n*n}=${n}.`)},
- ()=>{const a=R(2,5);return I(`So sánh √${a*a+1} và ${a}. Số lớn hơn (nhập 1 nếu √… lớn hơn, 0 nếu ${a} lớn hơn):`,1,`√${a*a+1} > √${a*a}=${a}, nên √… lớn hơn → nhập 1.`)}
+ ()=>{const a=R(2,9),b=R(2,9);return I(`Tính: √${a*a}×√${b*b}`,a*b,`Bước 1: √${a*a} = ${a} (căn không âm).\nBước 2: √${b*b} = ${b}.\nBước 3: Tích = ${a} × ${b} = ${a*b}.`)},
+ ()=>{const n=R(2,20);return I(`Tìm x>0 biết x²=${n*n}. x=?`,n,`Bước 1: x = √${n*n}.\nBước 2: Căn bậc hai số học của ${n*n} là ${n}.`)},
+ ()=>{const a=R(2,5);return I(`So sánh √${a*a+1} và ${a}. Số lớn hơn (nhập 1 nếu √… lớn hơn, 0 nếu ${a} lớn hơn):`,1,`Bước 1: So sánh √${a*a+1} với √${a*a} = ${a}.\nBước 2: Vì ${a*a+1} > ${a*a} nên căn lớn hơn → chọn 1.`)}
 );
 add('l7sth',
- ()=>{const s=R(3,15);return Z(`Căn bậc hai số học của ${s*s} là:`,''+s,[iz(-s),''+s*s,''+(s+1)],`Căn bậc hai số học là căn không âm: √${s*s}=${s}.`)},
+ ()=>{const s=R(3,15);return Z(`Căn bậc hai số học của ${s*s} là:`,''+s,[iz(-s),''+s*s,''+(s+1)],`Bước 1: Số ${s*s} có hai căn: ${s} và −${s}.\nBước 2: Căn bậc hai số học là căn không âm → ${s}.`)},
  ()=>Z('Số nào sau đây là số vô tỉ?','√2',['√4','0,25','−3/7'],'√2 là số thập phân vô hạn không tuần hoàn; các số còn lại viết được dạng phân số.')
 );
 
 /* TỈ LỆ THỨC */
 addH('l7tlt',
- ()=>{const[a,b,c]=P([[1,2,3],[2,3,5],[1,3,4],[2,3,4]]),k=R(2,10);return I(`Chia ${(a+b+c)*k} thành 3 phần tỉ lệ với ${a}; ${b}; ${c}. Phần lớn nhất bằng:`,Math.max(a,b,c)*k,`Mỗi phần ứng với ${k}; phần lớn nhất=max(${a},${b},${c})×${k}.`)},
- ()=>{const[a,b]=P([[5,3],[7,4],[4,3],[5,2]]),k=R(2,9);return I(`Hai số x,y có x/y=${a}/${b} và x−y=${(a-b)*k}. Tìm x.`,a*k,`x/a=y/b=(x−y)/(a−b)=${k}, nên x=${a}×${k}=${a*k}.`)},
- ()=>{const k=R(2,5),x1=R(2,6),x2=x1+R(1,4);return I(`Hai đại lượng tỉ lệ nghịch. Khi x=${x1} thì y=${k*x2}; khi x=${x2} thì y=?`,k*x1,`Tích x·y không đổi: ${x1}×${k*x2}=${x2}×y → y=${k*x1}.`)}
+ ()=>{const[a,b,c]=P([[1,2,3],[2,3,5],[1,3,4],[2,3,4]]),k=R(2,10);return I(`Chia ${(a+b+c)*k} thành 3 phần tỉ lệ với ${a}; ${b}; ${c}. Phần lớn nhất bằng:`,Math.max(a,b,c)*k,`Bước 1: Mỗi phần bằng ${k}.\nBước 2: Phần lớn nhất = max(${a},${b},${c}) × ${k}.`)},
+ ()=>{const[a,b]=P([[5,3],[7,4],[4,3],[5,2]]),k=R(2,9);return I(`Hai số x,y có x/y=${a}/${b} và x−y=${(a-b)*k}. Tìm x.`,a*k,`Bước 1: Từ tỉ lệ thức, các tỉ số bằng nhau = ${k}.\nBước 2: x = a × ${k} = ${a*k}.`)},
+ ()=>{const k=R(2,5),x1=R(2,6),x2=x1+R(1,4);return I(`Hai đại lượng tỉ lệ nghịch. Khi x=${x1} thì y=${k*x2}; khi x=${x2} thì y=?`,k*x1,`Bước 1: Tỉ lệ nghịch → tích x·y không đổi.\nBước 2: ${x1} × (${k}*${x2}) = ${x2} × y → y = ${k*x1}.`)}
 );
 add('l7tlt',
- ()=>{const a=R(2,9),b=R(2,9),c=R(2,9),d=R(2,9);return Z(`Tỉ lệ thức nào ĐÚNG (tích ngoại=tích trung)?`,`${a}/${b}=${a*c}/${b*c}`,[`${a}/${b}=${a+c}/${b+c}`,`${a}/${b}=${b}/${a}`,`${a}/${b}=${a*c}/${b}`],'Nhân cả tử và mẫu với cùng một số khác 0 thì được phân số bằng nhau.')}
+ ()=>{const a=R(2,9),b=R(2,9),c=R(2,9),d=R(2,9);return Z(`Tỉ lệ thức nào ĐÚNG (tích ngoại=tích trung)?`,`Bước 1: Nhân tử và mẫu với cùng một số ${c}.\nBước 2: ${a}/${b} = ${a*c}/${b*c} (phân số bằng nhau).`,[`${a}/${b}=${a+c}/${b+c}`,`${a}/${b}=${b}/${a}`,`${a}/${b}=${a*c}/${b}`],'Nhân cả tử và mẫu với cùng một số khác 0 thì được phân số bằng nhau.')}
 );
 
 /* ĐA THỨC */
@@ -48,7 +48,7 @@ addH('l7dt',
 );
 add('l7dt',
  ()=>{const c=rp(R(2,4));return N(`Bậc của đa thức ${ps(c)} là:`,c.length-1,'Bậc là số mũ lớn nhất của biến sau khi thu gọn.')},
- ()=>{const a=R(2,5),b=R(2,5);return Z(`Tích ${a}x²×${b}x³ bằng:`,`${a*b}x^5`,[`${a+b}x^5`,`${a*b}x^6`,`${a*b}x^5+1`],'Nhân hệ số, cộng số mũ của x: 2+3=5.')}
+ ()=>{let a=R(2,5),b=R(2,5);while(a==b)b=R(2,5);return Z(`Tích ${a}x²×${b}x³ bằng:`,`${a*b}x^5`,[`${a+b}x^5`,`${a*b}x^6`,`${a*b}x^5+1`,`${a*b}x^4`],'Nhân hệ số, cộng số mũ của x: 2+3=5.')}
 );
 
 /* GÓC & ĐƯỜNG THẲNG SONG SONG */
@@ -111,7 +111,7 @@ addH('l7xs',
  ()=>{const k=R(2,8);return I(`Xác suất trời mưa ngày mai=0,${k}. Xác suất trời không mưa (nhập số thập phân):`,((10-k)/10).toFixed(1),`Hai biến cố đối: 1−0,${k}=${((10-k)/10).toFixed(1).replace('.',',')}.`)}
 );
 add('l7xs',
- ()=>{const[t,s]=P([['chẵn',[2,4,6]],['lẻ',[1,3,5]],['lớn hơn 3',[4,5,6]]]);return Z(`Gieo một con xúc xắc. Xác suất xuất hiện mặt ${t} là:`,fq(s.length,6),['1/2','1/3','1/6'].filter(x=>x!=fq(s.length,6)),`Có ${s.length} kết quả thuận lợi trong 6.`)},
+ ()=>{const[t,s]=P([['chẵn',[2,4,6]],['lẻ',[1,3,5]],['lớn hơn 3',[4,5,6]]]);return Z(`Gieo một con xúc xắc. Xác suất xuất hiện mặt ${t} là:`,fq(s.length,6),['1/6','1/3','1/2','2/3','5/6'].filter(x=>x!=fq(s.length,6)),`Có ${s.length} kết quả thuận lợi trong 6.`)},
  ()=>Z('Biến cố nào là biến cố KHÔNG THỂ?','Gieo xúc xắc được mặt 7 chấm',['Tung đồng xu được mặt sấp','Ngày mai trời nắng','Rút thẻ số 3 từ hộp thẻ 1–10'],'Xúc xắc chỉ có 1–6 chấm nên mặt 7 chấm không bao giờ xảy ra.')
 );
 })();

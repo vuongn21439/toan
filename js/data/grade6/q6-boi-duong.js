@@ -8,21 +8,21 @@ const sd=n=>[...String(n)].reduce((s,c)=>s+(+c),0),
 
 /* TẬP HỢP (set) */
 HA('set',
- ()=>{const n=R(2,5);return I(`Tập hợp A có ${n} phần tử. Số tập hợp con của A (kể cả ∅ và chính A) là:`,2**n,`Mỗi phần tử có 2 lựa chọn nên có 2^${n} = ${2**n} tập hợp con.`)},
- ()=>{const n=R(3,6);return I(`Tập hợp A có ${n} phần tử. Số tập hợp con có đúng 2 phần tử là:`,n*(n-1)/2,`Chọn 2 trong ${n} phần tử: ${n}×${n-1}:2.`)},
- ()=>{const a=R(5,12),b=a+R(2,6);return I(`Số phần tử của A = {x ∈ ℕ | ${a} ≤ x ≤ ${b}} là:`,b-a+1,`Từ ${a} đến ${b} có ${b}−${a}+1 = ${b-a+1} số.`)}
+ ()=>{const n=R(2,5);return I(`Tập hợp A có ${n} phần tử. Số tập hợp con của A (kể cả ∅ và chính A) là:`,2**n,`Bước 1: Mỗi phần tử có 2 lựa chọn: thuộc hoặc không thuộc tập con.\nBước 2: Có ${n} phần tử → số tập con = 2^${n} = ${2**n}.`)},
+ ()=>{const n=R(3,6);return I(`Tập hợp A có ${n} phần tử. Số tập hợp con có đúng 2 phần tử là:`,n*(n-1)/2,`Bước 1: Số cách chọn 2 phần tử từ ${n} phần tử.\nBước 2: = ${n} × (${n}-1) : 2 (chia 2 vì thứ tự không quan trọng).`)},
+ ()=>{const a=R(5,12),b=a+R(2,6);return I(`Số phần tử của A = {x ∈ ℕ | ${a} ≤ x ≤ ${b}} là:`,b-a+1,`Bước 1: Các số từ ${a} đến ${b} gồm cả hai đầu.\nBước 2: Số lượng = ${b} − ${a} + 1 = ${b-a+1}.`)}
 );
 A('set',
- ()=>{const n=R(3,7);return Z(`Tập hợp A có ${n} phần tử. Số tập hợp con của A là:`,''+2**n,[2*n,2**(n-1),n*n].map(String),'Số tập hợp con = 2^số phần tử.')},
+ ()=>{const n=R(3,7);return Z(`Tập hợp A có ${n} phần tử. Số tập hợp con của A là:`,''+2**n,[2*n,2**(n-1),n*n,2**(n+1),n*n+1].map(String),'Số tập hợp con = 2^số phần tử.')},
  ()=>Q('Tập hợp nào sau đây là tập rỗng?','{x ∈ ℕ | x + 2 = 1}',['{0}','{x ∈ ℕ | x < 5}','{x ∈ ℤ | x² = 4}'],'x + 2 = 1 cho x = −1, không phải số tự nhiên.')
 );
 
 /* SỐ TỰ NHIÊN / ĐẾM SỐ (nat) */
 HA('nat',
- ()=>{let a=R(2,9),b=R(2,9);while(b==a)b=R(2,9);return I(`Có bao nhiêu số tự nhiên có 2 chữ số khác nhau tạo từ ${a} và ${b}?`,2,`Có 2 cách xếp: ${a}${b} và ${b}${a}.`)},
- ()=>{const a=R(2,8),d=R(2,5),n=R(4,8);return I(`Dãy: ${a}; ${a+d}; ${a+2*d}; …; số hạng thứ ${n} là:`,a+(n-1)*d,`Số hạng thứ k = số đầu + (k−1)×khoảng cách.`)},
- ()=>{const n=R(10,30);return I(`Tổng các số tự nhiên lẻ từ 1 đến ${2*n-1} là:`,n*n,`Có ${n} số lẻ: tổng ${n} số lẻ đầu = ${n}².`)},
- ()=>{const n=R(100,999);return I(`Tổng các chữ số của ${n} là:`,sd(n),`Cộng ${[...String(n)].join(' + ')} = ${sd(n)}.`)}
+ ()=>{let a=R(2,9),b=R(2,9);while(b==a)b=R(2,9);return I(`Có bao nhiêu số tự nhiên có 2 chữ số khác nhau tạo từ ${a} và ${b}?`,2,`Bước 1: Hai chữ số khác nhau ${a} và ${b}.\nBước 2: Có 2 cách xếp: ${a}${b} và ${b}${a}.`)},
+ ()=>{const a=R(2,8),d=R(2,5),n=R(4,8);return I(`Dãy: ${a}; ${a+d}; ${a+2*d}; …; số hạng thứ ${n} là:`,a+(n-1)*d,`Bước 1: Dãy cách đều: số hạng thứ k = số đầu + (k − 1) × khoảng cách.\nBước 2: Áp dụng công thức để tìm số hạng cần tìm.`)},
+ ()=>{const n=R(10,30);return I(`Tổng các số tự nhiên lẻ từ 1 đến ${2*n-1} là:`,n*n,`Bước 1: Có ${n} số lẻ đầu tiên.\nBước 2: Tổng n số lẻ đầu tiên = n² = ${n}².`)},
+ ()=>{const n=R(100,999);return I(`Tổng các chữ số của ${n} là:`,sd(n),`Bước 1: Tách các chữ số của ${n}.\nBước 2: Cộng các chữ số lại = ${sd(n)}.`)}
 );
 A('nat',
  ()=>{const n=R(100,999);return Z(`Tổng các chữ số của ${n} là:`,''+sd(n),[sd(n)+1,sd(n)-1,sd(n)+2].map(String),'Cộng ba chữ số lại.')},
@@ -33,7 +33,7 @@ A('nat',
 /* LŨY THỪA (pow) */
 HA('pow',
  ()=>{const a=P([2,3,4,7,8,9]),n=R(5,30);return I(`Chữ số tận cùng của ${a}^${n} là:`,last(a,n),'Chữ số tận cùng lặp theo chu kỳ; chia số mũ cho chu kỳ rồi xét số dư.')},
- ()=>{const n=R(2,5);return I(`Tính: 1 + 2 + 2² + … + 2^${n} = ?`,2**(n+1)-1,`Đặt A = tổng; 2A − A = 2^${n+1} − 1.`)}
+ ()=>{const n=R(2,5);return I(`Tính: 1 + 2 + 2² + … + 2^${n} = ?`,2**(n+1)-1,`Bước 1: Đặt A là tổng cần tính.\nBước 2: Nhân đôi A rồi trừ A để khử các số hạng giữa → còn 2^${n+1} − 1.`)}
 );
 A('pow',
  ()=>{const a=P([2,3,4,7,8,9]),n=R(4,20);return Z(`Chữ số tận cùng của ${a}^${n} là:`,''+last(a,n),sh([0,1,2,3,4,5,6,7,8,9]).map(String),'Chữ số tận cùng lặp theo chu kỳ (2,3,7,8 chu kỳ 4; 4,9 chu kỳ 2).')},
@@ -52,17 +52,17 @@ A('div',
 
 /* ƯỚC & BCNN (ub, gcd) */
 HA('ub',
- ()=>{const p=P([2,3,5]),e=R(1,4),n=p**e;return I(`Số ${n} = ${p}^${e} có bao nhiêu ước tự nhiên?`,e+1,`Các ước: ${p}^0; …; ${p}^${e}: có ${e+1} ước.`)},
+ ()=>{const p=P([2,3,5]),e=R(1,4),n=p**e;return I(`Số ${n} = ${p}^${e} có bao nhiêu ước tự nhiên?`,e+1,`Bước 1: Số dạng p^e có các ước: p^0, p^1, …, p^e.\nBước 2: Có ${e}+1 = ${e+1} ước.`)},
  ()=>{const n=P([12,18,24,30,36,48,60,72]);return I(`Số ${n} có bao nhiêu ước tự nhiên?`,dcount(n),'Phân tích ra thừa số nguyên tố: số ước = tích (số mũ + 1).')}
 );
 HA('gcd',
- ()=>{const a=R(3,8),b=R(3,8),r=R(1,Math.min(a,b)-1);return I(`Số tự nhiên nhỏ nhất chia cho ${a} dư ${r}, chia cho ${b} cũng dư ${r} là:`,lc(a,b)+r,`Số đó trừ ${r} chia hết cho cả ${a} và ${b}: BCNN + ${r}.`)}
+ ()=>{const a=R(3,8),b=R(3,8),r=R(1,Math.min(a,b)-1);return I(`Số tự nhiên nhỏ nhất chia cho ${a} dư ${r}, chia cho ${b} cũng dư ${r} là:`,lc(a,b)+r,`Bước 1: Số cần tìm trừ ${r} chia hết cho cả ${a} và ${b}.\nBước 2: Số đó = BCNN(${a}; ${b}) + ${r}.`)}
 );
 
 /* TÌM ẨN / PHÉP TÍNH (nat, int) */
 HA('nat',
- ()=>{const n=R(5,20);return I(`Tính nhanh: 2 + 4 + … + ${2*n} = ?`,n*(n+1),`= 2×(1+2+…+${n}) = 2×${n*(n+1)/2}.`)},
- ()=>{const a=R(2,9),b=R(2,9),c=R(10,50);return I(`Tìm x: ${a}×(x − ${b}) = ${a*c}. x = ?`,c+b,`x − ${b} = ${c} → x = ${c}+${b}.`)}
+ ()=>{const n=R(5,20);return I(`Tính nhanh: 2 + 4 + … + ${2*n} = ?`,n*(n+1),`Bước 1: Nhóm các cặp số đối xứng.\nBước 2: Tổng = 2 × (1+2+…+${n}) = 2 × ${n*(n+1)/2}.`)},
+ ()=>{const a=R(2,9),b=R(2,9),c=R(10,50);return I(`Tìm x: ${a}×(x − ${b}) = ${a*c}. x = ?`,c+b,`Bước 1: Chuyển ${b} sang vế phải (đổi dấu).\nBước 2: x = ${c} + ${b}.`)}
 );
 HA('int',
  ()=>{const a=R(2,10);return I(`Tổng các số nguyên x thỏa mãn |x| ≤ ${a} là:`,0,'Các cặp số đối nhau triệt tiêu, tổng bằng 0.')},
@@ -111,7 +111,7 @@ HA('stat',
  ()=>{const n=R(2,6);return I(`Gieo ${n} đồng xu. Có bao nhiêu kết quả?`,2**n,`Mỗi đồng xu 2 kết quả: 2^${n} = ${2**n}.`)}
 );
 A('stat',
- ()=>{const n=P([6,8,10,12]);let c=0;for(let i=1;i<=n;i++)if(i%2==0)c++;return Z(`Hộp có ${n} thẻ 1→${n}. Xác suất rút được số chẵn:`,fs(c,n),[fs(c+1,n),fs(n-c,n),fs(c,n+1)],'Đếm số thẻ số chẵn rồi chia cho tổng số thẻ.')}
+ ()=>{const n=P([6,8,10,12]);let c=0;for(let i=1;i<=n;i++)if(i%2==0)c++;return Z(`Hộp có ${n} thẻ 1→${n}. Xác suất rút được số chẵn:`,fs(c,n),[fs(c+1,n),fs(c-1,n),fs(c,n+1),fs(c,2*n)],'Đếm số thẻ số chẵn rồi chia cho tổng số thẻ.')}
 );
 
 /* gán rõ gr=6 cho mọi chủ đề lớp 6 (lớp 7 đã có gr=7) */

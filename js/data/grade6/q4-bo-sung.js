@@ -7,14 +7,14 @@ d2=()=>[['6A','6B','6C','6D'],sh([12,14,16,18,20,22,24,26]).slice(0,4),sh([13,15
 cn='Biểu đồ cột kép: cột trống là số bạn nam, cột tô là số bạn nữ.';
 T.push({id:'cir',n:'Đường tròn',e:'⭕',c:'#00a8a8',tip:'Đường kính d = 2 × r. Chu vi C = 2 × 3,14 × r. Diện tích hình tròn S = 3,14 × r × r.',g:[
 ()=>{const r=R(2,15);return F(N(`Đường tròn có bán kính ${r} cm. Đường kính là (cm):`,2*r,'Đường kính = 2 × bán kính.'),ci(r,`r = ${r} cm`))},
-()=>{const r=R(2,12);return F(Z(`Lấy π = 3,14. Chu vi đường tròn bán kính ${r} cm là (cm):`,f2(6.28*r),[f2(3.14*r),f2(3.14*r*r),f2(6.28*r*r),f2(6.28*r+2)],`C = 2 × 3,14 × ${r}.`),ci(r,`r = ${r} cm`))},
-()=>{const r=R(3,12);return F(Z(`Lấy π = 3,14. Diện tích hình tròn bán kính ${r} cm là (cm²):`,f2(3.14*r*r),[f2(6.28*r),f2(3.14*r),f2(6.28*r*r),f2(3.14*r*r+r)],`S = 3,14 × ${r} × ${r}.`),ci(r,`r = ${r} cm`))},
+()=>{const r=R(2,12);return F(Z(`Lấy π = 3,14. Chu vi đường tròn bán kính ${r} cm là (cm):`,f2(6.28*r),[f2(3.14*r),f2(3.14*r*r),f2(6.28*r*r),f2(6.28*r+2)],`Bước 1: Chu vi hình tròn = 2 × π × bán kính.\nBước 2: C = 2 × 3,14 × ${r}.`),ci(r,`r = ${r} cm`))},
+()=>{const r=R(3,12);return F(Z(`Lấy π = 3,14. Diện tích hình tròn bán kính ${r} cm là (cm²):`,f2(3.14*r*r),[f2(6.28*r),f2(3.14*r),f2(6.28*r*r),f2(3.14*r*r+r)],`Bước 1: Diện tích hình tròn = π × r × r.\nBước 2: S = 3,14 × ${r} × ${r}.`),ci(r,`r = ${r} cm`))},
 ()=>{const r=R(2,20);return N(`Hình tròn có đường kính ${2*r} cm. Bán kính là (cm):`,r,'Bán kính = đường kính : 2.')}],h:[
 ()=>{const r=R(2,12);return I(`Đường tròn có chu vi ${M(6.28*r)} cm (π = 3,14). Bán kính là (cm):`,r,'r = C : (2 × 3,14).')},
 ()=>{const r=R(2,12);return I(`Hình tròn bán kính ${r} cm (π = 3,14) có diện tích là (cm²):`,M(3.14*r*r),'S = 3,14 × r × r.')},
-()=>{const r=P([25,50]);return I(`Bánh xe bán kính ${r} cm lăn 10 vòng (π = 3,14). Quãng đường đi được là (m):`,M(10*6.28*r/100),`Mỗi vòng đi một chu vi 2 × 3,14 × ${r} cm; nhân 10 rồi đổi cm sang m.`)}]});
+()=>{const r=P([25,50]);return I(`Bánh xe bán kính ${r} cm lăn 10 vòng (π = 3,14). Quãng đường đi được là (m):`,M(10*6.28*r/100),`Bước 1: Mỗi vòng xe đạp đi một chu vi = 2 × 3,14 × ${r} cm.\nBước 2: 10 vòng = 10 × chu vi, rồi đổi cm sang m.`)}]});
 A('frac',
-()=>{const b=R(2,9),w=R(1,5),r=R(1,b-1);return Z(`Viết ${w*b+r}/${b} thành hỗn số:`,`${w} ${r}/${b}`,[`${w+1} ${r}/${b}`,`${w} ${b-r}/${b}`,`${r} ${w}/${b}`,`${w} ${r}/${b+1}`],`Chia ${w*b+r} cho ${b} được thương ${w}, dư ${r}.`)},
+()=>{const b=R(2,9),w=R(1,5),r=R(1,b-1);return Z(`Viết ${w*b+r}/${b} thành hỗn số:`,`${w} ${r}/${b}`,[`${w+1} ${r}/${b}`,`${w} ${b-r}/${b}`,`${r} ${w}/${b}`,`${w} ${r}/${b+1}`,`${w} ${r}/${b+2}`],`Bước 1: Thực hiện phép chia ${w*b+r} : ${b}.\nBước 2: Thương = ${w}, số dư = ${r}.`)},
 ()=>{const s=new Set(),a=[];while(a.length<3){const d=R(3,9),n=R(1,d-1),v=(n/d).toFixed(5);if(!s.has(v)){s.add(v);a.push([n,d,n/d])}}const f=p=>p.map(x=>x[0]+'/'+x[1]).join(' &lt; '),c=f([...a].sort((x,y)=>x[2]-y[2])),ps=[[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]].map(p=>f(p.map(i=>a[i]))).filter(x=>x!=c);return Q('Sắp xếp các phân số theo thứ tự tăng dần:',c,ps.slice(0,3),'Quy đồng mẫu số rồi so sánh các tử, hoặc đổi sang số thập phân.')});
 HA('frac',()=>{const d=R(4,9),w1=R(1,4),w2=R(1,4),a=R(1,d-1),b=R(1,d-1);return I(`Tính (kết quả là phân số rút gọn): ${w1} ${a}/${d} + ${w2} ${b}/${d}`,fs((w1+w2)*d+a+b,d),'Đổi hỗn số ra phân số rồi cộng, hoặc cộng phần nguyên và phần phân số riêng.')});
 A('stat',()=>{const [l,a,b]=d2(),i=R(0,3);return F(N(`${cn} Lớp ${l[i]} có bao nhiêu bạn nữ?`,b[i],'Đọc số ghi trên cột tô của lớp đó.'),dbc(a,b,l))});
@@ -22,17 +22,17 @@ HA('stat',
 ()=>{const [l,a,b]=d2();return I(`${cn} Tổng số bạn nam của bốn lớp là:`,a.reduce((x,y)=>x+y),'Cộng bốn số trên các cột trống.',dbc(a,b,l))},
 ()=>{const [l,a,b]=d2(),i=R(0,3);return I(`${cn} Số bạn nam và nữ của lớp ${l[i]} chênh nhau bao nhiêu bạn?`,Math.abs(a[i]-b[i]),'Lấy số lớn trừ số nhỏ.',dbc(a,b,l))});
 HA('nat',
-()=>{const k=R(3,15);return I(`Tìm số tự nhiên x biết x² = ${k*k}`,k,`${k*k} = ${k}² nên x = ${k}.`)},
+()=>{const k=R(3,15);return I(`Tìm số tự nhiên x biết x² = ${k*k}`,k,`Bước 1: x² = ${k*k} = ${k}².\nBước 2: Căn bậc hai số học → x = ${k}.`)},
 ()=>{const a=R(2,9),b=R(2,6),c=R(20,40),d=R(5,15),e=R(1,d);return I(`Tính: ${a} + ${b} × [${c} − (${d} − ${e})]`,a+b*(c-(d-e)),'Thứ tự: ngoặc tròn, ngoặc vuông, nhân chia, rồi cộng trừ.')});
 HA('pow',()=>{const a=R(2,5),m=R(2,5),n=m+R(1,5);return I(`Tìm số tự nhiên x biết ${a}^x · ${a}^${m} = ${a}^${n}`,n-m,'Nhân cùng cơ số: cộng số mũ, nên x + '+m+' = '+n+'.')});
 HA('div',
-()=>{const p=R(1,9);let c=0;for(let a=0;a<10;a++)if((p+a)%3==0)c++;return I(`Có bao nhiêu chữ số a để số ${p}a chia hết cho 3?`,c,`Tổng các chữ số ${p} + a phải chia hết cho 3.`)},
+()=>{const p=R(1,9);let c=0;for(let a=0;a<10;a++)if((p+a)%3==0)c++;return I(`Có bao nhiêu chữ số a để số ${p}a chia hết cho 3?`,c,`Bước 1: Một số chia hết cho 3 khi tổng các chữ số chia hết cho 3.\nBước 2: Tổng ${p} + a phải chia hết cho 3.`)},
 ()=>{const n=P([20,30,40,50]);let c=0;for(let i=2;i<n;i++)if(isP(i))c++;return I(`Có bao nhiêu số nguyên tố nhỏ hơn ${n}?`,c,'Liệt kê các số nguyên tố: 2; 3; 5; 7; 11; …')});
 HA('ub',
 ()=>{const n=P([12,18,20,24,28,30]);return I(`Tổng tất cả các ước của ${n} là:`,[...Array(n+1).keys()].filter(i=>i&&n%i==0).reduce((x,y)=>x+y),'Liệt kê các ước theo cặp rồi cộng lại.')},
-()=>{const [a,b]=P([[12,18],[24,36],[30,45],[18,27],[20,50]]);return I(`ƯC(${a}; ${b}) có bao nhiêu phần tử?`,[...Array(a+1).keys()].filter(i=>i&&a%i==0&&b%i==0).length,`Ước chung của ${a} và ${b} chính là các ước của ƯCLN(${a}; ${b}).`)});
+()=>{const [a,b]=P([[12,18],[24,36],[30,45],[18,27],[20,50]]);return I(`ƯC(${a}; ${b}) có bao nhiêu phần tử?`,[...Array(a+1).keys()].filter(i=>i&&a%i==0&&b%i==0).length,`Bước 1: Tìm ƯCLN của ${a} và ${b}.\nBước 2: Các ước chung chính là các ước của ƯCLN đó.`)});
 HA('pct',
-()=>{const x=P([10,20,50]),y=P([10,20,50]),p=100*R(1,10);return I(`Một món hàng giá ${p} nghìn đồng, giảm ${x}% rồi giảm tiếp ${y}% trên giá đã giảm. Giá cuối cùng là (nghìn đồng):`,p*(100-x)*(100-y)/10000,`Giá sau lần 1 = ${p} × ${100-x}%; sau lần 2 lấy giá đó × ${100-y}%.`)},
+()=>{const x=P([10,20,50]),y=P([10,20,50]),p=100*R(1,10);return I(`Một món hàng giá ${p} nghìn đồng, giảm ${x}% rồi giảm tiếp ${y}% trên giá đã giảm. Giá cuối cùng là (nghìn đồng):`,p*(100-x)*(100-y)/10000,`Bước 1: Sau giảm ${x}% còn (100−${x})% giá cũ.\nBước 2: Sau giảm ${y}% nữa: lấy giá vừa rồi × (100−${y})%.`)},
 ()=>{const r=P([5,10,15,20]),p=20*R(1,10);return I(`Gửi ngân hàng ${p} triệu đồng, lãi ${r}% một năm. Sau 1 năm, cả vốn lẫn lãi là (triệu đồng):`,p*(100+r)/100,`Cả vốn lẫn lãi = ${p} × ${100+r}%.`)});
 HA('sym',()=>{const n=R(5,10);return I(`Đa giác lồi có ${n} cạnh có bao nhiêu đường chéo?`,n*(n-3)/2,`Mỗi đỉnh nối được ${n-3} đường chéo, mỗi đường bị đếm 2 lần: ${n} × ${n-3} : 2.`)});
 HA('geo',

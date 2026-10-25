@@ -6,13 +6,13 @@ T.find(t=>t.id=='dec').tip+=' Ước lượng: làm tròn từng số rồi mớ
 
 /* CĐ7: Tính đối xứng (tách riêng khỏi Hình học trực quan) */
 T.push({id:'axis',n:'Tính đối xứng',e:'🦋',c:'#e84393',tip:'Trục đối xứng: gấp theo đường đó thì hai nửa trùng khít. Tâm đối xứng: quay nửa vòng (180°) quanh tâm thì hình trùng với chính nó. Đa giác đều n cạnh có n trục đối xứng.',g:[
-()=>{const c=P(['A','H','M','T','U','V','W','Y','O','X','I']);return Q('Chữ cái in hoa nào có trục đối xứng?',c,xw(['F','G','J','L','N','P','R','S','Z','Q']),`Gấp đôi chữ ${c} theo một đường thích hợp thì hai nửa trùng khít.`)},
-()=>{const c=P(['H','I','N','O','S','X','Z']);return Q('Chữ cái in hoa nào có tâm đối xứng?',c,xw(['A','B','C','D','E','K','M','P','R','T','U','V','W','Y']),`Xoay chữ ${c} nửa vòng quanh tâm thì chữ trùng khít với chính nó.`)},
+()=>{const c=P(['A','H','M','T','U','V','W','Y','O','X','I']);return Q('Chữ cái in hoa nào có trục đối xứng?',c,xw(['F','G','J','L','N','P','R','S','Z','Q']),`Bước 1: Trục đối xứng là đường gấp hình theo đó hai nửa trùng khít.\nBước 2: Gấp chữ ${c} theo đường thích hợp thì hai nửa trùng nhau.`)},
+()=>{const c=P(['H','I','N','O','S','X','Z']);return Q('Chữ cái in hoa nào có tâm đối xứng?',c,xw(['A','B','C','D','E','K','M','P','R','T','U','V','W','Y']),`Bước 1: Tâm đối xứng là điểm mà khi quay 180° quanh nó hình trùng với chính nó.\nBước 2: Xoay chữ ${c} nửa vòng quanh tâm thì trùng khít.`)},
 ()=>{const [n,c]=P([['tam giác cân (không đều)','1'],['ngũ giác đều','5'],['hình tròn','vô số'],['hình thang cân','1'],['hình vuông','4'],['hình chữ nhật (không vuông)','2']]);return Q(`${n[0].toUpperCase()+n.slice(1)} có bao nhiêu trục đối xứng?`,c,xw(['1','2','3','4','5','6','vô số'].filter(v=>v!=c)),'Hình tròn có vô số trục (mọi đường kính); đa giác đều n cạnh có n trục.')},
 ()=>Q('Vật nào sau đây có trục đối xứng?',P(['cánh bướm','bông tuyết','mặt đồng hồ tròn']),['tờ giấy bị vò nát','đám mây','vết mực loang'],'Vật có trục đối xứng khi gấp theo một đường thì hai nửa trùng khít.'),
 ()=>P([Q('Hình nào có tâm đối xứng nhưng KHÔNG có trục đối xứng?','hình bình hành (không phải chữ nhật, thoi)',['hình chữ nhật','hình thoi','hình tròn'],'Hình bình hành thường chỉ có tâm đối xứng là giao điểm hai đường chéo.'),Q('Hình nào có trục đối xứng nhưng KHÔNG có tâm đối xứng?','tam giác đều',['hình chữ nhật','hình vuông','hình tròn'],'Tam giác đều có 3 trục đối xứng nhưng quay nửa vòng thì không trùng với chính nó.')]),
 ()=>{const a=R(1,9)*P([1,-1]);return N(`Trên trục số, điểm A biểu diễn số ${iz(a)}. Điểm B đối xứng với A qua gốc O. B biểu diễn số:`,-a,'Hai điểm đối xứng qua O biểu diễn hai số đối nhau.',iz,1)},
-()=>{const m=R(-5,5),a=m+R(1,6);return N(`Trên trục số, điểm A biểu diễn ${iz(a)}, điểm M biểu diễn ${iz(m)}. Điểm B đối xứng với A qua M biểu diễn số:`,2*m-a,`M là trung điểm AB nên B = 2 × M − A = 2 × ${pa(m)} − ${pa(a)}.`,iz,1)}],h:[
+()=>{const m=R(-5,5),a=m+R(1,6);return N(`Trên trục số, điểm A biểu diễn ${iz(a)}, điểm M biểu diễn ${iz(m)}. Điểm B đối xứng với A qua M biểu diễn số:`,2*m-a,`Bước 1: M trung điểm AB → tọa độ M = (A + B) / 2.\nBước 2: Suy ra B = 2 × M − A = 2 × ${pa(m)} − ${pa(a)}.`,iz,1)}],h:[
 ()=>{const n=R(5,12);return I(`Đa giác đều ${n} cạnh có bao nhiêu trục đối xứng?`,n,'Đa giác đều n cạnh có đúng n trục đối xứng.')},
 ()=>{const L=xw(['A','F','H','M','N','P','S','T','Z','X'],6);return I(`Trong các chữ cái in hoa ${L.join(', ')}, có bao nhiêu chữ có trục đối xứng?`,L.filter(x=>'AHMTX'.includes(x)).length,'Các chữ có trục đối xứng: A, H, M, T, X; còn F, N, P, S, Z thì không.')},
 ()=>{const k=R(2,9),t=R(2,9);return I(`Hình thoi có hai đường chéo (cũng là hai trục đối xứng) dài ${2*k} cm và ${2*t} cm, cắt nhau tại tâm O. Độ dài OA (A là đỉnh trên đường chéo ${2*k} cm) là (cm):`,k,'Tâm đối xứng O là trung điểm của mỗi đường chéo.')}]});
@@ -22,12 +22,12 @@ A('nat',
 ()=>{const n=R(1000,9999),p=R(0,3);return Z(`Chữ số hàng ${['đơn vị','chục','trăm','nghìn'][p]} của số ${n} là:`,''+(Math.floor(n/10**p)%10),xw([0,1,2,3,4,5,6,7,8,9],9).map(String),'Các hàng: đơn vị, chục, trăm, nghìn đếm từ phải sang trái.')},
 ()=>{const n=R(100,9999),b=R(0,1);return N(`Số tự nhiên liền ${b?'sau':'trước'} của ${n} là:`,b?n+1:n-1,'Liền trước kém 1 đơn vị, liền sau hơn 1 đơn vị.')},
 ()=>{const a=R(1,9),b=R(0,9),c=R(0,9),d=R(0,9);return Z(`Số gồm ${a} nghìn, ${b} trăm, ${c} chục, ${d} đơn vị là:`,''+(a*1000+b*100+c*10+d),[d*1000+c*100+b*10+a,a*100+b*10+c+d,a*1000+b*100+c*10+d+10,a*10000+b*100+c*10+d].map(String),'Viết lần lượt các chữ số theo hàng từ nghìn đến đơn vị.')},
-()=>{const a=R(11,80),b=R(11,89);return N(`Tính nhanh: ${a} + ${b} + ${100-b}`,a+100,`Nhóm ${b} + ${100-b} = 100 rồi cộng ${a}.`)},
-()=>{const x=R(2,15),a=R(2,9),b=R(1,20);return N(`Tìm x biết: ${a} × x + ${b} = ${a*x+b}`,x,`${a} × x = ${a*x+b} − ${b} = ${a*x}, nên x = ${x}.`)},
-()=>{const a=R(2,9),b=R(2,9),d=R(2,6),k=R(1,Math.min(9,a*b));return N(`Tính: ${a} × ${b} − ${k*d} : ${d}`,a*b-k,`Nhân chia trước: ${k*d} : ${d} = ${k}, rồi trừ.`)});
+()=>{const a=R(11,80),b=R(11,89);return N(`Tính nhanh: ${a} + ${b} + ${100-b}`,a+100,`Bước 1: Nhóm ${b} + ${100-b} = 100.\nBước 2: Kết quả = ${a} + 100.`)},
+()=>{const x=R(2,15),a=R(2,9),b=R(1,20);return N(`Tìm x biết: ${a} × x + ${b} = ${a*x+b}`,x,`Bước 1: Chuyển ${b} sang vế trái: ${a} × x = ${a*x+b} − ${b} = ${a*x}.\nBước 2: Chia cả hai vế cho ${a} → x = ${x}.`)},
+()=>{const a=R(2,9),b=R(2,9),d=R(2,6),k=R(1,Math.min(9,a*b));return N(`Tính: ${a} × ${b} − ${k*d} : ${d}`,a*b-k,`Bước 1: Thực hiện nhân chia trước: ${k*d} : ${d} = ${k}.\nBước 2: Sau đó thực hiện phép trừ.`)});
 A('set',
-()=>{const B=xw([1,2,3,4,5,6,7,8,9],5).sort((x,y)=>x-y),x=B[4];return Q(`Cho A = {${B.slice(0,3).join('; ')}}, B = {${B.join('; ')}}. Khẳng định đúng là:`,'A ⊂ B',['B ⊂ A','A = B',`${x} ∈ A`],`Mọi phần tử của A đều thuộc B nên A ⊂ B; ${x} ∈ B nhưng ∉ A.`)},
-()=>{const n=P([8,10,12,14]);return Q(`Liệt kê tập hợp các số tự nhiên chẵn nhỏ hơn ${n}:`,xl(0,n-2,2),[xl(2,n-2,2),xl(0,n,2),xl(1,n-1,2)],`Số chẵn bắt đầu từ 0, tăng dần 2 đơn vị và phải nhỏ hơn ${n}.`)},
+()=>{const B=xw([1,2,3,4,5,6,7,8,9],5).sort((x,y)=>x-y),x=B[4];return Q(`Cho A = {${B.slice(0,3).join('; ')}}, B = {${B.join('; ')}}. Khẳng định đúng là:`,'A ⊂ B',['B ⊂ A','A = B',`${x} ∈ A`],`Bước 1: Mọi phần tử của A đều thuộc B → A ⊂ B.\nBước 2: ${x} thuộc B nhưng không thuộc A → B không là tập con của A.`)},
+()=>{const n=P([8,10,12,14]);return Q(`Liệt kê tập hợp các số tự nhiên chẵn nhỏ hơn ${n}:`,xl(0,n-2,2),[xl(2,n-2,2),xl(0,n,2),xl(1,n-1,2)],`Bước 1: Số chẵn bắt đầu từ 0, mỗi số sau tăng 2.\nBước 2: Lấy các số chẵn nhỏ hơn ${n}.`)},
 ()=>N('Tập hợp C = {x ∈ ℕ | x &lt; 0} có bao nhiêu phần tử?',0,'Không có số tự nhiên nào nhỏ hơn 0 nên C = ∅ (tập rỗng).'));
 
 /* CĐ2: tính chất chia hết, dấu hiệu 9, hợp số, ước chung, ƯCLN/BCNN đặc biệt */
@@ -39,7 +39,7 @@ A('div',
 ()=>Q('Số nguyên tố chẵn duy nhất là:','2',['0','4','6'],'Mọi số chẵn lớn hơn 2 đều có ước 2 nên là hợp số.'));
 A('ub',
 ()=>{const n=P([12,18,20,28,30,45,50,60,63,84]);return N(`Số ${n} có bao nhiêu ước nguyên tố?`,[2,3,5,7].filter(p=>n%p==0).length,'Phân tích ra thừa số nguyên tố rồi đếm các số nguyên tố khác nhau.')},
-()=>{const m=R(3,9),L=R(30,60);return N(`Có bao nhiêu bội của ${m} nhỏ hơn ${L} (kể cả số 0)?`,Math.floor((L-1)/m)+1,`Các bội: 0; ${m}; ${2*m}; … không vượt quá ${L-1}.`)},
+()=>{const m=R(3,9),L=R(30,60);return N(`Có bao nhiêu bội của ${m} nhỏ hơn ${L} (kể cả số 0)?`,Math.floor((L-1)/m)+1,`Bước 1: Các bội của ${m} là 0, ${m}, ${2*m}, …\nBước 2: Chỉ lấy các bội không vượt quá ${L-1}.`)},
 ()=>{const g=P([2,3,4,5,6]),a=g*R(2,6),b=g*R(7,12);return Q(`Số nào là ước chung của ${a} và ${b}?`,''+g,xw([...Array(12).keys()].filter(i=>i>1&&(a%i||b%i))).map(String),`${g} chia hết cả ${a} và ${b}.`)});
 A('gcd',
 ()=>{const b=R(3,12),a=b*R(2,9);return N(`ƯCLN(${a}; ${b}) = ? (${a} chia hết cho ${b})`,b,`${a} chia hết cho ${b} nên ƯCLN là số nhỏ hơn: ${b}.`)},
@@ -62,7 +62,7 @@ A('frac',
 ()=>{const b=R(2,6),a=R(1,b-1),k=R(2,9);return N(`${a}/${b} của một số là ${a*k}. Số đó là:`,b*k,`Số đó = ${a*k} : ${a}/${b} = ${a*k} × ${b}/${a} = ${b*k}.`)},
 ()=>{const b=R(2,6);let d;do d=R(2,6);while(d==b);const a=R(1,b-1),c=R(1,d-1);return Z(`Tính: ${a}/${b} + ${c}/${d}`,fs(a*d+c*b,b*d),[fs(a+c,b+d),fs(a+c,b*d),`${a*d+c*b}/${b+d}`],'Quy đồng mẫu số rồi cộng các tử (không cộng các mẫu), kết quả rút gọn.')},
 ()=>{const b=R(4,9);return Q('Phân số nào lớn hơn 1?',`${b+R(1,4)}/${b}`,xw([1,2,3,4,5,6,7,8].filter(i=>i<b)).map(n=>`${n}/${b}`),'Phân số lớn hơn 1 khi tử lớn hơn mẫu.')},
-()=>{const [x,y]=cop(2,9),g=R(2,4);return Z('Phân số nào chưa là phân số tối giản?',`${g*x}/${g*y}`,[0,0,0].map(()=>{const [p,q]=cop(2,9);return `${p}/${q}`}),'Phân số tối giản khi tử và mẫu chỉ có ước chung là 1; còn lại thì rút gọn được.')},
+()=>{const [x,y]=cop(2,9),g=R(2,4),cv=x/y,ws=new Set();while(ws.size<3){const [p,q]=cop(2,9);if(Math.abs(p/q-cv)>1e-9)ws.add(`${p}/${q}`)}return Z('Phân số nào chưa là phân số tối giản?',`${g*x}/${g*y}`,[...ws],'Phân số tối giản khi tử và mẫu chỉ có ước chung là 1; còn lại thì rút gọn được.')},
 ()=>{const b=R(2,6),a=R(1,5),k=b*R(2,5);return N(`Tính: ${k} × ${a}/${b}`,k/b*a,`${k} : ${b} × ${a} = ${k/b*a}.`)});
 HA('frac',
 ()=>{const [a,b]=cop(2,7),[c,d]=cop(2,7);return I(`Tìm x biết: x − ${a}/${b} = ${c}/${d}`,fs(a*d+c*b,b*d),'x = số trừ + hiệu: quy đồng rồi cộng, kết quả rút gọn.')},

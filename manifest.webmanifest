@@ -1,50 +1,21 @@
 {
- "id": "./",
- "name": "Toán Vui Vẻ",
- "short_name": "Toán THCS",
- "description": "Luyện Toán THCS (lớp 6, lớp 7) vui như chơi game, học mọi lúc kể cả khi mất mạng",
- "lang": "vi",
- "start_url": "./",
- "scope": "./",
- "display": "standalone",
- "orientation": "portrait",
- "background_color": "#0e1033",
- "theme_color": "#0e1033",
- "categories": [
-  "education"
- ],
- "icons": [
-  {
-   "src": "assets/icons/icon-192.png",
-   "sizes": "192x192",
-   "type": "image/png",
-   "purpose": "any"
-  },
-  {
-   "src": "assets/icons/icon-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "any"
-  },
-  {
-   "src": "assets/icons/icon-maskable-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "maskable"
-  }
- ],
- "shortcuts": [
-  {
-   "name": "Thử thách hôm nay",
-   "short_name": "Thử thách",
-   "url": "./?tab=daily",
-   "icons": [
-    {
-     "src": "assets/icons/icon-192.png",
-     "sizes": "192x192",
-     "type": "image/png"
-    }
-   ]
-  }
- ]
+  "name": "Toán Vui Vẻ",
+  "short_name": "Toán Vui Vẻ",
+  "description": "Luyện Toán lớp 6, lớp 7 qua trò chơi: bài học, thi thử, thử thách mỗi ngày.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e1033",
+  "theme_color": "#0e1033",
+  "icons": [
+    {"src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Thử thách hôm nay", "short_name": "Thử thách", "url": "./?tab=daily"},
+    {"name": "Thi thử", "short_name": "Thi thử", "url": "./?tab=mock"}
+  ]
 }

@@ -58,5 +58,8 @@ thêm mục 8 trong `GRADES` (`grades.js`) và nút chọn lớp trong `js/app/g
 - Tên lưu trữ cũ (`t6` trong localStorage, `T6_UI`, `T6_SYNC`) được **giữ nguyên** để học sinh không mất điểm, sao và tiến độ đã đồng bộ.
 - `firestore.rules`: `stars` tối đa 300; `progress` có thêm trường `dc7` (thử thách ngày của lớp 7, `dc` vẫn là lớp 6). **Cần dán lại rules vào Firebase Console** thì thử thách ngày lớp 7 mới đồng bộ được giữa các máy.
 - Chọn lớp: lần đầu mở app hiện màn Chọn lớp (`pickGrade` trong `js/app/grade.js`), sau đó đổi lớp bằng banner ở đầu các tab Học, Ôn tập, Thi thử, Thử thách. Giao diện đổi màu theo `body[data-gr]`.
-- `sw.js`: bản lưu offline đổi tên thành `thcs-v1`; các file `.js`/`.css` luôn ưu tiên bản mới khi có mạng.
+- `sw.js` (`thcs-v3`): danh sách file lưu offline tự đọc từ `index.html`, nên thêm file script mới chỉ cần khai báo trong `index.html`. Các file `.js`/`.css` và trang chính luôn ưu tiên bản mới khi có mạng (quá 6 giây hoặc mất mạng thì dùng bản đã lưu). Muốn ép máy học sinh tải lại toàn bộ thì đổi `V`.
 - Thử thách hằng ngày và đề thi theo lớp đang chọn; lớp 6 giữ nguyên đề ngày như trước.
+- **Chế độ thi thử & thử thách ngày (v2)**: đếm giờ (8 phút / 5 câu, 25 phút / 15 câu), chọn đáp án không hiện đúng/sai ngay, có nút Câu trước/Câu tiếp, phải **Nộp bài** mới chấm điểm và hiện lời giải. Luyện tập (tab Học, Ôn tập) vẫn feedback ngay như cũ.
+
+- **Phòng thi (v4)** – code ở `js/app/exam.js`: đồng hồ tính theo mốc giờ kết thúc (khóa màn hình không đứng giờ), tự lưu bài làm dở (`t6x` trong localStorage) để làm tiếp, bản đồ câu hỏi, đánh dấu xem lại, vuốt đổi câu, hộp thoại tự vẽ thay `confirm()`, màn **Xem lại bài & lời giải** sau khi nộp, gợi ý chủ đề cần luyện. Làm bài dưới 3 giây/câu thì không tính XP. Lịch sử thử thách 7 ngày (`dh`) và kết quả thi gần đây (`mh`) chỉ lưu trên máy, **không** đồng bộ nên không cần đổi `firestore.rules`.

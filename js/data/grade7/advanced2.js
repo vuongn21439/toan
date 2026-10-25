@@ -7,9 +7,9 @@
  ev=(c,x)=>c.reduceRight((s,a)=>s*x+a,0);
 
 addH('l7sht',
- ()=>{const a=R(2,9),b=R(2,9),x=R(2,9);return I(`Tìm x: ${a}(x + ${b}) − ${b}(x − ${a}) = ${2*a*b}. x = ?`,x,`Rút gọn: (${a}−${b})x + ${2*a*b} = ${2*a*b} → x = ${x}.`,iz,1)},
- ()=>{const[a,b]=rt(),n=R(2,4);return I(`Tính: (${br(a,b)})^${n} × (${br(b,a)})^${n}`,1,`Nhân từng cặp: (${fq(a,b)}×${fq(b,a)})^${n} = 1.`)},
- ()=>{const[a,b]=rt(),[c,d]=rt();return I(`Tìm x: x : ${br(a,b)} = ${br(c,d)}. x = ? (rút gọn)`,fr(a*c,b*d),`x = ${fq(c,d)}×${fq(a,b)} = ${fq(a*c,b*d)}.`)},
+ ()=>{let a=R(2,9),b=R(2,9);while(a==b)b=R(2,9);const x=R(2,9);return I(`Tìm x: ${a}(x + ${b}) − ${b}(x − ${a}) = ${2*a*b + (a-b)*x}. x = ?`,x,`Bước 1: Rút gọn vế trái: ${a}x + ${a*b} − ${b}x + ${a*b} = (${a}−${b})x + ${2*a*b}.\nBước 2: Đồng nhất với vế phải: (${a}−${b})x = (${a}−${b})·${x}.\nBước 3: Vì ${a} ≠ ${b}, chia cả hai vế cho ${a}−${b} → x = ${x}.`,iz,1)},
+ ()=>{const[a,b]=rt(),n=R(2,4);return I(`Tính: (${br(a,b)})^${n} × (${br(b,a)})^${n}`,1,`Bước 1: ${fq(a,b)} × ${fq(b,a)} = 1.\nBước 2: 1^${n} = 1.`)},
+ ()=>{const[a,b]=rt(),[c,d]=rt();return I(`Tìm x: x : ${br(a,b)} = ${br(c,d)}. x = ? (rút gọn)`,fr(a*c,b*d),`Bước 1: x = ${fq(c,d)} × ${fq(a,b)}.\nBước 2: Nhân tử với tử, mẫu với mẫu → ${fq(a*c,b*d)}.`)},
  ()=>{const n=R(2,5);return I(`Tính: (−1)^${2*n} + (−1)^${2*n+1}`,0,'Số mũ chẵn cho +1, số mũ lẻ cho −1: 1+(−1)=0.')}
 );
 add('l7sht',
@@ -18,22 +18,22 @@ add('l7sht',
 );
 
 addH('l7sth',
- ()=>{const a=R(2,6),b=R(2,6);return I(`Tìm x>0: x² = ${(a*b)*(a*b)}. x = ?`,a*b,`x = √${(a*b)*(a*b)} = ${a*b}.`)},
- ()=>{const a=R(2,9);return I(`Tìm x: √x = ${a}. x = ?`,a*a,`x = ${a}² = ${a*a}.`)},
- ()=>{const n=R(2,5);return I(`Tính: √${n*n}×√${n*n}×√${n*n}`,n**3,`Mỗi căn = ${n}; tích = ${n}³.`)}
+ ()=>{const a=R(2,6),b=R(2,6);return I(`Tìm x>0: x² = ${(a*b)*(a*b)}. x = ?`,a*b,`Bước 1: x = √(${a*b} × ${a*b}).\nBước 2: = √(${a*b})² = ${a*b} (căn không âm).`)},
+ ()=>{const a=R(2,9);return I(`Tìm x: √x = ${a}. x = ?`,a*a,`Bước 1: Bình phương cả hai vế (hoặc theo đề).\nBước 2: x = ${a}² = ${a*a}.`)},
+ ()=>{const n=R(2,5);return I(`Tính: √${n*n}×√${n*n}×√${n*n}`,n**3,`Bước 1: Mỗi căn bậc hai bằng ${n}.\nBước 2: Tích ba căn = ${n} × ${n} × ${n} = ${n}³.`)}
 );
 add('l7sth',
- ()=>{const a=R(11,30);const f=Math.floor(Math.sqrt(a));return Z(`√${a} nằm giữa hai số tự nhiên liên tiếp nào?`,`${f} và ${f+1}`,['10 và 11','1 và 2',`${f-1} và ${f}`],`${f}²=${f*f} < ${a} < ${(f+1)*(f+1)}=(f+1)².`)},
+ ()=>{const a=R(11,30);const f=Math.floor(Math.sqrt(a));return Z(`√${a} nằm giữa hai số tự nhiên liên tiếp nào?`,`${f} và ${f+1}`,['10 và 11','1 và 2',`${f-1} và ${f}`],`Bước 1: Tìm số nguyên f sao cho f² ≤ a < (f+1)².\nBước 2: ${f}² = ${f*f} < ${a} < ${(f+1)*(f+1)}.`)},
  ()=>{return Z('Số nào KHÔNG phải số vô tỉ?','√9',['√2','√3','π'],'√9=3 là số hữu tỉ; √2, √3, π là số vô tỉ.')}
 );
 
 addH('l7tlt',
- ()=>{const[a,b,c]=P([[1,2,3],[2,3,4],[1,3,5],[2,3,5]]),k=R(2,8);return I(`Biết x/${a}=y/${b}=z/${c} và x+y+z=${(a+b+c)*k}. Tính x+y−z.`,(a+b-c)*k,`Mỗi phần=${k}; x+y−z=(${a}+${b}−${c})×${k}.`)},
- ()=>{const[a,b]=P([[2,3],[3,5],[4,5],[3,4]]),k=R(2,6);return I(`Hai số có tỉ số ${a}/${b}, tổng=${(a+b)*k}. Số bé hơn là:`,Math.min(a,b)*k,`Mỗi phần=${k}; số bé=min(${a},${b})×${k}.`)},
- ()=>{const k=R(2,5),t=R(2,6);return I(`3 máy cày làm xong đồng ruộng trong ${t} ngày. ${k} máy cày làm xong trong mấy ngày? (làm tròn 1 chữ số)`,Math.round(3*t/k*10)/10,`Khối lượng không đổi: 3×${t}=${k}×x → x=${Math.round(3*t/k*10)/10}.`)}
+ ()=>{const[a,b,c]=P([[1,2,3],[2,3,4],[1,3,5],[2,3,5]]),k=R(2,8);return I(`Biết x/${a}=y/${b}=z/${c} và x+y+z=${(a+b+c)*k}. Tính x+y−z.`,(a+b-c)*k,`Bước 1: Mỗi phần bằng ${k}.\nBước 2: x + y − z = (${a} + ${b} − ${c}) × ${k}.`)},
+ ()=>{const[a,b]=P([[2,3],[3,5],[4,5],[3,4]]),k=R(2,6);return I(`Hai số có tỉ số ${a}/${b}, tổng=${(a+b)*k}. Số bé hơn là:`,Math.min(a,b)*k,`Bước 1: Mỗi phần bằng ${k}.\nBước 2: Số bé = min(${a},${b}) × ${k}.`)},
+ ()=>{const k=R(2,5),t=R(2,6);return I(`3 máy cày làm xong đồng ruộng trong ${t} ngày. ${k} máy cày làm xong trong mấy ngày? (làm tròn 1 chữ số)`,Math.round(3*t/k*10)/10,`Bước 1: Khối lượng không đổi khi đổi đơn vị.\nBước 2: 3 × ${t} = ${k} × x → x = ${Math.round(3*t/k*10)/10}.`)}
 );
 add('l7tlt',
- ()=>{const a=R(2,9),b=R(2,9);return Z(`Từ ${a}·x=${b}·y (x,y≠0), suy ra tỉ lệ thức nào ĐÚNG?`,`x/${b}=y/${a}`,[`x/${a}=y/${b}`,`x/y=${a}/${b}`,`x·y=${a*b}`],'Tích ngoại=tích trung: x·a=y·b ⇔ x/b=y/a.')},
+ ()=>{let a=R(2,9),b=R(2,9);while(a==b)b=R(2,9);return Z(`Từ ${a}·x=${b}·y (x,y≠0), suy ra tỉ lệ thức nào ĐÚNG?`,`x/${b}=y/${a}`,[`x/${a}=y/${b}`,`x/y=${a}/${b}`,`x·y=${a*b}`],'Tích ngoại=tích trung: x·a=y·b ⇔ x/b=y/a.')},
  ()=>{const k=R(2,4),x=R(3,10);return N(`y tỉ lệ thuận với x theo hệ số k=${k}. Khi y=${k*x} thì x bằng:`,x,'y=k·x → x=y:k.')}
 );
 
@@ -43,8 +43,8 @@ addH('l7dt',
  ()=>{const c=rp(2),x=P([-2,-1,1,2]);return I(`Cho P(x)=${ps(c)}. P(${iz(x)})=?`,ev(c,x),`Thay x=${iz(x)} vào P(x).`,iz,1)}
 );
 add('l7dt',
- ()=>{const c=rp(3);return Z(`Hạng tử tự do của đa thức ${ps(c)} là:`,''+c[0],[''+c[c.length-1],''+(c[0]+1),''+(c[0]-1)],'Hạng tử tự do là hạng tử không chứa biến.')},
- ()=>{const a=R(2,5),b=R(2,5);return Z(`Đa thức ${a}x−${a*b} có nghiệm là:`,''+b,[''+a,''+(a*b),''+(b+1)],`${a}x=${a*b} → x=${b}.`)}
+ ()=>{const c=rp(3);return Z(`Hạng tử tự do của đa thức ${ps(c)} là:`,''+c[0],[''+c[c.length-1],''+(c[0]+1),''+(c[0]-1),''+(c[0]+2)],'Hạng tử tự do là hạng tử không chứa biến.')},
+ ()=>{const a=R(2,5),b=R(2,5);return Z(`Đa thức ${a}x−${a*b} có nghiệm là:`,''+b,[''+(b+1),''+(b+2),''+(b+3)],`${a}x=${a*b} → x=${b}.`)}
 );
 
 addH('l7gdt',
@@ -53,7 +53,7 @@ addH('l7gdt',
  ()=>{const n=R(3,6);return I(`Có ${n} tia chung gốc O, trong đó có đúng một cặp tia đối nhau. Có bao nhiêu góc bẹt?`,1,'Chỉ có đúng một cặp tia đối nhau tạo thành một góc bẹt 180°.')}
 );
 add('l7gdt',
- ()=>{const a=P([35,50,65,80,100,115,130,145]);return N(`Hai góc kề bù, một góc ${a}°. Góc đối đỉnh của góc còn lại bằng (độ):`,a,'Góc đối đỉnh luôn bằng góc ban đầu.')},
+ ()=>{const a=P([35,50,65,80,100,115,130,145]);return N(`Hai góc kề bù, một góc ${a}°. Góc đối đỉnh của góc còn lại bằng (độ):`,180-a,`Bước 1: Góc còn lại (kề bù với góc ${a}°) = 180° − ${a}° = ${180-a}°.\nBước 2: Góc đối đỉnh thì bằng chính góc đó → bằng ${180-a}°.`)},
  ()=>{return Z('Hai đường phân giác của hai góc kề bù tạo với nhau một góc bằng:','90°',['45°','60°','180°'],'Hai góc kề bù tổng 180°, mỗi phân giác chia một nửa → tổng hai nửa=90°.')}
 );
 
@@ -105,7 +105,7 @@ addH('l7xs',
  ()=>{const k=R(2,3);return I(`Gieo một con xúc xắc ${k} lần. Có bao nhiêu kết quả có thể xảy ra?`,6**k,`Mỗi lần có 6 kết quả: 6^${k}=${6**k}.`)}
 );
 add('l7xs',
- ()=>{const[t,s]=P([['chia hết cho 2',[2,4,6]],['nhỏ hơn 4',[1,2,3]],['lớn hơn 2 và nhỏ hơn 6',[3,4,5]]]);return Z(`Gieo xúc xắc. Xác suất xuất hiện mặt ${t} là:`,fq(s.length,6),['1/2','1/3','1/6'].filter(x=>x!=fq(s.length,6)),`Có ${s.length} kết quả thuận lợi trong 6.`)},
+ ()=>{const[t,s]=P([['chia hết cho 2',[2,4,6]],['nhỏ hơn 4',[1,2,3]],['lớn hơn 2 và nhỏ hơn 6',[3,4,5]]]);return Z(`Gieo xúc xắc. Xác suất xuất hiện mặt ${t} là:`,fq(s.length,6),['1/6','1/3','1/2','2/3','5/6'].filter(x=>x!=fq(s.length,6)),`Có ${s.length} kết quả thuận lợi trong 6.`)},
  ()=>{return Z('Xác suất của biến cố ngẫu nhiên luôn nằm trong khoảng:','Từ 0 đến 1',['Nhỏ hơn 0','Lớn hơn 1','Chỉ bằng 0 hoặc 1'],'Xác suất=số thuận lợi:tổng số kết quả, luôn từ 0 đến 1.')}
 );
 })();
