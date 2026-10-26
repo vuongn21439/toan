@@ -1,7 +1,8 @@
 /* Toán Vui Vẻ (Toán THCS): mở lại được khi mất mạng.
    v3: danh sách file lưu offline tự đọc từ index.html (thêm/xoá file script không cần sửa tay ở đây nữa).
+   v4 (bản v5 của game): thêm ngân hàng câu hỏi chuyên đề + giải thích vì sao đáp án sai → đổi V để máy học sinh tải lại.
    Đổi V mỗi khi muốn ép máy học sinh tải bản mới. */
-const V='thcs-v3',
+const V='thcs-v4',
 /* file không nằm trong index.html nhưng vẫn cần khi offline (icon trong manifest) */
 EXTRA=['./','index.html','manifest.webmanifest','assets/icons/icon-192.png','assets/icons/icon-512.png','assets/icons/icon-maskable-512.png','assets/icons/apple-touch-icon.png'],
 HOSTS=['fonts.googleapis.com','fonts.gstatic.com','cdn.jsdelivr.net','www.gstatic.com'];

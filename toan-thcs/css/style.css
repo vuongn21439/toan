@@ -286,3 +286,6 @@ body[data-gr="7"]{--pr:#ff8a3d;--prd:#b85412;--prl:#ffad72;--bt:#2a1000}
 .rh{display:flex;justify-content:space-between;gap:8px;font-weight:800;margin-bottom:6px}
 .rv .q{font-size:17px}.rv p{margin:6px 0}
 .rv .ex{margin-top:8px;padding:10px;border-radius:12px;background:rgba(255,255,255,.06);font-size:14px}
+/* v5: giải thích vì sao đáp án đã chọn sai */
+.why{padding:9px 12px;border-radius:12px;background:rgba(255,210,94,.12);border:1px solid rgba(255,210,94,.35);font-size:14px;line-height:1.5}
+.fb .why{margin:6px 0 10px}

@@ -47,19 +47,19 @@ function quit(){if(S.i==0&&!S.d){home();return}exSheet(`<h3>Thoát bài này?</h
 function pick(k){
  const q=S.q[S.i];if(S.d)return;
  document.querySelectorAll('.o').forEach((b,j)=>{b.disabled=true;if(S.o[j]===q.a)b.classList.add('ok');else if(j==k)b.classList.add('no')});
- rs(S.o[k]===q.a);
+ rs(S.o[k]===q.a,S.o[k]);
 }
 function sub(){
  const v=document.getElementById('in');if(S.d||!v.value.trim())return;
  v.disabled=true;rs(chk(v.value,S.q[S.i].a));
 }
-function rs(ok){
+function rs(ok,mine){
  const q=S.q[S.i],last=S.i==S.q.length-1;S.d=1;
  if(ok)S.ok++;else S.bad.push(q);S.cb=ok?S.cb+1:0;fx(ok,S.cb);
  if(!S.rev&&q.t){const a=D.acc[q.t]=D.acc[q.t]||[0,0];a[1]++;if(ok)a[0]++;if(a[1]>40){a[0]=Math.round(a[0]/2);a[1]=Math.round(a[1]/2)}save()}
  gx('react',ok,S.cb);if(ok&&S.cb>=3)cf('burst',innerWidth/2,innerHeight*.4,16+Math.min(S.cb,10)*3);
  const f=document.getElementById('fb');f.className='fb '+(ok?'ok':'no');
- f.innerHTML=`<h3>${ok?(S.cb>=3?'🔥 Quá đỉnh! Liên tiếp ×'+S.cb:'🎉 Chính xác!'):'💪 Chưa đúng, cùng xem nhé'}</h3>${ok?'':`<p>Đáp án đúng: <b>${fa(q.a)}</b></p>`}<p>${H(q.e).replace(/\n/g,'<br>')}</p><button class="big" onclick="${last?'end()':'next()'}">${last?'Xem kết quả 🏁':'Tiếp tục'}</button>`;
+ f.innerHTML=`<h3>${ok?(S.cb>=3?'🔥 Quá đỉnh! Liên tiếp ×'+S.cb:'🎉 Chính xác!'):'💪 Chưa đúng, cùng xem nhé'}</h3>${ok?'':`<p>Đáp án đúng: <b>${fa(q.a)}</b></p>`}${!ok&&mine!=null&&q.x&&q.x[mine]?`<p class="why">🔎 <b>Vì sao đáp án em chọn chưa đúng?</b> ${H(q.x[mine].replace(/^./,c=>c.toUpperCase()))}.</p>`:''}<p>${H(q.e).replace(/\n/g,'<br>')}</p><button class="big" onclick="${last?'end()':'next()'}">${last?'Xem kết quả 🏁':'Tiếp tục'}</button>`;
  requestAnimationFrame(()=>scrollTo({top:document.documentElement.scrollHeight,behavior:'smooth'}));
 }
 function next(){S.i++;show()}

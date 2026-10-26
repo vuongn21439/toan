@@ -1,0 +1,2747 @@
+### axis.hinh_truc
+Q: Hình nào sau đây có đúng 1 trục đối xứng?
+  ✔ Tam giác cân (không đều)
+  ✘ Lục giác đều | Tam giác có ba cạnh khác nhau | Tam giác đều
+  why: {"Lục giác đều":"lục giác đều có 6 trục đối xứng, không phải 1","Tam giác có ba cạnh khác nhau":"tam giác có ba cạnh khác nhau có 0 trục đối xứng, không phải 1","Tam giác đều":"tam giác đều có 3 trục đối xứng, không phải 1"}
+  GIẢI:
+    Bước 1. Trục đối xứng là đường thẳng chia hình thành hai phần chồng khít khi gấp theo đường đó.
+    Bước 2. Tam giác cân (không đều) có 1 trục đối xứng.
+    Bước 3. Các hình còn lại: lục giác đều có 6; tam giác có ba cạnh khác nhau có 0; tam giác đều có 3 trục đối xứng.
+    ✅ Kết luận: đáp án: tam giác cân (không đều).
+    ⚠️ Dễ nhầm: Hình bình hành thường KHÔNG có trục đối xứng; hình chữ nhật và hình thoi có đúng 2 trục.
+
+### axis.hinh_truc
+Q: Hình nào sau đây có đúng 4 trục đối xứng?
+  ✔ Hình vuông
+  ✘ Tam giác đều | Hình chữ nhật (không phải hình vuông) | Tam giác có ba cạnh khác nhau
+  why: {"Tam giác đều":"tam giác đều có 3 trục đối xứng, không phải 4","Hình chữ nhật (không phải hình vuông)":"hình chữ nhật (không phải hình vuông) có 2 trục đối xứng, không phải 4","Tam giác có ba cạnh khác nhau":"tam giác có ba cạnh khác nhau có 0 trục đối xứng, không phải 4"}
+  GIẢI:
+    Bước 1. Trục đối xứng là đường thẳng chia hình thành hai phần chồng khít khi gấp theo đường đó.
+    Bước 2. Hình vuông có 4 trục đối xứng.
+    Bước 3. Các hình còn lại: tam giác đều có 3; hình chữ nhật (không phải hình vuông) có 2; tam giác có ba cạnh khác nhau có 0 trục đối xứng.
+    ✅ Kết luận: đáp án: hình vuông.
+    ⚠️ Dễ nhầm: Hình bình hành thường KHÔNG có trục đối xứng; hình chữ nhật và hình thoi có đúng 2 trục.
+
+### bd.lch_phantram
+Q: Biểu đồ đoạn thẳng cho số sản phẩm bán được mỗi tháng. Số sản phẩm bán được của tháng T3 tăng bao nhiêu phần trăm so với tháng T2?
+  ✔ 50%
+  ✘ 25% | 33,3% | 150%
+  why: {"25%":"chia đôi","33,3%":"so sánh với tháng sau (T3) thay vì tháng trước (T2)","150%":"đó là T3 bằng bao nhiêu % của T2, chưa trừ 100%"}
+  GIẢI:
+    Bước 1. Từ biểu đồ: tháng T2 bán 40 sản phẩm, tháng T3 bán 60 sản phẩm.
+    Bước 2. Số sản phẩm tăng thêm = 60 - 40 = 20.
+    Bước 3. So với T2: 20 : 40 = 0,5 = 50%.
+    ✅ Kết luận: T3 tăng 50% so với T2.
+    ⚠️ Dễ nhầm: Phần trăm tăng phải tính so với tháng TRƯỚC (T2), không phải tháng sau (T3).
+
+### bd.lch_phantram
+Q: Biểu đồ đoạn thẳng cho số sản phẩm bán được mỗi tháng. Số sản phẩm bán được của tháng T3 tăng bao nhiêu phần trăm so với tháng T2?
+  ✔ 25%
+  ✘ 125% | 20% | 12,5%
+  why: {"125%":"đó là T3 bằng bao nhiêu % của T2, chưa trừ 100%","20%":"so sánh với tháng sau (T3) thay vì tháng trước (T2)","12,5%":"chia đôi"}
+  GIẢI:
+    Bước 1. Từ biểu đồ: tháng T2 bán 80 sản phẩm, tháng T3 bán 100 sản phẩm.
+    Bước 2. Số sản phẩm tăng thêm = 100 - 80 = 20.
+    Bước 3. So với T2: 20 : 80 = 0,25 = 25%.
+    ✅ Kết luận: T3 tăng 25% so với T2.
+    ⚠️ Dễ nhầm: Phần trăm tăng phải tính so với tháng TRƯỚC (T2), không phải tháng sau (T3).
+
+### bd.pie_goc4
+Q: Biểu đồ hình quạt tròn thể hiện xếp loại học lực của một lớp. Các hình quạt "Giỏi", "Khá", "Đạt" có góc ở tâm lần lượt là 54°, 144°, 90°. Hình quạt "Chưa đạt" chiếm bao nhiêu phần trăm?
+  ✔ 20%
+  ✘ 24% | 0,2% | 80%
+  why: {"24%":"chia cho 3 thay vì 3,6","0,2%":"chia cho 360 mà quên nhân 100","80%":"đó là tổng phần trăm ba hình quạt đã biết"}
+  GIẢI:
+    Bước 1. Cả hình tròn là 360°, tương ứng 100%, nên 1% ứng với 3,6°.
+    Bước 2. Tổng ba góc đã biết = 54° + 144° + 90° = 288°.
+    Bước 3. Góc của hình quạt "Chưa đạt" = 360° - 288° = 72°.
+    Bước 4. Tỉ lệ phần trăm = 72 : 3,6 = 20%.
+    ✅ Kết luận: hình quạt "Chưa đạt" chiếm 20%.
+    ⚠️ Dễ nhầm: Đừng nhầm số đo góc (độ) với phần trăm: 1% ứng với 3,6°, không phải 1°.
+
+### bd.pie_goc4
+Q: Biểu đồ hình quạt tròn thể hiện xếp loại học lực của một lớp. Các hình quạt "Giỏi", "Khá", "Đạt" có góc ở tâm lần lượt là 108°, 90°, 126°. Hình quạt "Chưa đạt" chiếm bao nhiêu phần trăm?
+  ✔ 10%
+  ✘ 36% | 90% | 0,1%
+  why: {"36%":"đó là số đo góc ở tâm (độ), chưa đổi ra phần trăm","90%":"đó là tổng phần trăm ba hình quạt đã biết","0,1%":"chia cho 360 mà quên nhân 100"}
+  GIẢI:
+    Bước 1. Cả hình tròn là 360°, tương ứng 100%, nên 1% ứng với 3,6°.
+    Bước 2. Tổng ba góc đã biết = 108° + 90° + 126° = 324°.
+    Bước 3. Góc của hình quạt "Chưa đạt" = 360° - 324° = 36°.
+    Bước 4. Tỉ lệ phần trăm = 36 : 3,6 = 10%.
+    ✅ Kết luận: hình quạt "Chưa đạt" chiếm 10%.
+    ⚠️ Dễ nhầm: Đừng nhầm số đo góc (độ) với phần trăm: 1% ứng với 3,6°, không phải 1°.
+
+### bd.tbc_tanso
+Q: Kết quả bài kiểm tra của một lớp: điểm 5 có 8 bạn; điểm 6 có 2 bạn; điểm 7 có 8 bạn; điểm 8 có 7 bạn; điểm 9 có 3 bạn. Điểm trung bình của lớp (làm tròn đến hàng phần mười) là:
+  ✔ 6,8
+  ✘ 191 | 5 | 7
+  why: {"5":"đó là mốt (giá trị có tần số lớn nhất), không phải trung bình","7":"lấy trung bình cộng các giá trị điểm, quên nhân với tần số","191":"đó là tổng điểm, chưa chia cho số bạn"}
+  GIẢI:
+    Bước 1. Số bạn của cả lớp: 8 + 2 + 8 + 7 + 3 = 28.
+    Bước 2. Tổng điểm = 5×8 + 6×2 + 7×8 + 8×7 + 9×3 = 191.
+    Bước 3. Điểm trung bình = 191 : 28 ≈ 6,8214 ≈ 6,8 (làm tròn đến hàng phần mười).
+    ✅ Kết luận: điểm trung bình ≈ 6,8.
+    ⚠️ Dễ nhầm: Phải nhân từng giá trị với TẦN SỐ của nó rồi mới chia cho tổng số bạn (28), không chia cho số giá trị (5).
+
+### bd.tbc_tanso
+Q: Kết quả bài kiểm tra của một lớp: điểm 5 có 6 bạn; điểm 6 có 7 bạn; điểm 7 có 10 bạn; điểm 8 có 3 bạn; điểm 9 có 9 bạn. Điểm trung bình của lớp (làm tròn đến hàng phần mười) là:
+  ✔ 7,1
+  ✘ 7 | 247 | 10,1
+  why: {"7":"lấy trung bình cộng các giá trị điểm, quên nhân với tần số","247":"đó là tổng điểm, chưa chia cho số bạn"}
+  GIẢI:
+    Bước 1. Số bạn của cả lớp: 6 + 7 + 10 + 3 + 9 = 35.
+    Bước 2. Tổng điểm = 5×6 + 6×7 + 7×10 + 8×3 + 9×9 = 247.
+    Bước 3. Điểm trung bình = 247 : 35 ≈ 7,0571 ≈ 7,1 (làm tròn đến hàng phần mười).
+    ✅ Kết luận: điểm trung bình ≈ 7,1.
+    ⚠️ Dễ nhầm: Phải nhân từng giá trị với TẦN SỐ của nó rồi mới chia cho tổng số bạn (35), không chia cho số giá trị (5).
+
+### cir.nuahinhtron
+Q: Một nửa hình tròn bán kính 11 cm (hình giới hạn bởi cung nửa đường tròn và đường kính). Lấy π = 3,14. Chu vi nửa hình tròn là (cm):
+  ✔ 56,54
+  ✘ 34,54 | 91,08 | 45,54
+  why: {"34,54":"chỉ tính cung tròn, quên đường kính","91,08":"tính cả đường tròn (chu vi hình tròn) cộng đường kính","45,54":"cộng bán kính thay vì đường kính"}
+  GIẢI:
+    Bước 1. Chu vi nửa hình tròn gồm cung nửa đường tròn và đường kính.
+    Bước 2. Cung nửa đường tròn = 3,14 × 11 = 34,54 (cm) (nửa của 2 × 3,14 × 11).
+    Bước 3. Đường kính = 2 × 11 = 22 (cm). Chu vi = 34,54 + 22 = 56,54 (cm).
+    ✅ Kết luận: 56,54 cm.
+    ⚠️ Dễ nhầm: Chu vi nửa hình tròn phải cộng cả đường kính (đoạn thẳng bao quanh phần dưới).
+
+### cir.nuahinhtron
+Q: Một nửa hình tròn bán kính 9 cm (hình giới hạn bởi cung nửa đường tròn và đường kính). Lấy π = 3,14. Chu vi nửa hình tròn là (cm):
+  ✔ 46,26
+  ✘ 28,26 | 37,26 | 74,52
+  why: {"28,26":"chỉ tính cung tròn, quên đường kính","37,26":"cộng bán kính thay vì đường kính","74,52":"tính cả đường tròn (chu vi hình tròn) cộng đường kính"}
+  GIẢI:
+    Bước 1. Chu vi nửa hình tròn gồm cung nửa đường tròn và đường kính.
+    Bước 2. Cung nửa đường tròn = 3,14 × 9 = 28,26 (cm) (nửa của 2 × 3,14 × 9).
+    Bước 3. Đường kính = 2 × 9 = 18 (cm). Chu vi = 28,26 + 18 = 46,26 (cm).
+    ✅ Kết luận: 46,26 cm.
+    ⚠️ Dễ nhầm: Chu vi nửa hình tròn phải cộng cả đường kính (đoạn thẳng bao quanh phần dưới).
+
+### cir.vanhkhuyen
+Q: Một hình vành khuyên có bán kính ngoài 6 cm và bán kính trong 3 cm. Lấy π = 3,14. Diện tích hình vành khuyên là (cm²):
+  ✔ 84,78
+  ✘ 254,34 | 28,26 | 113,04
+  why: {"254,34":"bình phương tổng hai bán kính","28,26":"bình phương hiệu hai bán kính thay vì hiệu hai bình phương","113,04":"đó là diện tích hình tròn lớn"}
+  GIẢI:
+    Bước 1. Diện tích hình vành khuyên = diện tích hình tròn lớn - diện tích hình tròn nhỏ.
+    Bước 2. S = 3,14 × 6² - 3,14 × 3² = 3,14 × (36 - 9).
+    Bước 3. = 3,14 × 27 = 84,78 (cm²).
+    ✅ Kết luận: 84,78 cm².
+    ⚠️ Dễ nhầm: R² - r² khác (R - r)²: phải bình phương từng bán kính trước khi trừ.
+
+### cir.vanhkhuyen
+Q: Một hình vành khuyên có bán kính ngoài 6 cm và bán kính trong 4 cm. Lấy π = 3,14. Diện tích hình vành khuyên là (cm²):
+  ✔ 62,8
+  ✘ 113,04 | 314 | 12,56
+  why: {"314":"bình phương tổng hai bán kính","113,04":"đó là diện tích hình tròn lớn","12,56":"bình phương hiệu hai bán kính thay vì hiệu hai bình phương"}
+  GIẢI:
+    Bước 1. Diện tích hình vành khuyên = diện tích hình tròn lớn - diện tích hình tròn nhỏ.
+    Bước 2. S = 3,14 × 6² - 3,14 × 4² = 3,14 × (36 - 16).
+    Bước 3. = 3,14 × 20 = 62,8 (cm²).
+    ✅ Kết luận: 62,8 cm².
+    ⚠️ Dễ nhầm: R² - r² khác (R - r)²: phải bình phương từng bán kính trước khi trừ.
+
+### dec.dichdauphay
+Q: Khi dịch dấu phẩy của một số thập phân sang trái một chữ số thì ta được số mới kém số cũ 2,88 đơn vị. Số cũ là:
+  ✔ 3,2
+  ✘ 32 | 2,88 | 0,32
+  why: {"32":"dịch dấu phẩy nhầm sang phải","2,88":"nhầm hiệu là số cũ","0,32":"chia cho 9 thay vì 0,9 (kết quả cũng chính là số mới)"}
+  GIẢI:
+    Bước 1. Dịch dấu phẩy sang trái 1 chữ số tức là chia số đó cho 10. Gọi số cũ là a thì số mới là a : 10 = 0,1 × a.
+    Bước 2. Số mới kém số cũ 2,88: a - 0,1 × a = 2,88, tức 0,9 × a = 2,88.
+    Bước 3. a = 2,88 : 0,9 = 3,2.
+    Bước 4. Thử lại: 3,2 - 0,32 = 2,88.
+    ✅ Kết luận: số cũ là 3,2.
+    ⚠️ Dễ nhầm: a - 0,1a = 0,9a: chia cho 0,9 chứ không chia cho 9.
+
+### dec.dichdauphay
+Q: Khi dịch dấu phẩy của một số thập phân sang phải một chữ số thì ta được số mới lớn hơn số cũ 56,7 đơn vị. Số cũ là:
+  ✔ 6,3
+  ✘ 0,63 | 5,67 | 63
+  why: {"63":"đó là số mới (sau khi dịch dấu phẩy)","0,63":"dịch dấu phẩy nhầm sang trái","5,67":"chia cho 10 thay vì 9"}
+  GIẢI:
+    Bước 1. Dịch dấu phẩy sang phải 1 chữ số tức là nhân số đó với 10. Gọi số cũ là a thì số mới là 10 × a.
+    Bước 2. Số mới hơn số cũ 56,7: 10 × a - a = 56,7, tức 9 × a = 56,7.
+    Bước 3. a = 56,7 : 9 = 6,3.
+    Bước 4. Thử lại: 63 - 6,3 = 56,7.
+    ✅ Kết luận: số cũ là 6,3.
+    ⚠️ Dễ nhầm: Hiệu của 10a và a là 9a (không phải 10a hay 11a).
+
+### dec.nhomnhan
+Q: Tính nhanh: 5,9 × 0,3 + 5,9 × 0,7
+  ✔ 5,9
+  ✘ 59 | 6,9 | 0,59
+  why: {"59":"dịch dấu phẩy thừa một chữ số","6,9":"cộng thay vì nhân","0,59":"dịch dấu phẩy thiếu một chữ số"}
+  GIẢI:
+    Bước 1. Hai tích có thừa số chung 5,9: a × b + a × c = a × (b + c).
+    Bước 2. b + c = 0,3 + 0,7 = 1.
+    Bước 3. Kết quả = 5,9 × 1 = 5,9.
+    ✅ Kết luận: 5,9.
+    ⚠️ Dễ nhầm: Nhân với 1 thì giữ nguyên số; đừng nhân từng tích rồi cộng.
+
+### dec.nhomnhan
+Q: Tính nhanh: 2,6 × 0,5 + 2,6 × 0,5
+  ✔ 2,6
+  ✘ 26 | 3,6 | 0,26
+  why: {"26":"dịch dấu phẩy thừa một chữ số","3,6":"cộng thay vì nhân","0,26":"dịch dấu phẩy thiếu một chữ số"}
+  GIẢI:
+    Bước 1. Hai tích có thừa số chung 2,6: a × b + a × c = a × (b + c).
+    Bước 2. b + c = 0,5 + 0,5 = 1.
+    Bước 3. Kết quả = 2,6 × 1 = 2,6.
+    ✅ Kết luận: 2,6.
+    ⚠️ Dễ nhầm: Nhân với 1 thì giữ nguyên số; đừng nhân từng tích rồi cộng.
+
+### dec.timx_thapphan
+Q: Tìm x, biết: x × 0,4 + x × 0,6 = 7,3
+  ✔ 7,3
+  ✘ 18,25 | 6,3 | 12,1667
+  why: {"18,25":"chỉ chia cho hệ số thứ nhất","6,3":"trừ thay vì chia","12,1667":"chỉ chia cho hệ số thứ hai"}
+  GIẢI:
+    Bước 1. Đặt x làm thừa số chung: x × 0,4 + x × 0,6 = x × (0,4 + 0,6).
+    Bước 2. 0,4 + 0,6 = 1, nên x × 1 = 7,3.
+    Bước 3. x = 7,3 : 1 = 7,3.
+    ✅ Kết luận: x = 7,3.
+    ⚠️ Dễ nhầm: Phải nhóm hệ số trước, không chia 7,3 cho từng hệ số riêng lẻ.
+
+### dec.timx_thapphan
+Q: Tìm x, biết: x × 0,7 + x × 0,3 = 2,9
+  ✔ 2,9
+  ✘ 1,9 | 9,6667 | 4,1429
+  why: {"1,9":"trừ thay vì chia","9,6667":"chỉ chia cho hệ số thứ hai","4,1429":"chỉ chia cho hệ số thứ nhất"}
+  GIẢI:
+    Bước 1. Đặt x làm thừa số chung: x × 0,7 + x × 0,3 = x × (0,7 + 0,3).
+    Bước 2. 0,7 + 0,3 = 1, nên x × 1 = 2,9.
+    Bước 3. x = 2,9 : 1 = 2,9.
+    ✅ Kết luận: x = 2,9.
+    ⚠️ Dễ nhầm: Phải nhóm hệ số trước, không chia 2,9 cho từng hệ số riêng lẻ.
+
+### dec.tong_dichphay
+Q: Tổng của hai số thập phân là 10,45. Nếu dịch dấu phẩy của số lớn sang trái một chữ số thì ta được số bé. Số lớn là:
+  ✔ 9,5
+  ✘ 5,225 | 1,045 | 0,95
+  why: {"5,225":"chia đôi tổng: hai số không bằng nhau","1,045":"lấy tổng chia 10","0,95":"đó là số bé"}
+  GIẢI:
+    Bước 1. Dịch dấu phẩy của số lớn sang trái 1 chữ số thì được số bé, nên số lớn = 10 × số bé.
+    Bước 2. Tổng = số bé + 10 × số bé = 11 × số bé = 10,45.
+    Bước 3. Số bé = 10,45 : 11 = 0,95.
+    Bước 4. Số lớn = 10 × 0,95 = 9,5.
+    ✅ Kết luận: số lớn là 9,5.
+    ⚠️ Dễ nhầm: Chia đôi tổng chỉ đúng khi hai số bằng nhau; ở đây số lớn gấp 10 lần số bé.
+
+### dec.tong_dichphay
+Q: Tổng của hai số thập phân là 1,32. Nếu dịch dấu phẩy của số lớn sang trái một chữ số thì ta được số bé. Số lớn là:
+  ✔ 1,2
+  ✘ 0,66 | 12 | 0,12
+  why: {"12":"dịch dấu phẩy sai: gấp 10 lần số lớn","0,66":"chia đôi tổng: hai số không bằng nhau","0,12":"đó là số bé"}
+  GIẢI:
+    Bước 1. Dịch dấu phẩy của số lớn sang trái 1 chữ số thì được số bé, nên số lớn = 10 × số bé.
+    Bước 2. Tổng = số bé + 10 × số bé = 11 × số bé = 1,32.
+    Bước 3. Số bé = 1,32 : 11 = 0,12.
+    Bước 4. Số lớn = 10 × 0,12 = 1,2.
+    ✅ Kết luận: số lớn là 1,2.
+    ⚠️ Dễ nhầm: Chia đôi tổng chỉ đúng khi hai số bằng nhau; ở đây số lớn gấp 10 lần số bé.
+
+### div.cm_ab
+Q: Với a, b là các chữ số khác 0, số abab luôn chia hết cho số nào sau đây?
+  ✔ 101
+  ✘ 13 | 9 | 7
+  why: {"7":"ví dụ a = 1, b = 1 cho 1111, không chia hết cho 7","9":"ví dụ a = 1, b = 1 cho 1111, không chia hết cho 9","13":"ví dụ a = 1, b = 1 cho 1111, không chia hết cho 13"}
+  GIẢI:
+    Bước 1. abab = a × 1010 + b × 101 = 101 × (10a + b).
+    Bước 2. Hay abab = 101 × ab.
+    Bước 3. Vậy abab luôn chia hết cho 101.
+    ✅ Kết luận: abab luôn chia hết cho 101.
+    ⚠️ Dễ nhầm: Một số khác trong các đáp án chỉ chia hết trong vài trường hợp cụ thể (thử với các chữ số khác nhau), không đúng với mọi chữ số.
+
+### div.cm_ab
+Q: Với a, b, c là các chữ số khác 0, số abc - cba (với a > c) luôn chia hết cho số nào sau đây?
+  ✔ 99
+  ✘ 101 | 90 | 98
+  why: {"90":"ví dụ a = 2, b = 1, c = 1 cho 99, không chia hết cho 90","98":"ví dụ a = 2, b = 1, c = 1 cho 99, không chia hết cho 98","101":"ví dụ a = 2, b = 1, c = 1 cho 99, không chia hết cho 101"}
+  GIẢI:
+    Bước 1. abc = 100a + 10b + c và cba = 100c + 10b + a.
+    Bước 2. Hiệu = (100a + 10b + c) - (100c + 10b + a) = 99a - 99c = 99 × (a - c).
+    Bước 3. Hiệu có thừa số 99 với mọi a > c.
+    ✅ Kết luận: abc - cba (với a > c) luôn chia hết cho 99.
+    ⚠️ Dễ nhầm: Một số khác trong các đáp án chỉ chia hết trong vài trường hợp cụ thể (thử với các chữ số khác nhau), không đúng với mọi chữ số.
+
+### div.lientiep
+Q: Tích của 2 số tự nhiên liên tiếp luôn chia hết cho số nào sau đây?
+  ✔ 2
+  ✘ 4 | 6 | 3
+  why: {"3":"ví dụ 1 × 2 = 2 không chia hết cho 3","4":"ví dụ 1 × 2 = 2 không chia hết cho 4","6":"ví dụ 1 × 2 = 2 không chia hết cho 6"}
+  GIẢI:
+    Bước 1. Thử với 2 số nhỏ nhất: 1 × 2 = 2. Vậy số cần tìm phải là ước của 2.
+    Bước 2. Trong 2 số liên tiếp luôn có một số chẵn nên tích chia hết cho 2.
+    Bước 3. Các thừa số đó đôi một nguyên tố cùng nhau nên tích chia hết cho 2.
+    ✅ Kết luận: tích 2 số tự nhiên liên tiếp luôn chia hết cho 2.
+    ⚠️ Dễ nhầm: Một số không là ước của 2 thì không thể luôn là ước của tích (thử với 1 × 2).
+
+### div.lientiep
+Q: Tích của 4 số tự nhiên liên tiếp luôn chia hết cho số nào sau đây?
+  ✔ 24
+  ✘ 36 | 72 | 32
+  why: {"32":"ví dụ 1 × 2 × 3 × 4 = 24 không chia hết cho 32","36":"ví dụ 1 × 2 × 3 × 4 = 24 không chia hết cho 36","72":"ví dụ 1 × 2 × 3 × 4 = 24 không chia hết cho 72"}
+  GIẢI:
+    Bước 1. Thử với 4 số nhỏ nhất: 1 × 2 × 3 × 4 = 24. Vậy số cần tìm phải là ước của 24.
+    Bước 2. Trong 4 số liên tiếp có hai số chẵn liên tiếp: một số chia hết cho 4, số kia chia hết cho 2, nên tích chia hết cho 8. Lại có một số chia hết cho 3. Vì ƯCLN(8; 3) = 1 nên tích chia hết cho 8 × 3 = 24.
+    Bước 3. Các thừa số đó đôi một nguyên tố cùng nhau nên tích chia hết cho 24.
+    ✅ Kết luận: tích 4 số tự nhiên liên tiếp luôn chia hết cho 24.
+    ⚠️ Dễ nhầm: Một số không là ước của 24 thì không thể luôn là ước của tích (thử với 1 × 2 × 3 × 4).
+
+### div.nt_p
+Q: Tìm số nguyên tố p sao cho p + 2 và p + 4 cũng là số nguyên tố.
+  ✔ 3
+  ✘ 7 | 17 | 13
+  why: {"7":"7 + 2 = 9 không phải là số nguyên tố","13":"13 + 2 = 15 không phải là số nguyên tố","17":"17 + 4 = 21 không phải là số nguyên tố"}
+  GIẢI:
+    Bước 1. Xét số dư của p, p + 2, p + 4 khi chia cho 3. Vì 2 không chia hết cho 3 nên ba số này có ba số dư khác nhau 0; 1; 2 (theo một thứ tự nào đó).
+    Bước 2. Do đó trong ba số có đúng một số chia hết cho 3. Số nguyên tố chia hết cho 3 chỉ có thể là 3.
+    Bước 3. Hai số p + 2 và p + 4 đều lớn hơn 3, nên số chia hết cho 3 chính là p, tức p = 3.
+    Bước 4. Thử lại: 3; 5; 7 đều là số nguyên tố.
+    ✅ Kết luận: p = 3.
+    ⚠️ Dễ nhầm: Đừng chỉ thử vài giá trị nhỏ: phải chứng tỏ đó là giá trị duy nhất.
+
+### div.nt_p
+Q: Tìm số nguyên tố p sao cho p + 4 và p + 8 cũng là số nguyên tố.
+  ✔ 3
+  ✘ 7 | 17 | 13
+  why: {"7":"7 + 8 = 15 không phải là số nguyên tố","13":"13 + 8 = 21 không phải là số nguyên tố","17":"17 + 4 = 21 không phải là số nguyên tố"}
+  GIẢI:
+    Bước 1. Xét số dư của p, p + 4, p + 8 khi chia cho 3. Vì 4 không chia hết cho 3 nên ba số này có ba số dư khác nhau 0; 1; 2 (theo một thứ tự nào đó).
+    Bước 2. Do đó trong ba số có đúng một số chia hết cho 3. Số nguyên tố chia hết cho 3 chỉ có thể là 3.
+    Bước 3. Hai số p + 4 và p + 8 đều lớn hơn 3, nên số chia hết cho 3 chính là p, tức p = 3.
+    Bước 4. Thử lại: 3; 7; 11 đều là số nguyên tố.
+    ✅ Kết luận: p = 3.
+    ⚠️ Dễ nhầm: Đừng chỉ thử vài giá trị nhỏ: phải chứng tỏ đó là giá trị duy nhất.
+
+### div.soduA
+Q: Số a chia cho 5 dư 4, số b chia cho 5 dư 3. Khi chia a × b cho 5 thì dư bao nhiêu?
+  ✔ 2
+  ✘ 12 | 1 | 0
+  why: {"1":"lấy hiệu hai số dư","12":"chưa lấy số dư của kết quả cho 5"}
+  GIẢI:
+    Bước 1. Viết a = 5k + 4 và b = 5l + 3 (k, l là số tự nhiên).
+    Bước 2. a × b = 5(…) + 4 × 3 = 5(…) + 12 (các tích có chứa 5 đều chia hết cho 5).
+    Bước 3. 12 chia 5 dư 2 (12 = 5 × 2 + 2).
+    ✅ Kết luận: số dư là 2.
+    ⚠️ Dễ nhầm: Sau khi tính tích các số dư, phải chia tiếp cho 5 lấy số dư.
+
+### div.soduA
+Q: Số a chia cho 5 dư 2, số b chia cho 5 dư 4. Khi chia a + b cho 5 thì dư bao nhiêu?
+  ✔ 1
+  ✘ 6 | 2 | 3
+  why: {"2":"lấy hiệu hai số dư","3":"nhân thay vì cộng","6":"chưa lấy số dư của kết quả cho 5"}
+  GIẢI:
+    Bước 1. Viết a = 5k + 2 và b = 5l + 4 (k, l là số tự nhiên).
+    Bước 2. a + b = 5(k + l) + (2 + 4) = 5(k + l) + 6.
+    Bước 3. 6 chia 5 dư 1 (6 = 5 × 1 + 1).
+    ✅ Kết luận: số dư là 1.
+    ⚠️ Dễ nhầm: Sau khi tính tổng các số dư, phải chia tiếp cho 5 lấy số dư.
+
+### div.uocA
+Q: Cho A = 17 × 8 × 11 + 17 × 12 × 6. Số nào sau đây chắc chắn là ước của A?
+  ✔ 17
+  ✘ 3 | 11 | 31
+  why: {"3":"A chia cho 3 dư 2","11":"A chia cho 11 dư 3","31":"A chia cho 31 dư 23"}
+  GIẢI:
+    Bước 1. A = 17 × 8 × 11 + 17 × 12 × 6: hai số hạng đều có thừa số 17.
+    Bước 2. Đặt 17 làm thừa số chung: A = 17 × (8 × 11 + 12 × 6) = 17 × 160.
+    Bước 3. Vậy A chia hết cho 17; vì 160 > 1 nên A còn có ước khác 1 và A, tức là hợp số.
+    ✅ Kết luận: 17 là ước của A (A = 2720).
+    ⚠️ Dễ nhầm: Chỉ cần đặt thừa số chung, không cần tính A trước.
+
+### div.uocA
+Q: Cho A = 11 × 11 × 6 + 11 × 6 × 4. Số nào sau đây chắc chắn là ước của A?
+  ✔ 11
+  ✘ 17 | 31 | 23
+  why: {"17":"A chia cho 17 dư 4","23":"A chia cho 23 dư 1","31":"A chia cho 31 dư 29"}
+  GIẢI:
+    Bước 1. A = 11 × 11 × 6 + 11 × 6 × 4: hai số hạng đều có thừa số 11.
+    Bước 2. Đặt 11 làm thừa số chung: A = 11 × (11 × 6 + 6 × 4) = 11 × 90.
+    Bước 3. Vậy A chia hết cho 11; vì 90 > 1 nên A còn có ước khác 1 và A, tức là hợp số.
+    ✅ Kết luận: 11 là ước của A (A = 990).
+    ⚠️ Dễ nhầm: Chỉ cần đặt thừa số chung, không cần tính A trước.
+
+### dt.chia_het_tim_a
+Q: Tìm số nguyên a để đa thức P(x) = x^3 + ax^2 - 6x + 27 chia hết cho x - 3.
+  ✔ -4
+  ✘ -2 | 4 | -12
+  why: {"4":"quên đổi dấu khi chuyển vế","−2":"dùng nghiệm x = −3 (nhầm dấu của x − 3)","−12":"chia cho 3 thay vì 9"}
+  GIẢI:
+    Bước 1. P(x) chia hết cho (x - 3) khi và chỉ khi x = 3 là nghiệm của P(x), tức P(3) = 0.
+    Bước 2. P(3) = 3³ + a·3² - 6·3 + 27 = 27 + 9a - 18 + 27 = 0.
+    Bước 3. 9a = -36, nên a = -36 : 9 = -4.
+    ✅ Kết luận: a = -4.
+    ⚠️ Dễ nhầm: Chuyển vế phải đổi dấu: 9a = -(36).
+
+### dt.chia_het_tim_a
+Q: Tìm số nguyên a để đa thức P(x) = x^3 + ax^2 + 5x - 26 chia hết cho x - 2.
+  ✔ 2
+  ✘ -2 | 11 | 4
+  why: {"4":"chia cho 2 thay vì 4","11":"dùng nghiệm x = −2 (nhầm dấu của x − 2)","−2":"quên đổi dấu khi chuyển vế"}
+  GIẢI:
+    Bước 1. P(x) chia hết cho (x - 2) khi và chỉ khi x = 2 là nghiệm của P(x), tức P(2) = 0.
+    Bước 2. P(2) = 2³ + a·2² + 5·2 - 26 = 8 + 4a + 10 - 26 = 0.
+    Bước 3. 4a = 8, nên a = 8 : 4 = 2.
+    ✅ Kết luận: a = 2.
+    ⚠️ Dễ nhầm: Chuyển vế phải đổi dấu: 4a = -(-8).
+
+### dt.he_so_tich
+Q: Hệ số của x^1 trong tích (-3x + 2)(-4x^2 + 2x + 5) là:
+  ✔ -11
+  ✘ -14 | 19 | 10
+  why: {"10":"lấy nhầm hệ số của x^0","19":"cộng giá trị tuyệt đối, bỏ qua dấu","−14":"lấy nhầm hệ số của x^2"}
+  GIẢI:
+    Bước 1. Nhân từng hạng tử của đa thức thứ nhất với từng hạng tử của đa thức thứ hai.
+    Bước 2. Các tích cho hạng tử chứa x^1: (-3x) · (5) = -15x và (2) · (2x) = 4x.
+    Bước 3. Cộng các hệ số: -15 + (4) = -11.
+    ✅ Kết luận: hệ số của x^1 là -11.
+    ⚠️ Dễ nhầm: Phải cộng ĐỦ các tích cùng bậc, kể cả dấu âm.
+
+### dt.he_so_tich
+Q: Hệ số của x^2 trong tích (-2x - 3)(3x^2 + 3x + 1) là:
+  ✔ -15
+  ✘ -11 | 15 | -9
+  why: {"15":"cộng giá trị tuyệt đối, bỏ qua dấu","−11":"lấy nhầm hệ số của x^1","−9":"chỉ lấy một trong hai tích cho x^2"}
+  GIẢI:
+    Bước 1. Nhân từng hạng tử của đa thức thứ nhất với từng hạng tử của đa thức thứ hai.
+    Bước 2. Các tích cho hạng tử chứa x^2: (-2x) · (3x) = -6x² và (-3) · (3x²) = -9x².
+    Bước 3. Cộng các hệ số: -6 + (-9) = -15.
+    ✅ Kết luận: hệ số của x^2 là -15.
+    ⚠️ Dễ nhầm: Phải cộng ĐỦ các tích cùng bậc, kể cả dấu âm.
+
+### dt.so_nghiem
+Q: Đa thức P(x) = (x^2 - 4)(x^2 - 16) có bao nhiêu nghiệm thực?
+  ✔ 4
+  ✘ 2 | 3 | 1
+  why: {"1":"cho mỗi nhân tử một nghiệm","2":"chỉ lấy hai nghiệm dương","3":"đếm thiếu một nghiệm"}
+  GIẢI:
+    Bước 1. x² - 4 = 0 cho x = ±2: hai nghiệm.
+    Bước 2. x² - 16 = 0 cho x = ±4: hai nghiệm.
+    Bước 3. 2 ≠ 4 nên bốn nghiệm 2; -2; 4; -4 khác nhau.
+    ✅ Kết luận: có đúng 4 nghiệm.
+    ⚠️ Dễ nhầm: Mỗi nhân tử x² - k² cho hai nghiệm đối nhau.
+
+### dt.so_nghiem
+Q: Đa thức P(x) = (x^2 - 25)(x^2 + 6) có bao nhiêu nghiệm thực?
+  ✔ 2
+  ✘ 4 | 3 | 1
+  why: {"1":"quên nghiệm âm: x² = 25 cho x = ±5","3":"đếm thừa một nghiệm","4":"tính cả hai nghiệm của x² + 6 = 0"}
+  GIẢI:
+    Bước 1. x² - 25 = 0 ⟺ x² = 25 ⟺ x = 5 hoặc x = -5: hai nghiệm.
+    Bước 2. x² + 6 = 0 ⟺ x² = -6: vô nghiệm.
+    Bước 3. Vậy đa thức có đúng 2 nghiệm thực.
+    ✅ Kết luận: có đúng 2 nghiệm.
+    ⚠️ Dễ nhầm: x² = 25 luôn cho hai nghiệm đối nhau.
+
+### dt.xac_dinh_ab
+Q: Cho đa thức P(x) = x^2 + ax + b. Biết P(1) = -4 và P(2) = -3. Giá trị của a và b là:
+  ✔ a = -2, b = -3
+  ✘ a = -2, b = 3 | a = 2, b = -3 | a = -3, b = -2
+  why: {"a = −2, b = 3":"sai dấu của b","a = 2, b = −3":"sai dấu của a","a = −3, b = −2":"đảo vai trò của a và b"}
+  GIẢI:
+    Bước 1. P(1) = 1 + a + b = -4 ⟹ a + b = -5.
+    Bước 2. P(2) = 4 + 2a + b = -3 ⟹ 2a + b = -7.
+    Bước 3. Trừ hai đẳng thức: (2a + b) - (a + b) = -7 - -5, tức a = -2.
+    Bước 4. b = -5 - (-2) = -3.
+    ✅ Kết luận: a = -2, b = -3.
+    ⚠️ Dễ nhầm: Thử lại: P(1) = 1 + -2 + -3 = -4; P(2) = 4 + -4 + -3 = -3.
+
+### dt.xac_dinh_ab
+Q: Cho đa thức P(x) = x^2 + ax + b. Biết P(1) = 12 và P(2) = 20. Giá trị của a và b là:
+  ✔ a = 5, b = 6
+  ✘ a = 6, b = 5 | a = -5, b = 6 | a = 5, b = -6
+  why: {"a = 6, b = 5":"đảo vai trò của a và b","a = −5, b = 6":"sai dấu của a","a = 5, b = −6":"sai dấu của b"}
+  GIẢI:
+    Bước 1. P(1) = 1 + a + b = 12 ⟹ a + b = 11.
+    Bước 2. P(2) = 4 + 2a + b = 20 ⟹ 2a + b = 16.
+    Bước 3. Trừ hai đẳng thức: (2a + b) - (a + b) = 16 - 11, tức a = 5.
+    Bước 4. b = 11 - (5) = 6.
+    ✅ Kết luận: a = 5, b = 6.
+    ⚠️ Dễ nhầm: Thử lại: P(1) = 1 + 5 + 6 = 12; P(2) = 4 + 10 + 6 = 20.
+
+### frac.honso
+Q: Tính: 1 1/5 + 3 1/3
+  ✔ 4 8/15
+  ✘ 4 | 4 2/15 | 4 2/8
+  why: {"4":"bỏ qua phần phân số","4 2/15":"trừ hai phần phân số thay vì cộng","4 2/8":"cộng tử với tử, mẫu với mẫu"}
+  GIẢI:
+    Bước 1. Quy đồng phần phân số về mẫu chung 15: 1/5 = 3/15; 1/3 = 5/15.
+    Bước 2. Cộng phần nguyên: 1 + 3 = 4. Cộng phần phân số: 3/15 + 5/15 = 8/15.
+    Bước 3. Phần phân số 8/15 < 1 nên giữ nguyên.
+    Bước 4. Kết quả: 4 8/15.
+    ✅ Kết luận: 4 8/15.
+    ⚠️ Dễ nhầm: Không cộng tử với tử, mẫu với mẫu (1/5 + 1/3 ≠ 2/8).
+
+### frac.honso
+Q: Tính: 4 1/5 + 4 1/6
+  ✔ 8 11/30
+  ✘ 8 2/11 | 8 1/30 | 9 11/30
+  why: {"8 2/11":"cộng tử với tử, mẫu với mẫu","8 1/30":"trừ hai phần phân số thay vì cộng","9 11/30":"cộng thừa 1 vào phần nguyên"}
+  GIẢI:
+    Bước 1. Quy đồng phần phân số về mẫu chung 30: 1/5 = 6/30; 1/6 = 5/30.
+    Bước 2. Cộng phần nguyên: 4 + 4 = 8. Cộng phần phân số: 6/30 + 5/30 = 11/30.
+    Bước 3. Phần phân số 11/30 < 1 nên giữ nguyên.
+    Bước 4. Kết quả: 8 11/30.
+    ✅ Kết luận: 8 11/30.
+    ⚠️ Dễ nhầm: Không cộng tử với tử, mẫu với mẫu (1/5 + 1/6 ≠ 2/11).
+
+### frac.loivan1
+Q: Trong một buổi học, số học sinh vắng mặt bằng 14 số học sinh có mặt. Nếu có thêm 1 bạn nghỉ học nữa thì số học sinh vắng mặt bằng 13 số học sinh có mặt. Lớp có bao nhiêu học sinh?
+  ✔ 20
+  ✘ 16 | 30 | 19
+  why: {"16":"đó là số học sinh có mặt lúc đầu","19":"trừ nhầm 1 bạn","30":"dịch lệch một nấc tỉ số"}
+  GIẢI:
+    Bước 1. Lúc đầu số vắng bằng 14 số có mặt, nên số vắng bằng 15 số học sinh cả lớp (vắng : cả lớp = 1 : 5).
+    Bước 2. Thêm 1 bạn nghỉ nữa: số vắng bằng 13 số có mặt, tức bằng 14 số học sinh cả lớp.
+    Bước 3. 1 học sinh ứng với 14 - 15 = 120 số học sinh cả lớp.
+    Bước 4. Số học sinh cả lớp = 1 : 120 = 20.
+    ✅ Kết luận: lớp có 20 học sinh.
+    ⚠️ Dễ nhầm: Phải đổi các tỉ số "so với số có mặt" về tỉ số "so với cả lớp" (vì số có mặt thay đổi khi có thêm bạn nghỉ).
+
+### frac.loivan1
+Q: Trong một buổi học, số học sinh vắng mặt bằng 110 số học sinh có mặt. Nếu có thêm 1 bạn nghỉ học nữa thì số học sinh vắng mặt bằng 19 số học sinh có mặt. Lớp có bao nhiêu học sinh?
+  ✔ 110
+  ✘ 132 | 100 | 109
+  why: {"100":"đó là số học sinh có mặt lúc đầu","109":"trừ nhầm 1 bạn","132":"dịch lệch một nấc tỉ số"}
+  GIẢI:
+    Bước 1. Lúc đầu số vắng bằng 110 số có mặt, nên số vắng bằng 111 số học sinh cả lớp (vắng : cả lớp = 1 : 11).
+    Bước 2. Thêm 1 bạn nghỉ nữa: số vắng bằng 19 số có mặt, tức bằng 110 số học sinh cả lớp.
+    Bước 3. 1 học sinh ứng với 110 - 111 = 1110 số học sinh cả lớp.
+    Bước 4. Số học sinh cả lớp = 1 : 1110 = 110.
+    ✅ Kết luận: lớp có 110 học sinh.
+    ⚠️ Dễ nhầm: Phải đổi các tỉ số "so với số có mặt" về tỉ số "so với cả lớp" (vì số có mặt thay đổi khi có thêm bạn nghỉ).
+
+### frac.loivan2
+Q: Bạn An đọc một cuốn sách trong 3 ngày. Ngày thứ nhất đọc 13 số trang và thêm 10 trang; ngày thứ hai đọc 12 số trang còn lại và thêm 9 trang; ngày thứ ba đọc nốt 36 trang. Cuốn sách có bao nhiêu trang?
+  ✔ 150
+  ✘ 96 | 123 | 135
+  why: {"96":"trừ 9 thay vì cộng khi lùi lại","123":"quên số trang \"thêm 9\" của ngày 2","135":"quên số trang \"thêm 10\" của ngày 1"}
+  GIẢI:
+    Bước 1. Ngày 3 đọc nốt 36 trang, nên sau ngày 2 còn lại 36 trang.
+    Bước 2. Ngày 2 đọc 12 số trang còn lại và thêm 9 trang: 36 + 9 = 45 trang là 12 số trang còn lại sau ngày 1. Số trang còn lại sau ngày 1 = 45 × 2 = 90.
+    Bước 3. Ngày 1 đọc 13 số trang và thêm 10 trang, nên 23 số trang của sách = 90 + 10 = 100.
+    Bước 4. Số trang cả cuốn = 100 : 23 = 150.
+    ✅ Kết luận: cuốn sách có 150 trang.
+    ⚠️ Dễ nhầm: Làm ngược từ cuối: nhớ cộng (không trừ) các số trang "thêm" khi lùi lại.
+
+### frac.loivan2
+Q: Bạn An đọc một cuốn sách trong 3 ngày. Ngày thứ nhất đọc 13 số trang và thêm 10 trang; ngày thứ hai đọc 12 số trang còn lại và thêm 6 trang; ngày thứ ba đọc nốt 63 trang. Cuốn sách có bao nhiêu trang?
+  ✔ 222
+  ✘ 207 | 204 | 186
+  why: {"186":"trừ 6 thay vì cộng khi lùi lại","204":"quên số trang \"thêm 6\" của ngày 2","207":"quên số trang \"thêm 10\" của ngày 1"}
+  GIẢI:
+    Bước 1. Ngày 3 đọc nốt 63 trang, nên sau ngày 2 còn lại 63 trang.
+    Bước 2. Ngày 2 đọc 12 số trang còn lại và thêm 6 trang: 63 + 6 = 69 trang là 12 số trang còn lại sau ngày 1. Số trang còn lại sau ngày 1 = 69 × 2 = 138.
+    Bước 3. Ngày 1 đọc 13 số trang và thêm 10 trang, nên 23 số trang của sách = 138 + 10 = 148.
+    Bước 4. Số trang cả cuốn = 148 : 23 = 222.
+    ✅ Kết luận: cuốn sách có 222 trang.
+    ⚠️ Dễ nhầm: Làm ngược từ cuối: nhớ cộng (không trừ) các số trang "thêm" khi lùi lại.
+
+### frac.sosanh_trunggian
+Q: So sánh A = 1989/1990 và B = 1990/1991.
+  ✔ A < B
+  ✘ A > B | A = B | Không so sánh được
+  why: {"A > B":"nhầm chiều: với phân số nhỏ hơn 1, thêm cùng một số vào tử và mẫu làm giá trị TĂNG","A = B":"nhân chéo: 1989×1991 = 3960099 khác 1990×1990 = 3960100, nên hai phân số không bằng nhau","Không so sánh được":"so sánh được bằng \"phần bù\" (hoặc \"phần thừa\") so với 1"}
+  GIẢI:
+    Bước 1. Cả hai phân số đều nhỏ hơn 1 (tử nhỏ hơn mẫu). Xét "phần bù" đến 1: 1 - 1989/1990 = 11990; 1 - 1990/1991 = 11991.
+    Bước 2. Hai phần bù có cùng tử 1; mẫu 1990 11990 > 11991.
+    Bước 3. Phần bù của 1989/1990 lớn hơn nên 1989/1990 < 1990/1991.
+    Bước 4. Đối chiếu với đề: A = 1989/1990, B = 1990/1991 nên A < B.
+    ✅ Kết luận: A < B.
+    ⚠️ Dễ nhầm: Thêm cùng một số vào cả tử và mẫu của phân số nhỏ hơn 1 làm phân số TĂNG (tiến gần về 1).
+
+### frac.sosanh_trunggian
+Q: So sánh A = 17/25 và B = 25/33.
+  ✔ A < B
+  ✘ A = B | A > B | Không so sánh được
+  why: {"A = B":"nhân chéo: 17×33 = 561 khác 25×25 = 625, nên hai phân số không bằng nhau","A > B":"nhầm chiều: với phân số nhỏ hơn 1, thêm cùng một số vào tử và mẫu làm giá trị TĂNG","Không so sánh được":"so sánh được bằng \"phần bù\" (hoặc \"phần thừa\") so với 1"}
+  GIẢI:
+    Bước 1. Cả hai phân số đều nhỏ hơn 1 (tử nhỏ hơn mẫu). Xét "phần bù" đến 1: 1 - 17/25 = 825; 1 - 25/33 = 833.
+    Bước 2. Hai phần bù có cùng tử 8; mẫu 25 825 > 833.
+    Bước 3. Phần bù của 17/25 lớn hơn nên 17/25 < 25/33.
+    Bước 4. Đối chiếu với đề: A = 17/25, B = 25/33 nên A < B.
+    ✅ Kết luận: A < B.
+    ⚠️ Dễ nhầm: Thêm cùng một số vào cả tử và mẫu của phân số nhỏ hơn 1 làm phân số TĂNG (tiến gần về 1).
+
+### frac.toigian
+Q: Với mọi số tự nhiên n, phân số 2n + 13n + 2 có tính chất nào sau đây?
+  ✔ Luôn là phân số tối giản
+  ✘ Luôn rút gọn được cho một số lớn hơn 1 | Chỉ tối giản khi n là số chẵn | Chỉ tối giản khi n là số lẻ
+  why: {"Luôn rút gọn được cho một số lớn hơn 1":"thử n = 0: 1/2 đã tối giản","Chỉ tối giản khi n là số chẵn":"thử n = 1 (lẻ): 3/5 vẫn tối giản","Chỉ tối giản khi n là số lẻ":"thử n = 0 (chẵn): 1/2 vẫn tối giản"}
+  GIẢI:
+    Bước 1. Gọi k là một ước chung của (2n + 1) và (3n + 2).
+    Bước 2. Khi đó k chia hết 3(2n + 1) = 6n + 3 và 2(3n + 2) = 6n + 4.
+    Bước 3. Hiệu hai số này là 4 - 3 = 1 cũng chia hết cho k, nên k = 1.
+    Bước 4. ƯCLN = 1 với mọi số tự nhiên n, nên phân số luôn tối giản.
+    ✅ Kết luận: phân số 2n + 1 trên 3n + 2 luôn tối giản.
+    ⚠️ Dễ nhầm: Thử vài giá trị n (ví dụ n = 0 cho 1/2, n = 1 cho 3/5) chỉ gợi ý, chưa chứng minh được "với mọi n".
+
+### frac.toigian
+Q: Với mọi số tự nhiên n, phân số 4n + 33n + 2 có tính chất nào sau đây?
+  ✔ Luôn là phân số tối giản
+  ✘ Chỉ tối giản khi n là số chẵn | Chỉ tối giản khi n là số lẻ | Luôn rút gọn được cho một số lớn hơn 1
+  why: {"Chỉ tối giản khi n là số chẵn":"thử n = 1 (lẻ): 7/5 vẫn tối giản","Chỉ tối giản khi n là số lẻ":"thử n = 0 (chẵn): 3/2 vẫn tối giản","Luôn rút gọn được cho một số lớn hơn 1":"thử n = 0: 3/2 đã tối giản"}
+  GIẢI:
+    Bước 1. Gọi k là một ước chung của (4n + 3) và (3n + 2).
+    Bước 2. Khi đó k chia hết 3(4n + 3) = 12n + 9 và 4(3n + 2) = 12n + 8.
+    Bước 3. Hiệu hai số này là 8 - 9 = -1 cũng chia hết cho k, nên k = 1.
+    Bước 4. ƯCLN = 1 với mọi số tự nhiên n, nên phân số luôn tối giản.
+    ✅ Kết luận: phân số 4n + 3 trên 3n + 2 luôn tối giản.
+    ⚠️ Dễ nhầm: Thử vài giá trị n (ví dụ n = 0 cho 3/2, n = 1 cho 7/5) chỉ gợi ý, chưa chứng minh được "với mọi n".
+
+### frac.tong_dayso
+Q: Tính: 11·2 + 12·3 + 13·4 + … + 15·6
+  ✔ 5/6
+  ✘ 1/6 | 6/7 | 4/5
+  why: {"1/6":"chỉ lấy phân số cuối","6/7":"quy đồng sai","4/5":"kết thúc ở <span class=\"fr\"><b>1</b><b>5</b></span> thay vì <span class=\"fr\"><b>1</b><b>6</b></span>"}
+  GIẢI:
+    Bước 1. Mỗi số hạng tách được: 1n·(n + 1) = 1n - 1n + 1. Ví dụ 11·2 = 11 - 12.
+    Bước 2. Cộng lại: S = (11 - 12) + (12 - 13) + … + (15 - 16).
+    Bước 3. Các phân số ở giữa triệt tiêu từng đôi, còn lại S = 11 - 16.
+    Bước 4. S = 5/6 (quy đồng: 66 - 16).
+    ✅ Kết luận: S = 5/6.
+    ⚠️ Dễ nhầm: Số hạng đầu là 1/1, số hạng cuối bị trừ là 1/6 (không phải 1/5).
+
+### frac.tong_dayso
+Q: Tính: 13·4 + 14·5 + 15·6 + … + 114·15
+  ✔ 4/15
+  ✘ 5/16 | 13/48 | 1/15
+  why: {"5/16":"quy đồng sai","13/48":"đếm thừa một số hạng","1/15":"chỉ lấy phân số cuối"}
+  GIẢI:
+    Bước 1. Mỗi số hạng tách được: 1n·(n + 1) = 1n - 1n + 1. Ví dụ 13·4 = 13 - 14.
+    Bước 2. Cộng lại: S = (13 - 14) + (14 - 15) + … + (114 - 115).
+    Bước 3. Các phân số ở giữa triệt tiêu từng đôi, còn lại S = 13 - 115.
+    Bước 4. S = 4/15 (quy đồng: 1545 - 345).
+    ✅ Kết luận: S = 4/15.
+    ⚠️ Dễ nhầm: Số hạng đầu là 1/3, số hạng cuối bị trừ là 1/15 (không phải 1/14).
+
+### frac.tong_dayso2
+Q: Tính: 41·5 + 45·9 + 49·13 + … + 437·41
+  ✔ 40/41
+  ✘ 36/37 | 1 | 10/41
+  why: {"1":"quên trừ phân số cuối <span class=\"fr\"><b>1</b><b>41</b></span>","36/37":"kết thúc ở <span class=\"fr\"><b>1</b><b>37</b></span> thay vì <span class=\"fr\"><b>1</b><b>41</b></span>","10/41":"quên nhân 4 (đã gộp nhầm tử số)"}
+  GIẢI:
+    Bước 1. Hai thừa số ở mẫu hơn kém 4, tử số cũng là 4, nên tách được: 4a·(a + 4) = 1a - 1a + 4.
+    Bước 2. Ví dụ 41·5 = 11 - 15.
+    Bước 3. Cộng lại các phân số ở giữa triệt tiêu, còn 11 - 141.
+    Bước 4. = 4141 - 141 = 40/41.
+    ✅ Kết luận: tổng = 40/41.
+    ⚠️ Dễ nhầm: Phải kiểm tra tử số bằng đúng hiệu hai thừa số ở mẫu (4); nếu không thì phải đưa thêm hệ số.
+
+### frac.tong_dayso2
+Q: Tính: 43·7 + 47·11 + 411·15 + … + 443·47
+  ✔ 44/141
+  ✘ 1/3 | 44/47 | 11/141
+  why: {"1/3":"quên trừ phân số cuối <span class=\"fr\"><b>1</b><b>47</b></span>","44/47":"bỏ thừa số 3 ở mẫu","11/141":"quên nhân 4 (đã gộp nhầm tử số)"}
+  GIẢI:
+    Bước 1. Hai thừa số ở mẫu hơn kém 4, tử số cũng là 4, nên tách được: 4a·(a + 4) = 1a - 1a + 4.
+    Bước 2. Ví dụ 43·7 = 13 - 17.
+    Bước 3. Cộng lại các phân số ở giữa triệt tiêu, còn 13 - 147.
+    Bước 4. = 47141 - 3141 = 44/141.
+    ✅ Kết luận: tổng = 44/141.
+    ⚠️ Dễ nhầm: Phải kiểm tra tử số bằng đúng hiệu hai thừa số ở mẫu (4); nếu không thì phải đưa thêm hệ số.
+
+### gcd.chiaqua
+Q: Có 72 cái bút và 32 quyển vở. Chia đều thành các phần quà giống nhau (không thừa) với số phần nhiều nhất. Mỗi phần quà có:
+  ✔ 9 bút, 4 vở
+  ✘ 72 bút, 32 vở | 8 bút, 8 vở | 18 bút, 8 vở
+  why: {"72 bút, 32 vở":"không chia: mỗi phần giữ nguyên cả số bút và số vở","8 bút, 8 vở":"nhầm số phần quà với số bút, vở trong mỗi phần","18 bút, 8 vở":"chỉ chia được 4 phần, chưa phải nhiều phần nhất"}
+  GIẢI:
+    Bước 1. Số phần quà phải là ước chung của 72 và 32 (chia hết cả hai loại).
+    Bước 2. Nhiều phần nhất nên số phần = ƯCLN(72; 32) = 8.
+    Bước 3. Mỗi phần có 72 : 8 = 9 bút và 32 : 8 = 4 vở.
+    ✅ Kết luận: mỗi phần có 9 bút, 4 vở (chia được 8 phần).
+    ⚠️ Dễ nhầm: 8 là số phần quà, không phải số bút hay số vở trong mỗi phần.
+
+### gcd.chiaqua
+Q: Có 56 cái bút và 40 quyển vở. Chia đều thành các phần quà giống nhau (không thừa) với số phần nhiều nhất. Mỗi phần quà có:
+  ✔ 7 bút, 5 vở
+  ✘ 8 bút, 8 vở | 56 bút, 40 vở | 5 bút, 7 vở
+  why: {"8 bút, 8 vở":"nhầm số phần quà với số bút, vở trong mỗi phần","56 bút, 40 vở":"không chia: mỗi phần giữ nguyên cả số bút và số vở","5 bút, 7 vở":"đảo số bút và số vở"}
+  GIẢI:
+    Bước 1. Số phần quà phải là ước chung của 56 và 40 (chia hết cả hai loại).
+    Bước 2. Nhiều phần nhất nên số phần = ƯCLN(56; 40) = 8.
+    Bước 3. Mỗi phần có 56 : 8 = 7 bút và 40 : 8 = 5 vở.
+    ✅ Kết luận: mỗi phần có 7 bút, 5 vở (chia được 8 phần).
+    ⚠️ Dễ nhầm: 8 là số phần quà, không phải số bút hay số vở trong mỗi phần.
+
+### gcd.dukhacnhau
+Q: Tìm số tự nhiên nhỏ nhất (khác 0) chia cho 5; 8; 9; 15 lần lượt dư 3; 6; 7; 13.
+  ✔ 358
+  ✘ 362 | 718 | 5398
+  why: {"362":"cộng 2 thay vì trừ","718":"lấy bội chung thứ hai, chưa phải số nhỏ nhất","5398":"dùng tích các số chia thay vì BCNN"}
+  GIẢI:
+    Bước 1. Số cần tìm n chia 5 dư 3; 8 dư 6; 9 dư 7; 15 dư 13: ở mỗi phép chia, số dư kém số chia đúng 2 đơn vị.
+    Bước 2. Mỗi phép chia có n = (số chia) × (thương) + (số chia) - 2, nên n + 2 = (số chia) × (thương + 1). Vậy n + 2 chia hết cho cả 5, 8, 9, 15.
+    Bước 3. n + 2 là bội chung của 5, 8, 9, 15; n nhỏ nhất thì n + 2 = BCNN(5; 8; 9; 15) = 360.
+    Bước 4. n = 360 - 2 = 358.
+    ✅ Kết luận: số cần tìm là 358.
+    ⚠️ Dễ nhầm: Phải trừ 2 ở bước cuối; nếu cộng 2 sẽ không ra số dư như đề.
+
+### gcd.dukhacnhau
+Q: Tìm số tự nhiên nhỏ nhất (khác 0) chia cho 4; 8; 9 lần lượt dư 1; 5; 6.
+  ✔ 69
+  ✘ 75 | 285 | 72
+  why: {"72":"quên trừ 3","75":"cộng 3 thay vì trừ","285":"dùng tích các số chia thay vì BCNN"}
+  GIẢI:
+    Bước 1. Số cần tìm n chia 4 dư 1; 8 dư 5; 9 dư 6: ở mỗi phép chia, số dư kém số chia đúng 3 đơn vị.
+    Bước 2. Mỗi phép chia có n = (số chia) × (thương) + (số chia) - 3, nên n + 3 = (số chia) × (thương + 1). Vậy n + 3 chia hết cho cả 4, 8, 9.
+    Bước 3. n + 3 là bội chung của 4, 8, 9; n nhỏ nhất thì n + 3 = BCNN(4; 8; 9) = 72.
+    Bước 4. n = 72 - 3 = 69.
+    ✅ Kết luận: số cần tìm là 69.
+    ⚠️ Dễ nhầm: Phải trừ 3 ở bước cuối; nếu cộng 3 sẽ không ra số dư như đề.
+
+### gcd.lichtruc3
+Q: An, Bình, Chi cứ 6, 9, 5 ngày trực nhật một lần. Hôm nay cả ba bạn cùng trực. Sau ít nhất bao nhiêu ngày thì cả ba lại cùng trực?
+  ✔ 90
+  ✘ 20 | 270 | 18
+  why: {"18":"mới có An và Bình cùng trực","20":"lấy tổng","270":"lấy tích thay vì BCNN"}
+  GIẢI:
+    Bước 1. Cả ba cùng trực lại sau số ngày là bội chung của 6, 9 và 5.
+    Bước 2. Cần ít nhất nên tìm BCNN(6; 9; 5).
+    Bước 3. BCNN(6; 9) = 18; BCNN(18; 5) = 90.
+    ✅ Kết luận: sau 90 ngày.
+    ⚠️ Dễ nhầm: BCNN(6; 9) = 18 mới là lần An và Bình cùng trực, chưa có Chi.
+
+### gcd.lichtruc3
+Q: An, Bình, Chi cứ 9, 4, 10 ngày trực nhật một lần. Hôm nay cả ba bạn cùng trực. Sau ít nhất bao nhiêu ngày thì cả ba lại cùng trực?
+  ✔ 180
+  ✘ 360 | 23 | 36
+  why: {"23":"lấy tổng","36":"mới có An và Bình cùng trực","360":"lấy tích thay vì BCNN"}
+  GIẢI:
+    Bước 1. Cả ba cùng trực lại sau số ngày là bội chung của 9, 4 và 10.
+    Bước 2. Cần ít nhất nên tìm BCNN(9; 4; 10).
+    Bước 3. BCNN(9; 4) = 36; BCNN(36; 10) = 180.
+    ✅ Kết luận: sau 180 ngày.
+    ⚠️ Dễ nhầm: BCNN(9; 4) = 36 mới là lần An và Bình cùng trực, chưa có Chi.
+
+### gcd.tichuoc
+Q: Hai số tự nhiên có ƯCLN bằng 7 và BCNN bằng 168. Biết một số là 21, số còn lại là:
+  ✔ 56
+  ✘ 147 | 1176 | 8
+  why: {"8":"lấy BCNN chia số đã biết, quên nhân với ƯCLN","147":"lấy hiệu thay vì dùng tích","1176":"đó là tích hai số, chưa chia cho số đã biết"}
+  GIẢI:
+    Bước 1. Với hai số a, b bất kì: ƯCLN(a; b) × BCNN(a; b) = a × b.
+    Bước 2. Tích hai số = 7 × 168 = 1176.
+    Bước 3. Số còn lại = 1176 : 21 = 56.
+    ✅ Kết luận: số còn lại là 56.
+    ⚠️ Dễ nhầm: Lấy BCNN chia cho số đã biết (168 : 21) chưa ra số cần tìm vì còn thiếu ƯCLN.
+
+### gcd.tichuoc
+Q: Hai số tự nhiên có ƯCLN bằng 3 và BCNN bằng 30. Biết một số là 15, số còn lại là:
+  ✔ 6
+  ✘ 15 | 90 | 2
+  why: {"2":"lấy BCNN chia số đã biết, quên nhân với ƯCLN","15":"lấy hiệu thay vì dùng tích","90":"đó là tích hai số, chưa chia cho số đã biết"}
+  GIẢI:
+    Bước 1. Với hai số a, b bất kì: ƯCLN(a; b) × BCNN(a; b) = a × b.
+    Bước 2. Tích hai số = 3 × 30 = 90.
+    Bước 3. Số còn lại = 90 : 15 = 6.
+    ✅ Kết luận: số còn lại là 6.
+    ⚠️ Dễ nhầm: Lấy BCNN chia cho số đã biết (30 : 15) chưa ra số cần tìm vì còn thiếu ƯCLN.
+
+### gcd.xephang
+Q: Số học sinh khối 6 của một trường trong khoảng từ 132 đến 151. Khi xếp hàng 3, hàng 10 đều vừa đủ (không thừa, không thiếu ai). Số học sinh là:
+  ✔ 150
+  ✘ 180 | 120 | 144
+  why: {"120":"120 là bội chung nhưng nằm ngoài khoảng 132 đến 151","144":"144 chia hết cho 3 nhưng không chia hết cho 10","180":"180 là bội chung nhưng nằm ngoài khoảng 132 đến 151"}
+  GIẢI:
+    Bước 1. Xếp hàng 3, 10 đều vừa đủ nên số học sinh là bội chung của 3, 10.
+    Bước 2. BCNN(3; 10) = 30. Bội chung là các số: 30; 60; 90; …
+    Bước 3. Chọn bội chung nằm trong khoảng từ 132 đến 151: đó là 150.
+    ✅ Kết luận: có 150 học sinh.
+    ⚠️ Dễ nhầm: Phải chia hết cho CẢ 2 số, không chỉ một vài số.
+
+### gcd.xephang
+Q: Số học sinh khối 6 của một trường trong khoảng từ 93 đến 112. Khi xếp hàng 6, hàng 8 đều vừa đủ (không thừa, không thiếu ai). Số học sinh là:
+  ✔ 96
+  ✘ 120 | 72 | 102
+  why: {"72":"72 là bội chung nhưng nằm ngoài khoảng 93 đến 112","102":"102 chia hết cho 6 nhưng không chia hết cho 8","120":"120 là bội chung nhưng nằm ngoài khoảng 93 đến 112"}
+  GIẢI:
+    Bước 1. Xếp hàng 6, 8 đều vừa đủ nên số học sinh là bội chung của 6, 8.
+    Bước 2. BCNN(6; 8) = 24. Bội chung là các số: 24; 48; 72; …
+    Bước 3. Chọn bội chung nằm trong khoảng từ 93 đến 112: đó là 96.
+    ✅ Kết luận: có 96 học sinh.
+    ⚠️ Dễ nhầm: Phải chia hết cho CẢ 2 số, không chỉ một vài số.
+
+### gdt.dem_cap
+Q: Đường thẳng c cắt hai đường thẳng phân biệt a và b tại hai điểm khác nhau. Trong hình tạo thành có tất cả bao nhiêu cặp góc đồng vị?
+  ✔ 4
+  ✘ 8 | 6 | 2
+  why: {"2":"chỉ đếm cặp so le trong hoặc trong cùng phía","6":"đếm thừa","8":"đó là số góc tạo thành"}
+  GIẢI:
+    Bước 1. Đường thẳng c cắt a tại A và cắt b tại B, tạo ra 8 góc (4 góc tại mỗi giao điểm).
+    Bước 2. Ở mỗi phía của đường thẳng c có 2 cặp góc đồng vị (một cặp ở "trên", một cặp ở "dưới"): 2 × 2 = 4 cặp.
+    ✅ Kết luận: có 4.
+    ⚠️ Dễ nhầm: Phân biệt rõ vị trí của từng cặp góc: so le trong, đồng vị, trong cùng phía, đối đỉnh, kề bù.
+
+### gdt.dem_cap
+Q: Đường thẳng c cắt hai đường thẳng phân biệt a và b tại hai điểm khác nhau. Trong hình tạo thành có tất cả bao nhiêu góc (nhỏ hơn 180°)?
+  ✔ 8
+  ✘ 6 | 16 | 4
+  why: {"4":"chỉ đếm góc ở một giao điểm","6":"đếm thiếu","16":"đếm cả góc bẹt hoặc đếm hai lần"}
+  GIẢI:
+    Bước 1. Đường thẳng c cắt a tại A và cắt b tại B, tạo ra 8 góc (4 góc tại mỗi giao điểm).
+    Bước 2. Mỗi giao điểm tạo 4 góc; có 2 giao điểm: 2 × 4 = 8 góc.
+    ✅ Kết luận: có 8.
+    ⚠️ Dễ nhầm: Phân biệt rõ vị trí của từng cặp góc: so le trong, đồng vị, trong cùng phía, đối đỉnh, kề bù.
+
+### gdt.n_duong_cat
+Q: Cho 7 đường thẳng phân biệt, đôi một cắt nhau và không có ba đường thẳng nào đồng quy. Có tất cả bao nhiêu cặp góc đối đỉnh (không kể góc bẹt) được tạo thành?
+  ✔ 42
+  ✘ 49 | 84 | 21
+  why: {"21":"đó là số giao điểm","49":"bình phương số đường thẳng","84":"đó là số góc tạo thành (mỗi giao điểm có 4 góc)"}
+  GIẢI:
+    Bước 1. 7 đường thẳng đôi một cắt nhau, không có ba đường nào đồng quy: mỗi cặp đường thẳng cho một giao điểm riêng. Số giao điểm = 7 × 6 : 2 = 21.
+    Bước 2. Tại mỗi giao điểm, hai đường thẳng cắt nhau tạo ra 2 cặp góc đối đỉnh.
+    Bước 3. Số cặp góc đối đỉnh = 21 × 2 = 42.
+    ✅ Kết luận: có 42 cặp góc đối đỉnh.
+    ⚠️ Dễ nhầm: 21 là số giao điểm (số cặp đường thẳng), chưa phải số cặp góc đối đỉnh.
+
+### gdt.n_duong_cat
+Q: Cho 4 đường thẳng phân biệt, đôi một cắt nhau và không có ba đường thẳng nào đồng quy. Có tất cả bao nhiêu cặp góc đối đỉnh (không kể góc bẹt) được tạo thành?
+  ✔ 12
+  ✘ 18 | 24 | 16
+  why: {"16":"bình phương số đường thẳng","18":"mỗi giao điểm chỉ có 3 cặp góc đối đỉnh","24":"đó là số góc tạo thành (mỗi giao điểm có 4 góc)"}
+  GIẢI:
+    Bước 1. 4 đường thẳng đôi một cắt nhau, không có ba đường nào đồng quy: mỗi cặp đường thẳng cho một giao điểm riêng. Số giao điểm = 4 × 3 : 2 = 6.
+    Bước 2. Tại mỗi giao điểm, hai đường thẳng cắt nhau tạo ra 2 cặp góc đối đỉnh.
+    Bước 3. Số cặp góc đối đỉnh = 6 × 2 = 12.
+    ✅ Kết luận: có 12 cặp góc đối đỉnh.
+    ⚠️ Dễ nhầm: 6 là số giao điểm (số cặp đường thẳng), chưa phải số cặp góc đối đỉnh.
+
+### gdt.tim_x_song2
+Q: Cho a ∥ b và đường thẳng c cắt a, b. Hai góc đồng vị có số đo (2x + 26)° và (3x + 18)° (xem hình). Tìm x.
+  ✔ 8
+  ✘ 42 | 27,2 | 44
+  why: {"42":"đó là số đo của một góc, chưa phải x","44":"chuyển vế không đổi dấu","27,2":"coi hai góc bù nhau (nhầm với trong cùng phía)"}
+  GIẢI:
+    Bước 1. Vì a ∥ b nên hai góc đồng vị bằng nhau.
+    Bước 2. Ta có: 2x + 26 = 3x + 18.
+    Bước 3. Chuyển vế: x = 8.
+    Bước 4. Thử lại: (2x + 26)° = 42° và (3x + 18)° = 42° (bằng nhau ✓).
+    ✅ Kết luận: x = 8.
+    ⚠️ Dễ nhầm: Hai góc đồng vị BẰNG nhau (không bù nhau).
+
+### gdt.tim_x_song2
+Q: Cho a ∥ b và đường thẳng c cắt a, b. Hai góc đồng vị có số đo (4x + 21)° và (3x + 50)° (xem hình). Tìm x.
+  ✔ 29
+  ✘ 137 | 71 | 32
+  why: {"71":"chuyển vế không đổi dấu","137":"đó là số đo của một góc, chưa phải x"}
+  GIẢI:
+    Bước 1. Vì a ∥ b nên hai góc đồng vị bằng nhau.
+    Bước 2. Ta có: 4x + 21 = 3x + 50.
+    Bước 3. Chuyển vế: x = 29.
+    Bước 4. Thử lại: (4x + 21)° = 137° và (3x + 50)° = 137° (bằng nhau ✓).
+    ✅ Kết luận: x = 29.
+    ⚠️ Dễ nhầm: Hai góc đồng vị BẰNG nhau (không bù nhau).
+
+### geo.cat_goc
+Q: Từ một tấm bìa hình chữ nhật dài 21 cm, rộng 11 cm, người ta cắt bỏ một hình vuông cạnh 4 cm ở một góc. Chu vi phần bìa còn lại là (cm):
+  ✔ 64
+  ✘ 72 | 215 | 48
+  why: {"48":"trừ cả bốn cạnh của hình vuông bị cắt","72":"cộng hai cạnh mới mà quên trừ hai cạnh bị mất","215":"đó là diện tích phần còn lại"}
+  GIẢI:
+    Bước 1. Hình còn lại là hình chữ L. Hai cạnh của phần cắt bỏ nằm trên hai cạnh của hình chữ nhật ban đầu, đồng thời xuất hiện hai cạnh mới bằng 4 cm.
+    Bước 2. Phần bị mất trên biên: 4 + 4 = 8 cm. Phần biên mới thêm vào: 4 + 4 = 8 cm.
+    Bước 3. Hai phần này bằng nhau nên chu vi không đổi: 2 × (21 + 11) = 64 cm.
+    ✅ Kết luận: 64 cm.
+    ⚠️ Dễ nhầm: Diện tích thay đổi nhưng chu vi thì không: cắt bỏ một góc vuông không làm chu vi giảm.
+
+### geo.cat_goc
+Q: Từ một tấm bìa hình chữ nhật dài 20 cm, rộng 14 cm, người ta cắt bỏ một hình vuông cạnh 7 cm ở một góc. Chu vi phần bìa còn lại là (cm):
+  ✔ 68
+  ✘ 231 | 40 | 82
+  why: {"40":"trừ cả bốn cạnh của hình vuông bị cắt","82":"cộng hai cạnh mới mà quên trừ hai cạnh bị mất","231":"đó là diện tích phần còn lại"}
+  GIẢI:
+    Bước 1. Hình còn lại là hình chữ L. Hai cạnh của phần cắt bỏ nằm trên hai cạnh của hình chữ nhật ban đầu, đồng thời xuất hiện hai cạnh mới bằng 7 cm.
+    Bước 2. Phần bị mất trên biên: 7 + 7 = 14 cm. Phần biên mới thêm vào: 7 + 7 = 14 cm.
+    Bước 3. Hai phần này bằng nhau nên chu vi không đổi: 2 × (20 + 14) = 68 cm.
+    ✅ Kết luận: 68 cm.
+    ⚠️ Dễ nhầm: Diện tích thay đổi nhưng chu vi thì không: cắt bỏ một góc vuông không làm chu vi giảm.
+
+### geo.hcn_tang
+Q: Một hình chữ nhật. Nếu tăng chiều dài thêm 4 m (giữ nguyên chiều rộng) thì diện tích tăng thêm 96 m². Nếu tăng chiều rộng thêm 3 m (giữ nguyên chiều dài) thì diện tích tăng thêm 90 m². Diện tích hình chữ nhật ban đầu là (m²):
+  ✔ 720
+  ✘ 810 | 918 | 816
+  why: {"810":"diện tích sau khi chỉ tăng chiều rộng","816":"diện tích sau khi chỉ tăng chiều dài","918":"tính diện tích hình đã tăng cả hai kích thước"}
+  GIẢI:
+    Bước 1. Tăng chiều dài thêm 4 m (giữ nguyên chiều rộng) thì diện tích tăng thêm một hình chữ nhật kích thước 4 m × (chiều rộng): 4 × chiều rộng = 96.
+    Bước 2. Chiều rộng = 96 : 4 = 24 m.
+    Bước 3. Tương tự, tăng chiều rộng thêm 3 m thì diện tích tăng 3 × chiều dài = 90, nên chiều dài = 90 : 3 = 30 m.
+    Bước 4. Diện tích ban đầu = 30 × 24 = 720 m².
+    ✅ Kết luận: 720 m².
+    ⚠️ Dễ nhầm: Phần diện tích tăng thêm không phải diện tích ban đầu; cần tìm từng kích thước trước.
+
+### geo.hcn_tang
+Q: Một hình chữ nhật. Nếu tăng chiều dài thêm 3 m (giữ nguyên chiều rộng) thì diện tích tăng thêm 66 m². Nếu tăng chiều rộng thêm 4 m (giữ nguyên chiều dài) thì diện tích tăng thêm 36 m². Diện tích hình chữ nhật ban đầu là (m²):
+  ✔ 198
+  ✘ 312 | 234 | 264
+  why: {"234":"diện tích sau khi chỉ tăng chiều rộng","264":"diện tích sau khi chỉ tăng chiều dài","312":"tính diện tích hình đã tăng cả hai kích thước"}
+  GIẢI:
+    Bước 1. Tăng chiều dài thêm 3 m (giữ nguyên chiều rộng) thì diện tích tăng thêm một hình chữ nhật kích thước 3 m × (chiều rộng): 3 × chiều rộng = 66.
+    Bước 2. Chiều rộng = 66 : 3 = 22 m.
+    Bước 3. Tương tự, tăng chiều rộng thêm 4 m thì diện tích tăng 4 × chiều dài = 36, nên chiều dài = 36 : 4 = 9 m.
+    Bước 4. Diện tích ban đầu = 9 × 22 = 198 m².
+    ✅ Kết luận: 198 m².
+    ⚠️ Dễ nhầm: Phần diện tích tăng thêm không phải diện tích ban đầu; cần tìm từng kích thước trước.
+
+### geo.hinhthang
+Q: Hình thang có diện tích 45 cm², chiều cao 6 cm, đáy bé 4 cm. Đáy lớn dài (cm):
+  ✔ 11
+  ✘ 14,3333 | 15 | 3,5
+  why: {"15":"đó là tổng hai đáy, chưa trừ đáy bé","14,3333":"trừ đáy bé trước khi chia chiều cao","3,5":"quên nhân 2 (dùng S : h thay vì 2S : h)"}
+  GIẢI:
+    Bước 1. S = (đáy lớn + đáy bé) × chiều cao : 2, nên tổng hai đáy = 2 × S : chiều cao.
+    Bước 2. Tổng hai đáy = 2 × 45 : 6 = 15.
+    Bước 3. Đáy lớn = 15 - 4 = 11.
+    ✅ Kết luận: đáy lớn dài 11 cm.
+    ⚠️ Dễ nhầm: 2 × S : h là TỔNG hai đáy; phải trừ đáy bé mới ra đáy lớn.
+
+### geo.hinhthang
+Q: Hình thang có diện tích 48 cm², chiều cao 6 cm, đáy bé 5 cm. Đáy lớn dài (cm):
+  ✔ 11
+  ✘ 8 | 3 | 15,1667
+  why: {"3":"quên nhân 2 (dùng S : h thay vì 2S : h)","8":"nhầm S : h là đáy lớn","15,1667":"trừ đáy bé trước khi chia chiều cao"}
+  GIẢI:
+    Bước 1. S = (đáy lớn + đáy bé) × chiều cao : 2, nên tổng hai đáy = 2 × S : chiều cao.
+    Bước 2. Tổng hai đáy = 2 × 48 : 6 = 16.
+    Bước 3. Đáy lớn = 16 - 5 = 11.
+    ✅ Kết luận: đáy lớn dài 11 cm.
+    ⚠️ Dễ nhầm: 2 × S : h là TỔNG hai đáy; phải trừ đáy bé mới ra đáy lớn.
+
+### geo.vuon_k
+Q: Một mảnh vườn hình chữ nhật có chiều dài gấp 3 lần chiều rộng và chu vi 120 m. Diện tích mảnh vườn là (m²):
+  ✔ 675
+  ✘ 900 | 1350 | 673
+  why: {"900":"coi mảnh vườn là hình vuông","1350":"nhân đôi diện tích"}
+  GIẢI:
+    Bước 1. Nửa chu vi = 120 : 2 = 60 m = chiều dài + chiều rộng.
+    Bước 2. Chiều dài gấp 3 lần chiều rộng nên nửa chu vi gồm 4 phần bằng nhau: chiều rộng = 60 : 4 = 15 m.
+    Bước 3. Chiều dài = 3 × 15 = 45 m.
+    Bước 4. Diện tích = 45 × 15 = 675 m².
+    ✅ Kết luận: 675 m².
+    ⚠️ Dễ nhầm: Chu vi gồm 2 lần (dài + rộng), nên phải chia đôi trước khi chia thành 4 phần.
+
+### geo.vuon_k
+Q: Một mảnh vườn hình chữ nhật có chiều dài gấp 3 lần chiều rộng và chu vi 152 m. Diện tích mảnh vườn là (m²):
+  ✔ 1083
+  ✘ 2166 | 1444 | 1084
+  why: {"1444":"coi mảnh vườn là hình vuông","2166":"nhân đôi diện tích"}
+  GIẢI:
+    Bước 1. Nửa chu vi = 152 : 2 = 76 m = chiều dài + chiều rộng.
+    Bước 2. Chiều dài gấp 3 lần chiều rộng nên nửa chu vi gồm 4 phần bằng nhau: chiều rộng = 76 : 4 = 19 m.
+    Bước 3. Chiều dài = 3 × 19 = 57 m.
+    Bước 4. Diện tích = 57 × 19 = 1083 m².
+    ✅ Kết luận: 1083 m².
+    ⚠️ Dễ nhầm: Chu vi gồm 2 lần (dài + rộng), nên phải chia đôi trước khi chia thành 4 phần.
+
+### hk.cat_goc_khoi
+Q: Từ một khối hình hộp chữ nhật có ba kích thước 8 cm, 10 cm, 10 cm, người ta cắt bỏ một khối lập phương cạnh 2 cm ở một góc. Diện tích toàn phần của phần còn lại là (cm²):
+  ✔ 520
+  ✘ 792 | 532 | 508
+  why: {"508":"trừ ba mặt bị cắt mà quên cộng ba mặt mới","532":"cộng ba mặt mới mà quên trừ ba mặt bị mất","792":"đó là thể tích phần còn lại"}
+  GIẢI:
+    Bước 1. Diện tích toàn phần hình hộp ban đầu: 2 × (8×10 + 10×10 + 10×8) = 520 cm².
+    Bước 2. Cắt bỏ khối lập phương cạnh 2 cm ở một góc: bề mặt cũ mất 3 mặt hình vuông cạnh 2 (3 × 4 = 12 cm²).
+    Bước 3. Nhưng ở chỗ cắt lại xuất hiện 3 mặt vuông mới cạnh 2 (cũng 3 × 4 = 12 cm²). Phần mất đi và phần thêm vào bằng nhau nên diện tích toàn phần không đổi: 520 cm².
+    ✅ Kết luận: 520 cm².
+    ⚠️ Dễ nhầm: Phần bị cắt làm mất 3 mặt nhưng tạo ra 3 mặt mới bằng chúng, nên diện tích không đổi (khác với thể tích, giảm 8 cm³).
+
+### hk.cat_goc_khoi
+Q: Từ một khối hình hộp chữ nhật có ba kích thước 10 cm, 8 cm, 14 cm, người ta cắt bỏ một khối lập phương cạnh 4 cm ở một góc. Diện tích toàn phần của phần còn lại là (cm²):
+  ✔ 664
+  ✘ 1056 | 616 | 712
+  why: {"616":"trừ ba mặt bị cắt mà quên cộng ba mặt mới","712":"cộng ba mặt mới mà quên trừ ba mặt bị mất","1056":"đó là thể tích phần còn lại"}
+  GIẢI:
+    Bước 1. Diện tích toàn phần hình hộp ban đầu: 2 × (10×8 + 8×14 + 14×10) = 664 cm².
+    Bước 2. Cắt bỏ khối lập phương cạnh 4 cm ở một góc: bề mặt cũ mất 3 mặt hình vuông cạnh 4 (3 × 16 = 48 cm²).
+    Bước 3. Nhưng ở chỗ cắt lại xuất hiện 3 mặt vuông mới cạnh 4 (cũng 3 × 16 = 48 cm²). Phần mất đi và phần thêm vào bằng nhau nên diện tích toàn phần không đổi: 664 cm².
+    ✅ Kết luận: 664 cm².
+    ⚠️ Dễ nhầm: Phần bị cắt làm mất 3 mặt nhưng tạo ra 3 mặt mới bằng chúng, nên diện tích không đổi (khác với thể tích, giảm 64 cm³).
+
+### hk.lang_tru_dem
+Q: Một hình lăng trụ đứng có 5 mặt. Số cạnh của lăng trụ đó là:
+  ✔ 9
+  ✘ 15 | 6 | 3
+  why: {"3":"đó là số cạnh của một đáy","6":"chỉ đếm cạnh của hai đáy, quên các cạnh bên","15":"nhân 3 với số mặt, quên rằng 2 mặt đáy không phải mặt bên"}
+  GIẢI:
+    Bước 1. Lăng trụ đứng có 2 mặt đáy; các mặt còn lại là mặt bên. Số mặt bên = 5 - 2 = 3, nên đáy là đa giác 3 cạnh.
+    Bước 2. Mỗi đáy có 3 cạnh, ngoài ra có 3 cạnh bên: số cạnh = 3 + 3 + 3 = 9.
+    Bước 3. Kiểm tra bằng hệ thức Ơ-le: (số đỉnh) + (số mặt) - (số cạnh) = 6 + 5 - 9 = 2 ✓.
+    ✅ Kết luận: 9.
+    ⚠️ Dễ nhầm: Lăng trụ đứng đáy n-giác có 2n đỉnh, 3n cạnh và n + 2 mặt; đừng quên 2 mặt đáy.
+
+### hk.lang_tru_dem
+Q: Một hình lăng trụ đứng có 12 mặt. Số cạnh của lăng trụ đó là:
+  ✔ 30
+  ✘ 20 | 36 | 10
+  why: {"10":"đó là số cạnh của một đáy","20":"chỉ đếm cạnh của hai đáy, quên các cạnh bên","36":"nhân 3 với số mặt, quên rằng 2 mặt đáy không phải mặt bên"}
+  GIẢI:
+    Bước 1. Lăng trụ đứng có 2 mặt đáy; các mặt còn lại là mặt bên. Số mặt bên = 12 - 2 = 10, nên đáy là đa giác 10 cạnh.
+    Bước 2. Mỗi đáy có 10 cạnh, ngoài ra có 10 cạnh bên: số cạnh = 10 + 10 + 10 = 30.
+    Bước 3. Kiểm tra bằng hệ thức Ơ-le: (số đỉnh) + (số mặt) - (số cạnh) = 20 + 12 - 30 = 2 ✓.
+    ✅ Kết luận: 30.
+    ⚠️ Dễ nhầm: Lăng trụ đứng đáy n-giác có 2n đỉnh, 3n cạnh và n + 2 mặt; đừng quên 2 mặt đáy.
+
+### hk.nuoc_dang
+Q: Một bể hình hộp chữ nhật có đáy rộng 30 cm × 30 cm đang chứa nước. Thả chìm hoàn toàn một khối đá có thể tích 900 cm³ vào bể (nước không tràn ra ngoài). Mực nước trong bể dâng thêm bao nhiêu xăng-ti-mét?
+  ✔ 1
+  ✘ 30 | 7,5 | 15
+  why: {"15":"chia cho tổng hai cạnh đáy","30":"chia cho một cạnh đáy (30 cm)","7,5":"chia cho chu vi đáy"}
+  GIẢI:
+    Bước 1. Thể tích nước dâng thêm bằng thể tích vật chìm: 900 cm³.
+    Bước 2. Phần nước dâng lên là một hình hộp chữ nhật có đáy 30 cm × 30 cm = 900 cm² và chiều cao cần tìm.
+    Bước 3. Chiều cao = 900 : 900 = 1 (cm).
+    ✅ Kết luận: mực nước dâng thêm 1 cm.
+    ⚠️ Dễ nhầm: Phải chia cho DIỆN TÍCH ĐÁY (30 × 30), không chia cho một cạnh hay chu vi.
+
+### hk.nuoc_dang
+Q: Một bể hình hộp chữ nhật có đáy rộng 30 cm × 30 cm đang chứa nước. Thả chìm hoàn toàn một khối đá có thể tích 900 cm³ vào bể (nước không tràn ra ngoài). Mực nước trong bể dâng thêm bao nhiêu xăng-ti-mét?
+  ✔ 1
+  ✘ 10 | 15 | 7,5
+  why: {"10":"đổi nhầm sang milimét","15":"chia cho tổng hai cạnh đáy","7,5":"chia cho chu vi đáy"}
+  GIẢI:
+    Bước 1. Thể tích nước dâng thêm bằng thể tích vật chìm: 900 cm³.
+    Bước 2. Phần nước dâng lên là một hình hộp chữ nhật có đáy 30 cm × 30 cm = 900 cm² và chiều cao cần tìm.
+    Bước 3. Chiều cao = 900 : 900 = 1 (cm).
+    ✅ Kết luận: mực nước dâng thêm 1 cm.
+    ⚠️ Dễ nhầm: Phải chia cho DIỆN TÍCH ĐÁY (30 × 30), không chia cho một cạnh hay chu vi.
+
+### hk.thetich_thoi
+Q: Một lăng trụ đứng có đáy là hình thoi với hai đường chéo dài 10 cm và 14 cm, chiều cao lăng trụ là 8 cm. Thể tích lăng trụ là (cm³):
+  ✔ 560
+  ✘ 192 | 280 | 1120
+  why: {"192":"cộng hai đường chéo thay vì nhân","280":"chia 4 thay vì chia 2","1120":"quên chia 2 khi tính diện tích hình thoi"}
+  GIẢI:
+    Bước 1. Diện tích đáy hình thoi = (đường chéo thứ nhất × đường chéo thứ hai) : 2 = 10 × 14 : 2 = 70 (cm²).
+    Bước 2. Thể tích lăng trụ = diện tích đáy × chiều cao = 70 × 8 = 560 (cm³).
+    ✅ Kết luận: 560 cm³.
+    ⚠️ Dễ nhầm: Đừng quên chia 2 khi tính diện tích hình thoi.
+
+### hk.thetich_thoi
+Q: Một lăng trụ đứng có đáy là hình thoi với hai đường chéo dài 13 cm và 4 cm, chiều cao lăng trụ là 11 cm. Thể tích lăng trụ là (cm³):
+  ✔ 286
+  ✘ 187 | 143 | 572
+  why: {"143":"chia 4 thay vì chia 2","187":"cộng hai đường chéo thay vì nhân","572":"quên chia 2 khi tính diện tích hình thoi"}
+  GIẢI:
+    Bước 1. Diện tích đáy hình thoi = (đường chéo thứ nhất × đường chéo thứ hai) : 2 = 13 × 4 : 2 = 26 (cm²).
+    Bước 2. Thể tích lăng trụ = diện tích đáy × chiều cao = 26 × 11 = 286 (cm³).
+    ✅ Kết luận: 286 cm³.
+    ⚠️ Dễ nhầm: Đừng quên chia 2 khi tính diện tích hình thoi.
+
+### int.abs_x
+Q: Tìm các số nguyên x, biết |x + 12| = 7.
+  ✔ x = -5 hoặc x = -19
+  ✘ chỉ x = -5 | x = 5 hoặc x = 19 | chỉ x = -19
+  why: {"chỉ x = −5":"bỏ sót trường hợp biểu thức bằng số đối","x = 5 hoặc x = 19":"đổi dấu cả hai nghiệm","chỉ x = −19":"bỏ sót trường hợp biểu thức bằng chính số đó"}
+  GIẢI:
+    Bước 1. |A| = 7 (với 7 > 0) nên A = 7 hoặc A = -7.
+    Bước 2. x + 12 = 7 ⟹ x = 7 - 12 = -5; x + 12 = -7 ⟹ x = -7 - 12 = -19.
+    Bước 3. Thử lại cả hai giá trị vào đề bài đều đúng.
+    ✅ Kết luận: x = -5 hoặc x = -19.
+    ⚠️ Dễ nhầm: Phương trình giá trị tuyệt đối bằng một số dương có HAI nghiệm.
+
+### int.abs_x
+Q: Tìm các số nguyên x, biết |x - 2| = 1.
+  ✔ x = 3 hoặc x = 1
+  ✘ chỉ x = 3 | x = 1 hoặc x = -1 | chỉ x = 1
+  why: {"chỉ x = 3":"bỏ sót trường hợp biểu thức bằng số đối","x = 1 hoặc x = −1":"quên chuyển 2 sang vế phải","chỉ x = 1":"bỏ sót trường hợp biểu thức bằng chính số đó"}
+  GIẢI:
+    Bước 1. |A| = 1 (với 1 > 0) nên A = 1 hoặc A = -1.
+    Bước 2. x - 2 = 1 ⟹ x = 1 + 2 = 3; x - 2 = -1 ⟹ x = -1 + 2 = 1.
+    Bước 3. Thử lại cả hai giá trị vào đề bài đều đúng.
+    ✅ Kết luận: x = 3 hoặc x = 1.
+    ⚠️ Dễ nhầm: Phương trình giá trị tuyệt đối bằng một số dương có HAI nghiệm.
+
+### int.bongoac
+Q: Bỏ ngoặc rồi tính: 16 - (11 - 8) + (6 - 7)
+  ✔ 12
+  ✘ -4 | 18 | 14
+  why: {"14":"đổi dấu cả ngoặc có dấu \"+\" đứng trước","18":"coi dấu \"−\" trước ngoặc như dấu \"+\" (giữ nguyên dấu trong ngoặc)","−4":"bỏ ngoặc thứ nhất mà không đổi dấu số hạng trong ngoặc"}
+  GIẢI:
+    Bước 1. Ngoặc thứ nhất có dấu "-" đứng trước: bỏ ngoặc phải ĐỔI DẤU mọi số hạng trong ngoặc: -(11 - 8) = -11 + 8.
+    Bước 2. Ngoặc thứ hai có dấu "+" đứng trước: bỏ ngoặc giữ nguyên dấu: +(6 - 7) = +6 - 7.
+    Bước 3. Biểu thức = 16 - 11 + 8 + 6 - 7.
+    Bước 4. Tính từ trái sang phải: 5 + 8 = 13; 13 + 6 = 19; 19 - 7 = 12.
+    ✅ Kết luận: 12.
+    ⚠️ Dễ nhầm: Dấu "-" trước ngoặc đổi dấu mọi số hạng; dấu "+" trước ngoặc thì giữ nguyên.
+
+### int.bongoac
+Q: Bỏ ngoặc rồi tính: 16 - (9 - 20) + (8 - 8)
+  ✔ 27
+  ✘ 5 | -13 | 28
+  why: {"5":"coi dấu \"−\" trước ngoặc như dấu \"+\" (giữ nguyên dấu trong ngoặc)","−13":"bỏ ngoặc thứ nhất mà không đổi dấu số hạng trong ngoặc"}
+  GIẢI:
+    Bước 1. Ngoặc thứ nhất có dấu "-" đứng trước: bỏ ngoặc phải ĐỔI DẤU mọi số hạng trong ngoặc: -(9 - 20) = -9 + 20.
+    Bước 2. Ngoặc thứ hai có dấu "+" đứng trước: bỏ ngoặc giữ nguyên dấu: +(8 - 8) = +8 - 8.
+    Bước 3. Biểu thức = 16 - 9 + 20 + 8 - 8.
+    Bước 4. Tính từ trái sang phải: 7 + 20 = 27; 27 + 8 = 35; 35 - 8 = 27.
+    ✅ Kết luận: 27.
+    ⚠️ Dễ nhầm: Dấu "-" trước ngoặc đổi dấu mọi số hạng; dấu "+" trước ngoặc thì giữ nguyên.
+
+### int.min_abs
+Q: Giá trị nhỏ nhất của biểu thức A = |x - 2| + 1 là:
+  ✔ 1
+  ✘ 2 | 0 | 3
+  why: {"0":"quên số hạng +1","2":"nhầm giá trị của x với giá trị nhỏ nhất của A","3":"cộng cả a vào kết quả"}
+  GIẢI:
+    Bước 1. Giá trị tuyệt đối luôn không âm: |x - 2| ≥ 0 với mọi x.
+    Bước 2. Do đó A = |x - 2| + 1 ≥ 0 + 1 = 1.
+    Bước 3. Dấu "=" xảy ra khi |x - 2| = 0, tức x = 2.
+    ✅ Kết luận: giá trị nhỏ nhất của A là 1 (khi x = 2).
+    ⚠️ Dễ nhầm: Giá trị nhỏ nhất đạt được khi x = 2; đừng lấy 2 làm giá trị của A.
+
+### int.min_abs
+Q: Giá trị nhỏ nhất của biểu thức A = |x - 9| + 3 là:
+  ✔ 3
+  ✘ 12 | 0 | 9
+  why: {"0":"quên số hạng +3","9":"nhầm giá trị của x với giá trị nhỏ nhất của A","12":"cộng cả a vào kết quả"}
+  GIẢI:
+    Bước 1. Giá trị tuyệt đối luôn không âm: |x - 9| ≥ 0 với mọi x.
+    Bước 2. Do đó A = |x - 9| + 3 ≥ 0 + 3 = 3.
+    Bước 3. Dấu "=" xảy ra khi |x - 9| = 0, tức x = 9.
+    ✅ Kết luận: giá trị nhỏ nhất của A là 3 (khi x = 9).
+    ⚠️ Dễ nhầm: Giá trị nhỏ nhất đạt được khi x = 9; đừng lấy 9 làm giá trị của A.
+
+### int.tich0
+Q: Tìm các số nguyên x, biết: (x - 6)(x + 5) = 0
+  ✔ x = 6 hoặc x = -5
+  ✘ x = -6 hoặc x = 5 | x = 6 hoặc x = 5 | x = -6 hoặc x = -5
+  why: {"x = −6 hoặc x = 5":"đổi dấu cả hai nghiệm","x = 6 hoặc x = 5":"quên đổi dấu ở thừa số thứ hai (x + 5 = 0 cho x = −5)","x = −6 hoặc x = −5":"quên đổi dấu ở thừa số thứ nhất (x − 6 = 0 cho x = 6)"}
+  GIẢI:
+    Bước 1. Một tích bằng 0 khi có ít nhất một thừa số bằng 0.
+    Bước 2. x - 6 = 0 ⟹ x = 6.
+    Bước 3. x + 5 = 0 ⟹ x = -5.
+    ✅ Kết luận: x = 6 hoặc x = -5.
+    ⚠️ Dễ nhầm: Chuyển vế phải đổi dấu: x + 5 = 0 cho x = -5, không phải 5.
+
+### int.tich0
+Q: Tìm các số nguyên x, biết: (x - 8)(x + 1) = 0
+  ✔ x = 8 hoặc x = -1
+  ✘ x = -8 hoặc x = -1 | x = -8 hoặc x = 1 | x = 8 hoặc x = 1
+  why: {"x = −8 hoặc x = −1":"quên đổi dấu ở thừa số thứ nhất (x − 8 = 0 cho x = 8)","x = −8 hoặc x = 1":"đổi dấu cả hai nghiệm","x = 8 hoặc x = 1":"quên đổi dấu ở thừa số thứ hai (x + 1 = 0 cho x = −1)"}
+  GIẢI:
+    Bước 1. Một tích bằng 0 khi có ít nhất một thừa số bằng 0.
+    Bước 2. x - 8 = 0 ⟹ x = 8.
+    Bước 3. x + 1 = 0 ⟹ x = -1.
+    ✅ Kết luận: x = 8 hoặc x = -1.
+    ⚠️ Dễ nhầm: Chuyển vế phải đổi dấu: x + 1 = 0 cho x = -1, không phải 1.
+
+### int.tongxen
+Q: Tính S = 1 - 2 + 3 - 4 + … - 58 + 59
+  ✔ 30
+  ✘ 29 | -29 | -30
+  why: {"29":"quên dấu \"−\" của các cặp","−29":"quên số hạng cuối +59","−30":"sai dấu của kết quả"}
+  GIẢI:
+    Bước 1. Ghép các số hạng liên tiếp thành từng cặp (1 - 2), (3 - 4), …; mỗi cặp bằng -1.
+    Bước 2. Có 59 số hạng (lẻ) nên ghép được 29 cặp (1 - 2), …, (57 - 58); còn lẻ số hạng cuối +59.
+    Bước 3. Tổng = 29 × (-1) + 59 = -29 + 59 = 30.
+    ✅ Kết luận: S = 30.
+    ⚠️ Dễ nhầm: Hãy xem số số hạng là chẵn hay lẻ trước khi ghép cặp: số hạng cuối cùng mang dấu cộng.
+
+### int.tongxen
+Q: Tính S = 1 - 2 + 3 - 4 + … - 88 + 89
+  ✔ 45
+  ✘ 44 | -44 | -45
+  why: {"44":"quên dấu \"−\" của các cặp","−44":"quên số hạng cuối +89","−45":"sai dấu của kết quả"}
+  GIẢI:
+    Bước 1. Ghép các số hạng liên tiếp thành từng cặp (1 - 2), (3 - 4), …; mỗi cặp bằng -1.
+    Bước 2. Có 89 số hạng (lẻ) nên ghép được 44 cặp (1 - 2), …, (87 - 88); còn lẻ số hạng cuối +89.
+    Bước 3. Tổng = 44 × (-1) + 89 = -44 + 89 = 45.
+    ✅ Kết luận: S = 45.
+    ⚠️ Dễ nhầm: Hãy xem số số hạng là chẵn hay lẻ trước khi ghép cặp: số hạng cuối cùng mang dấu cộng.
+
+### int.uoc_n
+Q: Có bao nhiêu số nguyên n để (n + 11) chia hết cho (n + 2)?
+  ✔ 6
+  ✘ 5 | 3 | 8
+  why: {"3":"chỉ đếm ước dương, quên ước âm","5":"bỏ sót một ước","8":"đếm thừa"}
+  GIẢI:
+    Bước 1. (n + 11) - (n + 2) = 9, nên (n + 2) phải là ước nguyên của 9.
+    Bước 2. Các ước nguyên của 9: -9; -3; -1; 1; 3; 9 (có 6 ước, gồm 3 ước dương và 3 ước âm).
+    Bước 3. Mỗi ước cho đúng một giá trị n = ước - 2, nên có 6 giá trị của n.
+    ✅ Kết luận: có 6 số nguyên n.
+    ⚠️ Dễ nhầm: n là số NGUYÊN nên phải lấy cả các ước âm; chỉ lấy ước dương sẽ ra 3.
+
+### int.uoc_n
+Q: Có bao nhiêu số nguyên n để (n + 17) chia hết cho (n + 1)?
+  ✔ 10
+  ✘ 12 | 9 | 5
+  why: {"5":"chỉ đếm ước dương, quên ước âm","9":"bỏ sót một ước","12":"đếm thừa"}
+  GIẢI:
+    Bước 1. (n + 17) - (n + 1) = 16, nên (n + 1) phải là ước nguyên của 16.
+    Bước 2. Các ước nguyên của 16: -16; -8; -4; -2; -1; 1; 2; 4; 8; 16 (có 10 ước, gồm 5 ước dương và 5 ước âm).
+    Bước 3. Mỗi ước cho đúng một giá trị n = ước - 1, nên có 10 giá trị của n.
+    ✅ Kết luận: có 10 số nguyên n.
+    ⚠️ Dễ nhầm: n là số NGUYÊN nên phải lấy cả các ước âm; chỉ lấy ước dương sẽ ra 5.
+
+### line.dem_tia
+Q: Trên đường thẳng xy lấy 9 điểm phân biệt. Có bao nhiêu tia nằm trên đường thẳng xy và có gốc là một trong 9 điểm đó?
+  ✔ 18
+  ✘ 16 | 9 | 36
+  why: {"9":"mỗi điểm chỉ cho một tia","16":"bỏ hai tia ngoài cùng","36":"đó là số đoạn thẳng"}
+  GIẢI:
+    Bước 1. Mỗi điểm trên đường thẳng chia đường thẳng thành hai tia đối nhau có gốc là điểm đó.
+    Bước 2. Vậy mỗi điểm cho 2 tia gốc tại điểm đó.
+    Bước 3. Với 9 điểm có 9 × 2 = 18 tia.
+    ✅ Kết luận: 18 tia.
+    ⚠️ Dễ nhầm: Đừng nhầm với số đoạn thẳng 36 (mỗi đoạn có hai đầu mút).
+
+### line.dem_tia
+Q: Trên đường thẳng xy lấy 12 điểm phân biệt. Có bao nhiêu tia nằm trên đường thẳng xy và có gốc là một trong 12 điểm đó?
+  ✔ 24
+  ✘ 22 | 12 | 66
+  why: {"12":"mỗi điểm chỉ cho một tia","22":"bỏ hai tia ngoài cùng","66":"đó là số đoạn thẳng"}
+  GIẢI:
+    Bước 1. Mỗi điểm trên đường thẳng chia đường thẳng thành hai tia đối nhau có gốc là điểm đó.
+    Bước 2. Vậy mỗi điểm cho 2 tia gốc tại điểm đó.
+    Bước 3. Với 12 điểm có 12 × 2 = 24 tia.
+    ✅ Kết luận: 24 tia.
+    ⚠️ Dễ nhầm: Đừng nhầm với số đoạn thẳng 66 (mỗi đoạn có hai đầu mút).
+
+### line.goc_giao
+Q: Cho 6 đường thẳng phân biệt cùng đi qua điểm O. Có bao nhiêu góc có đỉnh O (không kể góc bẹt)?
+  ✔ 60
+  ✘ 12 | 15 | 66
+  why: {"12":"đó là số tia","15":"đó là số cặp đường thẳng","66":"đếm cả các góc bẹt"}
+  GIẢI:
+    Bước 1. 6 đường thẳng cắt nhau tại O tạo ra 12 tia chung gốc O.
+    Bước 2. Mỗi cặp tia (không đối nhau) tạo một góc. Số cặp tia: 12 × 11 : 2 = 66.
+    Bước 3. Trừ các cặp tia đối nhau (tạo góc bẹt): có 6 cặp. Số góc = 66 - 6 = 60.
+    ✅ Kết luận: 60 góc.
+    ⚠️ Dễ nhầm: Đề yêu cầu không kể góc bẹt nên phải trừ 6 cặp tia đối nhau.
+
+### line.goc_giao
+Q: Cho 3 đường thẳng phân biệt cùng đi qua điểm O. Có bao nhiêu góc có đỉnh O (không kể góc bẹt)?
+  ✔ 12
+  ✘ 6 | 3 | 15
+  why: {"3":"đó là số cặp đường thẳng","6":"chỉ đếm một nửa số góc","15":"đếm cả các góc bẹt"}
+  GIẢI:
+    Bước 1. 3 đường thẳng cắt nhau tại O tạo ra 6 tia chung gốc O.
+    Bước 2. Mỗi cặp tia (không đối nhau) tạo một góc. Số cặp tia: 6 × 5 : 2 = 15.
+    Bước 3. Trừ các cặp tia đối nhau (tạo góc bẹt): có 3 cặp. Số góc = 15 - 3 = 12.
+    ✅ Kết luận: 12 góc.
+    ⚠️ Dễ nhầm: Đề yêu cầu không kể góc bẹt nên phải trừ 3 cặp tia đối nhau.
+
+### line.goc_mon
+Q: Cho hai góc kề xOy và yOz (tia Oy nằm giữa hai tia Ox, Oz) và xOz = 100°. Om là tia phân giác của góc xOy, On là tia phân giác của góc yOz. Số đo góc mOn là (độ):
+  ✔ 50
+  ✘ 25 | 100 | 33,3333
+  why: {"25":"chia đôi hai lần","100":"nhầm mOn = xOz","33,3333":"chia ba"}
+  GIẢI:
+    Bước 1. Gọi xOy = a và yOz = b. Oy nằm giữa Ox, Oz nên a + b = xOz = 100°.
+    Bước 2. Om là phân giác của xOy: yOm = a : 2. On là phân giác của yOz: yOn = b : 2.
+    Bước 3. Om, On nằm hai phía của Oy nên mOn = yOm + yOn = (a + b) : 2 = 100 : 2 = 50°.
+    ✅ Kết luận: mOn = 50°.
+    ⚠️ Dễ nhầm: Kết quả không phụ thuộc vào a, b riêng lẻ: luôn bằng nửa xOz.
+
+### line.goc_mon
+Q: Cho hai góc kề xOy và yOz (tia Oy nằm giữa hai tia Ox, Oz) và xOz = 120°. Om là tia phân giác của góc xOy, On là tia phân giác của góc yOz. Số đo góc mOn là (độ):
+  ✔ 60
+  ✘ 30 | 120 | 70
+  why: {"30":"chia đôi hai lần","70":"cộng thêm không có cơ sở","120":"nhầm mOn = xOz"}
+  GIẢI:
+    Bước 1. Gọi xOy = a và yOz = b. Oy nằm giữa Ox, Oz nên a + b = xOz = 120°.
+    Bước 2. Om là phân giác của xOy: yOm = a : 2. On là phân giác của yOz: yOn = b : 2.
+    Bước 3. Om, On nằm hai phía của Oy nên mOn = yOm + yOn = (a + b) : 2 = 120 : 2 = 60°.
+    ✅ Kết luận: mOn = 60°.
+    ⚠️ Dễ nhầm: Kết quả không phụ thuộc vào a, b riêng lẻ: luôn bằng nửa xOz.
+
+### line.goc_phangiac
+Q: Cho góc xOy = 132°. Tia Oz nằm giữa hai tia Ox, Oy sao cho góc xOz lớn hơn góc zOy là 104°. Số đo góc xOz là (độ):
+  ✔ 118
+  ✘ 14 | 28 | 236
+  why: {"14":"đó là góc zOy (góc nhỏ hơn)","28":"lấy hiệu thay vì giải hệ","236":"cộng thay vì chia đôi"}
+  GIẢI:
+    Bước 1. Tia Oz nằm giữa Ox và Oy nên xOz + zOy = xOy = 132°.
+    Bước 2. Đề cho xOz - zOy = 104°.
+    Bước 3. Cộng hai đẳng thức: 2 × xOz = 132 + 104 = 236, nên xOz = 118°.
+    Bước 4. Thử lại: zOy = 132 - 118 = 14°; 118 - 14 = 104.
+    ✅ Kết luận: xOz = 118°.
+    ⚠️ Dễ nhầm: 14° mới là zOy (góc nhỏ hơn); xOz là góc lớn hơn.
+
+### line.goc_phangiac
+Q: Cho góc xOy = 58°. Tia Oz nằm giữa hai tia Ox, Oy sao cho góc xOz lớn hơn góc zOy là 8°. Số đo góc xOz là (độ):
+  ✔ 33
+  ✘ 29 | 50 | 66
+  why: {"29":"coi Oz là tia phân giác","50":"lấy hiệu thay vì giải hệ","66":"cộng thay vì chia đôi"}
+  GIẢI:
+    Bước 1. Tia Oz nằm giữa Ox và Oy nên xOz + zOy = xOy = 58°.
+    Bước 2. Đề cho xOz - zOy = 8°.
+    Bước 3. Cộng hai đẳng thức: 2 × xOz = 58 + 8 = 66, nên xOz = 33°.
+    Bước 4. Thử lại: zOy = 58 - 33 = 25°; 33 - 25 = 8.
+    ✅ Kết luận: xOz = 33°.
+    ⚠️ Dễ nhầm: 25° mới là zOy (góc nhỏ hơn); xOz là góc lớn hơn.
+
+### line.mn_ac
+Q: Cho đoạn thẳng AC dài 30 cm. B là một điểm nằm giữa A và C. M là trung điểm của AB, N là trung điểm của BC. Độ dài MN là (cm):
+  ✔ 15
+  ✘ 30 | 7,5 | 17
+  why: {"17":"cộng thêm không có cơ sở","30":"nhầm MN = AC","7,5":"chia đôi hai lần"}
+  GIẢI:
+    Bước 1. M là trung điểm của AB nên MB = AB : 2. N là trung điểm của BC nên BN = BC : 2.
+    Bước 2. B nằm giữa A và C nên M, B, N thẳng hàng theo thứ tự đó, và MN = MB + BN.
+    Bước 3. MN = AB : 2 + BC : 2 = (AB + BC) : 2 = AC : 2 = 30 : 2 = 15 (cm).
+    ✅ Kết luận: MN = 15 cm.
+    ⚠️ Dễ nhầm: Không cần biết vị trí của B: MN luôn bằng một nửa AC.
+
+### line.mn_ac
+Q: Cho đoạn thẳng AC dài 30 cm. B là một điểm nằm giữa A và C. M là trung điểm của AB, N là trung điểm của BC. Độ dài MN là (cm):
+  ✔ 15
+  ✘ 10 | 7,5 | 17
+  why: {"10":"chia ba","17":"cộng thêm không có cơ sở","7,5":"chia đôi hai lần"}
+  GIẢI:
+    Bước 1. M là trung điểm của AB nên MB = AB : 2. N là trung điểm của BC nên BN = BC : 2.
+    Bước 2. B nằm giữa A và C nên M, B, N thẳng hàng theo thứ tự đó, và MN = MB + BN.
+    Bước 3. MN = AB : 2 + BC : 2 = (AB + BC) : 2 = AC : 2 = 30 : 2 = 15 (cm).
+    ✅ Kết luận: MN = 15 cm.
+    ⚠️ Dễ nhầm: Không cần biết vị trí của B: MN luôn bằng một nửa AC.
+
+### nat.chiadu
+Q: Trong một phép chia có dư, số bị chia là 106, thương là 9, số dư là 7. Số chia là:
+  ✔ 11
+  ✘ 90 | 9 | 12
+  why: {"9":"nhầm thương với số chia","12":"chia cả 106 (chưa trừ số dư) rồi làm tròn lên","90":"lấy hiệu thay vì chia"}
+  GIẢI:
+    Bước 1. Số bị chia = số chia × thương + số dư, nên số chia × thương = 106 - 7 = 99.
+    Bước 2. Số chia = 99 : 9 = 11.
+    Bước 3. Thử lại: 11 × 9 + 7 = 106 đúng.
+    ✅ Kết luận: số chia là 11.
+    ⚠️ Dễ nhầm: Nhớ trừ số dư 7 trước khi chia cho thương.
+
+### nat.chiadu
+Q: Trong một phép chia có dư, số chia là 7, thương là 7, số dư là 3. Số bị chia là:
+  ✔ 52
+  ✘ 49 | 46 | 55
+  why: {"46":"trừ số dư thay vì cộng","49":"quên cộng số dư","55":"cộng số dư hai lần"}
+  GIẢI:
+    Bước 1. Trong phép chia có dư: số bị chia = số chia × thương + số dư.
+    Bước 2. Số bị chia = 7 × 7 + 3.
+    Bước 3. 7 × 7 = 49, cộng 3 được 52.
+    ✅ Kết luận: số bị chia là 52.
+    ⚠️ Dễ nhầm: Phải cộng thêm số dư. 7 × 7 = 49 mới là phần chia hết.
+
+### nat.chinhphuong4
+Q: Cho A = n(n+1)(n+2)(n+3) + 1. Với n = 4, A bằng bình phương của số tự nhiên nào?
+  ✔ 29
+  ✘ 27 | 30 | 28
+  why: {"27":"trừ 1 thay vì cộng 1","28":"lấy tích hai thừa số ngoài, quên cộng 1","30":"lấy tích hai thừa số giữa"}
+  GIẢI:
+    Bước 1. Với n = 4: A = 4×5×6×7 + 1 = 840 + 1 = 841.
+    Bước 2. Ghép thừa số đầu với cuối, hai thừa số giữa với nhau: 4×7 = 28 và 5×6 = 30. Hai tích này hơn kém 2.
+    Bước 3. Đặt t = 28: A = t × (t + 2) + 1 = t² + 2t + 1 = (t + 1)².
+    Bước 4. Vậy A = (28 + 1)² = 29².
+    ✅ Kết luận: A = 29² = 841.
+    ⚠️ Dễ nhầm: Quên số 1 cuối sẽ lấy 28; lấy tích hai thừa số giữa sẽ ra 30.
+
+### nat.chinhphuong4
+Q: Cho A = n(n+1)(n+2)(n+3) + 1. Với n = 7, A bằng bình phương của số tự nhiên nào?
+  ✔ 71
+  ✘ 69 | 70 | 72
+  why: {"69":"trừ 1 thay vì cộng 1","70":"lấy tích hai thừa số ngoài, quên cộng 1","72":"lấy tích hai thừa số giữa"}
+  GIẢI:
+    Bước 1. Với n = 7: A = 7×8×9×10 + 1 = 5040 + 1 = 5041.
+    Bước 2. Ghép thừa số đầu với cuối, hai thừa số giữa với nhau: 7×10 = 70 và 8×9 = 72. Hai tích này hơn kém 2.
+    Bước 3. Đặt t = 70: A = t × (t + 2) + 1 = t² + 2t + 1 = (t + 1)².
+    Bước 4. Vậy A = (70 + 1)² = 71².
+    ✅ Kết luận: A = 71² = 5041.
+    ⚠️ Dễ nhầm: Quên số 1 cuối sẽ lấy 70; lấy tích hai thừa số giữa sẽ ra 72.
+
+### nat.chuso_k
+Q: Viết liên tiếp các số tự nhiên từ 1 để được dãy chữ số 123456789101112… Chữ số thứ 661 của dãy là chữ số nào?
+  ✔ 2
+  ✘ 7 | 5 | 0
+  why: {"5":"là chữ số thứ 2 của 257, chưa đúng vị trí","7":"là chữ số thứ 3 của 257, chưa đúng vị trí"}
+  GIẢI:
+    Bước 1. Có 9 số có 1 chữ số → 9 chữ số; có 90 số có 2 chữ số → 180 chữ số. Tổng cộng 189 chữ số.
+    Bước 2. Chữ số thứ 661 nằm trong các số có 3 chữ số, là chữ số thứ 661 - 189 = 472 kể từ số 100.
+    Bước 3. Mỗi số chiếm 3 chữ số: 472 = 3 × 157 + 1. Đã viết trọn 157 số (100; 101; …; 256).
+    Bước 4. Chữ số cần tìm là chữ số thứ 1 của số tiếp theo là 257.
+    ✅ Kết luận: chữ số thứ 661 là 2.
+    ⚠️ Dễ nhầm: Đếm lệch 1 vị trí sẽ lấy nhầm chữ số của số 256 hoặc 258.
+
+### nat.chuso_k
+Q: Viết liên tiếp các số tự nhiên từ 1 để được dãy chữ số 123456789101112… Chữ số thứ 300 của dãy là chữ số nào?
+  ✔ 6
+  ✘ 3 | 5 | 1
+  why: {"1":"là chữ số thứ 1 của 136, chưa đúng vị trí","3":"là chữ số thứ 2 của 136, chưa đúng vị trí","5":"là chữ số thứ 3 của 135, nhầm sang số bên cạnh"}
+  GIẢI:
+    Bước 1. Có 9 số có 1 chữ số → 9 chữ số; có 90 số có 2 chữ số → 180 chữ số. Tổng cộng 189 chữ số.
+    Bước 2. Chữ số thứ 300 nằm trong các số có 3 chữ số, là chữ số thứ 300 - 189 = 111 kể từ số 100.
+    Bước 3. Mỗi số chiếm 3 chữ số: 111 = 3 × 36 + 3. Đã viết trọn 36 số (100; 101; …; 135).
+    Bước 4. Chữ số cần tìm là chữ số thứ 3 của số tiếp theo là 136.
+    ✅ Kết luận: chữ số thứ 300 là 6.
+    ⚠️ Dễ nhầm: Đếm lệch 1 vị trí sẽ lấy nhầm chữ số của số 135 hoặc 137.
+
+### nat.dem_chia
+Q: Có bao nhiêu số tự nhiên có 3 chữ số, chia hết cho 7 và có chữ số tận cùng bằng 9?
+  ✔ 13
+  ✘ 12 | 128 | 90
+  why: {"12":"quên cộng 1 khi đếm số số hạng","90":"đếm mọi số tận cùng 9, bỏ điều kiện chia hết","128":"đếm mọi bội của 7, bỏ điều kiện tận cùng"}
+  GIẢI:
+    Bước 1. Số cần đếm vừa chia hết cho 7, vừa tận cùng bằng 9. Hai số liền nhau thỏa mãn cách nhau 10 × 7 = 70 (vì chia hết cho 7 và có cùng chữ số tận cùng).
+    Bước 2. Số nhỏ nhất có 3 chữ số thỏa mãn: 119. Số lớn nhất: 959.
+    Bước 3. Đây là dãy cách đều với khoảng cách 70: 119; 189; …; 959.
+    Bước 4. Số số hạng = (959 - 119) : 70 + 1 = 12 + 1 = 13.
+    ✅ Kết luận: có 13 số.
+    ⚠️ Dễ nhầm: Đếm số số hạng của dãy cách đều phải cộng thêm 1: (959 - 119) : 70 = 12 mới là số khoảng.
+
+### nat.dem_chia
+Q: Có bao nhiêu số tự nhiên có 3 chữ số, chia hết cho 3 và có chữ số tận cùng bằng 5?
+  ✔ 30
+  ✘ 300 | 291 | 90
+  why: {"90":"đếm mọi số tận cùng 5, bỏ điều kiện chia hết","291":"lấy khoảng cách 3 thay vì 30","300":"đếm mọi bội của 3, bỏ điều kiện tận cùng"}
+  GIẢI:
+    Bước 1. Số cần đếm vừa chia hết cho 3, vừa tận cùng bằng 5. Hai số liền nhau thỏa mãn cách nhau 10 × 3 = 30 (vì chia hết cho 3 và có cùng chữ số tận cùng).
+    Bước 2. Số nhỏ nhất có 3 chữ số thỏa mãn: 105. Số lớn nhất: 975.
+    Bước 3. Đây là dãy cách đều với khoảng cách 30: 105; 135; …; 975.
+    Bước 4. Số số hạng = (975 - 105) : 30 + 1 = 29 + 1 = 30.
+    ✅ Kết luận: có 30 số.
+    ⚠️ Dễ nhầm: Đếm số số hạng của dãy cách đều phải cộng thêm 1: (975 - 105) : 30 = 29 mới là số khoảng.
+
+### nat.quyluat
+Q: Tìm số hạng tiếp theo của dãy: 4; 12; 36; 108; 324; …
+  ✔ 972
+  ✘ 2916 | 327 | 540
+  why: {"327":"cộng 3 thay vì nhân 3","540":"coi dãy là cách đều","2916":"nhân thừa một lần (×9)"}
+  GIẢI:
+    Bước 1. Lấy số sau chia số trước: 12 : 4 = 3; 36 : 12 = 3; … đều bằng 3.
+    Bước 2. Quy luật: mỗi số gấp 3 lần số liền trước.
+    Bước 3. Số cần tìm = 324 × 3 = 972.
+    ✅ Kết luận: 972
+    ⚠️ Dễ nhầm: Dãy nhân: không dùng hiệu hai số liền kề để dự đoán.
+
+### nat.quyluat
+Q: Tìm số hạng tiếp theo của dãy: 4; 8; 16; 32; 64; …
+  ✔ 128
+  ✘ 256 | 66 | 96
+  why: {"66":"cộng 2 thay vì nhân 2","96":"coi dãy là cách đều","256":"nhân thừa một lần (×4)"}
+  GIẢI:
+    Bước 1. Lấy số sau chia số trước: 8 : 4 = 2; 16 : 8 = 2; … đều bằng 2.
+    Bước 2. Quy luật: mỗi số gấp 2 lần số liền trước.
+    Bước 3. Số cần tìm = 64 × 2 = 128.
+    ✅ Kết luận: 128
+    ⚠️ Dễ nhầm: Dãy nhân: không dùng hiệu hai số liền kề để dự đoán.
+
+### nat.sosanhtich
+Q: So sánh A = 24 × 24 và B = 23 × 25 (không cần tính ra kết quả):
+  ✔ A > B
+  ✘ A = B | Không so sánh được | A < B
+  why: {"A = B":"cùng tổng hai thừa số nhưng tích không bằng nhau","Không so sánh được":"có thể so sánh bằng cách tách tích, không cần tính cả hai","A < B":"ngược chiều: hai thừa số càng gần nhau thì tích càng LỚN"}
+  GIẢI:
+    Bước 1. Hai tích đều có tổng hai thừa số bằng 48 (23 + 25 = 24 + 24 = 48).
+    Bước 2. Tách: 24 × 24 = 23 × 24 + 1 × 24.
+    Bước 3. Tách: 23 × 25 = 23 × 24 + 23 × 1.
+    Bước 4. Hai vế có chung 23 × 24; còn lại 1 × 24 = 24 lớn hơn 23 × 1 = 23.
+    Bước 5. Vậy 24 × 24 = 576 lớn hơn 23 × 25 = 575 đúng 1 đơn vị.
+    ✅ Kết luận: A > B (tích hai số có tổng không đổi thì lớn nhất khi hai số bằng nhau).
+    ⚠️ Dễ nhầm: Hai tích có cùng tổng các thừa số chưa chắc bằng nhau.
+
+### nat.sosanhtich
+Q: So sánh A = 83 × 89 và B = 86 × 86 (không cần tính ra kết quả):
+  ✔ A < B
+  ✘ A = B | Không so sánh được | A > B
+  why: {"A = B":"cùng tổng hai thừa số nhưng tích không bằng nhau","Không so sánh được":"có thể so sánh bằng cách tách tích, không cần tính cả hai","A > B":"ngược chiều: hai thừa số càng gần nhau thì tích càng LỚN"}
+  GIẢI:
+    Bước 1. Hai tích đều có tổng hai thừa số bằng 172 (83 + 89 = 86 + 86 = 172).
+    Bước 2. Tách: 86 × 86 = 83 × 86 + 3 × 86.
+    Bước 3. Tách: 83 × 89 = 83 × 86 + 83 × 3.
+    Bước 4. Hai vế có chung 83 × 86; còn lại 3 × 86 = 258 lớn hơn 83 × 3 = 249.
+    Bước 5. Vậy 86 × 86 = 7396 lớn hơn 83 × 89 = 7387 đúng 9 đơn vị.
+    ✅ Kết luận: A < B (tích hai số có tổng không đổi thì lớn nhất khi hai số bằng nhau).
+    ⚠️ Dễ nhầm: Hai tích có cùng tổng các thừa số chưa chắc bằng nhau.
+
+### nat.timx_ngoac
+Q: Tìm số tự nhiên x, biết: 900 : [166 - (2x - 6)] = 6
+  ✔ 11
+  ✘ 5 | 8 | 22
+  why: {"5":"sai dấu khi chuyển 6 (phải cộng, không trừ)","8":"quên cộng 6 khi chuyển vế","22":"quên chia 2 ở bước cuối (đó mới là 2x)"}
+  GIẢI:
+    Bước 1. Số chia = 900 : 6 = 150: ngoặc vuông [166 - (2x - 6)] = 150.
+    Bước 2. Số trừ = số bị trừ - hiệu: (2x - 6) = 166 - 150 = 16.
+    Bước 3. 2x = 16 + 6 = 22.
+    Bước 4. x = 22 : 2 = 11.
+    ✅ Kết luận: x = 11.
+    ⚠️ Dễ nhầm: Giải từ ngoài vào trong. Thử lại: 166 - (2×11 - 6) = 166 - 16 = 150; 900 : 150 = 6 đúng.
+
+### nat.timx_ngoac
+Q: Tìm số tự nhiên x, biết: 720 : [82 - (2x - 2)] = 18
+  ✔ 22
+  ✘ 21 | 20 | 44
+  why: {"20":"sai dấu khi chuyển 2 (phải cộng, không trừ)","21":"quên cộng 2 khi chuyển vế","44":"quên chia 2 ở bước cuối (đó mới là 2x)"}
+  GIẢI:
+    Bước 1. Số chia = 720 : 18 = 40: ngoặc vuông [82 - (2x - 2)] = 40.
+    Bước 2. Số trừ = số bị trừ - hiệu: (2x - 2) = 82 - 40 = 42.
+    Bước 3. 2x = 42 + 2 = 44.
+    Bước 4. x = 44 : 2 = 22.
+    ✅ Kết luận: x = 22.
+    ⚠️ Dễ nhầm: Giải từ ngoài vào trong. Thử lại: 82 - (2×22 - 2) = 82 - 42 = 40; 720 : 40 = 18 đúng.
+
+### nat.tongday
+Q: Tính tổng S = 9 + 11 + 13 + … + 121 (các số hạng cách đều 2 đơn vị).
+  ✔ 3705
+  ✘ 3770 | 7410 | 3640
+  why: {"3640":"đếm thiếu 1 số hạng (quên cộng 1)","3770":"đếm thừa 1 số hạng","7410":"quên chia cho 2"}
+  GIẢI:
+    Bước 1. Hai số liền nhau hơn kém 2, đây là dãy cách đều.
+    Bước 2. Số số hạng = (121 - 9) : 2 + 1 = 56 + 1 = 57.
+    Bước 3. Ghép cặp đầu với cuối: 9 + 121 = 130; có 57 số hạng nên tổng = (130 × 57) : 2.
+    Bước 4. 130 × 57 = 7410; chia 2 được 3705.
+    ✅ Kết luận: S = 3705.
+    ⚠️ Dễ nhầm: Số số hạng = (số cuối - số đầu) : khoảng cách + 1, đừng quên "+ 1" và ":2".
+
+### nat.tongday
+Q: Tính tổng S = 3 + 5 + 7 + … + 75 (các số hạng cách đều 2 đơn vị).
+  ✔ 1443
+  ✘ 1482 | 1404 | 2886
+  why: {"1404":"đếm thiếu 1 số hạng (quên cộng 1)","1482":"đếm thừa 1 số hạng","2886":"quên chia cho 2"}
+  GIẢI:
+    Bước 1. Hai số liền nhau hơn kém 2, đây là dãy cách đều.
+    Bước 2. Số số hạng = (75 - 3) : 2 + 1 = 36 + 1 = 37.
+    Bước 3. Ghép cặp đầu với cuối: 3 + 75 = 78; có 37 số hạng nên tổng = (78 × 37) : 2.
+    Bước 4. 78 × 37 = 2886; chia 2 được 1443.
+    ✅ Kết luận: S = 1443.
+    ⚠️ Dễ nhầm: Số số hạng = (số cuối - số đầu) : khoảng cách + 1, đừng quên "+ 1" và ":2".
+
+### nat.trang
+Q: Để đánh số trang một cuốn sách (bắt đầu từ trang 1), người ta phải viết tất cả 1536 chữ số. Cuốn sách có bao nhiêu trang?
+  ✔ 548
+  ✘ 549 | 512 | 449
+  why: {"449":"mới đếm các trang 3 chữ số","512":"coi mọi trang đều có 3 chữ số","549":"cộng 100 thay vì 99 trang đầu"}
+  GIẢI:
+    Bước 1. Trang 1 đến 9: 9 trang × 1 chữ số = 9 chữ số.
+    Bước 2. Trang 10 đến 99: 90 trang × 2 chữ số = 180 chữ số.
+    Bước 3. Đã dùng 9 + 180 = 189 chữ số, còn lại 1536 - 189 = 1347 chữ số cho các trang có 3 chữ số.
+    Bước 4. Số trang có 3 chữ số: 1347 : 3 = 449.
+    Bước 5. Tổng số trang: 99 + 449 = 548.
+    ✅ Kết luận: cuốn sách có 548 trang.
+    ⚠️ Dễ nhầm: Quên cộng 99 trang đầu sẽ ra 449; cộng 100 thay vì 99 sẽ ra 549.
+
+### nat.trang
+Q: Để đánh số trang một cuốn sách (bắt đầu từ trang 1), người ta phải viết tất cả 1734 chữ số. Cuốn sách có bao nhiêu trang?
+  ✔ 614
+  ✘ 615 | 515 | 578
+  why: {"515":"mới đếm các trang 3 chữ số","578":"coi mọi trang đều có 3 chữ số","615":"cộng 100 thay vì 99 trang đầu"}
+  GIẢI:
+    Bước 1. Trang 1 đến 9: 9 trang × 1 chữ số = 9 chữ số.
+    Bước 2. Trang 10 đến 99: 90 trang × 2 chữ số = 180 chữ số.
+    Bước 3. Đã dùng 9 + 180 = 189 chữ số, còn lại 1734 - 189 = 1545 chữ số cho các trang có 3 chữ số.
+    Bước 4. Số trang có 3 chữ số: 1545 : 3 = 515.
+    Bước 5. Tổng số trang: 99 + 515 = 614.
+    ✅ Kết luận: cuốn sách có 614 trang.
+    ⚠️ Dễ nhầm: Quên cộng 99 trang đầu sẽ ra 515; cộng 100 thay vì 99 sẽ ra 615.
+
+### pct.honkem
+Q: Số A bằng 25% của số B. Hỏi số B lớn hơn số A bao nhiêu phần trăm của A?
+  ✔ 300%
+  ✘ 25% | 400% | 75%
+  why: {"25%":"đó là A bằng bao nhiêu % của B","400%":"đó là B bằng bao nhiêu % của A, chưa trừ 100%","75%":"so sánh với B thay vì A"}
+  GIẢI:
+    Bước 1. Coi số B là 100 phần thì số A là 25 phần.
+    Bước 2. B hơn A: 100 - 25 = 75 (phần).
+    Bước 3. So với A: 75 : 25 = 3 = 300%.
+    ✅ Kết luận: B hơn A 300%.
+    ⚠️ Dễ nhầm: Phải so với A (số được so sánh), không phải so với B: 75% là A kém B.
+
+### pct.honkem
+Q: Số A bằng 40% của số B. Hỏi số B lớn hơn số A bao nhiêu phần trăm của A?
+  ✔ 150%
+  ✘ 40% | 250% | 60%
+  why: {"40%":"đó là A bằng bao nhiêu % của B","250%":"đó là B bằng bao nhiêu % của A, chưa trừ 100%","60%":"so sánh với B thay vì A"}
+  GIẢI:
+    Bước 1. Coi số B là 100 phần thì số A là 40 phần.
+    Bước 2. B hơn A: 100 - 40 = 60 (phần).
+    Bước 3. So với A: 60 : 40 = 1,5 = 150%.
+    ✅ Kết luận: B hơn A 150%.
+    ⚠️ Dễ nhầm: Phải so với A (số được so sánh), không phải so với B: 60% là A kém B.
+
+### pct.laikep
+Q: Gửi 500 triệu đồng vào ngân hàng với lãi suất 10%/năm theo thể thức lãi kép (tiền lãi cuối mỗi năm được cộng vào vốn). Sau 2 năm, cả vốn lẫn lãi là (triệu đồng):
+  ✔ 605
+  ✘ 600 | 550 | 100
+  why: {"100":"đó mới chỉ là tiền lãi (lãi đơn), chưa cộng vốn","550":"tính thiếu một năm","600":"tính lãi đơn: lãi các năm sau không tính trên tiền lãi"}
+  GIẢI:
+    Bước 1. Lãi kép: cuối mỗi năm, tiền lãi được cộng vào vốn để năm sau tính lãi tiếp.
+    Bước 2. Năm 1: 500 × 110% = 550 (triệu đồng).
+    Bước 3. Năm 2: 550 × 110% = 605 (triệu đồng).
+    ✅ Kết luận: sau 2 năm có 605 triệu đồng.
+    ⚠️ Dễ nhầm: Lãi đơn (chỉ tính lãi trên vốn ban đầu) cho 600 triệu, thấp hơn lãi kép.
+
+### pct.laikep
+Q: Gửi 200 triệu đồng vào ngân hàng với lãi suất 5%/năm theo thể thức lãi kép (tiền lãi cuối mỗi năm được cộng vào vốn). Sau 2 năm, cả vốn lẫn lãi là (triệu đồng):
+  ✔ 220,5
+  ✘ 20 | 210 | 220
+  why: {"20":"đó mới chỉ là tiền lãi (lãi đơn), chưa cộng vốn","210":"tính thiếu một năm","220":"tính lãi đơn: lãi các năm sau không tính trên tiền lãi"}
+  GIẢI:
+    Bước 1. Lãi kép: cuối mỗi năm, tiền lãi được cộng vào vốn để năm sau tính lãi tiếp.
+    Bước 2. Năm 1: 200 × 105% = 210 (triệu đồng).
+    Bước 3. Năm 2: 210 × 105% = 220,5 (triệu đồng).
+    ✅ Kết luận: sau 2 năm có 220,5 triệu đồng.
+    ⚠️ Dễ nhầm: Lãi đơn (chỉ tính lãi trên vốn ban đầu) cho 220 triệu, thấp hơn lãi kép.
+
+### pct.nongdo
+Q: Có 160 g dung dịch muối nồng độ 25%. Cần thêm bao nhiêu gam nước để được dung dịch muối nồng độ 10%?
+  ✔ 240
+  ✘ 40 | 24 | 160
+  why: {"24":"nhân khối lượng với hiệu hai nồng độ","40":"đó là khối lượng muối","160":"thêm lượng nước bằng khối lượng dung dịch"}
+  GIẢI:
+    Bước 1. Khối lượng muối trong 160 g dung dịch 25% là 160 × 25% = 40 g. Thêm nước thì lượng muối này không đổi.
+    Bước 2. Dung dịch 10% chứa 40 g muối thì khối lượng dung dịch mới là 40 : 10% = 400 g.
+    Bước 3. Lượng nước cần thêm = 400 - 160 = 240 g.
+    ✅ Kết luận: cần thêm 240 g nước.
+    ⚠️ Dễ nhầm: 400 g là khối lượng cả dung dịch mới, phải trừ đi 160 g dung dịch đã có.
+
+### pct.nongdo
+Q: Có 400 g dung dịch muối nồng độ 15%. Cần thêm bao nhiêu gam nước để được dung dịch muối nồng độ 10%?
+  ✔ 200
+  ✘ 600 | 20 | 400
+  why: {"20":"nhân khối lượng với hiệu hai nồng độ","400":"thêm lượng nước bằng khối lượng dung dịch","600":"đó là khối lượng dung dịch mới, chưa trừ phần đã có"}
+  GIẢI:
+    Bước 1. Khối lượng muối trong 400 g dung dịch 15% là 400 × 15% = 60 g. Thêm nước thì lượng muối này không đổi.
+    Bước 2. Dung dịch 10% chứa 60 g muối thì khối lượng dung dịch mới là 60 : 10% = 600 g.
+    Bước 3. Lượng nước cần thêm = 600 - 400 = 200 g.
+    ✅ Kết luận: cần thêm 200 g nước.
+    ⚠️ Dễ nhầm: 600 g là khối lượng cả dung dịch mới, phải trừ đi 400 g dung dịch đã có.
+
+### pct.tanggiam
+Q: Giá một mặt hàng tăng 20%, sau đó lại giảm 20% (tính trên giá đã tăng). So với giá ban đầu, giá cuối cùng:
+  ✔ giảm 4%
+  ✘ giảm 20% | tăng 4% | không đổi
+  why: {"giảm 20%":"nhầm cơ sở: lần giảm tính trên giá đã tăng chứ không phải giá gốc","tăng 4%":"nhầm chiều thay đổi","không đổi":"tăng rồi giảm cùng 20% không triệt tiêu vì cơ sở tính khác nhau"}
+  GIẢI:
+    Bước 1. Giả sử giá ban đầu là 100.
+    Bước 2. Sau khi tăng 20%: 100 + 20 = 120.
+    Bước 3. Giảm 20% của giá mới: 120 × 20% = 24, nên giá cuối = 120 - 24 = 96.
+    Bước 4. So với giá ban đầu (100) giá cuối 96 giảm 4%.
+    ✅ Kết luận: giá giảm 4%.
+    ⚠️ Dễ nhầm: Hai lần tính phần trăm có cơ sở khác nhau (100 và 120) nên không triệt tiêu nhau.
+
+### pct.tanggiam
+Q: Giá một mặt hàng tăng 40%, sau đó lại giảm 40% (tính trên giá đã tăng). So với giá ban đầu, giá cuối cùng:
+  ✔ giảm 16%
+  ✘ không đổi | giảm 40% | tăng 16%
+  why: {"không đổi":"tăng rồi giảm cùng 40% không triệt tiêu vì cơ sở tính khác nhau","giảm 40%":"nhầm cơ sở: lần giảm tính trên giá đã tăng chứ không phải giá gốc","tăng 16%":"nhầm chiều thay đổi"}
+  GIẢI:
+    Bước 1. Giả sử giá ban đầu là 100.
+    Bước 2. Sau khi tăng 40%: 100 + 40 = 140.
+    Bước 3. Giảm 40% của giá mới: 140 × 40% = 56, nên giá cuối = 140 - 56 = 84.
+    Bước 4. So với giá ban đầu (100) giá cuối 84 giảm 16%.
+    ✅ Kết luận: giá giảm 16%.
+    ⚠️ Dễ nhầm: Hai lần tính phần trăm có cơ sở khác nhau (100 và 140) nên không triệt tiêu nhau.
+
+### pow.cmp_mu
+Q: So sánh A = 5^40 và B = 3^30.
+  ✔ A > B
+  ✘ Không so sánh được | A < B | A = B
+  why: {"Không so sánh được":"đưa về cùng số mũ là so sánh được","A < B":"ngược chiều (cơ số lớn hơn thì lũy thừa lớn hơn)","A = B":"nhầm: sau khi đưa về cùng số mũ vẫn phải so sánh hai cơ số mới"}
+  GIẢI:
+    Bước 1. Hai số mũ 40 và 30 cùng chia hết cho 10: 40 = 4 × 10; 30 = 3 × 10.
+    Bước 2. A = 5^40 = (5^4)^10 = 625^10; B = 3^30 = (3^3)^10 = 27^10.
+    Bước 3. Hai lũy thừa cùng số mũ 10: cơ số lớn hơn thì lũy thừa lớn hơn. Ta có 625 > 27.
+    ✅ Kết luận: A > B.
+    ⚠️ Dễ nhầm: Số mũ khác nhau thì không thể so sánh trực tiếp hai cơ số 5 và 3.
+
+### pow.cmp_mu
+Q: So sánh A = 3^180 và B = 9^150.
+  ✔ A < B
+  ✘ A > B | A = B | Không so sánh được
+  why: {"A > B":"ngược chiều (cơ số lớn hơn thì lũy thừa lớn hơn)","A = B":"nhầm: sau khi đưa về cùng số mũ vẫn phải so sánh hai cơ số mới","Không so sánh được":"đưa về cùng số mũ là so sánh được"}
+  GIẢI:
+    Bước 1. Hai số mũ 180 và 150 cùng chia hết cho 30: 180 = 6 × 30; 150 = 5 × 30.
+    Bước 2. A = 3^180 = (3^6)^30 = 729^30; B = 9^150 = (9^5)^30 = 59049^30.
+    Bước 3. Hai lũy thừa cùng số mũ 30: cơ số lớn hơn thì lũy thừa lớn hơn. Ta có 729 < 59049.
+    ✅ Kết luận: A < B.
+    ⚠️ Dễ nhầm: Số mũ khác nhau thì không thể so sánh trực tiếp hai cơ số 3 và 9.
+
+### pow.cmp_trunggian
+Q: So sánh A = 8^9 và B = 9^8.
+  ✔ A > B
+  ✘ A = B | A < B | Không so sánh được
+  why: {"A = B":"hai lũy thừa khác cơ số, khác số mũ không thể bằng nhau","A < B":"ngược chiều: chưa bắc cầu qua lũy thừa trung gian","Không so sánh được":"có thể bắc cầu qua lũy thừa trung gian"}
+  GIẢI:
+    Bước 1. 9^8 < 10^8 = (10^2)^4 = 100^4 = 100 × 100^3.
+    Bước 2. 8^9 = (8^3)^3 = 512^3 > 500^3 = (5 × 100)^3 = 125 × 100^3.
+    Bước 3. Vì 100 × 100^3 < 125 × 100^3 nên 9^8 < 8^9.
+    ✅ Kết luận: A > B.
+    ⚠️ Dễ nhầm: Không thể so sánh bằng cách "nhìn" cơ số hay số mũ: phải bắc cầu qua một lũy thừa trung gian cùng cơ số hoặc cùng số mũ.
+
+### pow.cmp_trunggian
+Q: So sánh A = 31^11 và B = 17^14.
+  ✔ A < B
+  ✘ A > B | A = B | Không so sánh được
+  why: {"A > B":"ngược chiều: chưa bắc cầu qua lũy thừa trung gian","A = B":"hai lũy thừa khác cơ số, khác số mũ không thể bằng nhau","Không so sánh được":"có thể bắc cầu qua lũy thừa trung gian"}
+  GIẢI:
+    Bước 1. 17^14 > 16^14 = (2^4)^14 = 2^56.
+    Bước 2. 31^11 < 32^11 = (2^5)^11 = 2^55.
+    Bước 3. Vì 2^56 > 2^55 nên 17^14 > 2^56 > 2^55 > 31^11.
+    ✅ Kết luận: A < B.
+    ⚠️ Dễ nhầm: Không thể so sánh bằng cách "nhìn" cơ số hay số mũ: phải bắc cầu qua một lũy thừa trung gian cùng cơ số hoặc cùng số mũ.
+
+### pow.dang
+Q: Viết tích 27 × 9 × 81 dưới dạng lũy thừa của 3: 3^?
+  ✔ 9
+  ✘ 24 | 8 | 117
+  why: {"8":"cộng thiếu 1","24":"nhân các số mũ thay vì cộng","117":"cộng các thừa số"}
+  GIẢI:
+    Bước 1. Viết từng thừa số dưới dạng lũy thừa của 3: 27 = 3^3; 9 = 3^2; 81 = 3^4.
+    Bước 2. Nhân các lũy thừa cùng cơ số: giữ cơ số, cộng các số mũ.
+    Bước 3. Số mũ: 3 + 2 + 4 = 9.
+    ✅ Kết luận: tích bằng 3^9.
+    ⚠️ Dễ nhầm: Nhân cùng cơ số thì CỘNG số mũ, không nhân số mũ.
+
+### pow.dang
+Q: Viết tích 4 × 32 × 16 dưới dạng lũy thừa của 2: 2^?
+  ✔ 11
+  ✘ 40 | 12 | 10
+  why: {"10":"cộng thiếu 1","12":"cộng thừa 1","40":"nhân các số mũ thay vì cộng"}
+  GIẢI:
+    Bước 1. Viết từng thừa số dưới dạng lũy thừa của 2: 4 = 2^2; 32 = 2^5; 16 = 2^4.
+    Bước 2. Nhân các lũy thừa cùng cơ số: giữ cơ số, cộng các số mũ.
+    Bước 3. Số mũ: 2 + 5 + 4 = 11.
+    ✅ Kết luận: tích bằng 2^11.
+    ⚠️ Dễ nhầm: Nhân cùng cơ số thì CỘNG số mũ, không nhân số mũ.
+
+### pow.rutgon
+Q: Tính giá trị biểu thức: 2^7·26 + 2^7·272^4·53
+  ✔ 8
+  ✘ 424 | 16 | 128
+  why: {"16":"cộng thêm 1 vào hiệu số mũ","128":"chỉ lấy số mũ của tử","424":"quên rút gọn thừa số 53"}
+  GIẢI:
+    Bước 1. Tử số: đặt thừa số chung 2^7: 2^7·26 + 2^7·27 = 2^7 × (26 + 27) = 2^7 × 53.
+    Bước 2. Mẫu số là 2^4 × 53.
+    Bước 3. Chia tử cho mẫu: (2^7 × 53) : (2^4 × 53) = 2^7 : 2^4.
+    Bước 4. Chia hai lũy thừa cùng cơ số: trừ số mũ: 2^3 = 8.
+    ✅ Kết luận: giá trị bằng 8.
+    ⚠️ Dễ nhầm: Đặt thừa số chung trước, đừng tính từng lũy thừa lớn.
+
+### pow.rutgon
+Q: Tính giá trị biểu thức: 3^7·6 + 3^7·193^4·25
+  ✔ 27
+  ✘ 81 | 675 | 9
+  why: {"9":"trừ thừa 1 ở số mũ","81":"cộng thêm 1 vào hiệu số mũ","675":"quên rút gọn thừa số 25"}
+  GIẢI:
+    Bước 1. Tử số: đặt thừa số chung 3^7: 3^7·6 + 3^7·19 = 3^7 × (6 + 19) = 3^7 × 25.
+    Bước 2. Mẫu số là 3^4 × 25.
+    Bước 3. Chia tử cho mẫu: (3^7 × 25) : (3^4 × 25) = 3^7 : 3^4.
+    Bước 4. Chia hai lũy thừa cùng cơ số: trừ số mũ: 3^3 = 27.
+    ✅ Kết luận: giá trị bằng 27.
+    ⚠️ Dễ nhầm: Đặt thừa số chung trước, đừng tính từng lũy thừa lớn.
+
+### pow.tancung2
+Q: Hai chữ số tận cùng của 7^1418 là:
+  ✔ 49
+  ✘ 07 | 01 | 43
+  why: {"43":"43 đúng khi số mũ chia 4 dư 3","07":"07 đúng khi số mũ chia 4 dư 1","01":"01 đúng khi số mũ chia hết cho 4"}
+  GIẢI:
+    Bước 1. Tính vài lũy thừa đầu: 7^1 = 07; 7^2 = 49; 7^3 = 343 (tận cùng 43); 7^4 = 2401 (tận cùng 01).
+    Bước 2. 7^4 tận cùng 01 nên (7^4)^k cũng tận cùng 01 (01 × 01 = 01).
+    Bước 3. Ta có 1418 = 4 × 354 + 2, nên 7^1418 = (7^4)^354 × 7^2.
+    Bước 4. Hai chữ số tận cùng của 7^1418 chính là của 7^2, tức 49.
+    ✅ Kết luận: hai chữ số tận cùng là 49.
+    ⚠️ Dễ nhầm: Hai chữ số tận cùng của 7^n lặp lại theo chu kì 4: 07; 49; 43; 01 (ứng với số mũ chia 4 dư 1; 2; 3; 0).
+
+### pow.tancung2
+Q: Hai chữ số tận cùng của 7^805 là:
+  ✔ 07
+  ✘ 49 | 01 | 43
+  why: {"43":"43 đúng khi số mũ chia 4 dư 3","49":"49 đúng khi số mũ chia 4 dư 2","01":"01 đúng khi số mũ chia hết cho 4"}
+  GIẢI:
+    Bước 1. Tính vài lũy thừa đầu: 7^1 = 07; 7^2 = 49; 7^3 = 343 (tận cùng 43); 7^4 = 2401 (tận cùng 01).
+    Bước 2. 7^4 tận cùng 01 nên (7^4)^k cũng tận cùng 01 (01 × 01 = 01).
+    Bước 3. Ta có 805 = 4 × 201 + 1, nên 7^805 = (7^4)^201 × 7^1.
+    Bước 4. Hai chữ số tận cùng của 7^805 chính là của 7^1, tức 07.
+    ✅ Kết luận: hai chữ số tận cùng là 07.
+    ⚠️ Dễ nhầm: Hai chữ số tận cùng của 7^n lặp lại theo chu kì 4: 07; 49; 43; 01 (ứng với số mũ chia 4 dư 1; 2; 3; 0).
+
+### pow.tancung_tong
+Q: Chữ số tận cùng của 9^29 × 7^88 là:
+  ✔ 9
+  ✘ 3 | 7 | 0
+  why: {"0":"cộng thay vì nhân","3":"dùng chữ số tận cùng của cơ số, bỏ qua số mũ","7":"lệch chu kì khi số mũ chia hết cho chu kì"}
+  GIẢI:
+    Bước 1. Chữ số tận cùng của 9^k lặp theo chu kì: 9; 1 (chu kì 2).
+    Bước 2. 29 chia 2 dư 1, nên 9^29 tận cùng bằng 9.
+    Bước 3. Chữ số tận cùng của 7^k lặp theo chu kì: 7; 9; 3; 1 (chu kì 4). 88 chia 4 dư 0 (chia hết), nên 7^88 tận cùng bằng 1.
+    Bước 4. Tích có chữ số tận cùng là chữ số tận cùng của 9 × 1 = 9, tức 9.
+    ✅ Kết luận: chữ số tận cùng là 9.
+    ⚠️ Dễ nhầm: Khi số mũ chia hết cho chu kì, lấy PHẦN TỬ CUỐI của chu kì (ví dụ 2^4 tận cùng 6), không lấy phần tử đầu.
+
+### pow.tancung_tong
+Q: Chữ số tận cùng của 9^48 × 4^42 là:
+  ✔ 6
+  ✘ 7 | 5 | 0
+  why: {"7":"cộng thay vì nhân"}
+  GIẢI:
+    Bước 1. Chữ số tận cùng của 9^k lặp theo chu kì: 9; 1 (chu kì 2).
+    Bước 2. 48 chia 2 dư 0 (chia hết), nên 9^48 tận cùng bằng 1.
+    Bước 3. Chữ số tận cùng của 4^k lặp theo chu kì: 4; 6 (chu kì 2). 42 chia 2 dư 0 (chia hết), nên 4^42 tận cùng bằng 6.
+    Bước 4. Tích có chữ số tận cùng là chữ số tận cùng của 1 × 6 = 6, tức 6.
+    ✅ Kết luận: chữ số tận cùng là 6.
+    ⚠️ Dễ nhầm: Khi số mũ chia hết cho chu kì, lấy PHẦN TỬ CUỐI của chu kì (ví dụ 2^4 tận cùng 6), không lấy phần tử đầu.
+
+### pow.timx
+Q: Tìm số tự nhiên x, biết: 3x+1 - 3x = 486
+  ✔ 5
+  ✘ 243 | 6 | 4
+  why: {"4":"trừ thừa 1 khi so sánh số mũ","6":"nhầm x với số mũ của số hạng thứ hai (x + 1)","243":"đó mới là giá trị 3^x, chưa phải số mũ x"}
+  GIẢI:
+    Bước 1. Viết 3x+1 = 3x × 3, nên vế trái = 3x × 3 - 3x = 3x × (3 - 1) = 3x × 2.
+    Bước 2. 3x × 2 = 486, nên 3x = 486 : 2 = 243.
+    Bước 3. 243 = 3^5 nên x = 5.
+    ✅ Kết luận: x = 5.
+    ⚠️ Dễ nhầm: 243 là giá trị của 3^x, chưa phải x.
+
+### pow.timx
+Q: Tìm số tự nhiên x, biết: 3x + 3x+1 = 108
+  ✔ 3
+  ✘ 4 | 27 | 2
+  why: {"2":"trừ thừa 1 khi so sánh số mũ","4":"nhầm x với số mũ của số hạng thứ hai (x + 1)","27":"đó mới là giá trị 3^x, chưa phải số mũ x"}
+  GIẢI:
+    Bước 1. Đặt 3x làm thừa số chung: 3x × (1 + 3) = 3x × 4.
+    Bước 2. 3x × 4 = 108, nên 3x = 108 : 4 = 27.
+    Bước 3. 27 = 3^3 nên x = 3.
+    ✅ Kết luận: x = 3.
+    ⚠️ Dễ nhầm: 27 là giá trị của 3^x, chưa phải x.
+
+### qht.chuvi_cuc_tri
+Q: Một tam giác có hai cạnh dài 11 cm và 12 cm, cạnh thứ ba có độ dài là một số nguyên (cm). Chu vi nhỏ nhất của tam giác là (cm):
+  ✔ 25
+  ✘ 24 | 34 | 26
+  why: {"24":"lấy c = |a − b| (dấu \"=\" không xảy ra)","26":"bỏ sót giá trị c nhỏ nhất","34":"lấy cạnh thứ ba bằng cạnh nhỏ hơn"}
+  GIẢI:
+    Bước 1. Cạnh thứ ba c phải thỏa mãn |11 - 12| < c < 11 + 12, tức 1 < c < 23.
+    Bước 2. c là số nguyên nên 2 ≤ c ≤ 22.
+    Bước 3. Chu vi nhỏ nhất khi c nhỏ nhất = 2: 11 + 12 + 2 = 25 (cm).
+    ✅ Kết luận: chu vi nhỏ nhất là 25 cm.
+    ⚠️ Dễ nhầm: Dấu "<" là bất đẳng thức NGẶT nên c không thể bằng 23 hay 1.
+
+### qht.chuvi_cuc_tri
+Q: Một tam giác có hai cạnh dài 6 cm và 11 cm, cạnh thứ ba có độ dài là một số nguyên (cm). Chu vi nhỏ nhất của tam giác là (cm):
+  ✔ 23
+  ✘ 22 | 24 | 18
+  why: {"18":"lấy c = 1","22":"lấy c = |a − b| (dấu \"=\" không xảy ra)","24":"bỏ sót giá trị c nhỏ nhất"}
+  GIẢI:
+    Bước 1. Cạnh thứ ba c phải thỏa mãn |6 - 11| < c < 6 + 11, tức 5 < c < 17.
+    Bước 2. c là số nguyên nên 6 ≤ c ≤ 16.
+    Bước 3. Chu vi nhỏ nhất khi c nhỏ nhất = 6: 6 + 11 + 6 = 23 (cm).
+    ✅ Kết luận: chu vi nhỏ nhất là 23 cm.
+    ⚠️ Dễ nhầm: Dấu "<" là bất đẳng thức NGẶT nên c không thể bằng 17 hay 5.
+
+### qht.dem_tamgiac
+Q: Có bao nhiêu tam giác (không kể thứ tự các cạnh) có độ dài ba cạnh là các số nguyên (cm) và chu vi bằng 12 cm?
+  ✔ 3
+  ✘ 2 | 4 | 10
+  why: {"2":"bỏ sót 1 bộ","4":"đếm thừa 1 bộ","10":"đếm cả các hoán vị của cùng một bộ ba"}
+  GIẢI:
+    Bước 1. Gọi ba cạnh a ≤ b ≤ c có a + b + c = 12. Điều kiện bất đẳng thức tam giác chỉ cần kiểm tra cho cạnh lớn nhất: a + b > c.
+    Bước 2. Vì a + b + c = 12 nên a + b = 12 - c, điều kiện trở thành 12 - c > c, tức c < 6.
+    Bước 3. Liệt kê các bộ (a; b; c) thỏa mãn: (2; 5; 5), (3; 4; 5), (4; 4; 4).
+    Bước 4. Có 3 tam giác (các hoán vị của cùng một bộ ba chỉ là một tam giác).
+    ✅ Kết luận: có 3 tam giác.
+    ⚠️ Dễ nhầm: Bộ có a + b = c (ví dụ (1; 5; 6)) không tạo thành tam giác vì ba điểm thẳng hàng.
+
+### qht.dem_tamgiac
+Q: Có bao nhiêu tam giác (không kể thứ tự các cạnh) có độ dài ba cạnh là các số nguyên (cm) và chu vi bằng 16 cm?
+  ✔ 5
+  ✘ 9 | 6 | 21
+  why: {"6":"đếm thừa 1 bộ","9":"tính cả các bộ ba suy biến (a + b = c)","21":"đếm cả các hoán vị của cùng một bộ ba"}
+  GIẢI:
+    Bước 1. Gọi ba cạnh a ≤ b ≤ c có a + b + c = 16. Điều kiện bất đẳng thức tam giác chỉ cần kiểm tra cho cạnh lớn nhất: a + b > c.
+    Bước 2. Vì a + b + c = 16 nên a + b = 16 - c, điều kiện trở thành 16 - c > c, tức c < 8.
+    Bước 3. Liệt kê các bộ (a; b; c) thỏa mãn: (2; 7; 7), (3; 6; 7), (4; 5; 7), (4; 6; 6), (5; 5; 6).
+    Bước 4. Có 5 tam giác (các hoán vị của cùng một bộ ba chỉ là một tam giác).
+    ✅ Kết luận: có 5 tam giác.
+    ⚠️ Dễ nhầm: Bộ có a + b = c (ví dụ (1; 7; 8)) không tạo thành tam giác vì ba điểm thẳng hàng.
+
+### qht.sapxep_goc
+Q: Tam giác ABC có AB = 11 cm, BC = 4 cm, CA = 10 cm. Sắp xếp ba góc của tam giác theo thứ tự từ nhỏ đến lớn:
+  ✔ ∠A < ∠B < ∠C
+  ✘ ∠B < ∠A < ∠C | ∠B < ∠C < ∠A | ∠C < ∠A < ∠B
+  why: {"∠B < ∠A < ∠C":"không đúng thứ tự độ dài của ba cạnh đối diện","∠B < ∠C < ∠A":"xếp theo độ dài cạnh kề (AB, BC, CA) thay vì cạnh đối diện","∠C < ∠A < ∠B":"xếp theo độ dài cạnh kề (CA, AB, BC) thay vì cạnh đối diện"}
+  GIẢI:
+    Bước 1. Trong một tam giác, góc đối diện với cạnh lớn hơn thì lớn hơn. Vì vậy phải xét CẠNH ĐỐI DIỆN với từng góc.
+    Bước 2. ∠A đối diện BC = 4 cm; ∠B đối diện CA = 10 cm; ∠C đối diện AB = 11 cm.
+    Bước 3. Sắp xếp độ dài cạnh đối diện từ nhỏ đến lớn: BC = 4 < CA = 10 < AB = 11.
+    Bước 4. Suy ra thứ tự các góc: ∠A < ∠B < ∠C.
+    ✅ Kết luận: ∠A < ∠B < ∠C.
+    ⚠️ Dễ nhầm: Góc nằm ĐỐI DIỆN với cạnh, không phải góc kề cạnh đó.
+
+### qht.sapxep_goc
+Q: Tam giác ABC có AB = 7 cm, BC = 6 cm, CA = 10 cm. Sắp xếp ba góc của tam giác theo thứ tự từ nhỏ đến lớn:
+  ✔ ∠A < ∠C < ∠B
+  ✘ ∠C < ∠A < ∠B | ∠C < ∠B < ∠A | ∠A < ∠B < ∠C
+  why: {"∠C < ∠A < ∠B":"không đúng thứ tự độ dài của ba cạnh đối diện","∠C < ∠B < ∠A":"xếp theo độ dài cạnh kề (CA, AB, BC) thay vì cạnh đối diện","∠A < ∠B < ∠C":"không đúng thứ tự độ dài của ba cạnh đối diện"}
+  GIẢI:
+    Bước 1. Trong một tam giác, góc đối diện với cạnh lớn hơn thì lớn hơn. Vì vậy phải xét CẠNH ĐỐI DIỆN với từng góc.
+    Bước 2. ∠A đối diện BC = 6 cm; ∠B đối diện CA = 10 cm; ∠C đối diện AB = 7 cm.
+    Bước 3. Sắp xếp độ dài cạnh đối diện từ nhỏ đến lớn: BC = 6 < AB = 7 < CA = 10.
+    Bước 4. Suy ra thứ tự các góc: ∠A < ∠C < ∠B.
+    ✅ Kết luận: ∠A < ∠C < ∠B.
+    ⚠️ Dễ nhầm: Góc nằm ĐỐI DIỆN với cạnh, không phải góc kề cạnh đó.
+
+### qht.trungtuyen_tong
+Q: Cho tam giác ABC có ba đường trung tuyến AM = 18 cm, BN = 12 cm, CP = 21 cm cắt nhau tại trọng tâm G (xem hình). Tổng GA + GB + GC bằng (cm):
+  ✔ 34
+  ✘ 25,5 | 51 | 17
+  why: {"17":"dùng tỉ lệ 1/3 thay vì 2/3","51":"cộng ba trung tuyến, quên nhân với 2/3","25,5":"chia đôi tổng ba trung tuyến"}
+  GIẢI:
+    Bước 1. Trọng tâm G chia mỗi trung tuyến thành hai đoạn theo tỉ lệ 2 : 1 (kể từ đỉnh): GA = 23AM; GB = 23BN; GC = 23CP.
+    Bước 2. GA = 23 × 18 = 12; GB = 23 × 12 = 8; GC = 23 × 21 = 14.
+    Bước 3. GA + GB + GC = 12 + 8 + 14 = 34 (cm).
+    ✅ Kết luận: GA + GB + GC = 34 cm.
+    ⚠️ Dễ nhầm: G chia trung tuyến theo tỉ lệ 2 : 1 tính từ ĐỈNH (đoạn dài ở phía đỉnh), nên GA = 23AM, không phải 13AM.
+
+### qht.trungtuyen_tong
+Q: Cho tam giác ABC có ba đường trung tuyến AM = 21 cm, BN = 9 cm, CP = 9 cm cắt nhau tại trọng tâm G (xem hình). Tổng GA + GB + GC bằng (cm):
+  ✔ 26
+  ✘ 13 | 39 | 19,5
+  why: {"13":"dùng tỉ lệ 1/3 thay vì 2/3","39":"cộng ba trung tuyến, quên nhân với 2/3","19,5":"chia đôi tổng ba trung tuyến"}
+  GIẢI:
+    Bước 1. Trọng tâm G chia mỗi trung tuyến thành hai đoạn theo tỉ lệ 2 : 1 (kể từ đỉnh): GA = 23AM; GB = 23BN; GC = 23CP.
+    Bước 2. GA = 23 × 21 = 14; GB = 23 × 9 = 6; GC = 23 × 9 = 6.
+    Bước 3. GA + GB + GC = 14 + 6 + 6 = 26 (cm).
+    ✅ Kết luận: GA + GB + GC = 26 cm.
+    ⚠️ Dễ nhầm: G chia trung tuyến theo tỉ lệ 2 : 1 tính từ ĐỈNH (đoạn dài ở phía đỉnh), nên GA = 23AM, không phải 13AM.
+
+### set.con_chua
+Q: Tập hợp A = {a; b; c; d; e; g; h} có 7 phần tử. Có bao nhiêu tập hợp con của A chứa phần tử a?
+  ✔ 64
+  ✘ 6 | 63 | 128
+  why: {"6":"chỉ đếm số phần tử còn lại","63":"trừ nhầm tập rỗng (tập rỗng không chứa a nên không bị đếm)","128":"đếm cả các tập con không chứa a"}
+  GIẢI:
+    Bước 1. Phần tử a đã được chọn sẵn. Mỗi phần tử trong 6 phần tử còn lại có 2 lựa chọn: thuộc hoặc không thuộc tập con.
+    Bước 2. Số tập con chứa a = 2^6 = 64.
+    Bước 3. Kiểm tra: tổng số tập con 2^7 = 128 chia đều thành hai nhóm: chứa a và không chứa a.
+    ✅ Kết luận: 64 tập con.
+    ⚠️ Dễ nhầm: 2^7 = 128 là tổng số tập con (kể cả không chứa a).
+
+### set.con_chua
+Q: Tập hợp A = {a; b; c; d; e; g} có 6 phần tử. Có bao nhiêu tập hợp con của A chứa cả hai phần tử a và b?
+  ✔ 16
+  ✘ 32 | 8 | 14
+  why: {"8":"nhầm với phép nhân hai số","32":"chỉ cố định một phần tử"}
+  GIẢI:
+    Bước 1. Hai phần tử a và b đã được chọn sẵn.
+    Bước 2. Mỗi phần tử trong 4 phần tử còn lại có 2 lựa chọn: thuộc hoặc không thuộc tập con.
+    Bước 3. Số tập con = 2^4 = 16.
+    ✅ Kết luận: 16 tập con.
+    ⚠️ Dễ nhầm: Mỗi phần tử đã bị ép phải chọn thì không còn "2 lựa chọn" nữa.
+
+### set.dem_buoc
+Q: Tập hợp A = {9; 12; 15; …; 87} (các phần tử cách đều nhau 3 đơn vị) có bao nhiêu phần tử?
+  ✔ 27
+  ✘ 79 | 26 | 28
+  why: {"26":"quên cộng 1","28":"cộng thừa 1","79":"coi khoảng cách là 1 thay vì 3"}
+  GIẢI:
+    Bước 1. Các phần tử cách đều nhau 3 đơn vị: 9; 12; 15; …; 87.
+    Bước 2. Số phần tử = (số cuối - số đầu) : khoảng cách + 1.
+    Bước 3. (87 - 9) : 3 + 1 = 26 + 1 = 27.
+    ✅ Kết luận: tập hợp có 27 phần tử.
+    ⚠️ Dễ nhầm: Đếm số khoảng cách (26) chưa phải số phần tử; phải cộng thêm 1.
+
+### set.dem_buoc
+Q: Tập hợp A = {6; 8; 10; …; 48} (các phần tử cách đều nhau 2 đơn vị) có bao nhiêu phần tử?
+  ✔ 22
+  ✘ 23 | 21 | 43
+  why: {"21":"quên cộng 1","23":"cộng thừa 1","43":"coi khoảng cách là 1 thay vì 2"}
+  GIẢI:
+    Bước 1. Các phần tử cách đều nhau 2 đơn vị: 6; 8; 10; …; 48.
+    Bước 2. Số phần tử = (số cuối - số đầu) : khoảng cách + 1.
+    Bước 3. (48 - 6) : 2 + 1 = 21 + 1 = 22.
+    ✅ Kết luận: tập hợp có 22 phần tử.
+    ⚠️ Dễ nhầm: Đếm số khoảng cách (21) chưa phải số phần tử; phải cộng thêm 1.
+
+### set.venn
+Q: Lớp 6A có 21 học sinh; 14 em thích bóng đá, 11 em thích bóng rổ, trong đó 5 em thích cả hai môn. Có bao nhiêu em CHỈ thích bóng đá (không thích bóng rổ)?
+  ✔ 9
+  ✘ 15 | 6 | 14
+  why: {"6":"nhầm sang nhóm chỉ thích bóng rổ","14":"tính luôn cả nhóm thích cả hai môn","15":"tính số em thích đúng một trong hai môn"}
+  GIẢI:
+    Bước 1. Nhóm thích bóng đá gồm 14 em, trong đó 5 em thích cả hai môn.
+    Bước 2. Những em chỉ thích bóng đá = 14 - 5 = 9.
+    ✅ Kết luận: 9 em.
+    ⚠️ Dễ nhầm: Đáp 14 là tính cả các em thích bóng rổ.
+
+### set.venn
+Q: Lớp 6A có 27 học sinh; 15 em thích bóng đá, 11 em thích bóng rổ, trong đó 6 em thích cả hai môn. Có bao nhiêu em không thích môn nào trong hai môn đó?
+  ✔ 7
+  ✘ 13 | 1 | 12
+  why: {"1":"quên cộng lại phần chung bị trừ hai lần","12":"chỉ trừ nhóm thích bóng đá","13":"cộng lại phần chung hai lần"}
+  GIẢI:
+    Bước 1. Số em thích ít nhất một môn = 15 + 11 - 6 = 20 (trừ 6 em đếm hai lần).
+    Bước 2. Số em không thích môn nào = tổng số học sinh - số em thích ít nhất một môn.
+    Bước 3. = 27 - 20 = 7.
+    ✅ Kết luận: 7 em.
+    ⚠️ Dễ nhầm: Phải trừ phần chung 6 trước, nếu không sẽ ra 1 (có thể âm).
+
+### sht.abs_x
+Q: Tìm x, biết: |x - 32| = 2
+  ✔ x = 7/2 hoặc x = -1/2
+  ✘ x = 2 hoặc x = -2 | chỉ x = 7/2 | x = 1/2 hoặc x = -7/2
+  why: {"x = 2 hoặc x = −2":"quên chuyển phân số còn lại sang vế phải","chỉ x = 7/2":"bỏ sót trường hợp biểu thức bằng số đối","x = 1/2 hoặc x = −7/2":"quên đổi dấu khi chuyển phân số sang vế phải"}
+  GIẢI:
+    Bước 1. |A| = 2 (số dương) nên A = 2 hoặc A = -2.
+    Bước 2. x - 3/2 = 2 ⟹ x = 7/2.
+    Bước 3. x - 3/2 = -2 ⟹ x = -1/2.
+    ✅ Kết luận: x = 7/2 hoặc x = -1/2.
+    ⚠️ Dễ nhầm: Phương trình |A| = số dương có HAI nghiệm; nhớ đổi dấu khi chuyển 3/2 sang vế phải.
+
+### sht.abs_x
+Q: Tìm x, biết: |x + 13| = 25
+  ✔ x = 1/15 hoặc x = -11/15
+  ✘ chỉ x = 1/15 | x = 2/5 hoặc x = -2/5 | x = 11/15 hoặc x = -1/15
+  why: {"chỉ x = 1/15":"bỏ sót trường hợp biểu thức bằng số đối","x = 2/5 hoặc x = −2/5":"quên chuyển phân số còn lại sang vế phải","x = 11/15 hoặc x = −1/15":"quên đổi dấu khi chuyển phân số sang vế phải"}
+  GIẢI:
+    Bước 1. |A| = 2/5 (số dương) nên A = 2/5 hoặc A = -2/5.
+    Bước 2. x + 1/3 = 2/5 ⟹ x = 1/15.
+    Bước 3. x + 1/3 = -2/5 ⟹ x = -11/15.
+    ✅ Kết luận: x = 1/15 hoặc x = -11/15.
+    ⚠️ Dễ nhầm: Phương trình |A| = số dương có HAI nghiệm; nhớ đổi dấu khi chuyển 1/3 sang vế phải.
+
+### sht.luythua_tich
+Q: Tính: (4^3 · 9^5) : 6^7
+  ✔ 27/2
+  ✘ 8/3 | 54 | 1/144
+  why: {"54":"đổi dấu số mũ của một cơ số","8/3":"đảo số mũ giữa hai cơ số","1/144":"coi 4^3 = 2^3 và 9^5 = 3^5 (quên nhân đôi số mũ)"}
+  GIẢI:
+    Bước 1. Viết các cơ số dưới dạng lũy thừa của 2 và 3: 4 = 2^2; 9 = 3^2; 6 = 2·3.
+    Bước 2. Tử = (2^2)^3 · (3^2)^5 = 2^6 · 3^10. Mẫu = (2·3)^7 = 2^7 · 3^7.
+    Bước 3. Chia các lũy thừa cùng cơ số (trừ số mũ): 2^6 : 2^7 = 12^1; 3^10 : 3^7 = 3^3.
+    Bước 4. Kết quả: 12^1 · 3^3 = 27/2.
+    ✅ Kết luận: 27/2.
+    ⚠️ Dễ nhầm: (a^m)^n = a^(m·n): phải NHÂN số mũ khi lũy thừa của lũy thừa.
+
+### sht.luythua_tich
+Q: Tính: (9^3 · 49^2) : 21^5
+  ✔ 3/7
+  ✘ 1/21 | 1/3087 | 7/3
+  why: {"1/21":"đổi dấu số mũ của một cơ số","1/3087":"coi 9^3 = 3^3 và 49^2 = 7^2 (quên nhân đôi số mũ)","7/3":"đảo số mũ giữa hai cơ số"}
+  GIẢI:
+    Bước 1. Viết các cơ số dưới dạng lũy thừa của 3 và 7: 9 = 3^2; 49 = 7^2; 21 = 3·7.
+    Bước 2. Tử = (3^2)^3 · (7^2)^2 = 3^6 · 7^4. Mẫu = (3·7)^5 = 3^5 · 7^5.
+    Bước 3. Chia các lũy thừa cùng cơ số (trừ số mũ): 3^6 : 3^5 = 3^1; 7^4 : 7^5 = 17^1.
+    Bước 4. Kết quả: 3^1 · 17^1 = 3/7.
+    ✅ Kết luận: 3/7.
+    ⚠️ Dễ nhầm: (a^m)^n = a^(m·n): phải NHÂN số mũ khi lũy thừa của lũy thừa.
+
+### sht.min_hai_abs
+Q: Giá trị nhỏ nhất của biểu thức A = |x + 4| + |x + 8| là:
+  ✔ 4
+  ✘ 12 | 0 | 8
+  why: {"0":"cho rằng hai trị tuyệt đối cùng bằng 0 được","8":"nhân đôi kết quả","12":"cộng giá trị tuyệt đối của hai số a và b"}
+  GIẢI:
+    Bước 1. Với mọi x: |x + 8| + |x + 4| = |x + 8| + |-4 - x| ≥ |(x + 8) + (-4 - x)|.
+    Bước 2. Tổng trong dấu giá trị tuyệt đối = -4 - (-8) = 4, nên A ≥ 4.
+    Bước 3. Dấu "=" xảy ra khi (x + 8) và (-4 - x) cùng dấu, tức khi -8 ≤ x ≤ -4. Vậy giá trị nhỏ nhất của A là 4.
+    ✅ Kết luận: giá trị nhỏ nhất là 4.
+    ⚠️ Dễ nhầm: Hai trị tuyệt đối không thể cùng bằng 0 vì x không thể vừa bằng -4 vừa bằng -8.
+
+### sht.min_hai_abs
+Q: Giá trị nhỏ nhất của biểu thức A = |x - 2| + |x + 9| là:
+  ✔ 11
+  ✘ 7 | 22 | 0
+  why: {"0":"cho rằng hai trị tuyệt đối cùng bằng 0 được","7":"lấy |a + b| thay vì |a − b|","22":"nhân đôi kết quả"}
+  GIẢI:
+    Bước 1. Với mọi x: |x + 9| + |x - 2| = |x + 9| + |2 - x| ≥ |(x + 9) + (2 - x)|.
+    Bước 2. Tổng trong dấu giá trị tuyệt đối = 2 - (-9) = 11, nên A ≥ 11.
+    Bước 3. Dấu "=" xảy ra khi (x + 9) và (2 - x) cùng dấu, tức khi -9 ≤ x ≤ 2. Vậy giá trị nhỏ nhất của A là 11.
+    ✅ Kết luận: giá trị nhỏ nhất là 11.
+    ⚠️ Dễ nhầm: Hai trị tuyệt đối không thể cùng bằng 0 vì x không thể vừa bằng 2 vừa bằng -9.
+
+### sht.sosanh
+Q: Sắp xếp các số hữu tỉ sau theo thứ tự tăng dần: -7/10; -1/8; -1/4
+  ✔ -7/10 < -1/4 < -1/8
+  ✘ -1/8 < -1/4 < -7/10 | -7/10 < -1/8 < -1/4 | -1/4 < -7/10 < -1/8
+  why: {"−1/8 < −1/4 < −7/10":"xếp theo giá trị tuyệt đối tăng dần, quên rằng với số âm thì ngược lại","−7/10 < −1/8 < −1/4":"đổi chỗ hai số đứng cạnh nhau do quy đồng sai","−1/4 < −7/10 < −1/8":"đổi chỗ hai số đứng cạnh nhau do quy đồng sai"}
+  GIẢI:
+    Bước 1. Quy đồng mẫu số về 40: -7/10 = -28/40; -1/8 = -5/40; -1/4 = -10/40.
+    Bước 2. Cùng mẫu dương 40, số nào có tử nhỏ hơn thì nhỏ hơn: -28 < -10 < -5.
+    Bước 3. Sắp xếp tăng dần: -7/10 < -1/4 < -1/8.
+    ✅ Kết luận: -7/10 < -1/4 < -1/8.
+    ⚠️ Dễ nhầm: Với số âm, giá trị tuyệt đối càng LỚN thì số càng NHỎ.
+
+### sht.sosanh
+Q: Sắp xếp các số hữu tỉ sau theo thứ tự tăng dần: -7/8; -3/5; -5/6
+  ✔ -7/8 < -5/6 < -3/5
+  ✘ -7/8 < -3/5 < -5/6 | -5/6 < -7/8 < -3/5 | -3/5 < -5/6 < -7/8
+  why: {"−7/8 < −3/5 < −5/6":"đổi chỗ hai số đứng cạnh nhau do quy đồng sai","−5/6 < −7/8 < −3/5":"đổi chỗ hai số đứng cạnh nhau do quy đồng sai","−3/5 < −5/6 < −7/8":"xếp theo giá trị tuyệt đối tăng dần, quên rằng với số âm thì ngược lại"}
+  GIẢI:
+    Bước 1. Quy đồng mẫu số về 120: -7/8 = -105/120; -3/5 = -72/120; -5/6 = -100/120.
+    Bước 2. Cùng mẫu dương 120, số nào có tử nhỏ hơn thì nhỏ hơn: -105 < -100 < -72.
+    Bước 3. Sắp xếp tăng dần: -7/8 < -5/6 < -3/5.
+    ✅ Kết luận: -7/8 < -5/6 < -3/5.
+    ⚠️ Dễ nhầm: Với số âm, giá trị tuyệt đối càng LỚN thì số càng NHỎ.
+
+### sht.tong_day
+Q: Tính: 11·3 + 13·5 + 15·7 + … + 123·25
+  ✔ 12/25
+  ✘ 24/25 | 12/23 | 1/2
+  why: {"24/25":"quên nhân với một nửa","12/23":"nhầm mẫu của số hạng cuối","1/2":"chỉ giữ lại số hạng 1 và bỏ phần trừ cuối"}
+  GIẢI:
+    Bước 1. Mỗi số hạng tách được: 1(2k - 1)(2k + 1) = 12 × (12k - 1 - 12k + 1). Ví dụ 11·3 = 12 × (1 - 13).
+    Bước 2. A = 12 × [(1 - 13) + (13 - 15) + … + (123 - 125)].
+    Bước 3. Các phân số ở giữa triệt tiêu, còn A = 12 × (1 - 125) = 12 × 2425.
+    Bước 4. A = 12/25.
+    ✅ Kết luận: A = 12/25.
+    ⚠️ Dễ nhầm: Đừng quên nhân với 12 (vì hai thừa số ở mẫu hơn kém 2, không phải 1).
+
+### sht.tong_day
+Q: Tính: 11·3 + 13·5 + 15·7 + … + 127·29
+  ✔ 14/29
+  ✘ 28/29 | 14/27 | 1/2
+  why: {"28/29":"quên nhân với một nửa","14/27":"nhầm mẫu của số hạng cuối","1/2":"chỉ giữ lại số hạng 1 và bỏ phần trừ cuối"}
+  GIẢI:
+    Bước 1. Mỗi số hạng tách được: 1(2k - 1)(2k + 1) = 12 × (12k - 1 - 12k + 1). Ví dụ 11·3 = 12 × (1 - 13).
+    Bước 2. A = 12 × [(1 - 13) + (13 - 15) + … + (127 - 129)].
+    Bước 3. Các phân số ở giữa triệt tiêu, còn A = 12 × (1 - 129) = 12 × 2829.
+    Bước 4. A = 14/29.
+    ✅ Kết luận: A = 14/29.
+    ⚠️ Dễ nhầm: Đừng quên nhân với 12 (vì hai thừa số ở mẫu hơn kém 2, không phải 1).
+
+### stat.tbc
+Q: Bạn Lan có 4 bài kiểm tra với điểm trung bình là 8,25. Hỏi bài kiểm tra thứ năm Lan cần được bao nhiêu điểm để điểm trung bình của 5 bài là 8?
+  ✔ 7
+  ✘ 6 | 8 | 40
+  why: {"6":"trừ nhầm 1","8":"nhầm điểm bài thứ năm bằng điểm trung bình mong muốn","40":"đó là tổng điểm 5 bài"}
+  GIẢI:
+    Bước 1. Tổng điểm 4 bài đầu = 8,25 × 4 = 33.
+    Bước 2. Muốn trung bình 5 bài là 8 thì tổng điểm 5 bài = 8 × 5 = 40.
+    Bước 3. Điểm bài thứ năm = 40 - 33 = 7.
+    ✅ Kết luận: bài thứ năm cần 7 điểm.
+    ⚠️ Dễ nhầm: Phải dùng tổng điểm (không dùng trung bình) khi thêm một bài mới.
+
+### stat.tbc
+Q: Bạn Lan có 4 bài kiểm tra với điểm trung bình là 7,25. Hỏi bài kiểm tra thứ năm Lan cần được bao nhiêu điểm để điểm trung bình của 5 bài là 7?
+  ✔ 6
+  ✘ 35 | 5 | 7
+  why: {"5":"trừ nhầm 1","7":"nhầm điểm bài thứ năm bằng điểm trung bình mong muốn","35":"đó là tổng điểm 5 bài"}
+  GIẢI:
+    Bước 1. Tổng điểm 4 bài đầu = 7,25 × 4 = 29.
+    Bước 2. Muốn trung bình 5 bài là 7 thì tổng điểm 5 bài = 7 × 5 = 35.
+    Bước 3. Điểm bài thứ năm = 35 - 29 = 6.
+    ✅ Kết luận: bài thứ năm cần 6 điểm.
+    ⚠️ Dễ nhầm: Phải dùng tổng điểm (không dùng trung bình) khi thêm một bài mới.
+
+### stat.xs_themvao
+Q: Trong hộp có 4 viên bi đỏ và 7 viên bi xanh (cùng kích thước). Cần bỏ thêm bao nhiêu viên bi xanh vào hộp để xác suất lấy được viên bi đỏ bằng 14?
+  ✔ 5
+  ✘ 9 | 12 | 16
+  why: {"9":"quên trừ số bi đỏ","12":"quên trừ số bi xanh có sẵn","16":"đó là tổng số bi sau khi thêm"}
+  GIẢI:
+    Bước 1. Xác suất lấy bi đỏ bằng 14 nghĩa là số bi đỏ bằng 14 tổng số bi.
+    Bước 2. Tổng số bi lúc đó = 4 × 4 = 16 (viên).
+    Bước 3. Số bi hiện có = 4 + 7 = 11.
+    Bước 4. Số bi xanh cần thêm = 16 - 11 = 5.
+    ✅ Kết luận: cần thêm 5 viên bi xanh.
+    ⚠️ Dễ nhầm: Thêm bi xanh làm tổng số bi tăng nhưng số bi đỏ vẫn giữ nguyên 4.
+
+### stat.xs_themvao
+Q: Trong hộp có 5 viên bi đỏ và 10 viên bi xanh (cùng kích thước). Cần bỏ thêm bao nhiêu viên bi xanh vào hộp để xác suất lấy được viên bi đỏ bằng 14?
+  ✔ 5
+  ✘ 20 | 10 | 15
+  why: {"10":"quên trừ số bi đỏ","15":"quên trừ số bi xanh có sẵn","20":"đó là tổng số bi sau khi thêm"}
+  GIẢI:
+    Bước 1. Xác suất lấy bi đỏ bằng 14 nghĩa là số bi đỏ bằng 14 tổng số bi.
+    Bước 2. Tổng số bi lúc đó = 5 × 4 = 20 (viên).
+    Bước 3. Số bi hiện có = 5 + 10 = 15.
+    Bước 4. Số bi xanh cần thêm = 20 - 15 = 5.
+    ✅ Kết luận: cần thêm 5 viên bi xanh.
+    ⚠️ Dễ nhầm: Thêm bi xanh làm tổng số bi tăng nhưng số bi đỏ vẫn giữ nguyên 5.
+
+### sth.dem_so
+Q: Có bao nhiêu số nguyên n thỏa mãn 1 < √n < 6?
+  ✔ 34
+  ✘ 4 | 35 | 5
+  why: {"4":"đếm số nguyên giữa a và b thay vì giữa a² và b²","5":"đếm số nguyên từ a đến b","35":"đếm cả một đầu mút (hoặc quên trừ 1)"}
+  GIẢI:
+    Bước 1. a 0 tương đương a² < n < b².
+    Bước 2. Ở đây 1 < n < 36, nên n lấy các giá trị nguyên từ 2 đến 35.
+    Bước 3. Số giá trị = 35 - 2 + 1 = 34.
+    ✅ Kết luận: có 34 số nguyên n.
+    ⚠️ Dễ nhầm: Dấu "<" ở hai đầu nên phải loại 1 và 36; không đếm 35 số.
+
+### sth.dem_so
+Q: Có bao nhiêu số nguyên n thỏa mãn 1 < √n < 4?
+  ✔ 14
+  ✘ 16 | 3 | 2
+  why: {"2":"đếm số nguyên giữa a và b thay vì giữa a² và b²","3":"đếm số nguyên từ a đến b","16":"đếm cả hai đầu mút"}
+  GIẢI:
+    Bước 1. a 0 tương đương a² < n < b².
+    Bước 2. Ở đây 1 < n < 16, nên n lấy các giá trị nguyên từ 2 đến 15.
+    Bước 3. Số giá trị = 15 - 2 + 1 = 14.
+    ✅ Kết luận: có 14 số nguyên n.
+    ⚠️ Dễ nhầm: Dấu "<" ở hai đầu nên phải loại 1 và 16; không đếm 15 số.
+
+### sth.rutgon_can
+Q: Rút gọn: √192
+  ✔ 8√3
+  ✘ 8√24 | 64√3 | 3√8
+  why: {"8√24":"chỉ rút một nhân tử 8 ra ngoài, quên chia số dưới căn","64√3":"đưa 64 ra ngoài dấu căn mà quên lấy căn","3√8":"đảo hệ số và số dưới dấu căn"}
+  GIẢI:
+    Bước 1. Phân tích 192 = 64 × 3 = 8² × 3 (3 không còn thừa số chính phương).
+    Bước 2. √192 = √(8² × 3) = √(8²) × √3.
+    Bước 3. = 8√3.
+    ✅ Kết luận: √192 = 8√3.
+    ⚠️ Dễ nhầm: Lấy 8 (không phải 64) ra ngoài dấu căn vì √(8²) = 8.
+
+### sth.rutgon_can
+Q: Rút gọn: √112
+  ✔ 4√7
+  ✘ 4√28 | 7√4 | 16√7
+  why: {"4√28":"chỉ rút một nhân tử 4 ra ngoài, quên chia số dưới căn","7√4":"đảo hệ số và số dưới dấu căn","16√7":"đưa 16 ra ngoài dấu căn mà quên lấy căn"}
+  GIẢI:
+    Bước 1. Phân tích 112 = 16 × 7 = 4² × 7 (7 không còn thừa số chính phương).
+    Bước 2. √112 = √(4² × 7) = √(4²) × √7.
+    Bước 3. = 4√7.
+    ✅ Kết luận: √112 = 4√7.
+    ⚠️ Dễ nhầm: Lấy 4 (không phải 16) ra ngoài dấu căn vì √(4²) = 4.
+
+### sth.sosanh_can
+Q: So sánh hai số 5√3 và 3√7.
+  ✔ 5√3 > 3√7
+  ✘ 5√3 = 3√7 | Không so sánh được | 5√3 < 3√7
+  why: {"5√3 = 3√7":"hai bình phương 75 và 63 khác nhau","Không so sánh được":"so sánh được bằng cách bình phương hai vế (hoặc đưa thừa số vào trong căn)","5√3 < 3√7":"đảo chiều bất đẳng thức"}
+  GIẢI:
+    Bước 1. Cả hai số đều dương nên so sánh bình phương của chúng.
+    Bước 2. (5√3)² = 5² × 3 = 25 × 3 = 75; (3√7)² = 3² × 7 = 9 × 7 = 63.
+    Bước 3. 75 > 63 nên 5√3 > 3√7.
+    ✅ Kết luận: 5√3 > 3√7.
+    ⚠️ Dễ nhầm: Đưa thừa số vào trong căn phải bình phương: 5√3 = √(5² × 3) = √75.
+
+### sth.sosanh_can
+Q: So sánh hai số 4√6 và 2√7.
+  ✔ 4√6 > 2√7
+  ✘ 4√6 < 2√7 | 4√6 = 2√7 | Không so sánh được
+  why: {"4√6 < 2√7":"đảo chiều bất đẳng thức","4√6 = 2√7":"hai bình phương 96 và 28 khác nhau","Không so sánh được":"so sánh được bằng cách bình phương hai vế (hoặc đưa thừa số vào trong căn)"}
+  GIẢI:
+    Bước 1. Cả hai số đều dương nên so sánh bình phương của chúng.
+    Bước 2. (4√6)² = 4² × 6 = 16 × 6 = 96; (2√7)² = 2² × 7 = 4 × 7 = 28.
+    Bước 3. 96 > 28 nên 4√6 > 2√7.
+    ✅ Kết luận: 4√6 > 2√7.
+    ⚠️ Dễ nhầm: Đưa thừa số vào trong căn phải bình phương: 4√6 = √(4² × 6) = √96.
+
+### sth.timx_can
+Q: Tìm x, biết: √(x + 6) = 8
+  ✔ 58
+  ✘ 64 | 70 | 2
+  why: {"2":"quên bình phương (đã bỏ dấu căn mà không bình phương vế phải)","64":"quên chuyển +6 sang vế phải","70":"cộng 6 thay vì trừ khi chuyển vế"}
+  GIẢI:
+    Bước 1. Điều kiện: x + 6 ≥ 0. Bình phương hai vế (vế phải 8 > 0): x + 6 = 8² = 64.
+    Bước 2. x = 64 - 6 = 58.
+    Bước 3. x = 58 : 1 = 58.
+    Bước 4. Thử lại: √(1×58 + 6) = √64 = 8 đúng.
+    ✅ Kết luận: x = 58.
+    ⚠️ Dễ nhầm: Phải bình phương cả hai vế rồi mới chuyển vế; và thử lại nghiệm.
+
+### sth.timx_can
+Q: Tìm x, biết: √(4x + 9) = 9
+  ✔ 18
+  ✘ 0 | 22,5 | 72
+  why: {"0":"quên bình phương (đã bỏ dấu căn mà không bình phương vế phải)","72":"quên chia cho 4","22,5":"cộng 9 thay vì trừ khi chuyển vế"}
+  GIẢI:
+    Bước 1. Điều kiện: 4x + 9 ≥ 0. Bình phương hai vế (vế phải 9 > 0): 4x + 9 = 9² = 81.
+    Bước 2. 4x = 81 - 9 = 72.
+    Bước 3. x = 72 : 4 = 18.
+    Bước 4. Thử lại: √(4×18 + 9) = √81 = 9 đúng.
+    ✅ Kết luận: x = 18.
+    ⚠️ Dễ nhầm: Phải bình phương cả hai vế rồi mới chuyển vế; và thử lại nghiệm.
+
+### sym.bexep
+Q: Một bể nước hình hộp chữ nhật có chiều dài 8 m, chiều rộng 5 m, chiều cao 3 m. Hiện bể đang chứa nước đến 12 chiều cao của bể. Cần đổ thêm bao nhiêu lít nước để đầy bể? (1 m³ = 1 000 lít)
+  ✔ 60000
+  ✘ 6000 | 120000 | 60
+  why: {"60":"chưa đổi từ m³ sang lít","6000":"đổi nhầm 1 m³ = 100 lít","120000":"đó là thể tích cả bể"}
+  GIẢI:
+    Bước 1. Thể tích bể = 8 × 5 × 3 = 120 m³.
+    Bước 2. Phần chưa có nước = 1 - 12 = 12 chiều cao, tương ứng 12 thể tích: 120 × 12 = 60 m³.
+    Bước 3. Đổi ra lít: 60 × 1 000 = 60000 lít.
+    ✅ Kết luận: cần đổ thêm 60000 lít.
+    ⚠️ Dễ nhầm: 1 m³ = 1 000 lít (không phải 100 lít); và phải lấy phần CHƯA có nước.
+
+### sym.bexep
+Q: Một bể nước hình hộp chữ nhật có chiều dài 7 m, chiều rộng 6 m, chiều cao 2 m. Hiện bể đang chứa nước đến 35 chiều cao của bể. Cần đổ thêm bao nhiêu lít nước để đầy bể? (1 m³ = 1 000 lít)
+  ✔ 33600
+  ✘ 3360 | 50400 | 33,6
+  why: {"3360":"đổi nhầm 1 m³ = 100 lít","50400":"đó là lượng nước hiện có","33,6":"chưa đổi từ m³ sang lít"}
+  GIẢI:
+    Bước 1. Thể tích bể = 7 × 6 × 2 = 84 m³.
+    Bước 2. Phần chưa có nước = 1 - 35 = 25 chiều cao, tương ứng 25 thể tích: 84 × 25 = 33,6 m³.
+    Bước 3. Đổi ra lít: 33,6 × 1 000 = 33600 lít.
+    ✅ Kết luận: cần đổ thêm 33600 lít.
+    ⚠️ Dễ nhầm: 1 m³ = 1 000 lít (không phải 100 lít); và phải lấy phần CHƯA có nước.
+
+### sym.thetich_tang
+Q: Một hình lập phương có độ dài cạnh tăng lên 4 lần. Thể tích của nó tăng lên bao nhiêu lần?
+  ✔ 64
+  ✘ 4 | 12 | 16
+  why: {"4":"chỉ tăng theo một chiều","12":"nhân 3 lần số lần tăng cạnh","16":"đó là tỉ lệ tăng diện tích"}
+  GIẢI:
+    Bước 1. Gọi cạnh ban đầu là a thì thể tích ban đầu là a × a × a.
+    Bước 2. Cạnh mới là 4a nên thể tích mới = 4a × 4a × 4a = 64 × a × a × a.
+    Bước 3. Thể tích tăng 64 lần.
+    ✅ Kết luận: thể tích tăng 64 lần.
+    ⚠️ Dễ nhầm: Thể tích có 3 chiều nên tăng k³ lần (không phải k lần hay k² lần).
+
+### sym.thetich_tang
+Q: Một hình lập phương có độ dài cạnh tăng lên 3 lần. Thể tích của nó tăng lên bao nhiêu lần?
+  ✔ 27
+  ✘ 3 | 9 | 29
+  why: {"3":"chỉ tăng theo một chiều","9":"đó là tỉ lệ tăng diện tích"}
+  GIẢI:
+    Bước 1. Gọi cạnh ban đầu là a thì thể tích ban đầu là a × a × a.
+    Bước 2. Cạnh mới là 3a nên thể tích mới = 3a × 3a × 3a = 27 × a × a × a.
+    Bước 3. Thể tích tăng 27 lần.
+    ✅ Kết luận: thể tích tăng 27 lần.
+    ⚠️ Dễ nhầm: Thể tích có 3 chiều nên tăng k³ lần (không phải k lần hay k² lần).
+
+### tgb.can_goc
+Q: Một tam giác cân có một góc bằng 138°. Số đo hai góc còn lại là:
+  ✔ 21° và 21°
+  ✘ 42° và 42° | 69° và 69° | 60° và 60°
+  why: {"42° và 42°":"lấy mỗi góc bằng phần bù của góc đã cho","69° và 69°":"chia đôi góc đã cho","60° và 60°":"nhầm với tam giác đều"}
+  GIẢI:
+    Bước 1. 138° là góc tù (lớn hơn 90°). Tam giác không thể có hai góc tù (tổng hai góc đó vượt quá 180°).
+    Bước 2. Do hai góc đáy bằng nhau nên 138° không thể là góc đáy ⟹ 138° là góc ở đỉnh.
+    Bước 3. Mỗi góc đáy = (180° - 138°) : 2 = 21°.
+    ✅ Kết luận: hai góc còn lại là 21° và 21°.
+    ⚠️ Dễ nhầm: Góc tù chỉ có thể là góc ở đỉnh của tam giác cân.
+
+### tgb.can_goc
+Q: Một tam giác cân có một góc bằng 22°. Số đo hai góc còn lại là:
+  ✔ 22° và 136° hoặc 79° và 79°
+  ✘ 22° và 136° | 22° và 158° | 79° và 79°
+  why: {"22° và 136°":"chỉ xét trường hợp 22° là góc ở đáy","22° và 158°":"coi hai góc còn lại cùng bù với góc đã cho","79° và 79°":"chỉ xét trường hợp 22° là góc ở đỉnh"}
+  GIẢI:
+    Bước 1. Tam giác cân có hai góc ở đáy bằng nhau. Chưa biết 22° là góc ở đáy hay góc ở đỉnh nên xét hai trường hợp.
+    Bước 2. TH1: 22° là góc ở đáy. Góc đáy còn lại cũng 22°, góc ở đỉnh = 180° - 2 × 22° = 136°.
+    Bước 3. TH2: 22° là góc ở đỉnh. Hai góc đáy bằng nhau = (180° - 22°) : 2 = 79°.
+    ✅ Kết luận: hai góc còn lại là 22° và 136° hoặc 79° và 79°.
+    ⚠️ Dễ nhầm: Bỏ sót một trường hợp là lỗi hay gặp nhất của bài này.
+
+### tgb.dieu_kien_bang
+Q: Hai tam giác ABC và DEF có AB = DE và AC = DF. Cần thêm điều kiện nào để ΔABC = ΔDEF theo trường hợp cạnh-cạnh-cạnh (c.c.c)?
+  ✔ BC = EF
+  ✘ ∠C = ∠F | ∠B = ∠E | ∠A = ∠D
+  why: {"∠C = ∠F":"một góc bằng nhau chưa đủ để dùng c.c.c","∠B = ∠E":"một góc bằng nhau chưa đủ để dùng c.c.c","∠A = ∠D":"đó là điều kiện của trường hợp cạnh-góc-cạnh"}
+  GIẢI:
+    Bước 1. Trường hợp cạnh-cạnh-cạnh (c.c.c): ba cạnh của tam giác này bằng ba cạnh của tam giác kia.
+    Bước 2. Đã có hai cặp cạnh bằng nhau: AB = DE và AC = DF.
+    Bước 3. Cần thêm cặp cạnh thứ ba: BC = EF.
+    ✅ Kết luận: điều kiện cần thêm: BC = EF.
+    ⚠️ Dễ nhầm: Phải đúng tên trường hợp: c.g.c cần góc xen giữa, c.c.c cần cạnh thứ ba.
+
+### tgb.dieu_kien_bang
+Q: Hai tam giác MNP và XYZ có MN = XY và MP = XZ. Cần thêm điều kiện nào để ΔMNP = ΔXYZ theo trường hợp cạnh-cạnh-cạnh (c.c.c)?
+  ✔ NP = YZ
+  ✘ ∠P = ∠Z | ∠M = ∠X | ∠N = ∠Y
+  why: {"∠P = ∠Z":"một góc bằng nhau chưa đủ để dùng c.c.c","∠M = ∠X":"đó là điều kiện của trường hợp cạnh-góc-cạnh","∠N = ∠Y":"một góc bằng nhau chưa đủ để dùng c.c.c"}
+  GIẢI:
+    Bước 1. Trường hợp cạnh-cạnh-cạnh (c.c.c): ba cạnh của tam giác này bằng ba cạnh của tam giác kia.
+    Bước 2. Đã có hai cặp cạnh bằng nhau: MN = XY và MP = XZ.
+    Bước 3. Cần thêm cặp cạnh thứ ba: NP = YZ.
+    ✅ Kết luận: điều kiện cần thêm: NP = YZ.
+    ⚠️ Dễ nhầm: Phải đúng tên trường hợp: c.g.c cần góc xen giữa, c.c.c cần cạnh thứ ba.
+
+### tgb.goc_ngoai_tong
+Q: Tam giác ABC có góc ngoài tại đỉnh A bằng 106° và góc ngoài tại đỉnh B bằng 136°. Số đo góc C là (độ):
+  ✔ 62
+  ✘ 242 | 44 | 74
+  why: {"44":"đó là số đo góc B","74":"đó là số đo góc A","242":"cộng hai góc ngoài"}
+  GIẢI:
+    Bước 1. Góc ngoài bù với góc trong kề nó: ∠A = 180° - 106° = 74°; ∠B = 180° - 136° = 44°.
+    Bước 2. Tổng ba góc trong tam giác bằng 180° nên ∠C = 180° - 74° - 44° = 62°.
+    Bước 3. Kiểm tra bằng góc ngoài: 106° + 136° - 180° = 62° = ∠C.
+    ✅ Kết luận: ∠C = 62°.
+    ⚠️ Dễ nhầm: Tổng hai góc ngoài (242°) không phải là góc C.
+
+### tgb.goc_ngoai_tong
+Q: Tam giác ABC có góc ngoài tại đỉnh A bằng 121° và góc ngoài tại đỉnh B bằng 124°. Số đo góc C là (độ):
+  ✔ 65
+  ✘ 59 | 115 | 245
+  why: {"59":"đó là số đo góc A","115":"đó là góc ngoài tại đỉnh C, không phải góc C","245":"cộng hai góc ngoài"}
+  GIẢI:
+    Bước 1. Góc ngoài bù với góc trong kề nó: ∠A = 180° - 121° = 59°; ∠B = 180° - 124° = 56°.
+    Bước 2. Tổng ba góc trong tam giác bằng 180° nên ∠C = 180° - 59° - 56° = 65°.
+    Bước 3. Kiểm tra bằng góc ngoài: 121° + 124° - 180° = 65° = ∠C.
+    ✅ Kết luận: ∠C = 65°.
+    ⚠️ Dễ nhầm: Tổng hai góc ngoài (245°) không phải là góc C.
+
+### tlt.tln_may
+Q: Ba đội máy cày cùng cày trên ba cánh đồng có diện tích như nhau. Đội I hoàn thành trong 3 ngày, đội II trong 4 ngày, đội III trong 6 ngày. Biết đội I có nhiều hơn đội III 14 máy (năng suất mỗi máy như nhau). Tổng số máy của ba đội là:
+  ✔ 63
+  ✘ 60,6667 | 9 | 31,5
+  why: {"9":"đó là tổng số phần, chưa nhân với giá trị một phần","60,6667":"coi số máy tỉ lệ thuận với số ngày (3 : 4 : 6)","31,5":"chia hiệu cho số phần của đội I thay vì hiệu số phần"}
+  GIẢI:
+    Bước 1. Cùng một khối lượng công việc: số máy tỉ lệ nghịch với số ngày hoàn thành.
+    Bước 2. Số máy tỉ lệ với 13 : 14 : 16 = 4 : 3 : 2 (nhân cả ba số với BCNN(3; 4; 6) = 12).
+    Bước 3. Hiệu số máy đội I và đội III ứng với 4 - 2 = 2 phần, nên giá trị một phần = 14 : 2 = 7.
+    Bước 4. Tổng số máy = (4 + 3 + 2) × 7 = 9 × 7 = 63.
+    ✅ Kết luận: ba đội có tất cả 63 máy.
+    ⚠️ Dễ nhầm: Ít ngày hơn thì cần NHIỀU máy hơn: tỉ lệ nghịch, không phải tỉ lệ thuận với 3 : 4 : 6.
+
+### tlt.tln_may
+Q: Ba đội máy cày cùng cày trên ba cánh đồng có diện tích như nhau. Đội I hoàn thành trong 4 ngày, đội II trong 5 ngày, đội III trong 10 ngày. Biết đội I có nhiều hơn đội III 12 máy (năng suất mỗi máy như nhau). Tổng số máy của ba đội là:
+  ✔ 44
+  ✘ 11 | 26,4 | 20
+  why: {"11":"đó là tổng số phần, chưa nhân với giá trị một phần","20":"đó là số máy của đội I","26,4":"chia hiệu cho số phần của đội I thay vì hiệu số phần"}
+  GIẢI:
+    Bước 1. Cùng một khối lượng công việc: số máy tỉ lệ nghịch với số ngày hoàn thành.
+    Bước 2. Số máy tỉ lệ với 14 : 15 : 110 = 5 : 4 : 2 (nhân cả ba số với BCNN(4; 5; 10) = 20).
+    Bước 3. Hiệu số máy đội I và đội III ứng với 5 - 2 = 3 phần, nên giá trị một phần = 12 : 3 = 4.
+    Bước 4. Tổng số máy = (5 + 4 + 2) × 4 = 11 × 4 = 44.
+    ✅ Kết luận: ba đội có tất cả 44 máy.
+    ⚠️ Dễ nhầm: Ít ngày hơn thì cần NHIỀU máy hơn: tỉ lệ nghịch, không phải tỉ lệ thuận với 4 : 5 : 10.
+
+### tlt.tln_nguoi
+Q: Một nhóm 20 công nhân làm xong một công việc trong 11 ngày (năng suất mỗi người như nhau). Sau khi làm được 5 ngày, nhóm được bổ sung thêm 4 công nhân (cùng năng suất). Hỏi cần thêm bao nhiêu ngày nữa để hoàn thành công việc?
+  ✔ 5
+  ✘ 6 | 10 | 4,1667
+  why: {"6":"bỏ qua số người được bổ sung","10":"đó là tổng số ngày làm việc, chưa trừ phần đã làm","4,1667":"tính như thể số người mới làm từ đầu"}
+  GIẢI:
+    Bước 1. Toàn bộ công việc cần 20 × 11 = 220 (công).
+    Bước 2. Sau 5 ngày đã làm được 20 × 5 = 100 công, còn lại 220 - 100 = 120 công.
+    Bước 3. Số người lúc sau: 20 + 4 = 24. Số ngày cần thêm = 120 : 24 = 5.
+    ✅ Kết luận: cần thêm 5 ngày.
+    ⚠️ Dễ nhầm: Chỉ còn 120 công (không phải cả 220 công) phải chia cho số người mới.
+
+### tlt.tln_nguoi
+Q: Một nhóm 15 công nhân làm xong một công việc trong 20 ngày (năng suất mỗi người như nhau). Sau khi làm được 14 ngày, nhóm được bổ sung thêm 3 công nhân (cùng năng suất). Hỏi cần thêm bao nhiêu ngày nữa để hoàn thành công việc?
+  ✔ 5
+  ✘ 19 | 6 | 2,6667
+  why: {"6":"bỏ qua số người được bổ sung","19":"đó là tổng số ngày làm việc, chưa trừ phần đã làm","2,6667":"tính như thể số người mới làm từ đầu"}
+  GIẢI:
+    Bước 1. Toàn bộ công việc cần 15 × 20 = 300 (công).
+    Bước 2. Sau 14 ngày đã làm được 15 × 14 = 210 công, còn lại 300 - 210 = 90 công.
+    Bước 3. Số người lúc sau: 15 + 3 = 18. Số ngày cần thêm = 90 : 18 = 5.
+    ✅ Kết luận: cần thêm 5 ngày.
+    ⚠️ Dễ nhầm: Chỉ còn 90 công (không phải cả 300 công) phải chia cho số người mới.
+
+### tlt.xy_tich
+Q: Cho hai số dương x, y thỏa mãn x2 = y6 và x · y = 300. Giá trị của x là:
+  ✔ 10
+  ✘ 50 | 150 | 5
+  why: {"5":"đó là giá trị của t (hệ số tỉ lệ chung), chưa nhân với 2","50":"dùng t² thay vì t","150":"chia tích cho hệ số tỉ lệ a"}
+  GIẢI:
+    Bước 1. Đặt x2 = y6 = t. Khi đó x = 2t và y = 6t.
+    Bước 2. x · y = 2t × 6t = 12t² = 300, nên t² = 300 : 12 = 25.
+    Bước 3. x, y dương nên t > 0, suy ra t = 5.
+    Bước 4. x = 2 × 5 = 10.
+    ✅ Kết luận: x = 10.
+    ⚠️ Dễ nhầm: t² = 25 cho t = 5 (số dương), không phải t = 25.
+
+### tlt.xy_tich
+Q: Cho hai số dương x, y thỏa mãn x4 = y3 và x · y = 432. Giá trị của x là:
+  ✔ 24
+  ✘ 144 | 18 | 108
+  why: {"18":"đó là giá trị của y","108":"chia tích cho hệ số tỉ lệ a","144":"dùng t² thay vì t"}
+  GIẢI:
+    Bước 1. Đặt x4 = y3 = t. Khi đó x = 4t và y = 3t.
+    Bước 2. x · y = 4t × 3t = 12t² = 432, nên t² = 432 : 12 = 36.
+    Bước 3. x, y dương nên t > 0, suy ra t = 6.
+    Bước 4. x = 4 × 6 = 24.
+    ✅ Kết luận: x = 24.
+    ⚠️ Dễ nhầm: t² = 36 cho t = 6 (số dương), không phải t = 36.
+
+### tlt.xyz_chain
+Q: Cho x7 = y3 và y5 = z7, biết x + y + z = 497. Giá trị của z là:
+  ✔ 147
+  ✘ 204,6471 | 7 | 21
+  why: {"7":"đó là giá trị của một phần","21":"đó là số phần của z, chưa nhân với giá trị một phần","204,6471":"ghép thẳng 7 : 3 : 7 mà chưa làm cho y bằng nhau"}
+  GIẢI:
+    Bước 1. Làm cho giá trị của y ở hai tỉ lệ thức bằng nhau: BCNN(3; 5) = 15.
+    Bước 2. x7 = y3 ⟹ x35 = y15; y5 = z7 ⟹ y15 = z21.
+    Bước 3. Vậy x : y : z = 35 : 15 : 21. Áp dụng tính chất dãy tỉ số bằng nhau: x35 = y15 = z21 = x + y + z71 = 49771 = 7.
+    Bước 4. z = 21 × 7 = 147.
+    ✅ Kết luận: z = 147.
+    ⚠️ Dễ nhầm: Không được ghép thẳng x : y : z = 7 : 3 : 7: giá trị của y trong hai tỉ lệ thức phải bằng nhau trước.
+
+### tlt.xyz_chain
+Q: Cho x9 = y3 và y5 = z3, biết x + y + z = 46. Giá trị của z là:
+  ✔ 6
+  ✘ 3 | 9,2 | 2
+  why: {"2":"đó là giá trị của một phần","3":"đó là số phần của z, chưa nhân với giá trị một phần","9,2":"ghép thẳng 9 : 3 : 3 mà chưa làm cho y bằng nhau"}
+  GIẢI:
+    Bước 1. Làm cho giá trị của y ở hai tỉ lệ thức bằng nhau: BCNN(3; 5) = 15.
+    Bước 2. x9 = y3 ⟹ x45 = y15; y5 = z3 ⟹ y15 = z9.
+    Bước 3. Vậy x : y : z = 45 : 15 : 9 = 15 : 5 : 3. Áp dụng tính chất dãy tỉ số bằng nhau: x15 = y5 = z3 = x + y + z23 = 4623 = 2.
+    Bước 4. z = 3 × 2 = 6.
+    ✅ Kết luận: z = 6.
+    ⚠️ Dễ nhầm: Không được ghép thẳng x : y : z = 9 : 3 : 3: giá trị của y trong hai tỉ lệ thức phải bằng nhau trước.
+
+### ub.n_chia_het
+Q: Có bao nhiêu số tự nhiên n để (n + 24) chia hết cho (n + 4)?
+  ✔ 4
+  ✘ 5 | 6 | 3
+  why: {"3":"bỏ sót một ước","5":"đếm thừa 1 ước","6":"đếm cả các ước nhỏ hơn 4 (cho n âm)"}
+  GIẢI:
+    Bước 1. (n + 24) - (n + 4) = 20. Nếu (n + 4) là ước của (n + 24) thì (n + 4) là ước của 20.
+    Bước 2. Ư(20) = {1; 2; 4; 5; 10; 20}.
+    Bước 3. n là số tự nhiên nên n + 4 ≥ 4. Các ước thỏa mãn: 4; 5; 10; 20 → n = 0; 1; 6; 16.
+    Bước 4. Thử lại: mỗi giá trị n trên cho (n + 24) chia hết cho (n + 4).
+    ✅ Kết luận: có 4 giá trị của n.
+    ⚠️ Dễ nhầm: Phải loại các ước nhỏ hơn 4 (làm n âm), không phải ước nào của 20 cũng cho n là số tự nhiên.
+
+### ub.n_chia_het
+Q: Có bao nhiêu số tự nhiên n để (n + 18) chia hết cho (n + 3)?
+  ✔ 3
+  ✘ 2 | 4 | 0
+  why: {"2":"bỏ sót một ước","4":"đếm cả các ước nhỏ hơn 3 (cho n âm)"}
+  GIẢI:
+    Bước 1. (n + 18) - (n + 3) = 15. Nếu (n + 3) là ước của (n + 18) thì (n + 3) là ước của 15.
+    Bước 2. Ư(15) = {1; 3; 5; 15}.
+    Bước 3. n là số tự nhiên nên n + 3 ≥ 3. Các ước thỏa mãn: 3; 5; 15 → n = 0; 2; 12.
+    Bước 4. Thử lại: mỗi giá trị n trên cho (n + 18) chia hết cho (n + 3).
+    ✅ Kết luận: có 3 giá trị của n.
+    ⚠️ Dễ nhầm: Phải loại các ước nhỏ hơn 3 (làm n âm), không phải ước nào của 15 cũng cho n là số tự nhiên.
+
+### ub.soUoc
+Q: Số n = 2^4 · 3^1 · 5 có bao nhiêu ước tự nhiên chia hết cho 3?
+  ✔ 10
+  ✘ 4 | 20 | 8
+  why: {"4":"quên cộng 1 vào các số mũ","20":"đếm cả ước không chia hết cho 3"}
+  GIẢI:
+    Bước 1. Ước chia hết cho 3 phải chứa thừa số 3: số mũ của 3 chỉ có thể là 1 (không được là 0): có 1 cách.
+    Bước 2. Số mũ của 2 có 5 cách, số mũ của 5 có 2 cách.
+    Bước 3. Số ước chia hết cho 3 = 5 × 1 × 2 = 10.
+    Bước 4. Kiểm tra bằng cách khác: tổng số ước 20 trừ số ước không chia hết cho 3 là 10 → 20 - 10 = 10.
+    ✅ Kết luận: có 10 ước chia hết cho 3.
+    ⚠️ Dễ nhầm: Số mũ của 3 phải ≥ 1 (không được bằng 0) vì ước đó phải chia hết cho 3.
+
+### ub.soUoc
+Q: Số n = 2^3 · 3^2 · 5 có bao nhiêu ước tự nhiên là số chẵn?
+  ✔ 18
+  ✘ 6 | 24 | 21
+  why: {"6":"đó là số ước lẻ","24":"đếm cả ước lẻ"}
+  GIẢI:
+    Bước 1. Ước chẵn phải chứa thừa số 2: số mũ của 2 là 1, 2, …, 3 (không được là 0): có 3 cách chọn.
+    Bước 2. Số mũ của 3 có 3 cách chọn, số mũ của 5 có 2 cách chọn.
+    Bước 3. Số ước chẵn = 3 × 3 × 2 = 18.
+    Bước 4. Kiểm tra bằng cách khác: số ước chẵn = tổng số ước - số ước lẻ = 24 - 6 = 18.
+    ✅ Kết luận: có 18 ước chẵn.
+    ⚠️ Dễ nhầm: Số mũ của 2 phải ≥ 1 (không được bằng 0) vì ước chẵn phải chia hết cho 2.
+
+### ub.tongUoc
+Q: Tổng tất cả các ước tự nhiên của số 14 = 2^1 · 7^1 là:
+  ✔ 24
+  ✘ 10 | 4 | 15
+  why: {"4":"đó là số ước, không phải tổng các ước","10":"quên cộng ước là chính n","15":"chỉ cộng ước 1 và chính n"}
+  GIẢI:
+    Bước 1. Phân tích: n = 2^1 · 7^1 = 14.
+    Bước 2. Mỗi ước của n có dạng 2^i · 7^j (0 ≤ i ≤ 1, 0 ≤ j ≤ 1). Tổng các ước = (1 + 2) × (1 + 7).
+    Bước 3. = 3 × 8 = 24.
+    ✅ Kết luận: tổng các ước là 24.
+    ⚠️ Dễ nhầm: Phải NHÂN hai tổng, không cộng; và tính cả ước 1 và chính n.
+
+### ub.tongUoc
+Q: Tổng tất cả các ước tự nhiên của số 200 = 2^3 · 5^2 là:
+  ✔ 465
+  ✘ 201 | 46 | 12
+  why: {"12":"đó là số ước, không phải tổng các ước","46":"cộng hai tổng thay vì nhân","201":"chỉ cộng ước 1 và chính n"}
+  GIẢI:
+    Bước 1. Phân tích: n = 2^3 · 5^2 = 200.
+    Bước 2. Mỗi ước của n có dạng 2^i · 5^j (0 ≤ i ≤ 3, 0 ≤ j ≤ 2). Tổng các ước = (1 + 2 + 4 + 8) × (1 + 5 + 25).
+    Bước 3. = 15 × 31 = 465.
+    ✅ Kết luận: tổng các ước là 465.
+    ⚠️ Dễ nhầm: Phải NHÂN hai tổng, không cộng; và tính cả ước 1 và chính n.
+
+### word.cay_vong
+Q: Người ta trồng cây dọc một con đường thẳng dài 150 m, các cây cách đều nhau 6 m, không trồng ở hai đầu đường. Cần tất cả bao nhiêu cây?
+  ✔ 24
+  ✘ 25 | 48 | 26
+  why: {"25":"đếm cả một đầu","26":"đếm cả hai đầu","48":"nhân đôi số cây"}
+  GIẢI:
+    Bước 1. Số khoảng cách giữa hai cây liên tiếp = 150 : 6 = 25.
+    Bước 2. Số khoảng cách = 150 : 6 = 25. Không trồng ở hai đầu: số cây = số khoảng cách - 1 = 24.
+    ✅ Kết luận: 24 cây.
+    ⚠️ Dễ nhầm: Số cây phụ thuộc hình dạng đường trồng: vòng kín, thẳng có/không trồng hai đầu.
+
+### word.cay_vong
+Q: Người ta trồng cây dọc một con đường thẳng dài 138 m, các cây cách đều nhau 6 m, trồng ở cả hai đầu đường. Cần tất cả bao nhiêu cây?
+  ✔ 24
+  ✘ 23 | 46 | 22
+  why: {"22":"bỏ cả hai cây ở hai đầu","23":"quên cây ở một đầu","46":"nhân đôi số khoảng cách"}
+  GIẢI:
+    Bước 1. Số khoảng cách giữa hai cây liên tiếp = 138 : 6 = 23.
+    Bước 2. Số khoảng cách = 138 : 6 = 23. Đường thẳng trồng cả hai đầu: số cây = số khoảng cách + 1 = 24.
+    ✅ Kết luận: 24 cây.
+    ⚠️ Dễ nhầm: Số cây phụ thuộc hình dạng đường trồng: vòng kín, thẳng có/không trồng hai đầu.
+
+### word.tbvt
+Q: Một ô tô đi từ A đến B với vận tốc 50 km/h, rồi quay về A với vận tốc 75 km/h (cùng một con đường). Vận tốc trung bình của ô tô trên cả quãng đường đi và về là (km/h):
+  ✔ 60
+  ✘ 30 | 50 | 62,5
+  why: {"30":"quên nhân 2 quãng đường (đi và về)","50":"lấy vận tốc nhỏ hơn","62,5":"lấy trung bình cộng hai vận tốc, trong khi thời gian đi mỗi chặng khác nhau"}
+  GIẢI:
+    Bước 1. Gọi quãng đường AB là s. Chọn s = 150 km (bội chung của 50 và 75) cho dễ tính.
+    Bước 2. Thời gian đi: 150 : 50 = 3 giờ. Thời gian về: 150 : 75 = 2 giờ.
+    Bước 3. Cả đi lẫn về: quãng đường = 2 × 150 = 300 km, thời gian = 3 + 2 = 5 giờ.
+    Bước 4. Vận tốc trung bình = 300 : 5 = 60 km/h.
+    ✅ Kết luận: vận tốc trung bình là 60 km/h.
+    ⚠️ Dễ nhầm: Vận tốc trung bình = tổng quãng đường : tổng thời gian, không phải trung bình cộng hai vận tốc.
+
+### word.tbvt
+Q: Một ô tô đi từ A đến B với vận tốc 20 km/h, rồi quay về A với vận tốc 30 km/h (cùng một con đường). Vận tốc trung bình của ô tô trên cả quãng đường đi và về là (km/h):
+  ✔ 24
+  ✘ 10 | 20 | 25
+  why: {"10":"lấy hiệu hai vận tốc","20":"lấy vận tốc nhỏ hơn","25":"lấy trung bình cộng hai vận tốc, trong khi thời gian đi mỗi chặng khác nhau"}
+  GIẢI:
+    Bước 1. Gọi quãng đường AB là s. Chọn s = 60 km (bội chung của 20 và 30) cho dễ tính.
+    Bước 2. Thời gian đi: 60 : 20 = 3 giờ. Thời gian về: 60 : 30 = 2 giờ.
+    Bước 3. Cả đi lẫn về: quãng đường = 2 × 60 = 120 km, thời gian = 3 + 2 = 5 giờ.
+    Bước 4. Vận tốc trung bình = 120 : 5 = 24 km/h.
+    ✅ Kết luận: vận tốc trung bình là 24 km/h.
+    ⚠️ Dễ nhầm: Vận tốc trung bình = tổng quãng đường : tổng thời gian, không phải trung bình cộng hai vận tốc.
+
+### word.tong_tiso
+Q: Tổng của hai số là 15. Tỉ số của số bé và số lớn là 12. Hiệu của hai số là:
+  ✔ 5
+  ✘ 10 | 0 | 3
+  why: {"10":"đó là số lớn"}
+  GIẢI:
+    Bước 1. Tỉ số của số bé và số lớn là 12: số bé gồm 1 phần, số lớn gồm 2 phần như nhau.
+    Bước 2. Tổng số phần = 1 + 2 = 3 (phần). Giá trị một phần = 15 : 3 = 5.
+    Bước 3. Số lớn = 10, số bé = 5; hiệu = 10 - 5 = 5.
+    ✅ Kết luận: hiệu hai số là 5.
+    ⚠️ Dễ nhầm: Phải chia tổng cho TỔNG SỐ PHẦN (3), không chia cho 2.
+
+### word.tong_tiso
+Q: Tổng của hai số là 52. Tỉ số của số bé và số lớn là 58. Số lớn là:
+  ✔ 32
+  ✘ 20 | 4 | 29,7143
+  why: {"4":"đó là giá trị một phần","20":"đó là số bé","29,7143":"chia cho số phần thiếu hoặc thừa"}
+  GIẢI:
+    Bước 1. Tỉ số của số bé và số lớn là 58: số bé gồm 5 phần, số lớn gồm 8 phần như nhau.
+    Bước 2. Tổng số phần = 5 + 8 = 13 (phần). Giá trị một phần = 52 : 13 = 4.
+    Bước 3. Số lớn = 4 × 8 = 32.
+    ✅ Kết luận: số lớn là 32.
+    ⚠️ Dễ nhầm: Phải chia tổng cho TỔNG SỐ PHẦN (13), không chia cho 8.
+
+### word.tuoi
+Q: Hiện nay tổng số tuổi của hai mẹ con là 52. Cách đây 5 năm, tuổi mẹ gấp 6 lần tuổi con. Tuổi con hiện nay là:
+  ✔ 11
+  ✘ 11,7143 | 6 | 7,4286
+  why: {"6":"đó là tuổi con cách đây 5 năm","11,7143":"trừ 5 (chứ không phải 2 × 5) khi lùi về quá khứ","7,4286":"chia tổng hiện nay theo tỉ số 6 : 1, quên rằng tỉ số đó chỉ đúng cách đây 5 năm"}
+  GIẢI:
+    Bước 1. Cách đây 5 năm, mỗi người trẻ hơn 5 tuổi nên tổng số tuổi hai người khi đó = 52 - 2 × 5 = 42.
+    Bước 2. Lúc đó tuổi mẹ gấp 6 lần tuổi con, nên tổng gồm 7 phần: tuổi con khi đó = 42 : 7 = 6.
+    Bước 3. Tuổi con hiện nay = 6 + 5 = 11.
+    Bước 4. Thử lại: mẹ hiện 41 tuổi, cách đây 5 năm mẹ 36, con 6, và 36 = 6 × 6.
+    ✅ Kết luận: con hiện nay 11 tuổi.
+    ⚠️ Dễ nhầm: Cách đây 5 năm cả hai đều trẻ hơn 5 tuổi: tổng giảm 2 × 5, không phải 5.
+
+### word.tuoi
+Q: Hiện nay tổng số tuổi của hai mẹ con là 57. Cách đây 4 năm, tuổi mẹ gấp 6 lần tuổi con. Tuổi con hiện nay là:
+  ✔ 11
+  ✘ 46 | 11,5714 | 8,1429
+  why: {"46":"đó là tuổi mẹ hiện nay","11,5714":"trừ 4 (chứ không phải 2 × 4) khi lùi về quá khứ","8,1429":"chia tổng hiện nay theo tỉ số 6 : 1, quên rằng tỉ số đó chỉ đúng cách đây 4 năm"}
+  GIẢI:
+    Bước 1. Cách đây 4 năm, mỗi người trẻ hơn 4 tuổi nên tổng số tuổi hai người khi đó = 57 - 2 × 4 = 49.
+    Bước 2. Lúc đó tuổi mẹ gấp 6 lần tuổi con, nên tổng gồm 7 phần: tuổi con khi đó = 49 : 7 = 7.
+    Bước 3. Tuổi con hiện nay = 7 + 4 = 11.
+    Bước 4. Thử lại: mẹ hiện 46 tuổi, cách đây 4 năm mẹ 42, con 7, và 42 = 6 × 7.
+    ✅ Kết luận: con hiện nay 11 tuổi.
+    ⚠️ Dễ nhầm: Cách đây 4 năm cả hai đều trẻ hơn 4 tuổi: tổng giảm 2 × 4, không phải 4.
+
+### word.voi
+Q: Vòi A chảy một mình đầy bể trong 10 giờ. Nếu mở cả hai vòi A và B thì sau 8 giờ đầy bể. Hỏi vòi B chảy một mình thì sau bao nhiêu giờ đầy bể?
+  ✔ 40
+  ✘ 80 | 2 | 18
+  why: {"2":"lấy hiệu hai thời gian","18":"cộng hai thời gian","80":"nhân hai thời gian"}
+  GIẢI:
+    Bước 1. Mỗi giờ vòi A chảy được 110 bể; cả hai vòi cùng chảy được 18 bể.
+    Bước 2. Mỗi giờ vòi B chảy được 18 - 110 = 280 bể.
+    Bước 3. Vòi B chảy một mình đầy bể sau 80 : 2 = 40 giờ.
+    ✅ Kết luận: vòi B cần 40 giờ.
+    ⚠️ Dễ nhầm: Cộng hai thời gian hay trừ thời gian đều sai: phải cộng/trừ phần bể chảy được trong 1 giờ.
+
+### word.voi
+Q: Vòi A chảy một mình đầy bể trong 16 giờ. Nếu mở cả hai vòi A và B thì sau 12 giờ đầy bể. Hỏi vòi B chảy một mình thì sau bao nhiêu giờ đầy bể?
+  ✔ 48
+  ✘ 96 | 4 | 28
+  why: {"4":"lấy hiệu hai thời gian","28":"cộng hai thời gian","96":"nhân đôi kết quả"}
+  GIẢI:
+    Bước 1. Mỗi giờ vòi A chảy được 116 bể; cả hai vòi cùng chảy được 112 bể.
+    Bước 2. Mỗi giờ vòi B chảy được 112 - 116 = 4192 bể.
+    Bước 3. Vòi B chảy một mình đầy bể sau 192 : 4 = 48 giờ.
+    ✅ Kết luận: vòi B cần 48 giờ.
+    ⚠️ Dễ nhầm: Cộng hai thời gian hay trừ thời gian đều sai: phải cộng/trừ phần bể chảy được trong 1 giờ.
+
+### xs.hai_xucxac
+Q: Gieo đồng thời hai con xúc xắc cân đối. Xác suất của biến cố "tổng số chấm nhỏ hơn 5" là:
+  ✔ 1/6
+  ✘ 1/12 | 5/18 | 1/9
+  why: {"1/12":"chỉ đếm tổng bằng 4","5/18":"tính cả tổng bằng 5","1/9":"đếm sai số kết quả"}
+  GIẢI:
+    Bước 1. Gieo hai con xúc xắc có 6 × 6 = 36 kết quả đồng khả năng (phân biệt thứ tự hai con).
+    Bước 2. Các kết quả thuận lợi cho biến cố "tổng số chấm nhỏ hơn 5": có 6 kết quả: (1; 1), (1; 2), (1; 3), (2; 1), (2; 2), (3; 1).
+    Bước 3. Xác suất = 636 = 1/6.
+    ✅ Kết luận: xác suất là 1/6.
+    ⚠️ Dễ nhầm: Phải phân biệt hai con xúc xắc: (1; 2) và (2; 1) là hai kết quả khác nhau.
+
+### xs.hai_xucxac
+Q: Gieo đồng thời hai con xúc xắc cân đối. Xác suất của biến cố "tích số chấm của hai con là số lẻ" là:
+  ✔ 1/4
+  ✘ 1/2 | 3/4 | 1/3
+  why: {"1/2":"chỉ xét một con xúc xắc lẻ","3/4":"đó là xác suất tích chẵn","1/3":"đếm sai số kết quả"}
+  GIẢI:
+    Bước 1. Gieo hai con xúc xắc có 6 × 6 = 36 kết quả đồng khả năng (phân biệt thứ tự hai con).
+    Bước 2. Các kết quả thuận lợi cho biến cố "tích số chấm của hai con là số lẻ": có 9 kết quả: (1; 1), (1; 3), (1; 5), (3; 1), (3; 3), (3; 5), (5; 1), (5; 3), (5; 5).
+    Bước 3. Xác suất = 936 = 1/4.
+    ✅ Kết luận: xác suất là 1/4.
+    ⚠️ Dễ nhầm: Phải phân biệt hai con xúc xắc: (1; 2) và (2; 1) là hai kết quả khác nhau.
+
+### xs.rut_the
+Q: Hộp có 6 thẻ đánh số từ 1 đến 6. Rút ngẫu nhiên cùng lúc 2 thẻ. Xác suất để tích hai số trên hai thẻ là số lẻ là:
+  ✔ 1/5
+  ✘ 1/4 | 2/5 | 1/2
+  why: {"1/4":"coi như rút có hoàn lại","2/5":"đếm có thứ tự ở tử số nhưng không ở mẫu","1/2":"cho rằng chẵn và lẻ ngang nhau"}
+  GIẢI:
+    Bước 1. Rút 2 thẻ từ 6 thẻ cùng lúc: số kết quả = 6 × 5 : 2 = 15.
+    Bước 2. Tích hai thẻ lẻ khi cả hai thẻ đều lẻ. Trong 6 thẻ có 3 thẻ lẻ.
+    Bước 3. Số kết quả thuận lợi = 3 × 2 : 2 = 3.
+    Bước 4. Xác suất = 315 = 1/5.
+    ✅ Kết luận: xác suất là 1/5.
+    ⚠️ Dễ nhầm: Rút cùng lúc nên (a; b) và (b; a) chỉ là MỘT kết quả: chia 2 khi đếm số cặp.
+
+### xs.rut_the
+Q: Hộp có 8 thẻ đánh số từ 1 đến 8. Rút ngẫu nhiên cùng lúc 2 thẻ. Xác suất để tổng hai số trên hai thẻ là số chẵn là:
+  ✔ 3/7
+  ✘ 1/2 | 3/14 | 6/7
+  why: {"1/2":"cho rằng chẵn và lẻ ngang nhau","3/14":"chia cho số cách rút có thứ tự (không chia 2 ở mẫu)","6/7":"đếm có thứ tự ở tử số nhưng không ở mẫu"}
+  GIẢI:
+    Bước 1. Rút 2 thẻ từ 8 thẻ cùng lúc: số kết quả = 8 × 7 : 2 = 28.
+    Bước 2. Hai thẻ có tổng chẵn khi cùng chẵn hoặc cùng lẻ. Trong 8 thẻ có 4 thẻ chẵn và 4 thẻ lẻ.
+    Bước 3. Số kết quả thuận lợi = 4×3:2 + 4×3:2 = 6 + 6 = 12.
+    Bước 4. Xác suất = 1228 = 3/7.
+    ✅ Kết luận: xác suất là 3/7.
+    ⚠️ Dễ nhầm: Rút cùng lúc nên (a; b) và (b; a) chỉ là MỘT kết quả: chia 2 khi đếm số cặp.
+
+### xs.tanso_thucnghiem
+Q: Gieo một con xúc xắc 80 lần, kết quả như sau: mặt 1 chấm xuất hiện 10 lần; mặt 2 chấm xuất hiện 19 lần; mặt 3 chấm xuất hiện 7 lần; mặt 4 chấm xuất hiện 16 lần; mặt 5 chấm xuất hiện 12 lần; mặt 6 chấm xuất hiện 16 lần. Xác suất thực nghiệm của biến cố "mặt xuất hiện có số chấm chẵn" là:
+  ✔ 51/80
+  ✘ 19/80 | 51/29 | 29/80
+  why: {"19/80":"chỉ lấy mặt xuất hiện nhiều nhất","51/29":"lấy tỉ số số lần chẵn : số lần lẻ","29/80":"đó là xác suất thực nghiệm của mặt lẻ"}
+  GIẢI:
+    Bước 1. Tổng số lần gieo: 10 + 19 + 7 + 16 + 12 + 16 = 80.
+    Bước 2. Số lần xuất hiện mặt chẵn (2, 4, 6) = 19 + 16 + 16 = 51.
+    Bước 3. Xác suất thực nghiệm = 5180 = 51/80.
+    ✅ Kết luận: xác suất thực nghiệm là 51/80.
+    ⚠️ Dễ nhầm: Xác suất thực nghiệm = số lần xảy ra : tổng số lần thử (dựa vào kết quả đã gieo, không dựa vào số mặt của xúc xắc).
+
+### xs.tanso_thucnghiem
+Q: Gieo một con xúc xắc 60 lần, kết quả như sau: mặt 1 chấm xuất hiện 7 lần; mặt 2 chấm xuất hiện 10 lần; mặt 3 chấm xuất hiện 9 lần; mặt 4 chấm xuất hiện 7 lần; mặt 5 chấm xuất hiện 8 lần; mặt 6 chấm xuất hiện 19 lần. Xác suất thực nghiệm của biến cố "mặt xuất hiện có số chấm chẵn" là:
+  ✔ 3/5
+  ✘ 2/5 | 19/60 | 1/2
+  why: {"2/5":"đó là xác suất thực nghiệm của mặt lẻ","19/60":"chỉ lấy mặt xuất hiện nhiều nhất","1/2":"dùng xác suất lý thuyết 3/6 = 1/2 thay vì kết quả đã gieo"}
+  GIẢI:
+    Bước 1. Tổng số lần gieo: 7 + 10 + 9 + 7 + 8 + 19 = 60.
+    Bước 2. Số lần xuất hiện mặt chẵn (2, 4, 6) = 10 + 7 + 19 = 36.
+    Bước 3. Xác suất thực nghiệm = 3660 = 3/5.
+    ✅ Kết luận: xác suất thực nghiệm là 3/5.
+    ⚠️ Dễ nhầm: Xác suất thực nghiệm = số lần xảy ra : tổng số lần thử (dựa vào kết quả đã gieo, không dựa vào số mặt của xúc xắc).
+

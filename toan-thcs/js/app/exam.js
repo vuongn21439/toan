@@ -131,7 +131,7 @@ function exBack(){if(S.resHTML){app.innerHTML=S.resHTML;scrollTo(0,0)}else home(
 function exReview(onlyBad){
  const n=S.q.length,items=S.q.map((q,i)=>{const ua=S.ans[i],ok=S.res[i];if(onlyBad&&ok)return'';
   const mine=ua===null?'<i>Bỏ trống</i>':q.inp?H(exEsc(ua)):fa(ua);
-  return `<div class="rv ${ok?'ok':'no'}"><div class="rh"><b>Câu ${i+1}${S.flag[i]?' 🚩':''}</b><span>${ok?'✓ Đúng':ua===null?'➖ Bỏ trống':'✕ Sai'}</span></div><div class="q">${H(q.q)}</div>${q.f||''}<p>Em chọn: <b>${mine}</b></p>${ok?'':`<p>Đáp án đúng: <b>${fa(q.a)}</b></p>`}<div class="ex">${H(q.e).replace(/\n/g,'<br>')}</div></div>`}).join('');
+  return `<div class="rv ${ok?'ok':'no'}"><div class="rh"><b>Câu ${i+1}${S.flag[i]?' 🚩':''}</b><span>${ok?'✓ Đúng':ua===null?'➖ Bỏ trống':'✕ Sai'}</span></div><div class="q">${H(q.q)}</div>${q.f||''}<p>Em chọn: <b>${mine}</b></p>${ok?'':`<p>Đáp án đúng: <b>${fa(q.a)}</b></p>`}${!ok&&ua!==null&&!q.inp&&q.x&&q.x[ua]?`<p class="why">🔎 <b>Vì sao em chọn chưa đúng?</b> ${H(q.x[ua].replace(/^./,c=>c.toUpperCase()))}.</p>`:''}<div class="ex">${H(q.e).replace(/\n/g,'<br>')}</div></div>`}).join('');
  app.innerHTML=`<div class="top"><button class="x" aria-label="Về kết quả" onclick="exBack()">←</button><h3>Xem lại bài làm</h3></div>
  <div class="seg"><button class="${onlyBad?'':'on'}" onclick="exReview(0)">Tất cả (${n})</button><button class="${onlyBad?'on':''}" onclick="exReview(1)">Chỉ câu sai (${n-S.ok})</button></div>
  ${items||'<div class="card soft"><div class="cap">🎉</div><p>Không có câu nào sai. Em làm tốt lắm!</p></div>'}<button class="big alt" onclick="exBack()">← Về kết quả</button>`;
