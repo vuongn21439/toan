@@ -1,7 +1,7 @@
 {
   "name": "Toán Vui Vẻ",
   "short_name": "Toán Vui Vẻ",
-  "description": "Luyện Toán lớp 6, lớp 7 qua trò chơi: bài học, thi thử, thử thách mỗi ngày.",
+  "description": "Luyện Toán lớp 6, 7, 8, 9 qua trò chơi: bài học, thi thử, thử thách mỗi ngày.",
   "lang": "vi",
   "start_url": "./",
   "scope": "./",

@@ -9,7 +9,7 @@ if(!D||typeof D!='object')D={};D.b=D.b&&typeof D.b=='object'?D.b:{};D.xp=Math.ma
 const save=()=>{try{localStorage.setItem('t6',JSON.stringify(D))}catch(e){}};
 
 D.lv=['b','h','m'].includes(D.lv)?D.lv:'b';
-D.gr=D.gr==7?7:6; /* lớp đang học: 6 hoặc 7 */
+D.gr=[6,7,8,9].includes(D.gr)?D.gr:6; /* lớp đang học: 6, 7, 8 hoặc 9 */
 const LV={b:'🌱 Cơ bản',h:'🔥 Nâng cao',m:'🎲 Trộn'},
 fa=a=>H(String(a).replace(/^-/,'−').replace(/^(−?\d+)\.(\d+)$/,'$1,$2')),
 nm=s=>s.trim().replace(/\s/g,'').replace(/[−–]/g,'-').replace(',','.'),

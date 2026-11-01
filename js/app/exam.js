@@ -25,7 +25,7 @@ function exSaved(){try{const s=JSON.parse(localStorage.getItem(EXK)||'null');
 function resumeBar(){const s=exSaved();if(!s)return'';const l=Math.max(0,Math.ceil((s.end-Date.now())/1000)),n=s.ans.filter(a=>a!==null).length;
  return `<div class="resume"><div><b>${s.id=='daily'?'⚡ Thử thách ngày':'🎯 Bài thi thử'} đang làm dở</b><small>${n}/${s.q.length} câu · ${l?'còn '+fmtTime(l):'đã hết giờ'}</small></div><button class="chip go" onclick="resumeExam()">${l?'Làm tiếp':'Xem kết quả'}</button><button class="chip" aria-label="Bỏ bài đang làm dở" onclick="dropExam()">✕</button></div>`}
 function resumeExam(){const s=exSaved();if(!s)return;
- if(s.gr&&s.gr!=D.gr){D.gr=s.gr==7?7:6;save();applyGr()}
+ if(s.gr&&s.gr!=D.gr){D.gr=[6,7,8,9].includes(s.gr)?s.gr:6;save();applyGr()}
  S={id:s.id,q:s.q,i:Math.min(Math.max(s.i|0,0),s.q.length-1),ok:0,bad:[],rev:false,m:s.m,k:s.k,cb:0,exam:true,ans:s.ans,
   flag:Array.isArray(s.flag)&&s.flag.length==s.q.length?s.flag:s.q.map(()=>false),end:s.end,t0:s.t0,day:s.day,gr:s.gr,tok:0};
  Snd.music('quiz',{k:s.id=='daily'?5:3});

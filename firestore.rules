@@ -37,14 +37,14 @@ service cloud.firestore {
         && request.resource.data.stars <= 300;
     }
 
-    // progress/{uid}: tiến độ học (sao từng chủ đề, độ chính xác, thử thách ngày: dc = lớp 6, dc7 = lớp 7, chuỗi ngày)
+    // progress/{uid}: tiến độ học (sao từng chủ đề, độ chính xác, thử thách ngày: dc = lớp 6, dc7, dc8, dc9 = lớp 7, 8, 9, chuỗi ngày)
     // để đồng bộ giữa các máy. Chỉ chủ tài khoản đọc/ghi. XP vẫn nằm ở players/{uid} (có chặn cộng quá 250/lượt).
     match /progress/{u} {
       allow read: if request.auth != null && request.auth.uid == u;
       allow create, update: if request.auth != null && request.auth.uid == u
-        && request.resource.data.keys().hasOnly(['b', 'acc', 'dc', 'dc7', 'st', 'day', 'updatedAt'])
-        && request.resource.data.b is map && request.resource.data.b.size() <= 100
-        && request.resource.data.acc is map && request.resource.data.acc.size() <= 100;
+        && request.resource.data.keys().hasOnly(['b', 'acc', 'dc', 'dc7', 'dc8', 'dc9', 'st', 'day', 'updatedAt'])
+        && request.resource.data.b is map && request.resource.data.b.size() <= 200
+        && request.resource.data.acc is map && request.resource.data.acc.size() <= 200;
     }
   }
 }

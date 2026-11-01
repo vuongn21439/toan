@@ -4,7 +4,7 @@ const $=id=>document.getElementById(id),
 esc=s=>String(s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';'),
 /* Chuẩn hoá tên để so trùng: bỏ dấu, bỏ khoảng trắng/ký tự lạ, không phân biệt hoa thường */
 nk=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]/g,''),
-shell=h=>{app.innerHTML=`<header><h1>Toán Vui Vẻ</h1><p>Luyện đủ chương trình Toán lớp 6 và lớp 7, từ cơ bản đến nâng cao</p></header>${h}`;scrollTo(0,0)},
+shell=h=>{app.innerHTML=`<header><h1>Toán Vui Vẻ</h1><p>Luyện đủ chương trình Toán lớp 6, 7, 8 và 9, từ cơ bản đến nâng cao</p></header>${h}`;scrollTo(0,0)},
 et=e=>{if(e&&e.code=='auth/popup-closed-by-user')return'';console.warn('[Firebase]',e);return e&&e.code=='auth/network-request-failed'?'Mạng đang yếu, em thử lại nhé!':'Ôi, chưa vào được rồi. Em thử lại nhé!'},
 meChip=()=>U?`<div class="me"><div class="av">${esc([...U.name][0].toUpperCase())}</div><b>${esc(U.name)}${U.guest?' <small>(khách)</small>':''}</b><button onclick="lb()">🏆 Xếp hạng</button>${U.guest?'<button onclick="linkAcc()">Liên Kết TK</button>':''}</div><div id="mini"></div>`:'',
 rows=r=>r.map((p,i)=>`<div class="lbr${U&&p.id==U.uid?' me1':''}${i<3?' t'+(i+1):''}"><span class="rk">${['🥇','🥈','🥉'][i]||i+1}</span><span class="nm">${esc(p.name)}</span><span class="xp">${p.xp|0} XP</span></div>`).join('')||'<p class="hint">Chưa có ai trên bảng. Em hãy là người đầu tiên!</p>';
@@ -26,21 +26,22 @@ async function claim(){const v=cl(),b=$('go'),m=$('msg');b.disabled=true;m.class
 /* ===== Đồng bộ tiến độ giữa các máy (Firestore: progress/{uid}) =====
    Gộp theo nguyên tắc "bên nào tiến xa hơn thì giữ": sao = lớn nhất, độ chính xác = bên nhiều lượt hơn,
    thử thách ngày = ngày mới hơn, chuỗi ngày = bên có ngày chơi mới hơn. */
-const PN=(x,lo,hi)=>Math.max(lo,Math.min(hi,+x||0)),
+const DCS=['dc','dc7','dc8','dc9'], /* thử thách ngày của từng lớp: dc = lớp 6 (tên cũ), dc7, dc8, dc9 */
+PN=(x,lo,hi)=>Math.max(lo,Math.min(hi,+x||0)),
 accOk=a=>Array.isArray(a)&&a[1]>0&&a[0]>=0&&a[0]<=a[1],
 dcOk=d=>!!d&&d.k>0&&d.ok>=0,
 dayMs=s=>{const t=Date.parse(s);return t>0?t:0},
-progOf=()=>{const p={b:D.b,acc:D.acc,st:PN(D.st,0,3650)|0,day:D.day||''};if(D.dc)p.dc=D.dc;if(D.dc7)p.dc7=D.dc7;return p},
+progOf=()=>{const p={b:D.b,acc:D.acc,st:PN(D.st,0,3650)|0,day:D.day||''};DCS.forEach(K=>{if(D[K])p[K]=D[K]});return p},
 mergeProg=(a,r)=>{a=a||{};r=r||{};const o={b:{},acc:{}},A=a.b||{},R=r.b||{},Aa=a.acc||{},Ra=r.acc||{};
  for(const k of new Set([...Object.keys(A),...Object.keys(R)]))o.b[k]=Math.max(PN(A[k],0,3),PN(R[k],0,3))|0;
  for(const k of new Set([...Object.keys(Aa),...Object.keys(Ra)])){const x=Aa[k],y=Ra[k],g=accOk(x)&&(!accOk(y)||x[1]>=y[1])?x:accOk(y)?y:null;if(g)o.acc[k]=[g[0],g[1]]}
- for(const K of['dc','dc7']){const x=a[K],y=r[K],dc=dcOk(x)&&(!dcOk(y)||x.k>y.k||(x.k==y.k&&x.ok>=y.ok))?x:dcOk(y)?y:null;if(dc)o[K]={k:dc.k|0,ok:dc.ok|0}}
+ for(const K of DCS){const x=a[K],y=r[K],dc=dcOk(x)&&(!dcOk(y)||x.k>y.k||(x.k==y.k&&x.ok>=y.ok))?x:dcOk(y)?y:null;if(dc)o[K]={k:dc.k|0,ok:dc.ok|0}}
  const dx=dayMs(a.day),dy=dayMs(r.day),pk=dx>dy||(dx==dy&&PN(a.st,0,3650)>=PN(r.st,0,3650))?a:r;
  o.st=PN(pk.st,0,3650)|0;o.day=typeof pk.day=='string'?pk.day:'';return o},
-applyProg=m=>{D.b=m.b;D.acc=m.acc;if(m.dc)D.dc=m.dc;if(m.dc7)D.dc7=m.dc7;D.st=m.st;D.day=m.day;save()};
+applyProg=m=>{D.b=m.b;D.acc=m.acc;DCS.forEach(K=>{if(m[K])D[K]=m[K]});D.st=m.st;D.day=m.day;save()};
 function enter(p){
  /* Máy này đang giữ tiến độ của tài khoản khác thì bỏ đi, tránh lẫn sao/điểm giữa các tài khoản */
- if(D.uid&&D.uid!==p.uid){D.b={};D.acc={};D.xp=0;delete D.dc;delete D.dc7;delete D.st;delete D.day}
+ if(D.uid&&D.uid!==p.uid){D.b={};D.acc={};D.xp=0;DCS.forEach(K=>{delete D[K]});delete D.st;delete D.day}
  D.uid=p.uid;U=p;D.name=p.name;D.xp=Math.max(D.xp,p.xp|0);
  applyProg(mergeProg(progOf(),p.prog));
  home();

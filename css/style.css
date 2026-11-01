@@ -211,20 +211,22 @@ input.sn-v:focus{box-shadow:none}
 /* Chọn lớp 6/7 */
 .seg.two{grid-template-columns:repeat(2,1fr)}
 
-/* --- v7: màu theo lớp (Lớp 6 xanh biển, Lớp 7 cam), màn Chọn lớp, banner đổi lớp --- */
+/* --- v7: màu theo lớp (Lớp 6 xanh biển, Lớp 7 cam, Lớp 8 xanh lá, Lớp 9 hồng đậm), màn Chọn lớp, banner đổi lớp --- */
 body[data-gr="6"]{--pr:#2f6fe0;--prd:#1b4aa8;--prl:#5a93f2;--bt:#fff}
 body[data-gr="7"]{--pr:#ff8a3d;--prd:#b85412;--prl:#ffad72;--bt:#2a1000}
+body[data-gr="8"]{--pr:#2ecc9a;--prd:#127a5c;--prl:#7ae6c4;--bt:#04261c}
+body[data-gr="9"]{--pr:#d6336c;--prd:#8f1d47;--prl:#ee6f9a;--bt:#fff}
 .gb{display:flex;align-items:center;gap:12px;width:100%;min-height:60px;margin-bottom:12px;padding:8px 14px;text-align:left;border-radius:18px;color:var(--bt,#fff);background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,0) 60%),var(--pr);box-shadow:0 4px 0 var(--prd)}
 .gb:active{transform:translateY(3px);box-shadow:0 1px 0 var(--prd)}
 .gb .ge{font-size:28px}.gb .gt{flex:1;display:flex;flex-direction:column;line-height:1.25}.gb .gt b{font:800 18px "Baloo 2",sans-serif}
 .gb small{color:inherit;opacity:.88;font-size:12.5px}.gb .gs{display:flex;flex-direction:column;align-items:flex-end;font-size:13px;font-weight:800}.gb .gs i{font-style:normal;font-size:12px;font-weight:600;opacity:.88}
 .gh{margin:6px 0 4px;font:800 28px/1.2 "Baloo 2",sans-serif}.gsub{margin:0 0 18px}
-.gc{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;width:100%;min-height:176px;margin-bottom:18px;padding:18px;text-align:left;border-radius:26px;color:var(--ci);background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0) 58%),var(--c);box-shadow:0 6px 0 rgba(0,0,0,.34),inset 0 1.5px 0 rgba(255,255,255,.42);transition:transform .08s,box-shadow .08s}
+.gc{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;width:100%;min-height:150px;margin-bottom:14px;padding:16px;text-align:left;border-radius:26px;color:var(--ci);background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0) 58%),var(--c);box-shadow:0 6px 0 rgba(0,0,0,.34),inset 0 1.5px 0 rgba(255,255,255,.42);transition:transform .08s,box-shadow .08s}
 .gc:active{transform:translateY(5px);box-shadow:0 1px 0 rgba(0,0,0,.34)}
 .gc.on{outline:3px solid var(--sun);outline-offset:3px}
-.gc .gi{font-size:40px;line-height:1}.gc b{font:800 30px/1.1 "Baloo 2",sans-serif}.gc em{font-style:normal;font-weight:700}.gc small{color:inherit;opacity:.88}.gc .gp{font-size:13px;font-weight:800}
+.gc .gi{font-size:40px;line-height:1}.gc b{font:800 28px/1.1 "Baloo 2",sans-serif}.gc em{font-style:normal;font-weight:700}.gc small{color:inherit;opacity:.88}.gc .gp{font-size:13px;font-weight:800}
 .gc u{display:block;width:100%;height:8px;margin-top:6px;border-radius:9px;background:linear-gradient(90deg,var(--ci) calc(var(--p)*1%),var(--tr) 0)}
-.gc.g6{--c:#2f6fe0;--ci:#fff;--tr:rgba(0,0,0,.3)}.gc.g7{--c:#ff8a3d;--ci:#2a1000;--tr:rgba(255,255,255,.5)}
+.gc.g6{--c:#2f6fe0;--ci:#fff;--tr:rgba(0,0,0,.3)}.gc.g7{--c:#ff8a3d;--ci:#2a1000;--tr:rgba(255,255,255,.5)}.gc.g8{--c:#2ecc9a;--ci:#04261c;--tr:rgba(255,255,255,.5)}.gc.g9{--c:#d6336c;--ci:#fff;--tr:rgba(0,0,0,.3)}
 
 /* ===== Chế độ thi thử / thử thách ngày ===== */
 .tmr{min-width:54px;text-align:center;font:800 17px/1 "Baloo 2",sans-serif;color:var(--sun);padding:4px 10px;border-radius:12px;background:rgba(0,0,0,.35)}
