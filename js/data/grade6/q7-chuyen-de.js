@@ -33,7 +33,7 @@ gen('nat.quyluat',()=>{
 gen('nat.sosanhtich',()=>{
  const m=R(20,99),d=R(1,6),sw=R(0,1),X=`${m-d} × ${m+d}`,Y=`${m} × ${m}`,tr=(m-d)*(m+d)<m*m,
   A=sw?Y:X,B=sw?X:Y,ans=sw?'A > B':'A < B',rv=sw?'A < B':'A > B';
- const e=sol([`Hai tích đều có tổng hai thừa số bằng ${2*m} (${m-d} + ${m+d} = ${m} + ${m} = ${2*m}).`,`Tách: ${m} × ${m} = ${m-d} × ${m} + ${d} × ${m}.`,`Tách: ${m-d} × ${m+d} = ${m-d} × ${m} + ${m-d} × ${d}.`,`Hai vế có chung ${m-d} × ${m}; còn lại ${d} × ${m} = ${d*m} lớn hơn ${m-d} × ${d} = ${(m-d)*d}.`,`Vậy ${m} × ${m} = ${m*m} lớn hơn ${m-d} × ${m+d} = ${(m-d)*(m+d)} đúng ${d*d} đơn vị.`],`${ans} (tích hai số có tổng không đổi thì lớn nhất khi hai số bằng nhau).`,`Hai tích có cùng tổng các thừa số chưa chắc bằng nhau.`);
+ const e=sol([`Hai tích đều có tổng hai thừa số bằng ${2*m} (${m-d} + ${m+d} = ${m} + ${m} = ${2*m}).`,`Tách: ${m} × ${m} = ${m-d} × ${m} + ${d} × ${m}.`,`Tách: ${m-d} × ${m+d} = ${m-d} × ${m} + ${m-d} × ${d}.`,`Hai vế có chung ${m-d} × ${m}; còn lại ${d} × ${m} và ${m-d} × ${d}. Cùng nhân với ${d} mà ${m} > ${m-d}, nên ${d} × ${m} lớn hơn ${m-d} × ${d}.`,`Vậy ${m} × ${m} lớn hơn ${m-d} × ${m+d}; chênh lệch là ${d} × ${m} − ${m-d} × ${d} = ${d} × (${m} − ${m-d}) = ${d} × ${d} = ${d*d} đơn vị.`],`${ans} (tích hai số có tổng không đổi thì lớn nhất khi hai số bằng nhau).`,`Hai tích có cùng tổng các thừa số chưa chắc bằng nhau.`);
  return[mc(`So sánh A = ${A} và B = ${B} (không cần tính ra kết quả):`,ans,[[rv,'ngược chiều: hai thừa số càng gần nhau thì tích càng LỚN'],['A = B','cùng tổng hai thừa số nhưng tích không bằng nhau'],['Không so sánh được','có thể so sánh bằng cách tách tích, không cần tính cả hai']],e,String),[m,d,sw]]}),
 
 /* Phép chia có dư */
