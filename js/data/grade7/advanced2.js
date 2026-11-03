@@ -30,7 +30,7 @@ add('l7sth',
 addH('l7tlt',
  ()=>{const[a,b,c]=P([[1,2,3],[2,3,4],[1,3,5],[2,3,5]]),k=R(2,8);return I(`Biết x/${a}=y/${b}=z/${c} và x+y+z=${(a+b+c)*k}. Tính x+y−z.`,(a+b-c)*k,`Bước 1: Mỗi phần bằng ${k}.\nBước 2: x + y − z = (${a} + ${b} − ${c}) × ${k}.`)},
  ()=>{const[a,b]=P([[2,3],[3,5],[4,5],[3,4]]),k=R(2,6);return I(`Hai số có tỉ số ${a}/${b}, tổng=${(a+b)*k}. Số bé hơn là:`,Math.min(a,b)*k,`Bước 1: Mỗi phần bằng ${k}.\nBước 2: Số bé = min(${a},${b}) × ${k}.`)},
- ()=>{const k=R(2,5),t=R(2,6);return I(`3 máy cày làm xong đồng ruộng trong ${t} ngày. ${k} máy cày làm xong trong mấy ngày? (làm tròn 1 chữ số)`,Math.round(3*t/k*10)/10,`Bước 1: Khối lượng không đổi khi đổi đơn vị.\nBước 2: 3 × ${t} = ${k} × x → x = ${Math.round(3*t/k*10)/10}.`)}
+ ()=>{const k=P([2,4,5,6]),t=R(2,6);return I(`3 máy cày làm xong đồng ruộng trong ${t} ngày. ${k} máy cày làm xong trong mấy ngày? (làm tròn 1 chữ số)`,Math.round(3*t/k*10)/10,`Bước 1: Khối lượng không đổi khi đổi đơn vị.\nBước 2: 3 × ${t} = ${k} × x → x = ${Math.round(3*t/k*10)/10}.`)}
 );
 add('l7tlt',
  ()=>{let a=R(2,9),b=R(2,9);while(a==b)b=R(2,9);return Z(`Từ ${a}·x=${b}·y (x,y≠0), suy ra tỉ lệ thức nào ĐÚNG?`,`x/${b}=y/${a}`,[`x/${a}=y/${b}`,`x/y=${a}/${b}`,`x·y=${a*b}`],'Tích ngoại=tích trung: x·a=y·b ⇔ x/b=y/a.')},

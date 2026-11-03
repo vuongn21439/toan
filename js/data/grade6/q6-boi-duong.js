@@ -79,7 +79,7 @@ HA('frac',
 HA('word',
  ()=>{const v1=R(30,60),v2=v1+R(10,30),t=R(1,4);return I(`Hai xe cùng chiều, xe sau nhanh hơn ${v2-v1} km/h, cách nhau ${(v2-v1)*t} km. Sau mấy giờ gặp nhau?`,t,`Thời gian = khoảng cách : hiệu vận tốc.`)},
  ()=>{const s=R(2,8),m=R(2,8);return I(`Vừa gà vừa chó có ${s+m} con, ${2*s+4*m} chân. Số gà là:`,s,`Giả sử tất cả là chó: ${4*(s+m)} chân, thừa ${2*m}; mỗi gà ít hơn chó 2 chân → số gà = ${2*m}:2.`)},
- ()=>{const a=R(5,15),k=R(2,4);return I(`Năm nay con ${a} tuổi, mẹ gấp ${k} lần con. Hiệu số tuổi hai mẹ con là:`,(k-1)*a,`Mẹ ${k*a} tuổi, con ${a}; hiệu = ${k*a}−${a}. Hiệu số tuổi không đổi.`)}
+ ()=>{const k=R(3,4),a=R(k==3?10:8,13);return I(`Năm nay con ${a} tuổi, mẹ gấp ${k} lần con. Hiệu số tuổi hai mẹ con là:`,(k-1)*a,`Mẹ ${k*a} tuổi, con ${a}; hiệu = ${k*a}−${a}. Hiệu số tuổi không đổi.`)}
 );
 A('word',
  ()=>{const v1=R(30,60),v2=R(30,60),t=R(1,4);return N(`Hai xe đi ngược chiều cách ${(v1+v2)*t} km, vận tốc ${v1} và ${v2} km/h. Sau mấy giờ gặp nhau?`,t,'Thời gian = quãng đường : tổng vận tốc.')}

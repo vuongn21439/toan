@@ -219,7 +219,7 @@ gen('frac.tong_dayso2',()=>{
 
 /* Học sinh vắng mặt (CĐ10 dạng 5) */
 gen('frac.loivan1',()=>{
- const p=R(4,12),tot=p*(p+1);
+ const p=R(4,7),tot=p*(p+1);
  const e=sol([`Lúc đầu số vắng bằng ${fh(1,p)} số có mặt, nên số vắng bằng ${fh(1,p+1)} số học sinh cả lớp (vắng : cả lớp = 1 : ${p+1}).`,`Thêm 1 bạn nghỉ nữa: số vắng bằng ${fh(1,p-1)} số có mặt, tức bằng ${fh(1,p)} số học sinh cả lớp.`,`1 học sinh ứng với ${fh(1,p)} − ${fh(1,p+1)} = ${fh(1,p*(p+1))} số học sinh cả lớp.`,`Số học sinh cả lớp = 1 : ${fh(1,p*(p+1))} = ${tot}.`],`lớp có ${tot} học sinh.`,`Phải đổi các tỉ số "so với số có mặt" về tỉ số "so với cả lớp" (vì số có mặt thay đổi khi có thêm bạn nghỉ).`);
  return[mc(`Trong một buổi học, số học sinh vắng mặt bằng ${fh(1,p)} số học sinh có mặt. Nếu có thêm 1 bạn nghỉ học nữa thì số học sinh vắng mặt bằng ${fh(1,p-1)} số học sinh có mặt. Lớp có bao nhiêu học sinh?`,tot,[[p*p,'đó là số học sinh có mặt lúc đầu'],[p*(p-1),'so sánh trực tiếp với số có mặt, chưa đổi về cả lớp'],[(p+1)*(p+2),'dịch lệch một nấc tỉ số'],[tot-1,'trừ nhầm 1 bạn']],e),[p]]}),
 

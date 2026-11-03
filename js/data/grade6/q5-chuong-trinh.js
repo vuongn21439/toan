@@ -50,7 +50,7 @@ A('gcd',
 A('int',
 ()=>Q('Số nào KHÔNG phải là số nguyên?',P(['2,5','1/2','0,75','3/4']),xw([-7,0,12,-3,25,-18]).map(iz),'Số nguyên gồm các số tự nhiên và số đối của chúng; phân số, số thập phân không nguyên thì không phải.'),
 ()=>{const a=R(-15,15),b=R(0,1);return N(`Số nguyên liền ${b?'sau':'trước'} của ${iz(a)} là:`,b?a+1:a-1,'Liền sau lớn hơn 1 đơn vị, liền trước nhỏ hơn 1 đơn vị.',iz,1)},
-()=>{const a=R(20,80),b=R(5,100);return N(`Tàu ngầm đang ở độ cao ${iz(-a)} m so với mực nước biển, rồi nổi lên ${b} m. Độ cao mới là (m):`,b-a,`${iz(-a)} + ${b} = ${iz(b-a)}.`,iz,1)},
+()=>{const a=R(20,80),b=R(5,a-5);return N(`Tàu ngầm đang ở độ cao ${iz(-a)} m so với mực nước biển, rồi nổi lên ${b} m. Độ cao mới là (m):`,b-a,`${iz(-a)} + ${b} = ${iz(b-a)}.`,iz,1)},
 ()=>{const a=R(5,40),b=R(5,40);return N(`Tháng 1 cửa hàng lãi ${a} triệu, tháng 2 lỗ ${b} triệu (lỗ tính là số âm). Tổng kết hai tháng (triệu):`,a-b,`${a} + (${iz(-b)}) = ${iz(a-b)}.`,iz,1)},
 ()=>{const a=nz(),b=nz();return N(`Tính: |${iz(a)}| + |${iz(b)}|`,Math.abs(a)+Math.abs(b),'Giá trị tuyệt đối luôn không âm: cộng hai khoảng cách đến 0.',iz,1)},
 ()=>{const a=R(2,5),b=R(2,5),c=R(2,5);return N(`Tính: ${pa(-a)} × ${pa(-b)} × ${pa(-c)}`,-a*b*c,'Ba thừa số âm (số lẻ thừa số âm) nên tích âm.',iz,1)},
@@ -88,7 +88,7 @@ A('sym',
 ()=>{const [n,a,w]=P([['hình chữ nhật','bằng nhau và cắt nhau tại trung điểm mỗi đường',['vuông góc với nhau','song song với nhau','không bằng nhau']],['hình thoi','vuông góc và cắt nhau tại trung điểm mỗi đường',['bằng nhau và song song','bằng nhau và không cắt nhau','song song với nhau']],['hình bình hành','cắt nhau tại trung điểm mỗi đường',['luôn bằng nhau','luôn vuông góc','song song với nhau']]]);return Q(`Hai đường chéo của ${n} có tính chất nào?`,a,w,`Đây là tính chất hai đường chéo của ${n}.`)},
 ()=>{const a=R(2,15);return N(`Hình thoi có cạnh ${a} cm. Chu vi là (cm):`,4*a,'Hình thoi có 4 cạnh bằng nhau.')},
 ()=>Q('Nối tâm với các đỉnh của lục giác đều thì chia nó thành mấy tam giác đều bằng nhau?','6',['3','4','8'],'Lục giác đều có 6 cạnh nên chia thành 6 tam giác đều bằng nhau.'),
-()=>{const a=R(3,8),b=R(2,6);return N(`Nền nhà hình chữ nhật dài ${a} m, rộng ${b} m, lát bằng gạch hình vuông cạnh 50 cm, không cắt gạch. Cần bao nhiêu viên?`,4*a*b,`Mỗi mét lát được 2 viên: (${a} × 2) × (${b} × 2).`)});
+()=>{const b=R(2,6),a=b+R(1,3);return N(`Nền nhà hình chữ nhật dài ${a} m, rộng ${b} m, lát bằng gạch hình vuông cạnh 50 cm, không cắt gạch. Cần bao nhiêu viên?`,4*a*b,`Mỗi mét lát được 2 viên: (${a} × 2) × (${b} × 2).`)});
 A('geo',
 ()=>{const a=R(5,30),k=R(2,9);return N(`Rào quanh mảnh vườn hình vuông cạnh ${a} m, mỗi mét hàng rào tốn ${k} nghìn đồng. Tổng chi phí là (nghìn đồng):`,4*a*k,`Chu vi = ${a} × 4 = ${4*a} m; nhân với ${k}.`)},
 ()=>{const a=R(3,15);return N(`Hình vuông có chu vi ${4*a} cm. Diện tích là (cm²):`,a*a,`Cạnh = ${4*a} : 4 = ${a} cm; S = ${a} × ${a}.`)});

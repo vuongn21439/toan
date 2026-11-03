@@ -33,7 +33,7 @@ HA('ub',
 ()=>{const [a,b]=P([[12,18],[24,36],[30,45],[18,27],[20,50]]);return I(`ƯC(${a}; ${b}) có bao nhiêu phần tử?`,[...Array(a+1).keys()].filter(i=>i&&a%i==0&&b%i==0).length,`Bước 1: Tìm ƯCLN của ${a} và ${b}.\nBước 2: Các ước chung chính là các ước của ƯCLN đó.`)});
 HA('pct',
 ()=>{const x=P([10,20,50]),y=P([10,20,50]),p=100*R(1,10);return I(`Một món hàng giá ${p} nghìn đồng, giảm ${x}% rồi giảm tiếp ${y}% trên giá đã giảm. Giá cuối cùng là (nghìn đồng):`,p*(100-x)*(100-y)/10000,`Bước 1: Sau giảm ${x}% còn (100−${x})% giá cũ.\nBước 2: Sau giảm ${y}% nữa: lấy giá vừa rồi × (100−${y})%.`)},
-()=>{const r=P([5,10,15,20]),p=20*R(1,10);return I(`Gửi ngân hàng ${p} triệu đồng, lãi ${r}% một năm. Sau 1 năm, cả vốn lẫn lãi là (triệu đồng):`,p*(100+r)/100,`Cả vốn lẫn lãi = ${p} × ${100+r}%.`)});
+()=>{const r=P([5,6,7,8]),p=100*R(1,5);return I(`Gửi ngân hàng ${p} triệu đồng, lãi ${r}% một năm. Sau 1 năm, cả vốn lẫn lãi là (triệu đồng):`,p*(100+r)/100,`Cả vốn lẫn lãi = ${p} × ${100+r}%.`)});
 HA('sym',()=>{const n=R(5,10);return I(`Đa giác lồi có ${n} cạnh có bao nhiêu đường chéo?`,n*(n-3)/2,`Mỗi đỉnh nối được ${n-3} đường chéo, mỗi đường bị đếm 2 lần: ${n} × ${n-3} : 2.`)});
 HA('geo',
 ()=>{const k=R(2,5);return I(`Tăng cạnh hình vuông lên ${k} lần thì diện tích tăng lên bao nhiêu lần?`,k*k,`Diện tích = cạnh × cạnh nên tăng ${k} × ${k} lần.`)},

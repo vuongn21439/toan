@@ -70,7 +70,7 @@ gen('pct.nongdo',()=>{
 
 /* Lãi kép */
 gen('pct.laikep',()=>{
- const p=P([5,10,20]),n=p==5?2:P([2,3]),V=P([100,200,500]),tot=V*Math.pow(1+p/100,n),simple=V*(1+n*p/100),
+ const p=P([5,6]),n=2,V=P([100,200,500]),tot=V*Math.pow(1+p/100,n),simple=V*(1+n*p/100),
   e=sol([`Lãi kép: cuối mỗi năm, tiền lãi được cộng vào vốn để năm sau tính lãi tiếp.`,...Array.from({length:n},(_,i)=>{const a=V*Math.pow(1+p/100,i),b=V*Math.pow(1+p/100,i+1);return `Năm ${i+1}: ${fd(a)} × ${100+p}% = ${fd(b)} (triệu đồng).`})],`sau ${n} năm có ${fd(tot)} triệu đồng.`,`Lãi đơn (chỉ tính lãi trên vốn ban đầu) cho ${fd(simple)} triệu, thấp hơn lãi kép.`);
  return[mcd(`Gửi ${V} triệu đồng vào ngân hàng với lãi suất ${p}%/năm theo thể thức lãi kép (tiền lãi cuối mỗi năm được cộng vào vốn). Sau ${n} năm, cả vốn lẫn lãi là (triệu đồng):`,tot,[[simple,'tính lãi đơn: lãi các năm sau không tính trên tiền lãi'],[V*n*p/100,'đó mới chỉ là tiền lãi (lãi đơn), chưa cộng vốn'],[V*Math.pow(1+p/100,n-1),'tính thiếu một năm']],e),[V,p,n]]})
 );
@@ -170,7 +170,7 @@ gen('word.tuoi',()=>{
 
 /* Vận tốc trung bình cả đi lẫn về */
 gen('word.tbvt',()=>{
- const [v1,v2]=P([[40,60],[30,60],[20,30],[60,90],[24,40],[12,20],[30,45],[50,75],[10,15],[40,24]]),s=lcm(v1,v2),t1=s/v1,t2=s/v2,vtb=2*s/(t1+t2),
+ const [v1,v2]=P([[40,60],[30,60],[60,90],[24,40],[30,45],[50,75],[40,24]]),s=lcm(v1,v2),t1=s/v1,t2=s/v2,vtb=2*s/(t1+t2),
   e=sol([`Gọi quãng đường AB là s. Chọn s = ${s} km (bội chung của ${v1} và ${v2}) cho dễ tính.`,`Thời gian đi: ${s} : ${v1} = ${t1} giờ. Thời gian về: ${s} : ${v2} = ${t2} giờ.`,`Cả đi lẫn về: quãng đường = 2 × ${s} = ${2*s} km, thời gian = ${t1} + ${t2} = ${t1+t2} giờ.`,`Vận tốc trung bình = ${2*s} : ${t1+t2} = ${vtb} km/h.`],`vận tốc trung bình là ${vtb} km/h.`,`Vận tốc trung bình = tổng quãng đường : tổng thời gian, không phải trung bình cộng hai vận tốc.`);
  return[mc(`Một ô tô đi từ A đến B với vận tốc ${v1} km/h, rồi quay về A với vận tốc ${v2} km/h (cùng một con đường). Vận tốc trung bình của ô tô trên cả quãng đường đi và về là (km/h):`,vtb,[[(v1+v2)/2,'lấy trung bình cộng hai vận tốc, trong khi thời gian đi mỗi chặng khác nhau'],[v1*v2/(v1+v2),'quên nhân 2 quãng đường (đi và về)'],[Math.abs(v1-v2),'lấy hiệu hai vận tốc'],[Math.min(v1,v2),'lấy vận tốc nhỏ hơn']],e,fd),[v1,v2]]}),
 
@@ -235,7 +235,7 @@ gen('sym.thetich_tang',()=>{
 
 gen('sym.bexep',()=>{
  let a,b,c,pq;
- do{a=R(3,8);b=R(2,6);c=R(2,4);pq=P([[1,2],[3,5],[2,3],[3,4],[1,4],[4,5]])}while(a==b||b==c||!Number.isInteger(a*b*c*(pq[1]-pq[0])*1000/pq[1]));
+ do{a=R(3,8);b=R(2,6);c=R(2,4);pq=P([[1,2],[3,5],[2,3],[3,4],[1,4],[4,5]])}while(a<=b||b==c||!Number.isInteger(a*b*c*(pq[1]-pq[0])*1000/pq[1]));
  const [p,q]=pq,V=a*b*c,need=V*(q-p)/q*1000,have=V*p/q*1000,
   e=sol([`Thể tích bể = ${a} × ${b} × ${c} = ${V} m³.`,`Phần chưa có nước = 1 − ${fh(p,q)} = ${fh(q-p,q)} chiều cao, tương ứng ${fh(q-p,q)} thể tích: ${V} × ${fh(q-p,q)} = ${fd(V*(q-p)/q)} m³.`,`Đổi ra lít: ${fd(V*(q-p)/q)} × 1 000 = ${need} lít.`],`cần đổ thêm ${need} lít.`,`1 m³ = 1 000 lít (không phải 100 lít); và phải lấy phần CHƯA có nước.`);
  return[mc(`Một bể nước hình hộp chữ nhật có chiều dài ${a} m, chiều rộng ${b} m, chiều cao ${c} m. Hiện bể đang chứa nước đến ${fh(p,q)} chiều cao của bể. Cần đổ thêm bao nhiêu lít nước để đầy bể? (1 m³ = 1 000 lít)`,need,[[have,'đó là lượng nước hiện có'],[V*(q-p)/q,'chưa đổi từ m³ sang lít'],[V*1000,'đó là thể tích cả bể'],[need/10,'đổi nhầm 1 m³ = 100 lít']],e,fd),[a,b,c,p,q]]})

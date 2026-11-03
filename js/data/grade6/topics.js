@@ -52,5 +52,5 @@ const T=[
 {id:'word',n:'Toán đố',e:'💡',c:'#ffb142',tip:'Đọc kỹ đề, gạch chân số liệu, xác định đề hỏi gì. Hiệu số tuổi của hai người không bao giờ thay đổi.',g:[
 ()=>{const y=R(10,40),x=y+2*R(2,15);return N(`Hai số có tổng bằng ${x+y} và hiệu bằng ${x-y}. Số lớn là:`,x,`Số lớn = (tổng + hiệu) : 2 = (${x+y} + ${x-y}) : 2.`)},
 ()=>{const v=R(3,12)*5,t=R(2,6);return N(`Một xe đi với vận tốc ${v} km/h trong ${t} giờ. Quãng đường đi được là (km):`,v*t,'Quãng đường = vận tốc × thời gian.')},
-()=>{const a=R(6,12),k=R(3,4),n=R(3,10);return N(`Năm nay con ${a} tuổi, mẹ gấp ${k} lần tuổi con. Sau ${n} năm nữa, mẹ hơn con bao nhiêu tuổi?`,(k-1)*a,`Hiệu số tuổi không đổi theo thời gian: ${k*a} − ${a}.`)}]}
+()=>{const k=R(3,4),a=R(k==3?10:8,12),n=R(3,10);return N(`Năm nay con ${a} tuổi, mẹ gấp ${k} lần tuổi con. Sau ${n} năm nữa, mẹ hơn con bao nhiêu tuổi?`,(k-1)*a,`Hiệu số tuổi không đổi theo thời gian: ${k*a} − ${a}.`)}]}
 ];

@@ -43,7 +43,7 @@ gn('py.dcheo',()=>{const k=R(0,1);
  const a=R(2,9);return[M(`Hình vuông có cạnh ${a} cm. Độ dài đường chéo là`,`${a}√2 cm`,[[`${2*a} cm`,'cho rằng đường chéo gấp đôi cạnh'],[`${a} cm`,'cho rằng đường chéo bằng cạnh'],[`${a*a}√2 cm`,'nhầm bình phương cạnh']],[`Đường chéo d của hình vuông cạnh a thỏa d² = a² + a² = 2a².`,`d² = 2·${a}² = ${2*a*a}, nên d = ${a}√2 cm.`],`Đường chéo hình vuông luôn bằng cạnh nhân √2.`,String),[a,0]]}),
 gn('py.cao_can',()=>{const [m,h,c]=tp(3,3);
  return[M(`Tam giác ABC cân tại A có đáy BC = ${2*m} cm, cạnh bên AB = ${c} cm. Chiều cao AH là`,h,[[c-m,'trừ độ dài hai cạnh'],[c*c-m*m,'quên lấy căn bậc hai'],[c-2*m>0?c-2*m:h+1,'lấy nhầm cả đáy trừ đi cạnh bên'],[h+1]],[`Chiều cao AH cũng là trung tuyến, nên H là trung điểm BC và BH = ${2*m}/2 = ${m} cm.`,`Trong tam giác vuông AHB: AH² = AB² − BH² = ${c*c} − ${m*m} = ${h*h}, nên AH = ${h} cm.`],`Dùng NỬA đáy (BH), không phải cả đáy.`,cm),[m,h,c]]}),
-gn('py.thang',()=>{const [d,h,l]=tp(3,3);
+gn('py.thang',()=>{const [d,h,l]=tp(2,1);
  return[M(`Một chiếc thang dài ${l} m dựa vào tường thẳng đứng, chân thang cách tường ${d} m. Đầu trên của thang chạm tường ở độ cao bao nhiêu mét?`,h,[[l-d,'trừ độ dài thang với khoảng cách chân thang'],[l*l-d*d,'quên lấy căn bậc hai'],[l+d,'cộng thay vì trừ'],[h+1]],[`Thang, tường và mặt đất tạo thành tam giác vuông có cạnh huyền là thang (${l} m).`,`Độ cao² = ${l}² − ${d}² = ${l*l} − ${d*d} = ${h*h}, nên độ cao = ${h} m.`],`Chiều dài thang là cạnh huyền.`,v=>fd(v)+' m'),[d,h,l]]}));
 
 addH('l8py',
@@ -57,7 +57,7 @@ gn('py.dien_tich',()=>{const [a,b,c]=tp(5,2),[x,y]=sw(a,b);
  return[Iq(`Tam giác ABC vuông tại A có AB = ${x} cm và BC = ${c} cm. Tính diện tích tam giác ABC (cm²).`,x*y/2,[`AC² = BC² − AB² = ${c*c} − ${x*x} = ${y*y}, nên AC = ${y} cm.`,`Diện tích = ½·AB·AC = ½·${x}·${y} = ${x*y/2} cm².`],`Diện tích tam giác vuông bằng một nửa tích hai cạnh góc vuông.`),[x,y,c]]}),
 gn('py.hinh_thang',()=>{const [p,q,r]=tp(3,3),[dd,h]=sw(p,q),a=R(2,8);
  return[Iq(`Hình thang vuông ABCD (∠A = ∠D = 90°) có AB = ${a} cm, CD = ${a+dd} cm, AD = ${h} cm. Tính cạnh bên BC (cm).`,r,[`Kẻ BH ⊥ CD tại H. Khi đó ABHD là hình chữ nhật nên BH = AD = ${h} cm và DH = AB = ${a} cm.`,`HC = CD − DH = ${a+dd} − ${a} = ${dd} cm. Trong tam giác vuông BHC: BC² = ${h}² + ${dd}² = ${r*r}, nên BC = ${r} cm.`],`Kẻ đường cao từ đỉnh đáy nhỏ để tạo tam giác vuông.`),[a,dd,h,r]]}),
-gn('py.cay_gay',()=>{const [a,b,c]=tp(3,3),[h,d]=sw(a,b);
+gn('py.cay_gay',()=>{const [a,b,c]=tp(2,1),[h,d]=sw(a,b);
  return[Iq(`Một cây bị gió bẻ gãy ngang thân. Phần gốc còn lại cao ${h} m, ngọn cây chạm đất cách gốc ${d} m. Hỏi trước khi gãy cây cao bao nhiêu mét?`,h+c,[`Phần thân bị gãy (đoạn từ chỗ gãy tới ngọn) là cạnh huyền của tam giác vuông có hai cạnh góc vuông ${h} m và ${d} m.`,`Cạnh huyền = √(${h}² + ${d}²) = ${c} m. Chiều cao ban đầu = ${h} + ${c} = ${h+c} m.`],`Chiều cao ban đầu là phần gốc CỘNG phần ngọn bị gãy.`),[h,d,c]]}));
 
 /* ================= TỨ GIÁC ================= */
