@@ -1,8 +1,8 @@
 /* LỚP 6: danh sách chủ đề (id, tên, màu, mẹo học, bộ câu hỏi cơ bản g) */
 const T=[
 {id:'nat',n:'Số tự nhiên',e:'🔢',c:'#ff7675',tip:'Nhân chia trước, cộng trừ sau. Có ngoặc thì tính trong ngoặc trước. Tập ℕ bắt đầu từ 0.',g:[
-()=>{const a=R(10,50),b=R(2,9),c=R(2,9);return N(`Tính: ${a} + ${b} × ${c}`,a+b*c,`Nhân trước: ${b} × ${c} = ${b*c}, rồi cộng ${a}.`)},
-()=>{const a=R(20,60),b=R(2,19),c=R(2,9);return N(`Tính: (${a} − ${b}) × ${c}`,(a-b)*c,`Làm trong ngoặc trước: ${a} − ${b} = ${a-b}.`)},
+()=>{const a=R(10,50),b=R(2,9),c=R(2,9);return N(`Tính: ${a} + ${b} × ${c}`,a+b*c,`Nhân trước: ${b} × ${c} = ${b*c}, rồi cộng: ${a} + ${b*c} = ${a+b*c}.`)},
+()=>{const a=R(20,60),b=R(2,19),c=R(2,9);return N(`Tính: (${a} − ${b}) × ${c}`,(a-b)*c,`Làm trong ngoặc trước: ${a} − ${b} = ${a-b}, rồi nhân: ${a-b} × ${c} = ${(a-b)*c}.`)},
 ()=>{const n=R(4,9);return N(`Tập hợp A = {x ∈ ℕ | x &lt; ${n}} có bao nhiêu phần tử?`,n,`ℕ bắt đầu từ 0 nên A = {0; 1; …; ${n-1}} có ${n} phần tử.`)},
 ()=>{const a=R(10,90),b=a+R(10,90);return N(`Tìm x biết: x + ${a} = ${b}`,b-a,`x = ${b} − ${a} = ${b-a}.`)},
 ()=>{const n=R(4,29);return Q(`Số ${n} viết bằng số La Mã là:`,rom(n),[n+1,n-1,n+2].map(rom),'Nhớ: I = 1, V = 5, X = 10. Số nhỏ đứng bên trái thì trừ, bên phải thì cộng.')}]},

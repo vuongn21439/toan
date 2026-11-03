@@ -14,7 +14,7 @@ T.push({id:'set',n:'Tập hợp',e:'🧺',c:'#e67e22',tip:'∈ là thuộc, ∉ 
 ()=>{const a=R(10,40),b=a+R(10,40);let c=0;for(let i=a;i<=b;i++)if(i%2)c++;return I(`Cho A = {x ∈ ℕ | ${a} ≤ x ≤ ${b}}. Số phần tử lẻ của A là:`,c,'Liệt kê hoặc dùng công thức dãy cách đều 2, nhớ xét số đầu và số cuối có lẻ không.')}]});
 A('sym',
 ()=>{const i=R(0,6);return F(Q('Hình bên là hình gì?',SH[i][0],sh(SH.filter((_,j)=>j!=i)).slice(0,3).map(x=>x[0]),'Đếm số cạnh, rồi xét cạnh và góc của hình.'),sp(i))},
-()=>{const i=R(0,6);return F(N(`Hình ${SH[i][0]} bên có bao nhiêu trục đối xứng?`,SH[i][2],'Gấp hình theo trục thì hai nửa phải trùng khít.'),sp(i))});
+()=>{const i=R(0,6);return F(N(`${(/^hình/.test(SH[i][0])?SH[i][0]:'hình '+SH[i][0]).replace(/^./,c=>c.toUpperCase())} bên có bao nhiêu trục đối xứng?`,SH[i][2],'Gấp hình theo trục thì hai nửa phải trùng khít.'),sp(i))});
 A('stat',
 ()=>{const [l,v]=cv(),m=Math.max(...v);return F(Q('Biểu đồ cột cho số học sinh giỏi của mỗi lớp. Lớp nào nhiều nhất?',l[v.indexOf(m)],l.filter((_,i)=>v[i]!=m),'Cột cao nhất ứng với giá trị lớn nhất.'),bc(v,l))},
 ()=>{const [l,v]=cv();return F(N('Tổng số học sinh giỏi của bốn lớp theo biểu đồ là:',v.reduce((a,b)=>a+b),'Cộng giá trị trên bốn cột.'),bc(v,l))},
@@ -27,17 +27,17 @@ HA('stat',
 A('line',
 ()=>Q('Hai đường thẳng phân biệt có nhiều nhất mấy điểm chung?','1',['0','2','vô số'],'Hai đường thẳng phân biệt hoặc cắt nhau tại đúng 1 điểm, hoặc song song.'),
 ()=>Q('Hai tia chung gốc O và cùng nằm trên một đường thẳng, về hai phía của O, là hai tia:','đối nhau',['trùng nhau','song song','vuông góc'],'Đó là định nghĩa hai tia đối nhau.'),
-()=>{const a=R(3,9),k=R(2,5);return N(`A, B, C thẳng hàng, B nằm giữa A và C, AB = ${a} cm, AC = ${a+k} cm. BC bằng (cm):`,k,'BC = AC − AB.')});
+()=>{const a=R(3,9),k=R(2,5);return N(`A, B, C thẳng hàng, B nằm giữa A và C, AB = ${a} cm, AC = ${a+k} cm. BC bằng (cm):`,k,`BC = AC − AB = ${a+k} − ${a} = ${k} cm.`)});
 HA('line',
 ()=>{const a=R(10,40),b=R(3,9);return I(`M là trung điểm của AB, N là trung điểm của BC (B nằm giữa A và C). AB = ${2*a} cm, BC = ${2*b} cm. Độ dài MN là (cm):`,a+b,'MN = MB + BN = AB : 2 + BC : 2.')},
 ()=>{const k=R(2,4);return I(`Hai góc kề bù, góc lớn gấp ${k} lần góc nhỏ. Số đo góc lớn là (độ):`,k*180/(k+1),`Tổng 180° chia thành ${k+1} phần bằng nhau; góc lớn chiếm ${k} phần.`)});
 A('int',
 ()=>{const a=R(2,15),b=R(2,15),c=R(2,15);return N(`Bỏ ngoặc rồi tính: ${a} − (−${b} + ${c})`,a+b-c,`Dấu − trước ngoặc: đổi dấu mọi số hạng trong ngoặc, được ${a} + ${b} − ${c}.`,iz,1)},
-()=>{const a=R(2,15),b=R(1,20);return N(`Tìm x biết: x − ${a} = ${iz(-b)}`,a-b,`Chuyển vế: x = ${iz(-b)} + ${a}.`,iz,1)},
+()=>{const a=R(2,15),b=R(1,20);return N(`Tìm x biết: x − ${a} = ${iz(-b)}`,a-b,`Chuyển vế: x = ${iz(-b)} + ${a} = ${iz(a-b)}.`,iz,1)},
 ()=>{const k=R(3,9),m=k*nz();return Q(`Số nào là bội của ${iz(-k)}?`,iz(m),[m+1,m+2,m-1].map(iz),'Bội của −k là các số chia hết cho k, kể cả số âm.')});
 HA('int',()=>{const n=P([6,8,10,12,15]);return I(`Số ${n} có bao nhiêu ước nguyên (kể cả ước âm)?`,2*[...Array(n+1).keys()].filter(i=>i&&n%i==0).length,'Mỗi ước dương cho một ước âm đối của nó, nên số ước nguyên gấp đôi.')});
 A('frac',
 ()=>{const [a,b]=cop(2,8),k=R(2,6);return N(`Tìm x biết ${a}/${b} = x/${b*k}`,a*k,`Mẫu nhân với ${k} nên tử cũng nhân với ${k}.`)},
 ()=>{const [a,b]=cop(2,8),[c,d]=cop(2,8);return N(`Quy đồng ${a}/${b} và ${c}/${d}. Mẫu số chung nhỏ nhất là:`,lc(b,d),`Mẫu chung nhỏ nhất là BCNN(${b}; ${d}).`)});
 A('dec',()=>{const y=R(2,9),q=R(2,15);return N(`Tính: ${dc(y*q)} : ${dc(y)}`,q,'Nhân cả số bị chia và số chia với 10 để số chia thành số tự nhiên, rồi chia.')});
-HA('dec',()=>{const t=P([100000,500000,1000000]),c=R(2,9);return I(`Trên bản đồ tỉ lệ 1 : ${t}, hai điểm cách nhau ${c} cm. Khoảng cách thật là (km):`,c*t/100000,'1 cm trên bản đồ ứng với (tỉ lệ) cm thật; đổi cm sang km bằng cách chia cho 100 000.')});
+HA('dec',()=>{const t=P([100000,500000,1000000]),c=R(2,9);return I(`Trên bản đồ tỉ lệ 1 : ${t}, hai điểm cách nhau ${c} cm. Khoảng cách thật là (km):`,c*t/100000,`Bước 1: Khoảng cách thật = ${c} × ${t} = ${c*t} cm.\nBước 2: Đổi sang km (chia cho 100 000): ${c*t} : 100 000 = ${String(c*t/100000).replace('.',',')} km.`)});

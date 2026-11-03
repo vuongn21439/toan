@@ -20,20 +20,20 @@ A('set',
 /* SỐ TỰ NHIÊN / ĐẾM SỐ (nat) */
 HA('nat',
  ()=>{let a=R(2,9),b=R(2,9);while(b==a)b=R(2,9);return I(`Có bao nhiêu số tự nhiên có 2 chữ số khác nhau tạo từ ${a} và ${b}?`,2,`Bước 1: Hai chữ số khác nhau ${a} và ${b}.\nBước 2: Có 2 cách xếp: ${a}${b} và ${b}${a}.`)},
- ()=>{const a=R(2,8),d=R(2,5),n=R(4,8);return I(`Dãy: ${a}; ${a+d}; ${a+2*d}; …; số hạng thứ ${n} là:`,a+(n-1)*d,`Bước 1: Dãy cách đều: số hạng thứ k = số đầu + (k − 1) × khoảng cách.\nBước 2: Áp dụng công thức để tìm số hạng cần tìm.`)},
- ()=>{const n=R(10,30);return I(`Tổng các số tự nhiên lẻ từ 1 đến ${2*n-1} là:`,n*n,`Bước 1: Có ${n} số lẻ đầu tiên.\nBước 2: Tổng n số lẻ đầu tiên = n² = ${n}².`)},
+ ()=>{const a=R(2,8),d=R(2,5),n=R(4,8);return I(`Dãy: ${a}; ${a+d}; ${a+2*d}; …; số hạng thứ ${n} là:`,a+(n-1)*d,`Bước 1: Dãy cách đều: số hạng thứ k = số đầu + (k − 1) × khoảng cách.\nBước 2: Số hạng thứ ${n} = ${a} + (${n} − 1) × ${d} = ${a+(n-1)*d}.`)},
+ ()=>{const n=R(10,30);return I(`Tổng các số tự nhiên lẻ từ 1 đến ${2*n-1} là:`,n*n,`Bước 1: Có ${n} số lẻ đầu tiên.\nBước 2: Tổng n số lẻ đầu tiên = n² = ${n}² = ${n*n}.`)},
  ()=>{const n=R(100,999);return I(`Tổng các chữ số của ${n} là:`,sd(n),`Bước 1: Tách các chữ số của ${n}.\nBước 2: Cộng các chữ số lại = ${sd(n)}.`)}
 );
 A('nat',
- ()=>{const n=R(100,999);return Z(`Tổng các chữ số của ${n} là:`,''+sd(n),[sd(n)+1,sd(n)-1,sd(n)+2].map(String),'Cộng ba chữ số lại.')},
- ()=>{const a=R(1,5),d=R(2,4),n=R(3,6);return N(`Số hạng thứ ${n} của dãy ${a}; ${a+d}; ${a+2*d}; … là:`,a+(n-1)*d,'Số hạng thứ k = số đầu + (k−1)×khoảng cách.')},
- ()=>{const n=R(4,20);return Z('Số nào sau đây là số chính phương?',''+n*n,sh([n*n+1,n*n-1,n*n+2,n*n-2]).map(String),'Số chính phương là bình phương của một số tự nhiên.')}
+ ()=>{const n=R(100,999);return Z(`Tổng các chữ số của ${n} là:`,''+sd(n),[sd(n)+1,sd(n)-1,sd(n)+2].map(String),`Cộng các chữ số: ${String(n).split('').join(' + ')} = ${sd(n)}.`)},
+ ()=>{const a=R(1,5),d=R(2,4),n=R(3,6);return N(`Số hạng thứ ${n} của dãy ${a}; ${a+d}; ${a+2*d}; … là:`,a+(n-1)*d,`Số hạng thứ ${n} = số đầu + (${n} − 1) × khoảng cách = ${a} + ${n-1} × ${d} = ${a+(n-1)*d}.`)},
+ ()=>{const n=R(4,20);return Z('Số nào sau đây là số chính phương?',''+n*n,sh([n*n+1,n*n-1,n*n+2,n*n-2]).map(String),`${n*n} = ${n} × ${n} là bình phương của số tự nhiên ${n} nên là số chính phương. Các số còn lại không phải bình phương của số tự nhiên nào.`)}
 );
 
 /* LŨY THỪA (pow) */
 HA('pow',
  ()=>{const a=P([2,3,4,7,8,9]),n=R(5,30);return I(`Chữ số tận cùng của ${a}^${n} là:`,last(a,n),'Chữ số tận cùng lặp theo chu kỳ; chia số mũ cho chu kỳ rồi xét số dư.')},
- ()=>{const n=R(2,5);return I(`Tính: 1 + 2 + 2² + … + 2^${n} = ?`,2**(n+1)-1,`Bước 1: Đặt A là tổng cần tính.\nBước 2: Nhân đôi A rồi trừ A để khử các số hạng giữa → còn 2^${n+1} − 1.`)}
+ ()=>{const n=R(4,7);return I(`Tính: 1 + 2 + 2² + … + 2^${n} = ?`,2**(n+1)-1,`Bước 1: Đặt A = 1 + 2 + 2² + … + 2^${n}.\nBước 2: Nhân đôi: 2A = 2 + 2² + … + 2^${n+1}.\nBước 3: 2A − A = 2^${n+1} − 1 = ${2**(n+1)} − 1 = ${2**(n+1)-1}.`)}
 );
 A('pow',
  ()=>{const a=P([2,3,4,7,8,9]),n=R(4,20);return Z(`Chữ số tận cùng của ${a}^${n} là:`,''+last(a,n),sh([0,1,2,3,4,5,6,7,8,9]).map(String),'Chữ số tận cùng lặp theo chu kỳ (2,3,7,8 chu kỳ 4; 4,9 chu kỳ 2).')},
@@ -46,8 +46,8 @@ HA('div',
  ()=>{const m=R(20,60);let c=0;for(let i=1;i<=m;i++)if(i%2==0&&i%3==0)c++;return I(`Từ 1 đến ${m}, có bao nhiêu số chia hết cho cả 2 và 3?`,c,'Chia hết cho cả 2 và 3 nghĩa là chia hết cho 6.')}
 );
 A('div',
- ()=>{const w=new Set();while(w.size<3)w.add(11*R(10,80)+R(1,10));return Q('Số nào chia hết cho 11?',''+11*R(10,80),[...w].map(String),'Hiệu tổng chữ số vị trí lẻ và chẵn chia hết cho 11.')},
- ()=>{const w=new Set();while(w.size<3){const n=100*R(1,9)+10*R(0,9)+R(0,9);if(n%4)w.add(n)}return Q('Số nào chia hết cho 4?',''+4*R(25,249),[...w].map(String),'Hai chữ số tận cùng tạo số chia hết cho 4.')}
+ ()=>{const w=new Set(),k=11*R(10,80);while(w.size<3)w.add(11*R(10,80)+R(1,10));const s=String(k).split('').map(Number),od=s.filter((_,i)=>i%2==0).reduce((x,y)=>x+y,0),ev=s.filter((_,i)=>i%2==1).reduce((x,y)=>x+y,0);return Q('Số nào chia hết cho 11?',''+k,[...w].map(String),`Lấy tổng chữ số ở vị trí 1, 3, … (đếm từ trái) trừ tổng chữ số ở vị trí 2, 4, …; hiệu chia hết cho 11 thì số đó chia hết cho 11. Với ${k}: ${od} − ${ev} = ${od-ev}, chia hết cho 11 nên ${k} chia hết cho 11.`)},
+ ()=>{const w=new Set();while(w.size<3){const n=100*R(1,9)+10*R(0,9)+R(0,9);if(n%4)w.add(n)}const k=4*R(25,249);return Q('Số nào chia hết cho 4?',''+k,[...w].map(String),`Số chia hết cho 4 khi hai chữ số tận cùng tạo thành số chia hết cho 4. Với ${k}: hai chữ số tận cùng là ${String(k%100).padStart(2,'0')}, mà ${k%100} : 4 = ${k%100/4} nên ${k} chia hết cho 4.`)}
 );
 
 /* ƯỚC & BCNN (ub, gcd) */
@@ -61,8 +61,8 @@ HA('gcd',
 
 /* TÌM ẨN / PHÉP TÍNH (nat, int) */
 HA('nat',
- ()=>{const n=R(5,20);return I(`Tính nhanh: 2 + 4 + … + ${2*n} = ?`,n*(n+1),`Bước 1: Nhóm các cặp số đối xứng.\nBước 2: Tổng = 2 × (1+2+…+${n}) = 2 × ${n*(n+1)/2}.`)},
- ()=>{const a=R(2,9),b=R(2,9),c=R(10,50);return I(`Tìm x: ${a}×(x − ${b}) = ${a*c}. x = ?`,c+b,`Bước 1: Chuyển ${b} sang vế phải (đổi dấu).\nBước 2: x = ${c} + ${b}.`)}
+ ()=>{const n=R(5,20);return I(`Tính nhanh: 2 + 4 + … + ${2*n} = ?`,n*(n+1),`Bước 1: Đưa thừa số 2 ra ngoài: 2 + 4 + … + ${2*n} = 2 × (1 + 2 + … + ${n}).\nBước 2: 1 + 2 + … + ${n} = ${n} × ${n+1} : 2 = ${n*(n+1)/2}, nên tổng = 2 × ${n*(n+1)/2} = ${n*(n+1)}.`)},
+ ()=>{const a=R(2,9),b=R(2,9),c=R(10,50);return I(`Tìm x: ${a}×(x − ${b}) = ${a*c}. x = ?`,c+b,`Bước 1: Chia cả hai vế cho ${a}: x − ${b} = ${c}.\nBước 2: Cộng ${b} vào hai vế: x = ${c} + ${b} = ${c+b}.`)}
 );
 HA('int',
  ()=>{const a=R(2,10);return I(`Tổng các số nguyên x thỏa mãn |x| ≤ ${a} là:`,0,'Các cặp số đối nhau triệt tiêu, tổng bằng 0.')},
@@ -72,7 +72,7 @@ HA('int',
 /* PHÂN SỐ (frac) */
 HA('frac',
  ()=>{const [a,b]=cop(3,9),[c,d]=cop(3,9);return I(`Tính (rút gọn): ${a}/${b} × ${c}/${d}`,fs(a*c,b*d),'Nhân tử với tử, mẫu với mẫu rồi rút gọn.')},
- ()=>{const a=R(2,6),b=R(2,6);return I(`Vòi 1 chảy đầy bể trong ${a} giờ, vòi 2 trong ${b} giờ. Cả hai cùng chảy 1 giờ được mấy phần bể? (rút gọn)`,fs(a+b,a*b),`1/${a} + 1/${b} = ${a+b}/${a*b}.`)}
+ ()=>{const a=R(2,6),b=R(2,6),r=fs(a+b,a*b),u=`${a+b}/${a*b}`;return I(`Vòi 1 chảy đầy bể trong ${a} giờ, vòi 2 trong ${b} giờ. Cả hai cùng chảy 1 giờ được mấy phần bể? (rút gọn)`,r,`Mỗi giờ vòi 1 chảy được 1/${a} bể, vòi 2 chảy được 1/${b} bể.\nCả hai: 1/${a} + 1/${b} = ${b}/${a*b} + ${a}/${a*b} = ${u}${r==u?'':' = '+r} (bể).`)}
 );
 
 /* TOÁN ĐỐ / CHUYỂN ĐỘNG (word) */
@@ -87,18 +87,18 @@ A('word',
 
 /* ĐIỂM – ĐOẠN – GÓC (line) */
 HA('line',
- ()=>{const n=R(4,8);return I(`Có ${n} tia chung gốc O, không có hai tia đối nhau. Có bao nhiêu góc đỉnh O?`,n*(n-1)/2,`Mỗi cặp tia tạo một góc: ${n}×${n-1}:2.`)},
+ ()=>{const n=R(4,8);return I(`Có ${n} tia chung gốc O, không có hai tia đối nhau. Có bao nhiêu góc đỉnh O?`,n*(n-1)/2,`Mỗi cặp tia tạo một góc: ${n} × ${n-1} : 2 = ${n*(n-1)/2} góc.`)},
  ()=>{const a=R(20,40),b=R(20,40);while(a+b>=90)b=R(20,40);return I(`Tam giác vuông có một góc nhọn ${a}°. Góc nhọn còn lại (độ):`,90-a,'Hai góc nhọn cộng lại = 90°.')}
 );
 A('line',
- ()=>{const n=R(3,7);return N(`Cho ${n} điểm, không có 3 điểm thẳng hàng. Có bao nhiêu đoạn thẳng?`,n*(n-1)/2,`Mỗi cặp điểm tạo một đoạn.`)},
+ ()=>{const n=R(3,7);return N(`Cho ${n} điểm, không có 3 điểm thẳng hàng. Có bao nhiêu đoạn thẳng?`,n*(n-1)/2,`Mỗi điểm nối với ${n-1} điểm còn lại, mỗi đoạn bị đếm 2 lần: ${n} × ${n-1} : 2 = ${n*(n-1)/2} đoạn.`)},
  ()=>{const x=R(20,80);return N(`Hai góc kề bù, một góc ${x}°. Góc còn lại (độ):`,180-x,'Tổng hai góc kề bù = 180°.')}
 );
 
 /* HÌNH HỌC (geo, cir) */
 HA('geo',
  ()=>{const a=R(3,10);return I(`Hình vuông có chu vi ${4*a} cm. Diện tích (cm²):`,a*a,`Cạnh = ${4*a}:4 = ${a}; S = cạnh².`)},
- ()=>{const a=R(4,12),b=R(3,10);return I(`Hình chữ nhật chu vi ${2*(a+b)} cm, dài hơn rộng ${a-b} cm. Diện tích (cm²):`,a*b,`Nửa chu vi = ${a+b}; rộng = (${a+b}−${a-b}):2 = ${b}; dài = ${a}.`)}
+ ()=>{const b=R(3,10),a=b+R(1,6);return I(`Hình chữ nhật chu vi ${2*(a+b)} cm, dài hơn rộng ${a-b} cm. Diện tích (cm²):`,a*b,`Nửa chu vi = ${2*(a+b)} : 2 = ${a+b} cm.\nRộng = (${a+b} − ${a-b}) : 2 = ${b} cm; dài = ${b} + ${a-b} = ${a} cm.\nDiện tích = ${a} × ${b} = ${a*b} cm².`)}
 );
 HA('cir',
  ()=>{const d=R(4,20);return I(`Hình tròn đường kính ${d} cm (π=3,14). Chu vi (cm):`,M(3.14*d),`C = π×d = 3,14×${d}.`)},

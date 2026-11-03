@@ -23,9 +23,11 @@ let _pt=0;const exPersistSoon=()=>{clearTimeout(_pt);_pt=setTimeout(persistExam,
 function exSaved(){try{const s=JSON.parse(localStorage.getItem(EXK)||'null');
  if(s&&typeof s.id=='string'&&Array.isArray(s.q)&&s.q.length&&Array.isArray(s.ans)&&s.ans.length==s.q.length&&s.end>0&&s.t0>0)return s}catch(e){}return null}
 function resumeBar(){const s=exSaved();if(!s)return'';const l=Math.max(0,Math.ceil((s.end-Date.now())/1000)),n=s.ans.filter(a=>a!==null).length;
- return `<div class="resume"><div><b>${s.id=='daily'?'⚡ Thử thách ngày':'🎯 Bài thi thử'} đang làm dở</b><small>${n}/${s.q.length} câu · ${l?'còn '+fmtTime(l):'đã hết giờ'}</small></div><button class="chip go" onclick="resumeExam()">${l?'Làm tiếp':'Xem kết quả'}</button><button class="chip" aria-label="Bỏ bài đang làm dở" onclick="dropExam()">✕</button></div>`}
-function resumeExam(){const s=exSaved();if(!s)return;
- if(s.gr&&s.gr!=D.gr){D.gr=[6,7,8,9].includes(s.gr)?s.gr:6;save();applyGr()}
+ return `<div class="resume"><div><b>${s.id=='daily'?'⚡ Thử thách ngày':'🎯 Bài thi thử'} Lớp ${exGrOf(s)} đang làm dở</b><small>${n}/${s.q.length} câu · ${l?'còn '+fmtTime(l):'đã hết giờ'}</small></div><button class="chip go" onclick="resumeExam()">${l?'Làm tiếp':'Xem kết quả'}</button><button class="chip" aria-label="Bỏ bài đang làm dở" onclick="dropExam()">✕</button></div>`}
+/* lớp của bài đang làm dở: suy ra từ chủ đề của các câu hỏi (đáng tin hơn trường gr, bài lưu từ bản cũ có thể thiếu gr) */
+function exGrOf(s){const c={};s.q.forEach(q=>{const t=T.find(x=>x.id==q.t);if(t){const g=t.gr||6;c[g]=(c[g]||0)+1}});const e=Object.entries(c).sort((a,b)=>b[1]-a[1])[0];return e?+e[0]:([6,7,8,9].includes(s.gr)?s.gr:D.gr)}
+function resumeExam(){const s=exSaved();if(!s)return;const g=exGrOf(s);s.gr=g;
+ if(g!=D.gr){D.gr=g;save();applyGr()}
  S={id:s.id,q:s.q,i:Math.min(Math.max(s.i|0,0),s.q.length-1),ok:0,bad:[],rev:false,m:s.m,k:s.k,cb:0,exam:true,ans:s.ans,
   flag:Array.isArray(s.flag)&&s.flag.length==s.q.length?s.flag:s.q.map(()=>false),end:s.end,t0:s.t0,day:s.day,gr:s.gr,tok:0};
  Snd.music('quiz',{k:s.id=='daily'?5:3});
@@ -131,7 +133,7 @@ function exBack(){if(S.resHTML){app.innerHTML=S.resHTML;scrollTo(0,0)}else home(
 function exReview(onlyBad){
  const n=S.q.length,items=S.q.map((q,i)=>{const ua=S.ans[i],ok=S.res[i];if(onlyBad&&ok)return'';
   const mine=ua===null?'<i>Bỏ trống</i>':q.inp?H(exEsc(ua)):fa(ua);
-  return `<div class="rv ${ok?'ok':'no'}"><div class="rh"><b>Câu ${i+1}${S.flag[i]?' 🚩':''}</b><span>${ok?'✓ Đúng':ua===null?'➖ Bỏ trống':'✕ Sai'}</span></div><div class="q">${H(q.q)}</div>${q.f||''}<p>Em chọn: <b>${mine}</b></p>${ok?'':`<p>Đáp án đúng: <b>${fa(q.a)}</b></p>`}${!ok&&ua!==null&&!q.inp&&q.x&&q.x[ua]?`<p class="why">🔎 <b>Vì sao em chọn chưa đúng?</b> ${H(q.x[ua].replace(/^./,c=>c.toUpperCase()))}.</p>`:''}<div class="ex">${H(q.e).replace(/\n/g,'<br>')}</div></div>`}).join('');
+  return `<div class="rv ${ok?'ok':'no'}"><div class="rh"><b>Câu ${i+1}${S.flag[i]?' 🚩':''}</b><span>${ok?'✓ Đúng':ua===null?'➖ Bỏ trống':'✕ Sai'}</span></div><div class="q">${H(q.q)}</div>${q.f||''}<p>Em chọn: <b>${mine}</b></p>${ok?'':`<p>Đáp án đúng: <b>${fa(q.a)}</b></p>`}${!ok&&ua!==null&&!q.inp&&q.x&&q.x[ua]?`<p class="why">🔎 <b>Vì sao em chọn chưa đúng?</b> ${H(q.x[ua].replace(/^./,c=>c.toUpperCase()))}.</p>`:''}<div class="ex">${H(q.e).replace(/\n/g,'<br>')}${exFull(q)}</div></div>`}).join('');
  app.innerHTML=`<div class="top"><button class="x" aria-label="Về kết quả" onclick="exBack()">←</button><h3>Xem lại bài làm</h3></div>
  <div class="seg"><button class="${onlyBad?'':'on'}" onclick="exReview(0)">Tất cả (${n})</button><button class="${onlyBad?'on':''}" onclick="exReview(1)">Chỉ câu sai (${n-S.ok})</button></div>
  ${items||'<div class="card soft"><div class="cap">🎉</div><p>Không có câu nào sai. Em làm tốt lắm!</p></div>'}<button class="big alt" onclick="exBack()">← Về kết quả</button>`;

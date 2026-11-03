@@ -10,7 +10,7 @@ T.push({id:'cir',n:'Đường tròn',e:'⭕',c:'#00a8a8',tip:'Đường kính d 
 ()=>{const r=R(2,12);return F(Z(`Lấy π = 3,14. Chu vi đường tròn bán kính ${r} cm là (cm):`,f2(6.28*r),[f2(3.14*r),f2(3.14*r*r),f2(6.28*r*r),f2(6.28*r+2)],`Bước 1: Chu vi hình tròn = 2 × π × bán kính.\nBước 2: C = 2 × 3,14 × ${r}.`),ci(r,`r = ${r} cm`))},
 ()=>{const r=R(3,12);return F(Z(`Lấy π = 3,14. Diện tích hình tròn bán kính ${r} cm là (cm²):`,f2(3.14*r*r),[f2(6.28*r),f2(3.14*r),f2(6.28*r*r),f2(3.14*r*r+r)],`Bước 1: Diện tích hình tròn = π × r × r.\nBước 2: S = 3,14 × ${r} × ${r}.`),ci(r,`r = ${r} cm`))},
 ()=>{const r=R(2,20);return N(`Hình tròn có đường kính ${2*r} cm. Bán kính là (cm):`,r,'Bán kính = đường kính : 2.')}],h:[
-()=>{const r=R(2,12);return I(`Đường tròn có chu vi ${M(6.28*r)} cm (π = 3,14). Bán kính là (cm):`,r,'r = C : (2 × 3,14).')},
+()=>{const r=R(2,12);return I(`Đường tròn có chu vi ${f2(6.28*r)} cm (π = 3,14). Bán kính là (cm):`,r,'r = C : (2 × 3,14).')},
 ()=>{const r=R(2,12);return I(`Hình tròn bán kính ${r} cm (π = 3,14) có diện tích là (cm²):`,M(3.14*r*r),'S = 3,14 × r × r.')},
 ()=>{const r=P([25,50]);return I(`Bánh xe bán kính ${r} cm lăn 10 vòng (π = 3,14). Quãng đường đi được là (m):`,M(10*6.28*r/100),`Bước 1: Mỗi vòng xe đạp đi một chu vi = 2 × 3,14 × ${r} cm.\nBước 2: 10 vòng = 10 × chu vi, rồi đổi cm sang m.`)}]});
 A('frac',

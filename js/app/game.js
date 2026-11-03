@@ -1,3 +1,7 @@
+/* Lời giải chưa nêu đáp án (chỉ có gợi ý quy tắc) thì thêm một dòng đáp án ở cuối, để em không phải tự đoán kết quả */
+const exFull=q=>{const n=s=>String(s==null?'':s).replace(/<[^>]+>/g,'').replace(/[−–]/g,'-').replace(/,/g,'.'),e=n(q.e),a=n(q.a).trim();if(!a)return'';
+ const re=new RegExp('(^|[^0-9.])'+a.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/\s+/g,'\\s*')+'(?![0-9])');return re.test(e)?'':`<br>👉 <b>Đáp án:</b> ${fa(q.a)}`};
+
 /* Chủ đề em hay sai (theo lớp đang học) được ưu tiên hơn */
 const weak=()=>{const G=gT(),w=G.map(t=>{const a=D.acc[t.id];return a?1+3*(1-a[0]/a[1]):2.5});let r=Math.random()*w.reduce((x,y)=>x+y,0);for(let i=0;i<G.length;i++){if((r-=w[i])<=0)return G[i]}return G[0]};
 
@@ -59,7 +63,7 @@ function rs(ok,mine){
  if(!S.rev&&q.t){const a=D.acc[q.t]=D.acc[q.t]||[0,0];a[1]++;if(ok)a[0]++;if(a[1]>40){a[0]=Math.round(a[0]/2);a[1]=Math.round(a[1]/2)}save()}
  gx('react',ok,S.cb);if(ok&&S.cb>=3)cf('burst',innerWidth/2,innerHeight*.4,16+Math.min(S.cb,10)*3);
  const f=document.getElementById('fb');f.className='fb '+(ok?'ok':'no');
- f.innerHTML=`<h3>${ok?(S.cb>=3?'🔥 Quá đỉnh! Liên tiếp ×'+S.cb:'🎉 Chính xác!'):'💪 Chưa đúng, cùng xem nhé'}</h3>${ok?'':`<p>Đáp án đúng: <b>${fa(q.a)}</b></p>`}${!ok&&mine!=null&&q.x&&q.x[mine]?`<p class="why">🔎 <b>Vì sao đáp án em chọn chưa đúng?</b> ${H(q.x[mine].replace(/^./,c=>c.toUpperCase()))}.</p>`:''}<p>${H(q.e).replace(/\n/g,'<br>')}</p><button class="big" onclick="${last?'end()':'next()'}">${last?'Xem kết quả 🏁':'Tiếp tục'}</button>`;
+ f.innerHTML=`<h3>${ok?(S.cb>=3?'🔥 Quá đỉnh! Liên tiếp ×'+S.cb:'🎉 Chính xác!'):'💪 Chưa đúng, cùng xem nhé'}</h3>${ok?'':`<p>Đáp án đúng: <b>${fa(q.a)}</b></p>`}${!ok&&mine!=null&&q.x&&q.x[mine]?`<p class="why">🔎 <b>Vì sao đáp án em chọn chưa đúng?</b> ${H(q.x[mine].replace(/^./,c=>c.toUpperCase()))}.</p>`:''}<p>${H(q.e).replace(/\n/g,'<br>')}${exFull(q)}</p><button class="big" onclick="${last?'end()':'next()'}">${last?'Xem kết quả 🏁':'Tiếp tục'}</button>`;
  requestAnimationFrame(()=>scrollTo({top:document.documentElement.scrollHeight,behavior:'smooth'}));
 }
 function next(){S.i++;show()}
