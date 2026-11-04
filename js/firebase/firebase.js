@@ -25,6 +25,19 @@ window.FB={
  claim:async(name,k)=>{const u=auth.currentUser,pr={uid:u.uid,name,nk:k,guest:u.isAnonymous,xp:0,stars:0,streak:0,updatedAt:serverTimestamp()};
   await runTransaction(db,async t=>{const n=doc(db,'names',k),s=await t.get(n);if(s.exists())throw new Error('taken');t.set(n,{uid:u.uid});t.set(doc(db,'players',u.uid),pr)});
   UI.in({...pr,xp:0})},
+ /* Đổi tên: một transaction làm 3 việc — giữ chỗ tên mới, nhả tên cũ, sửa hồ sơ. XP/sao/tiến độ giữ nguyên.
+    Nếu chỉ đổi cách viết (hoa/thường, dấu cách) thì tên chuẩn hoá không đổi, không đụng tới names/. */
+ rename:async(name,k)=>{const u=auth.currentUser,pr=doc(db,'players',u.uid);
+  await runTransaction(db,async t=>{
+   const ps=await t.get(pr);if(!ps.exists())throw new Error('noprofile');
+   const old=ps.data().nk;let drop=null;
+   if(k!==old){
+    if((await t.get(doc(db,'names',k))).exists())throw new Error('taken');
+    const os=old?await t.get(doc(db,'names',old)):null;
+    if(os&&os.exists()&&os.data().uid===u.uid)drop=os.ref;
+    t.set(doc(db,'names',k),{uid:u.uid});if(drop)t.delete(drop)}
+   t.update(pr,{name,nk:k,updatedAt:serverTimestamp()})});
+  UI.renamed(name,k)},
  top:async(n=20)=>(await getDocs(query(collection(db,'players'),orderBy('xp','desc'),limit(n)))).docs.map(d=>({id:d.id,...d.data()}))
 };
 /* Hook game gọi sau mỗi lượt chơi: chỉ cộng dồn XP (increment) thay vì ghi đè tổng, Rules chặn cộng quá 250 XP/lượt */

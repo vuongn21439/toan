@@ -141,11 +141,11 @@ function exReview(onlyBad){
 
 /* ---------- hub: thẻ Thi thử / Thử thách ngày (hub.js gọi) ---------- */
 const tabMock=()=>{const g=GRADES[D.gr],mh=(D.mh||[]).filter(r=>r.gr==D.gr).slice(0,3);
- return `${resumeBar()}${gradeSwitch()}<div class="card soft"><div class="cap">🎯</div><h2>Phòng thi ${g.label}</h2><p class="sub">Đồng hồ chạy thật, chưa hiện đúng/sai. Nộp bài xong mới chấm và xem lời giải từng câu.</p></div>
+ return `${resumeBar()}${gradeSwitch()}<div class="card soft hd"><div class="cap">🎯</div><h2>Phòng thi ${g.label}</h2><p class="sub">Đồng hồ chạy thật, chưa hiện đúng/sai. Nộp bài xong mới chấm và xem lời giải từng câu.</p></div>
  <button class="big" onclick="go('all','m')">🎯 Đề tổng hợp<small>15 câu · 25 phút · ${XQ.mock} XP/câu</small></button>${GR.map((x,i)=>`<button class="big alt" onclick="go('ex${i+1}','m')">${x[0]}<small>15 câu · 25 phút · đề riêng phần này</small></button>`).join('')}
  ${mh.length?`<h3 class="ph">Kết quả gần đây</h3>${mh.map(r=>`<div class="hrow"><b>${r.id=='all'?'Đề tổng hợp':(GR[+r.id.slice(2)-1]||[r.id])[0]}</b><span>${(r.ok/r.n*10).toFixed(1).replace('.',',')} điểm · ${r.ok}/${r.n} câu</span><small>⏱ ${fmtTime(r.sec)}</small></div>`).join('')}`:''}
  <p class="hint">Thoát giữa chừng cũng không mất bài: đồng hồ vẫn chạy và em làm tiếp được.</p>`};
 const tabDaily=()=>{const dn=dcDone(),g=GRADES[D.gr];
- return `${resumeBar()}${gradeSwitch()}<div class="card soft"><div class="cap">⚡</div><h2>Thử thách ${g.label}</h2><p class="sub">5 câu · 8 phút · mọi bạn cùng một đề hôm nay.</p><div class="dstrip">${exWeek()}</div><div class="dmeta"><span>🔥 Chuỗi ${exStreak()} ngày</span><span>${dn?'Đề mới sau '+exNextIn():XQ.daily+' XP/câu · đúng cả 5 thưởng 20 XP'}</span></div>${dn?`<div class="xpc">Hôm nay: ${D[dcK()].ok}/5 ✅</div>`:''}</div>`+
+ return `${resumeBar()}${gradeSwitch()}<div class="card soft hd"><div class="cap">⚡</div><h2>Thử thách ${g.label}</h2><p class="sub">5 câu · 8 phút · mọi bạn cùng một đề hôm nay.</p><div class="dstrip">${exWeek()}</div><div class="dmeta"><span>🔥 Chuỗi ${exStreak()} ngày</span><span>${dn?'Đề mới sau '+exNextIn():XQ.daily+' XP/câu · đúng cả 5 thưởng 20 XP'}</span></div>${dn?`<div class="xpc">Hôm nay: ${D[dcK()].ok}/5 ✅</div>`:''}</div>`+
  (dn?`<button class="big alt" onclick="start('daily',dailyQs())">🔁 Làm lại cho vui<small>Có đáp án ngay · không tính XP</small></button><p class="hint">Quay lại mỗi ngày để giữ chuỗi 🔥</p>`
  :`<button class="big" onclick="start('daily')">Bắt đầu thử thách 🚀<small>Đồng hồ chạy ngay khi bấm</small></button>`)};

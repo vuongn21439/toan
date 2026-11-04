@@ -159,3 +159,9 @@ Mỗi dạng mới được chạy hàng trăm lần và so đáp án với mộ
     # kết quả: "Generators mới: 111  sai đáp án: 0"; mẫu câu hỏi ghi ở samples.txt
 
 Thêm dạng mới thì thêm oracle vào `oracles*.js` (khóa = mã câu `gen('mã', …)`, hàm nhận `(tham-số, câu-hỏi)` và trả về đáp án đúng).
+
+## Đổi tên hiển thị (v8)
+Tab **Hạng** → thẻ hồ sơ → **✏️ Đổi tên**. Tên vẫn phải không trùng; XP, sao, tiến độ giữ nguyên.
+Đổi tên chạy trong một transaction (`FB.rename` ở `js/firebase/firebase.js`): giữ chỗ tên mới, nhả tên cũ, sửa `players/{uid}`.
+**Bắt buộc đăng lại `firestore.rules`** (Firebase Console → Firestore → Rules → Publish), vì bản cũ cấm đổi tên và cấm xoá `names/{k}`.
+Tab Hạng cũng có thêm nút **Đăng xuất** (trước đây hàm `out()` có nhưng không có nút nào gọi).

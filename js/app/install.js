@@ -14,11 +14,11 @@ insHas=()=>{try{return localStorage.getItem('t6inst')=='1'}catch(e){return false
 canIns=()=>!isApp()&&!insHas()&&(!!DP||isMob),
 hasNav=()=>!!document.querySelector('.nav'),
 insRedo=()=>{if(!hasNav())return;const y=scrollY;home(TAB);scrollTo(0,y)},
-insBusy=on=>document.querySelectorAll('[data-ins]').forEach(b=>{if(on){b.dataset.h=b.innerHTML;b.innerHTML='⏳ Đang chuẩn bị…';b.disabled=true}else if(b.dataset.h){b.innerHTML=b.dataset.h;b.disabled=false}}),
+insBusy=on=>document.querySelectorAll('[data-ins]').forEach(b=>{if(on){b.dataset.h=b.innerHTML;b.innerHTML=b.classList.contains('go')?'⏳':'⏳ Đang chuẩn bị…';b.disabled=true}else if(b.dataset.h){b.innerHTML=b.dataset.h;b.disabled=false}}),
 insWait=ms=>DP?Promise.resolve():new Promise(r=>{const t=setTimeout(()=>{INS_W=null;r()},ms);INS_W=()=>{clearTimeout(t);INS_W=null;r()}}),
 insLater=()=>{D.ins=Date.now()+7*864e5;save();insRedo()},
 insBtn=(c,h)=>`<button class="${c}" data-ins onclick="insNow()">${h}</button>`,
-insCard=()=>canIns()&&D.xp>0&&!(D.ins>Date.now())?`<div class="ins"><img src="assets/icons/icon-192.png" alt="" width="52" height="52"><div class="tx"><b>Cài Toán THCS lên máy nhé!</b><small>Mở như app thật, chơi được cả khi mất mạng</small></div><div class="ib">${insBtn('go','📲 Cài ngay')}<button class="later" onclick="insLater()">Để sau</button></div></div>`:'',
+insCard=()=>canIns()&&D.xp>0&&!(D.ins>Date.now())?`<div class="ins"><img src="assets/icons/icon-192.png" alt="" width="40" height="40"><div class="tx"><b>Cài app lên máy</b><small>Mở nhanh, chơi cả khi mất mạng</small></div>${insBtn('go','📲 Cài')}<button class="later" aria-label="Để sau" onclick="insLater()">✕</button></div>`:'',
 insRow=()=>canIns()?insBtn('big alt','📲 Cài app lên máy<small>Mở nhanh từ màn hình chính, chơi cả khi mất mạng</small>'):'';
 addEventListener('beforeinstallprompt',e=>{e.preventDefault();const was=canIns();DP=e;try{localStorage.removeItem('t6inst')}catch(x){}if(INS_W)INS_W();if(canIns()!=was)insRedo()});
 addEventListener('appinstalled',()=>{DP=null;insDone()});

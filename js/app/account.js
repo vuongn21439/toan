@@ -6,22 +6,37 @@ esc=s=>String(s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';'),
 nk=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]/g,''),
 shell=h=>{app.innerHTML=`<header><h1>Toán Vui Vẻ</h1><p>Luyện đủ chương trình Toán lớp 6, 7, 8 và 9, từ cơ bản đến nâng cao</p></header>${h}`;scrollTo(0,0)},
 et=e=>{if(e&&e.code=='auth/popup-closed-by-user')return'';console.warn('[Firebase]',e);return e&&e.code=='auth/network-request-failed'?'Mạng đang yếu, em thử lại nhé!':'Ôi, chưa vào được rồi. Em thử lại nhé!'},
-meChip=()=>U?`<div class="me"><div class="av">${esc([...U.name][0].toUpperCase())}</div><b>${esc(U.name)}${U.guest?' <small>(khách)</small>':''}</b><button onclick="lb()">🏆 Xếp hạng</button>${U.guest?'<button onclick="linkAcc()">Liên Kết TK</button>':''}</div><div id="mini"></div>`:'',
+meChip=()=>U?`<div class="me"><div class="av">${esc([...U.name][0].toUpperCase())}</div><div class="mt"><b>${esc(U.name)}</b><small>${U.guest?'Khách · ':''}Cấp ${lvOf(D.xp)} · ${D.xp} XP</small></div><button class="ed" onclick="renameScreen()" aria-label="Đổi tên hiển thị">✏️ Đổi tên</button></div><div id="mini"></div>`:'',
+/* cuối tab Hạng: khách thì nhắc liên kết Google, ai cũng có nút Đăng xuất */
+acctRow=()=>U?`${U.guest?`<div class="card soft lk"><b>Em đang chơi với tư cách khách</b><small>Liên kết Google để không mất điểm khi đổi máy hoặc thoát.</small><button class="big alt" onclick="linkAcc()">🔗 Liên kết Google</button></div>`:''}<button class="lnk" onclick="out()">Đăng xuất</button>`:'',
 rows=r=>r.map((p,i)=>`<div class="lbr${U&&p.id==U.uid?' me1':''}${i<3?' t'+(i+1):''}"><span class="rk">${['🥇','🥈','🥉'][i]||i+1}</span><span class="nm">${esc(p.name)}</span><span class="xp">${p.xp|0} XP</span></div>`).join('')||'<p class="hint">Chưa có ai trên bảng. Em hãy là người đầu tiên!</p>';
 
 const getTop=async n=>{if(Date.now()-lbc.t<45e3&&lbc.n>=n)return lbc.r.slice(0,n);const r=await FB.top(n);lbc={t:Date.now(),n,r};return r};
 function loginScreen(m=''){shell(`<div class="card soft"><div class="cap">🎓</div><h2>Chào mừng em!</h2><p class="sub">Đăng nhập để lưu điểm và lên bảng xếp hạng.</p></div><button class="gbtn" onclick="doLogin('google')"><svg width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>Đăng nhập bằng Google</button><button class="big alt" onclick="doLogin('guest')">👤 Chơi với tư cách khách</button><p class="msg no" id="msg">${esc(m)}</p>`)}
 async function doLogin(k){const m=$('msg');m.className='msg';m.textContent='Đang đăng nhập…';try{await FB.login(k)}catch(e){m.className='msg no';m.textContent=et(e)}}
 
-function nameScreen(){shell(`<div class="card"><h2>Đặt tên hiển thị</h2><p class="sub">Tên phải <b>không trùng</b> với bạn khác (2–16 ký tự).</p></div><input id="nn" maxlength="16" autocomplete="off" placeholder="Ví dụ: Minh Khoa" oninput="chkName()"><p class="msg" id="msg"></p><button class="big" id="go" onclick="claim()" disabled>Vào game 🚀</button><button class="big alt" onclick="FB.logout()">← Đổi tài khoản</button>`);$('nn').focus()}
+/* RN=1: đang ĐỔI tên (đã có hồ sơ) · RN=0: đặt tên lần đầu */
+let RN=0;
+function nameScreen(){RN=0;nameForm()}
+function renameScreen(){if(!U)return;RN=1;nameForm()}
+function nameForm(){
+ const body=`<div class="card"><h2>${RN?'Đổi tên hiển thị':'Đặt tên hiển thị'}</h2><p class="sub">${RN?`Tên hiện tại: <b>${esc(U.name)}</b>. Điểm XP, sao và tiến độ vẫn giữ nguyên.<br>`:''}Tên phải <b>không trùng</b> với bạn khác (2–16 ký tự).</p></div><input id="nn" maxlength="16" autocomplete="off" placeholder="Ví dụ: Minh Khoa" oninput="chkName()" onkeydown="event.key=='Enter'&&!$('go').disabled&&claim()"><p class="msg" id="msg"></p><button class="big" id="go" onclick="claim()" disabled>${RN?'Lưu tên mới ✓':'Vào game 🚀'}</button>${RN?`<button class="big alt" onclick="home('rank')">Hủy</button>`:`<button class="big alt" onclick="FB.logout()">← Đổi tài khoản</button>`}`;
+ if(RN){app.innerHTML=`<div class="top"><button class="x" aria-label="Quay lại" onclick="home('rank')">←</button></div>${body}`;scrollTo(0,0)}else shell(body);
+ const i=$('nn');if(RN){i.value=U.name;i.select()}i.focus()}
 const cl=()=>$('nn').value.trim().replace(/\s+/g,' ');
 /* Kiểm tra trùng tên khi gõ (debounce 400ms, bỏ kết quả cũ nếu đã gõ tiếp) */
 function chkName(){const v=cl(),m=$('msg'),b=$('go');b.disabled=true;clearTimeout(ct);m.className='msg';
  if(nk(v).length<2){m.textContent=v?'Tên hơi ngắn, cần ít nhất 2 chữ cái/số':'';return}
+ if(RN&&v===U.name){m.textContent='Đây là tên hiện tại của em';return}
+ /* cùng tên chuẩn hoá với tên đang dùng (chỉ khác hoa/thường, dấu cách): không cần hỏi server */
+ if(RN&&nk(v)===(U.nk||nk(U.name))){m.className='msg ok';m.textContent='✅ Vẫn là tên của em, chỉ đổi cách viết';b.disabled=false;return}
  m.textContent='Đang kiểm tra…';
  ct=setTimeout(async()=>{try{const ok=await FB.free(nk(v));if(!$('nn')||cl()!==v)return;m.className='msg '+(ok?'ok':'no');m.textContent=ok?'✅ Tên này dùng được!':'❌ Tên đã có người dùng, chọn tên khác';b.disabled=!ok}catch(e){m.className='msg no';m.textContent=et(e)}},400)}
 /* Chốt tên bằng transaction ở server: hai người bấm cùng lúc thì chỉ một người được */
-async function claim(){const v=cl(),b=$('go'),m=$('msg');b.disabled=true;m.className='msg';m.textContent='Đang lưu…';try{await FB.claim(v,nk(v))}catch(e){m.className='msg no';m.textContent=e.message=='taken'?'❌ Vừa có bạn lấy mất tên này, chọn tên khác nhé':et(e);b.disabled=false}}
+async function claim(){const v=cl(),b=$('go'),m=$('msg');if(b.disabled)return;b.disabled=true;m.className='msg';m.textContent='Đang lưu…';
+ try{await(RN?FB.rename(v,nk(v)):FB.claim(v,nk(v)))}
+ catch(e){m.className='msg no';
+  m.textContent=e.message=='taken'?'❌ Vừa có bạn lấy mất tên này, chọn tên khác nhé':e.code=='permission-denied'&&RN?(console.warn('[Firebase] đổi tên bị từ chối: kiểm tra đã đăng Firestore Rules mới chưa',e),'Chưa đổi được tên lúc này, em thử lại sau nhé!'):et(e);b.disabled=false}}
 
 /* ===== Đồng bộ tiến độ giữa các máy (Firestore: progress/{uid}) =====
    Gộp theo nguyên tắc "bên nào tiến xa hơn thì giữ": sao = lớn nhất, độ chính xác = bên nhiều lượt hơn,
@@ -59,9 +74,11 @@ async function linkErr(e,quiet){
  if(quiet||e.code=='auth/cancelled-popup-request'){console.warn('[Firebase]',e);return}
  const m=et(e);if(m)alert(m)}
 async function linkAcc(){if(!U||!U.guest)return;try{await FB.link()}catch(e){linkErr(e)}}
-function out(){if(U&&U.guest&&!confirm('Tài khoản khách sẽ mất nếu thoát. Thoát thật không?'))return;FB.logout()}
+function out(sure){
+ if(!sure&&U){exSheet(U.guest?`<h3>Thoát tài khoản khách?</h3><p class="sub">Tài khoản khách sẽ <b>mất điểm</b> nếu thoát. Liên kết Google trước để giữ điểm nhé.</p><button class="big" data-f onclick="closeSheet();linkAcc()">🔗 Liên kết Google</button><button class="big alt" onclick="closeSheet();out(1)">Vẫn thoát</button>`:`<h3>Đăng xuất?</h3><p class="sub">Đăng nhập lại bằng Google là chơi tiếp được, điểm vẫn còn nguyên.</p><button class="big" data-f onclick="closeSheet()">Ở lại</button><button class="big alt" onclick="closeSheet();out(1)">Đăng xuất</button>`);return}
+ FB.logout()}
 
 /* Cầu nối cho module Firebase gọi vào */
-window.T6_UI={out:()=>{U=null;loginScreen()},name:nameScreen,in:enter,fail:e=>{e&&console.warn('[Firebase]',e);offline()},
+window.T6_UI={renamed:(n,k)=>{if(U){U.name=n;U.nk=k}D.name=n;save();lbc.t=0;home('rank');exToast('✅ Đã đổi tên thành '+n)},out:()=>{U=null;loginScreen()},name:nameScreen,in:enter,fail:e=>{e&&console.warn('[Firebase]',e);offline()},
  merge:mergeProg,apply:m=>applyProg(mergeProg(progOf(),m)),linkErr,
  linked:()=>{if(U){U.guest=false;home();setTimeout(()=>alert('✅ Đã liên kết với Google! Tiến độ của em được lưu an toàn, đăng nhập Google trên máy khác là chơi tiếp được.'),60)}}};
