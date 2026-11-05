@@ -172,3 +172,10 @@ Tab **Hạng** → thẻ hồ sơ → **✏️ Đổi tên**. Tên vẫn phải 
 Đổi tên chạy trong một transaction (`FB.rename` ở `js/firebase/firebase.js`): giữ chỗ tên mới, nhả tên cũ, sửa `players/{uid}`.
 **Bắt buộc đăng lại `firestore.rules`** (Firebase Console → Firestore → Rules → Publish), vì bản cũ cấm đổi tên và cấm xoá `names/{k}`.
 Tab Hạng cũng có thêm nút **Đăng xuất** (trước đây hàm `out()` có nhưng không có nút nào gọi).
+
+## Bổ sung lớp 6 từ "Chuyên đề Toán 6 KNTT, tập 2" (bản bổ sung q11)
+File `js/data/grade6/q11-tap2.js`: **173 câu trắc nghiệm cố định** lấy từ phần BÀI TẬP TRẮC NGHIỆM của tài liệu (chương 6 Phân số, 7 Số thập phân, 8 Hình học phẳng, 9 Thống kê – xác suất), giữ nguyên đề và 4 lựa chọn. Tài liệu không kèm đáp án nên mỗi câu được giải lại, thêm **lời giải từng bước** + mục ⚠️ Dễ nhầm.
+Phân bố: Phân số 103 (hỗn số, cộng trừ, nhân chia, hai bài toán về phân số), Số thập phân 37, Phần trăm 15, Điểm – đoạn – góc 11, Thống kê – xác suất 7; trong đó 31 câu ở mức Nâng cao (câu khó), còn lại ở mức Cơ bản. Thứ tự bốn đáp án được xáo mỗi lần chơi; câu có hình ô tô màu dùng SVG.
+Mã câu `bNNcMM` = Bài NN, Câu MM trong tài liệu. Câu có tử/mẫu chứa chữ hoặc phép tính viết dạng `‹tử|mẫu›` trong file nguồn.
+Kiểm chứng: `node kiem-chung/lop6-tap2/verify.js` (Node 18+): kiểm cấu trúc (đủ 4 đáp án khác nhau, có lời giải) và so 144/173 câu với oracle độc lập (phân số chính xác bằng BigInt, vét cạn). Kết quả: sai đáp án 0. Các câu còn lại là câu khái niệm (định nghĩa, cách đọc tên góc, …).
+Một lựa chọn trong tài liệu bị trùng (câu 27 bài 23: hai đáp án giống nhau) đã được thay bằng {1; 3}. `sw.js` đã đổi lên `thcs-v11`.
