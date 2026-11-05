@@ -123,6 +123,13 @@ Cần Node 18+. Chạy ở thư mục gốc của project:
 - Thêm dạng mới thì thêm oracle cùng mã (`gn('mã', …)`): hàm nhận `(tham-số, câu-hỏi)` và trả về đáp án đúng (chuỗi) hoặc `true/false`.
 - `ui-test.js` nạp `index.html`, chọn lớp 8 và 9, chơi mọi chủ đề ở cả hai mức (đúng lẫn sai, kể cả gõ đáp án kiểu Việt `2,5` và `−3`), làm bài thi thử và thử thách ngày; kiểm tra đáp án đúng được chấm đúng, đáp án sai được chấm sai, không có lỗi chạy.
 
+## Bổ sung lớp 6 theo tài liệu "Chuyên đề học tập Toán 6" (bản bổ sung q10)
+File `js/data/grade6/q10-sgk.js`: **56 dạng mới** (39 Cơ bản, 17 Nâng cao) bám 5 chương của tài liệu: tập hợp, số tự nhiên, chia hết, số nguyên, hình phẳng (chu vi, diện tích), tính đối xứng.
+Phân bố: Tập hợp (4), Số tự nhiên (9), Lũy thừa (4), Chia hết & nguyên tố (6), Ước & bội (4), ƯCLN – BCNN (8), Số nguyên (8), Chu vi & diện tích (8), Tính đối xứng (5).
+Mỗi câu: 3 đáp án nhiễu là lỗi hay gặp (94% có lý do hiện ở "Vì sao đáp án em chọn chưa đúng?"), lời giải từng bước, mục ⚠️ Dễ nhầm.
+Kiểm chứng (Node 18+, không cần build): `node kiem-chung/lop6-sgk/verify.js 500` — so từng đáp án với oracle độc lập (vét cạn / tính lại bằng cách khác). Kết quả: 56/56 dạng có oracle, 84.000 lượt thử, sai đáp án 0, nhiễu trùng đáp án đúng 0.
+`sw.js` đã đổi lên `thcs-v10` để máy học sinh tải lại bản mới.
+
 ## Ghi chú kỹ thuật
 - Tên lưu trữ cũ (`t6` trong localStorage, `T6_UI`, `T6_SYNC`) được **giữ nguyên** để học sinh không mất điểm, sao và tiến độ đã đồng bộ.
 - `firestore.rules`: `stars` tối đa 300 (đúng bằng 100 khóa tiến độ × 3 sao của cả bốn lớp); `progress` có các trường `dc7`, `dc8`, `dc9` (thử thách ngày của lớp 7, 8, 9; `dc` vẫn là lớp 6) và số khóa `b`, `acc` được nâng lên tối đa 200. **Cần dán lại rules vào Firebase Console** thì tiến độ và thử thách ngày lớp 8, 9 mới đồng bộ được giữa các máy (nếu chưa dán, lớp 6, 7 vẫn chạy bình thường nhưng lần đồng bộ tiến độ vượt 100 khóa sẽ bị từ chối).
