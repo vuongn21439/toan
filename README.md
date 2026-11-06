@@ -16,7 +16,7 @@ Khi đưa lên mạng (GitHub Pages, Firebase Hosting…) chỉ cần tải nguy
     js/core/helpers.js      hàm dùng chung (ngẫu nhiên, tạo câu hỏi Q/N/Z, hiển thị phân số)
     js/data/grades.js       danh mục lớp: nhóm chủ đề của lớp 6, 7, 8 và 9
     js/data/grade6/         câu hỏi lớp 6 (nội dung cũ) + q7/q8/q9-chuyen-de.js (v5: 74 dạng bài chuyên đề mới)
-    js/data/grade7/         câu hỏi lớp 7: helpers, topics, algebra, geometry, statistics + chuyen-de-1/2.js (v5: 37 dạng mới)
+    js/data/grade7/         câu hỏi lớp 7: helpers, topics, algebra, geometry, statistics + chuyen-de-1/2.js (v5: 37 dạng mới) + cbnc-helpers/sht/sth/tlt.js (v12: 48 dạng mới)
     js/data/grade8/         câu hỏi lớp 8: helpers.js (G8H, dùng chung lớp 8 và 9), topics, algebra, algebra2, geometry, geometry2, statistics
     js/data/grade9/         câu hỏi lớp 9: topics, algebra, algebra2, geometry, statistics
     js/data/bank/helpers.js BK (v5): bộ dựng câu hỏi có đáp án nhiễu kèm lý do + lời giải từng bước
@@ -166,6 +166,21 @@ Mỗi dạng mới được chạy hàng trăm lần và so đáp án với mộ
     # kết quả: "Generators mới: 111  sai đáp án: 0"; mẫu câu hỏi ghi ở samples.txt
 
 Thêm dạng mới thì thêm oracle vào `oracles*.js` (khóa = mã câu `gen('mã', …)`, hàm nhận `(tham-số, câu-hỏi)` và trả về đáp án đúng).
+
+## Bổ sung lớp 7 từ "Cơ bản và nâng cao Toán 7 tập 1 – Đại số" (v12)
+**48 dạng câu mới** (30 Cơ bản + 18 Nâng cao) cho ba chủ đề đại số lớp 7, lấy ý tưởng từ các chuyên đề của tài liệu. Mỗi dạng là một hàm sinh số ngẫu nhiên (không bao giờ hết đề); lời giải chia từng bước, không có phần "vì sao chọn sai" (đáp án nhiễu chỉ là các kết quả sai thường gặp).
+
+| File | Chủ đề | Cơ bản | Nâng cao |
+|---|---|---|---|
+| `js/data/grade7/cbnc-sht.js` | Số hữu tỉ (`l7sht`) | số nằm giữa hai số · cộng trừ ba phân số · tính hợp lý (đặt thừa số chung) · tìm n trong lũy thừa · tìm x hai bước · giá trị tuyệt đối · đếm số nguyên giữa hai phân số · bài toán tiêu tiền liên tiếp · hình vuông kì diệu (có hình) · thay số vào biểu thức | sắp xếp bằng phần bù/phần hơn · rút gọn \|x−a\|+\|x−b\| · GTLN/GTNN chứa giá trị tuyệt đối · \|x−p\|=\|x−q\| · số lớn nhất trong các lũy thừa · tổng 1/r+1/r²+… · tổng các số nguyên thỏa bất đẳng thức · hình vuông kì diệu nâng cao (có hình) |
+| `js/data/grade7/cbnc-sth.js` | Số thực (`l7sth`) | phân số → thập phân hữu hạn · số thập phân tuần hoàn → phân số · làm tròn (số thập phân, số nguyên lớn, kết quả phép chia, căn bậc hai) · căn của phân số/số thập phân · (x−a)²=k², x²=p²/q² · đếm số vô tỉ · rút gọn \|√a−b\| · phần nguyên [x] · hình vuông (diện tích ↔ chu vi) | chữ số thập phân thứ n · tổng các x thỏa [x/k]=n · [√1]+…+[√(m²−1)] · đếm số nguyên giữa −√a và √b · phép tính với số thập phân tuần hoàn |
+| `js/data/grade7/cbnc-tlt.js` | Tỉ lệ thức, đại lượng tỉ lệ (`l7tlt`) | tìm x có biểu thức ở tử/mẫu · lập tỉ lệ thức (tìm cái sai) · ax=by và x±y=S · chia lãi theo vốn · hình chữ nhật biết tỉ lệ cạnh và chu vi · vận tốc–thời gian tỉ lệ nghịch · tỉ lệ thuận với hệ số âm · đưa tỉ số về số nguyên · nhận biết đại lượng từ bảng | x/a=y/b và x²+y²=S · hai ô tô đến muộn · số người × số giờ mỗi ngày · ba lớp biết hiệu số học sinh · dãy tỉ số có hằng số (x−p)/u=(y−q)/v=(z−r)/w |
+
+Dùng chung: `js/data/grade7/cbnc-helpers.js` (đối tượng `G7X`: phân số chính xác `Fr/fadd/fmul…`, `S`/`pr` in phân số có dấu −, `svgMagic` vẽ hình vuông kì diệu, `bd/rnd/isqrt` số thập phân và làm tròn bằng BigInt, `G7X.gen` tự đổi `-3` thành `−3` trong đề và lời giải).
+
+### Kiểm chứng (`kiem-chung/lop7-cbnc/verify.js`)
+    node kiem-chung/lop7-cbnc/verify.js 500            # 500 lượt mỗi dạng; thêm đối số "sth." "tlt." để lọc
+Oracle **tự đọc lại đề hiển thị** rồi tính bằng cách khác (vét cạn, BigInt, chia dài, khử Gauss trên hình vuông kì diệu…) và chấm **từng đáp án**: đáp án đúng phải đúng, 3 đáp án nhiễu phải sai, không có hai đáp án cùng giá trị. Kiểm cả hiển thị (thẻ HTML đóng mở, không sót `^`, dấu trừ, số thập phân dùng dấu phẩy, hệ số `1x`). Kết quả bản giao: 48 dạng, 38 400 lượt, 0 lỗi. Đã đối chứng bằng cách cố ý làm sai đáp án ba dạng, oracle bắt được cả ba.
 
 ## Đổi tên hiển thị (v8)
 Tab **Hạng** → thẻ hồ sơ → **✏️ Đổi tên**. Tên vẫn phải không trùng; XP, sao, tiến độ giữ nguyên.
