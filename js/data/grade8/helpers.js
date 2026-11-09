@@ -8,7 +8,7 @@ const G8H=(()=>{
  gn=(k,fn)=>()=>{
   for(let i=0;i<14;i++){try{const r=fn(),q=Array.isArray(r)?r[0]:r;
    if(q&&q.q&&(q.inp?q.a!=='':q.w&&q.w.length>=3)&&!/NaN|undefined|Infinity|null/.test(q.q+q.a+(q.w||[]).join('|')+q.e)){q.k=k;if(Array.isArray(r))q.p=r[1];return q}}catch(e){}}
-  const a=R(11,49),b=R(11,49),o=Q(`Tính: ${a} + ${b}`,''+(a+b),[a+b+10,a+b-10,a+b+1].map(String),sol([`Cộng hàng đơn vị rồi hàng chục: ${a} + ${b} = ${a+b}.`],`${a+b}`));o.k='fallback';return o},
+  const a=R(11,49),b=R(11,49),o=Q(`Tính: ${a} + ${b}`,''+(a+b),[a+b+10,a+b-10,a+b+1].map(String),sol([`Cộng hàng đơn vị rồi hàng chục: ${a} + ${b} = ${a+b}.`],`${a+b}`));o.k='fallback';o.fk=k;return o}   /* fk: mã dạng bài thất bại (để verify.js báo đúng chỗ) */,
  M=(q,a,w,st,err,fmt=ng,cc)=>mc(q,a,w,sol(st,cc==null?fmt(a):cc,err),fmt),
  Iq=(q,a,st,err,cc)=>{if(typeof a=='number')a=+a.toFixed(6);return I(q,a,sol(st,cc==null?(typeof a=='number'?fd(a):ng(a)):cc,err))},
  fg=(o,f)=>(o.f=f,o),   /* gắn hình vẽ f vào câu hỏi o */

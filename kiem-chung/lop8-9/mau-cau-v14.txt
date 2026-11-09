@@ -1,0 +1,766 @@
+# Mẫu 1 câu cho mỗi dạng mới v14 (đề · đáp án · lời giải). Mỗi lần chơi số liệu khác. Phân số hiển thị (tử)/(mẫu), hình vẽ không có trong file này.
+
+■ pt2.la_pt · l8pt · Cơ bản
+Biểu thức nào sau đây là phân thức đại số?
+   Đáp án đúng: x^2 − 7x + 7  |  Nhiễu: (x − 7)/(√x + 7) ; (x + 7)/(0) ; (7)/(√(x − 7))
+   Bước 1. Phân thức đại số là biểu thức có dạng (A)/(B), trong đó A, B là các đa thức và B khác đa thức 0. Mỗi đa thức cũng là một phân thức.
+   Bước 2. Xét từng biểu thức: (x − 7)/(√x + 7) (mẫu chứa √x, không phải đa thức); x^2 − 7x + 7 (là đa thức, mà mỗi đa thức là một phân thức (mẫu bằng 1)); (7)/(√(x − 7)) (mẫu chứa căn của biến, không phải đa thức); (x + 7)/(0) (mẫu bằng 0).
+   ✅ Kết luận: x^2 − 7x + 7
+
+■ pt2.dk_nhan_tu · l8pt · Cơ bản
+Điều kiện xác định của phân thức (1)/(4x + 9) là
+   Đáp án đúng: x ≠ −9/4  |  Nhiễu: x ≠ −9 ; x ≠ 4/9 ; x ≠ 9/4
+   Bước 1. Mẫu thức phải khác 0: 4x + 9 ≠ 0.
+   Bước 2. Chuyển vế: 4x ≠ −9.
+   Bước 3. Chia hai vế cho 4: x ≠ −9/4.
+   ✅ Kết luận: x ≠ −9/4
+
+■ pt2.gia_tri · l8pt · Cơ bản
+Tính giá trị của phân thức (−2x^2 + 3x + 4)/(x^2 + 2x + 1) tại x = 3. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): -5/16
+   Bước 1. Điều kiện xác định: mẫu thức phải khác 0. Tại x = 3, mẫu thức = 3^2 + 2·3 + 1 = 16, khác 0 nên phân thức xác định.
+   Bước 2. Tử thức = −2·3^2 + 3·3 + 4 = −5.
+   Bước 3. Giá trị của phân thức là −5/16.
+   ✅ Kết luận: −5/16
+
+■ pt2.gt_khong_xd · l8pt · Cơ bản
+Phân thức (x + 4)/(x + 7) không xác định tại giá trị nào của x trong các giá trị sau?
+   Đáp án đúng: −7  |  Nhiễu: −14 ; −8 ; 7
+   Bước 1. Phân thức không xác định khi mẫu thức bằng 0.
+   Bước 2. Giải x + 7 = 0: x + 7 = 0, suy ra x = −7.
+   Bước 3. Tại x = −4 thì tử bằng 0 nhưng mẫu vẫn khác 0, nên phân thức vẫn xác định (giá trị bằng 0).
+   ✅ Kết luận: −7
+
+■ pt2.gt_bang_k · l8pt · Cơ bản
+Tìm x để phân thức (x + 1)/(x − 3) có giá trị bằng −2. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 5/3
+   Bước 1. Điều kiện xác định: x − 3 ≠ 0, tức x ≠ 3.
+   Bước 2. Cho phân thức bằng −2 rồi nhân hai vế với x − 3: x + 1 = −2(x − 3).
+   Bước 3. Khai triển: x + 1 = −2x + 6. Chuyển vế: 3x = 5.
+   Bước 4. Do đó x = 5/3, thỏa điều kiện x ≠ 3.
+   ✅ Kết luận: 5/3
+
+■ pt2.pt_bang_0 · l8pt · Cơ bản
+Tìm x để phân thức (x^2 + 4x)/(x^2 − 5x) có giá trị bằng 0.
+   Đáp án đúng: x = −4  |  Nhiễu: x = 0 hoặc x = −4 ; x = 0 ; Không có giá trị nào của x
+   Bước 1. Điều kiện xác định: mẫu x^2 − 5x = x(x − 5) ≠ 0, tức x ≠ 0 và x ≠ 5.
+   Bước 2. Phân thức bằng 0 khi tử bằng 0: x^2 + 4x = x(x + 4) = 0, suy ra x = 0 hoặc x = −4.
+   Bước 3. Đối chiếu điều kiện: x = 0 làm mẫu bằng 0 nên bị loại; x = −4 thỏa mãn.
+   ✅ Kết luận: x = −4
+
+■ pt2.cap_bang_nhau · l8pt · Cơ bản
+Cặp phân thức nào sau đây bằng nhau?
+   Đáp án đúng: (x + 3)/(x + 4) = (2x + 6)/(2x + 8)  |  Nhiễu: (x + 3)/(x + 4) = (3x + 11)/(3x + 12) ; (x + 3)/(x + 4) = (x^2 + 2x)/(x^2 + 4x) ; (x + 3)/(x + 4) = (x^2 + 2x + 3)/(x^2 + 3x − 4)
+   Bước 1. Hai phân thức (A)/(B) và (C)/(D) bằng nhau khi A·D = B·C (nhân chéo).
+   Bước 2. Với cặp đúng: (x + 3)·(2x + 8) = 2x^2 + 14x + 24 và (x + 4)·(2x + 6) = 2x^2 + 14x + 24, hai kết quả bằng nhau.
+   Bước 3. Với các cặp còn lại, hai tích nhân chéo cho kết quả khác nhau nên chúng không bằng nhau.
+   ✅ Kết luận: (x + 3)/(x + 4) = (2x + 6)/(2x + 8)
+
+■ pt2.tim_da_thuc · l8pt · Cơ bản
+Tìm đa thức A, biết (1 − x)/(6 − x) = (A)/(x − 6).
+   Đáp án đúng: x − 1  |  Nhiễu: −1 − x ; x + 6 ; 1 − x
+   Bước 1. Đổi dấu cả tử và mẫu của phân thức (được một phân thức bằng phân thức đã cho): (1 − x)/(6 − x) = (−(1 − x))/(−(6 − x)).
+   Bước 2. Ta có −(1 − x) = x − 1 và −(6 − x) = x − 6, nên (1 − x)/(6 − x) = (x − 1)/(x − 6).
+   Bước 3. Mẫu của vế phải là x − 6 nên A = x − 1.
+   ✅ Kết luận: x − 1
+
+■ pt2.rut_gon_ntc · l8pt · Cơ bản
+Rút gọn phân thức (x^2 + 2x)/(4x^2 − 12x) (với điều kiện xác định) ta được
+   Đáp án đúng: (x + 2)/(4x − 12)  |  Nhiễu: (x + 2)/(4x − 14) ; (x + 2)/(−4x − 12) ; (4x − 12)/(x + 2)
+   Bước 1. Phân tích tử và mẫu thành nhân tử: tử = x(x + 2), mẫu = 4x(x − 3).
+   Bước 2. Nhân tử chung của tử và mẫu là x.
+   Bước 3. Chia cả tử và mẫu cho x: (x + 2)/(4x − 12).
+   ✅ Kết luận: (x + 2)/(4x − 12)
+
+■ pt2.rut_gon_doi_dau · l8pt · Cơ bản
+Rút gọn phân thức (3x(7 − x))/(9x(x − 7)) (với điều kiện xác định) ta được số nào? (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): -1/3
+   Bước 1. Hai nhân tử 7 − x và x − 7 là hai biểu thức đối nhau: 7 − x = −(x − 7).
+   Bước 2. Viết lại phân thức: (−3x(x − 7))/(9x(x − 7)).
+   Bước 3. Chia cả tử và mẫu cho nhân tử chung 3x(x − 7): được −1/3.
+   ✅ Kết luận: −1/3
+
+■ pt2.rut_gon_hd · l8pt · Cơ bản
+Rút gọn phân thức (x^2 − y^2)/(x^2 − 2xy + y^2) (với điều kiện xác định) ta được
+   Đáp án đúng: (x + y)/(x − y)  |  Nhiễu: (x + y)/(−x − y) ; (−x + y)/(x − y) ; (x − y)/(x + y)
+   Bước 1. Phân tích tử và mẫu thành nhân tử: x^2 − y^2 = (x − y)(x + y); x^2 − 2xy + y^2 = (x − y)^2.
+   Bước 2. Nhân tử chung của tử và mẫu là (x − y).
+   Bước 3. Chia cả tử và mẫu cho (x − y): (x + y)/(x − y).
+   ✅ Kết luận: (x + y)/(x − y)
+
+■ pt2.mtc · l8pt · Cơ bản
+Mẫu thức chung đơn giản nhất của hai phân thức (1)/(5x^2 + 10x) và (1)/(3x^2 − 9x) là
+   Đáp án đúng: 15x(x + 2)(x − 3)  |  Nhiễu: 15x^2(x + 2)(x − 3) ; 15x(x − 3) ; 15x(x + 2)
+   Bước 1. Phân tích các mẫu thành nhân tử: 5x^2 + 10x = 5x(x + 2); 3x^2 − 9x = 3x(x − 3).
+   Bước 2. Hệ số: BCNN(5, 3) = 15. Phần biến: lấy mỗi nhân tử với số mũ lớn nhất, gồm x, (x + 2) và (x − 3).
+   Bước 3. Mẫu thức chung: 15x(x + 2)(x − 3).
+   ✅ Kết luận: 15x(x + 2)(x − 3)
+
+■ pt2.cong_cung_mau · l8pt · Cơ bản
+Tính: (x^2 − 5x)/(x − 4) + (6x − 20)/(x − 4) (với điều kiện xác định). Kết quả rút gọn là
+   Đáp án đúng: x + 5  |  Nhiễu: x − 4 ; x + 4 ; x + 6
+   Bước 1. Hai phân thức có cùng mẫu x − 4 nên cộng các tử thức, giữ nguyên mẫu.
+   Bước 2. Tử thức: (x^2 − 5x) + (6x − 20) = x^2 + x − 20.
+   Bước 3. Phân tích tử: x^2 + x − 20 = (x − 4)(x + 5), rồi chia cả tử và mẫu cho x − 4: kết quả là x + 5.
+   ✅ Kết luận: x + 5
+
+■ pt2.cong_doi_dau · l8pt · Cơ bản
+Tính: (−3x + 3)/(x − 2) + (3x + 2)/(2 − x) (với điều kiện xác định). Kết quả là
+   Đáp án đúng: (−6x + 1)/(x − 2)  |  Nhiễu: (−4x + 1)/(x − 2) ; (−6x + 2)/(x − 2) ; (−6x + 1)/(x − 1)
+   Bước 1. Hai mẫu x − 2 và 2 − x là hai biểu thức đối nhau: 2 − x = −(x − 2).
+   Bước 2. Đổi dấu mẫu của phân thức thứ hai: (3x + 2)/(2 − x) = (−3x − 2)/(x − 2).
+   Bước 3. Cộng hai tử thức, giữ mẫu x − 2: (−3x + 3) + (−3x − 2) = −6x + 1.
+   ✅ Kết luận: (−6x + 1)/(x − 2)
+
+■ pt2.cong_khac_mau · l8pt · Cơ bản
+Tính: (1)/(x + 5) − (1)/(x − 3) (với điều kiện xác định). Kết quả là
+   Đáp án đúng: (−8)/((x + 5)(x − 3))  |  Nhiễu: (8)/((x + 5)(x − 3)) ; (2x + 2)/((x + 5)(x − 3)) ; (−2)/((x + 5)(x − 3))
+   Bước 1. Mẫu thức chung là (x + 5)(x − 3).
+   Bước 2. Quy đồng: (1)/(x + 5) = ((x − 3))/((x + 5)(x − 3)) và (1)/(x − 3) = ((x + 5))/((x + 5)(x − 3)).
+   Bước 3. Tử thức: (x − 3) − (x + 5) = −8.
+   Bước 4. Kết quả: (−8)/((x + 5)(x − 3)) (tử và mẫu không còn nhân tử chung).
+   ✅ Kết luận: (−8)/((x + 5)(x − 3))
+
+■ pt2.cong_mau_binh · l8pt · Cơ bản
+Tính: (2)/(x − 2) − (8)/(x^2 − 4) (với điều kiện xác định). Kết quả rút gọn là
+   Đáp án đúng: (2)/(x + 2)  |  Nhiễu: (10)/(x^2 − 4) ; (2)/(x^2 − 4) ; (2)/(x − 2)
+   Bước 1. Ta có x^2 − 4 = (x − 2)(x + 2), nên mẫu thức chung là x^2 − 4.
+   Bước 2. Quy đồng: (2)/(x − 2) = (2(x + 2))/(x^2 − 4).
+   Bước 3. Tử thức: 2(x + 2) − 8 = 2x − 4 = 2(x − 2).
+   Bước 4. Chia cả tử và mẫu cho nhân tử chung (x − 2) ta được (2)/(x + 2).
+   ✅ Kết luận: (2)/(x + 2)
+
+■ pt2.nhan · l8pt · Cơ bản
+Tính: (x + 6)/(x − 1) · (x^2 − 1)/(x^2 − 36) (với điều kiện xác định). Kết quả là
+   Đáp án đúng: (x + 1)/(x − 6)  |  Nhiễu: (x + 1)/(x + 6) ; (x + 3)/(x − 6) ; (x + 1)/(−x − 6)
+   Bước 1. Nhân tử với tử, mẫu với mẫu rồi phân tích thành nhân tử: x^2 − 1 = (x − 1)(x + 1) và x^2 − 36 = (x − 6)(x + 6).
+   Bước 2. Phân thức tích là ((x + 6)(x − 1)(x + 1))/((x − 1)(x − 6)(x + 6)).
+   Bước 3. Chia cả tử và mẫu cho nhân tử chung (x + 6)(x − 1): được (x + 1)/(x − 6).
+   ✅ Kết luận: (x + 1)/(x − 6)
+
+■ pt2.chia · l8pt · Cơ bản
+Tính: (5x)/(x^2 − 16) : (x^2)/(x − 4) (với điều kiện xác định). Kết quả là
+   Đáp án đúng: (5)/(x(x + 4))  |  Nhiễu: (5)/((x + 4)) ; (5)/(x(x − 4)) ; (5)/(x^2(x + 4))
+   Bước 1. Chia cho một phân thức là nhân với phân thức nghịch đảo: (5x)/(x^2 − 16) · (x − 4)/(x^2).
+   Bước 2. Phân tích x^2 − 16 = (x − 4)(x + 4) rồi nhân: (5x(x − 4))/(x^2(x − 4)(x + 4)).
+   Bước 3. Chia cả tử và mẫu cho x(x − 4): được (5)/(x(x + 4)).
+   ✅ Kết luận: (5)/(x(x + 4))
+
+■ pt2.nghich_dao · l8pt · Cơ bản
+Phân thức nghịch đảo của phân thức (−x − 4)/(2x^2 − x − 3) (tử thức khác 0) là
+   Đáp án đúng: (2x^2 − x − 3)/(−x − 4)  |  Nhiễu: (2x^2 − 3)/(−x − 4) ; (−x − 4)/(2x^2 − x − 3) ; (2x^2 − x − 3)/(−x − 2)
+   Bước 1. Phân thức nghịch đảo của (A)/(B) là (B)/(A) (đảo tử và mẫu, với A khác 0).
+   Bước 2. Ở đây A = −x − 4, B = 2x^2 − x − 3.
+   Bước 3. Phân thức nghịch đảo là (2x^2 − x − 3)/(−x − 4).
+   ✅ Kết luận: (2x^2 − x − 3)/(−x − 4)
+
+■ pt2.bt_thoi_gian · l8pt · Cơ bản
+Một ô tô đi quãng đường 120 km với vận tốc trung bình v (km/h). Thời gian đi là (120)/(v) giờ. Với v = 60 thì ô tô đi hết quãng đường trong bao nhiêu giờ?
+   Đáp án (nhập): 2
+   Bước 1. Thay v = 60 vào biểu thức thời gian: 120 : 60.
+   Bước 2. 120 : 60 = 2 (giờ).
+   ✅ Kết luận: 2
+
+■ pt2.bt_hang · l8pt · Nâng cao
+Biểu thức P = ((4)/(x − 3) − (4)/(x + 3)) · (x^2 − 9)/(3) có giá trị không đổi (với x ≠ ±3). Tìm giá trị đó. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 8
+   Bước 1. Quy đồng trong ngoặc, mẫu chung x^2 − 9: (4)/(x − 3) − (4)/(x + 3) = (4(x + 3) − 4(x − 3))/(x^2 − 9) = (24)/(x^2 − 9).
+   Bước 2. Nhân hai phân thức: (24)/(x^2 − 9) · (x^2 − 9)/(3).
+   Bước 3. Rút gọn x^2 − 9 ở tử và mẫu: P = 24/3 = 8.
+   ✅ Kết luận: 8
+
+■ pt2.nguyen_dem2 · l8pt · Nâng cao
+Tìm giá trị nguyên lớn nhất của x để phân thức (5x − 5)/(x − 3) nhận giá trị là số nguyên.
+   Đáp án (nhập): 13
+   Bước 1. Chia tử cho mẫu: (5x − 5)/(x − 3) = 5 + (10)/(x − 3). Phân thức nguyên khi (10)/(x − 3) nguyên, tức x − 3 là ước nguyên của 10.
+   Bước 2. Các ước nguyên của 10: 10 có 4 ước dương nên có 8 ước nguyên (cả dương và âm). Ước lớn nhất là 10, nhỏ nhất là −10.
+   Bước 3. x lớn nhất khi x − 3 = 10, tức x = 3 + 10 = 13.
+   ✅ Kết luận: 13
+
+■ pt2.cong_3 · l8pt · Nâng cao
+Tính: (5)/(x − 5) − (2)/(x + 5) + (2)/(x^2 − 25) (với điều kiện xác định). Kết quả là
+   Đáp án đúng: (3x + 37)/(x^2 − 25)  |  Nhiễu: (3x + 37)/(−x^2 + 25) ; (3x + 37)/(2x^2 − 25) ; (3x + 37)/(x^2 − 23)
+   Bước 1. Ta có x^2 − 25 = (x − 5)(x + 5) nên mẫu thức chung là x^2 − 25.
+   Bước 2. Quy đồng: tử thức = 5(x + 5) − 2(x − 5) + 2.
+   Bước 3. Khai triển và gộp: 5x + 25 − (2x − 10) + 2 = 3x + 37.
+   Bước 4. Kết quả: (3x + 37)/(x^2 − 25).
+   ✅ Kết luận: (3x + 37)/(x^2 − 25)
+
+■ pt2.chia_hai_bien · l8pt · Nâng cao
+Tính: (x^2 − y^2)/(7xy) : (x + y)/(6x^2y) (với điều kiện xác định). Kết quả là
+   Đáp án đúng: (6x(x − y))/(7)  |  Nhiễu: (6xy(x − y))/(7) ; (6x(x − y))/(7x) ; ((x − y)(x + y)^2)/(42x^3y^2)
+   Bước 1. Chia cho một phân thức là nhân với phân thức nghịch đảo: (x^2 − y^2)/(7xy) · (6x^2y)/(x + y).
+   Bước 2. Phân tích x^2 − y^2 = (x − y)(x + y), rồi nhân: ((x − y)(x + y)·6x^2y)/(7xy(x + y)).
+   Bước 3. Chia cả tử và mẫu cho xy(x + y): (6x(x − y))/(7).
+   ✅ Kết luận: (6x(x − y))/(7)
+
+■ hsn.gia_tri_ham · l8hs · Cơ bản
+Cho hàm số y = f(x) = 4x^2 + 4x + 2. Tính f(3) − f(−3).
+   Đáp án (nhập): 24
+   Bước 1. f(3) = 4·3^2 + 4·3 + 2 = 50.
+   Bước 2. f(−3) = 4·(−3)^2 + 4·(−3) + 2 = 26.
+   Bước 3. f(3) − f(−3) = 50 − 26 = 24.
+   ✅ Kết luận: 24
+
+■ hsn.bang_hs · l8hs · Cơ bản
+Cho hai đại lượng x và y có các giá trị tương ứng: (2; 4), (3; 4), (5; 5), (6; 8). Đại lượng y có phải là hàm số của đại lượng x không?
+   Đáp án đúng: Có, vì mỗi giá trị của x chỉ ứng với một giá trị của y  |  Nhiễu: Có, vì giá trị của y luôn tăng khi x tăng ; Không, vì có hai giá trị khác nhau của x ứng với cùng một giá trị của y ; Không, vì có một giá trị của x ứng với hai giá trị khác nhau của y
+   Bước 1. Đại lượng y là hàm số của x nếu mỗi giá trị của x chỉ xác định đúng một giá trị của y.
+   Bước 2. Các giá trị của x là 2; 3; 5; 6, đều khác nhau nên mỗi giá trị x chỉ ứng với một giá trị y.
+   Bước 3. Vậy y là hàm số của x. (Hai giá trị khác nhau của x có thể cho cùng một giá trị của y mà vẫn là hàm số.)
+   ✅ Kết luận: Có, vì mỗi giá trị của x chỉ ứng với một giá trị của y
+
+■ hsn.doi_xung · l8hs · Cơ bản
+Điểm A(5; −3). Điểm đối xứng với A qua gốc tọa độ O có tọa độ là
+   Đáp án đúng: (−5; 3)  |  Nhiễu: (−5; −3) ; (5; 3) ; (3; −5)
+   Bước 1. Hai điểm đối xứng qua gốc O có hoành độ đối nhau và tung độ đối nhau.
+   Bước 2. Từ A(5; −3), ta được điểm đối xứng là (−5; 3).
+   ✅ Kết luận: (−5; 3)
+
+■ hsn.he_so_ab · l8hs · Cơ bản
+Cho hàm số y = 3(3x − 6) + 3. Tung độ gốc b của hàm số này là
+   Đáp án đúng: −15  |  Nhiễu: −21 ; 15 ; −14
+   Bước 1. Nhân 3 với từng hạng tử trong ngoặc: 3·3x = 9x và 3·(−6) = −18. Ta có y = 9x − 18 + 3.
+   Bước 2. Thu gọn: y = 9x − 15.
+   Bước 3. Tung độ gốc là số hạng không chứa x: b = −15.
+   ✅ Kết luận: −15
+
+■ hsn.dk_bac_nhat_m · l8hs · Cơ bản
+Hàm số y = (3m + 3)x − 6 là hàm số bậc nhất khi và chỉ khi
+   Đáp án đúng: m ≠ −1  |  Nhiễu: m ≠ 1 ; m ≠ 0 ; m = −1
+   Bước 1. Hàm số y = ax + b là hàm số bậc nhất khi hệ số a ≠ 0. Ở đây hệ số của x là 3m + 3.
+   Bước 2. Điều kiện: 3m + 3 ≠ 0.
+   Bước 3. Chuyển vế: 3m ≠ −3, suy ra m ≠ −1.
+   ✅ Kết luận: m ≠ −1
+
+■ hsn.qua_diem_m · l8hs · Cơ bản
+Đồ thị hàm số y = (m + 3)x − 8 đi qua điểm A(3; −14). Tìm m.
+   Đáp án (nhập): -5
+   Bước 1. Vì đồ thị đi qua A(3; −14) nên khi thay x = 3, y = −14 vào hàm số thì được đẳng thức đúng.
+   Bước 2. −14 = (m + 3)·3 − 8, suy ra (m + 3)·3 = −6.
+   Bước 3. Chia hai vế cho 3: m + 3 = −2, nên m = −5.
+   ✅ Kết luận: −5
+
+■ hsn.cat_truc_m · l8hs · Cơ bản
+Cho hàm số y = (m − 4)x + (m − 3). Tìm m để đồ thị hàm số cắt trục tung tại điểm có tung độ −4.
+   Đáp án (nhập): -1
+   Bước 1. Đồ thị cắt trục tung tại điểm (0; b), nên tung độ chính là hệ số tự do: m − 3.
+   Bước 2. Cho m − 3 = −4, suy ra m = −1.
+   ✅ Kết luận: −1
+
+■ hsn.cuoc_dt · l8hs · Cơ bản
+Một gói cước điện thoại tính phí cố định 30000 đồng mỗi tháng và 200 đồng cho mỗi phút gọi. Gọi x là số phút gọi trong tháng và y (đồng) là số tiền phải trả. Công thức tính y theo x là
+   Đáp án đúng: y = 200x + 30000  |  Nhiễu: y = 30200x ; y = 30000x + 200 ; y = 200x − 30000
+   Bước 1. Tiền gọi tính theo số phút: 200·x (đồng).
+   Bước 2. Cộng với phí cố định 30000 đồng mỗi tháng, ta được y = 200x + 30000.
+   ✅ Kết luận: y = 200x + 30000
+
+■ hsn.goc_ox · l8hs · Cơ bản
+Đường thẳng y = 4x + 6 tạo với tia Ox một góc
+   Đáp án đúng: nhọn  |  Nhiễu: vuông ; bẹt ; tù
+   Bước 1. Đường thẳng y = ax + b tạo với tia Ox góc nhọn khi hệ số góc a dương và góc tù khi hệ số góc a âm.
+   Bước 2. Ở đây hệ số góc a = 4, là số dương.
+   Bước 3. Vậy đường thẳng tạo với tia Ox một góc nhọn.
+   ✅ Kết luận: nhọn
+
+■ hsn.so_sanh_goc · l8hs · Cơ bản
+Cho các đường thẳng d1: y = −3x + 6; d2: y = −5x + 5; d3: y = −6x − 5; d4: y = −4x + 1. Đường thẳng nào tạo với tia Ox một góc tù lớn nhất?
+   Đáp án đúng: d1  |  Nhiễu: d4 ; d2 ; d3
+   Bước 1. Các hệ số góc đều âm nên các đường thẳng đều tạo với tia Ox góc tù. Hệ số góc càng gần 0 (giá trị tuyệt đối càng nhỏ) thì góc tù càng lớn; giá trị tuyệt đối càng lớn thì góc tù càng nhỏ.
+   Bước 2. Hệ số góc: d1: a = −3; d2: a = −5; d3: a = −6; d4: a = −4.
+   Bước 3. Chọn góc lớn nhất: đường thẳng d1.
+   ✅ Kết luận: d1
+
+■ hsn.giao_truc · l8hs · Cơ bản
+Đường thẳng y = 5x − 5 cắt trục hoành tại điểm
+   Đáp án đúng: (1; 0)  |  Nhiễu: (0; −5) ; (−1; 0) ; (0; 1)
+   Bước 1. Điểm trên trục hoành có tung độ bằng 0. Cho y = 0: 5x − 5 = 0.
+   Bước 2. Suy ra 5x = 5, nên x = 1.
+   Bước 3. Vậy đường thẳng cắt trục hoành tại điểm (1; 0).
+   ✅ Kết luận: (1; 0)
+
+■ hsn.he_so_goc_2diem · l8hs · Cơ bản
+Đường thẳng y = ax + b đi qua hai điểm A(−3; −4) và B(−2; 3). Tính hệ số góc a. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 7
+   Bước 1. Vì đường thẳng đi qua A và B nên −4 = a·(−3) + b và 3 = a·(−2) + b.
+   Bước 2. Trừ hai đẳng thức theo vế: 3 − (−4) = a(−2 − (−3)), tức là 7 = 1a.
+   Bước 3. Do đó a = 7.
+   ✅ Kết luận: 7
+
+■ hsn.doc_do_thi · l8hs · Cơ bản · có hình
+Đường thẳng d vẽ trên mặt phẳng tọa độ trong hình là đồ thị của hàm số nào?
+   Đáp án đúng: y = 3x − 1  |  Nhiễu: y = −3x − 1 ; y = 3x + 1 ; y = 3x
+   Bước 1. Đường thẳng cắt trục tung tại điểm (0; −1) nên b = −1.
+   Bước 2. Đường thẳng đi qua điểm (1; 2). Thay vào y = ax + b: 2 = a·1 + (−1), suy ra a = 3.
+   Bước 3. Vậy hàm số là y = 3x − 1.
+   ✅ Kết luận: y = 3x − 1
+
+■ hsn.dt_tam_giac_hai_dt · l8hs · Nâng cao
+Hai đường thẳng d₁: y = −4x + 4 và d₂: y = −x − 8 cắt nhau tại M. Gọi A, B lần lượt là giao điểm của d₁, d₂ với trục hoành. Tính diện tích tam giác MAB (đơn vị diện tích).
+   Đáp án (nhập): 54
+   Bước 1. Hoành độ giao điểm M: −4x + 4 = −x − 8, suy ra −3x = −12, x = 4. Tung độ: y = −4·4 + 4 = −12. Vậy M(4; −12).
+   Bước 2. A là giao của d₁ với trục hoành: −4x + 4 = 0 nên x = 1, A(1; 0). Tương tự B(−8; 0).
+   Bước 3. Đáy AB = |1 − (−8)| = 9; chiều cao là khoảng cách từ M đến trục hoành = |−12| = 12.
+   Bước 4. Diện tích tam giác MAB = 9·12 : 2 = 54.
+   ✅ Kết luận: 54
+
+■ hsn.dong_quy · l8hs · Nâng cao
+Cho ba đường thẳng d₁: y = −3x − 5; d₂: y = 2x + 15; d₃: y = mx + 15. Tìm m để ba đường thẳng đồng quy (cùng đi qua một điểm).
+   Đáp án (nhập): 2
+   Bước 1. Tìm giao điểm của d₁ và d₂: −3x − 5 = 2x + 15, suy ra −5x = 20, x = −4.
+   Bước 2. Thay x = −4 vào d₁: y = 7. Giao điểm là M(−4; 7).
+   Bước 3. Ba đường thẳng đồng quy khi d₃ cũng đi qua M: 7 = m·(−4) + 15, suy ra −4m = −8, m = 2.
+   ✅ Kết luận: 2
+
+■ hsn.cuoc_so_sanh · l8hs · Nâng cao
+Hãng taxi A tính phí mở cửa 9 nghìn đồng và 11 nghìn đồng cho mỗi kilômét. Hãng taxi B tính phí mở cửa 54 nghìn đồng và 8 nghìn đồng cho mỗi kilômét. Quãng đường nguyên nhỏ nhất (km) để đi hãng B rẻ hơn hãng A là bao nhiêu?
+   Đáp án (nhập): 16
+   Bước 1. Gọi x (km) là quãng đường. Cước hãng A: 11x + 9 (nghìn đồng); cước hãng B: 8x + 54 (nghìn đồng).
+   Bước 2. Cước bằng nhau khi 11x + 9 = 8x + 54, suy ra 3x = 45, x = 15.
+   Bước 3. Quãng đường dài hơn 15 km thì hãng A (tăng 11 nghìn đồng/km) đắt hơn hãng B (tăng 8 nghìn đồng/km), nên hãng B rẻ hơn. Số km nguyên nhỏ nhất là 16.
+   ✅ Kết luận: 16
+
+■ hsn.song_song_qua_diem · l8hs · Nâng cao
+Đường thẳng đi qua điểm A(4; −4) và song song với đường thẳng y = −3x + 3 có phương trình là
+   Đáp án đúng: y = −3x + 8  |  Nhiễu: y = −3x − 16 ; y = 3x + 8 ; y = −3x + 3
+   Bước 1. Đường thẳng cần tìm có dạng y = a′x + b′. Song song với y = −3x + 3 nên a′ = −3 và b′ ≠ 3.
+   Bước 2. Đi qua A(4; −4): −4 = −3·4 + b′, suy ra b′ = −4 − (−12) = 8.
+   Bước 3. Vì 8 ≠ 3 nên thỏa điều kiện. Phương trình: y = −3x + 8.
+   ✅ Kết luận: y = −3x + 8
+
+■ ptr2.nhan_dang · l8ptr · Cơ bản
+Phương trình nào sau đây là phương trình bậc nhất một ẩn?
+   Đáp án đúng: 6x − 5 = 0  |  Nhiễu: x^2 − 5 = 0 ; x^2 + 5x = 0 ; 3x + y = 0
+   Bước 1. Phương trình bậc nhất một ẩn có dạng ax + b = 0, trong đó a, b là các số đã cho và a ≠ 0.
+   Bước 2. Xét từng phương trình: 3x + y = 0 (có hai ẩn x và y); x^2 + 5x = 0 (có x^2, là phương trình bậc hai); x^2 − 5 = 0 (có x^2, là phương trình bậc hai); 6x − 5 = 0 (có dạng ax + b = 0 với a ≠ 0).
+   ✅ Kết luận: 6x − 5 = 0
+
+■ ptr2.giai_ngoac · l8ptr · Cơ bản
+Nghiệm của phương trình 5(x − 2) − 1(x + 3) = 7 là
+   Đáp án đúng: 5  |  Nhiễu: −5 ; 6 ; 4
+   Bước 1. Bỏ ngoặc (chú ý dấu − đứng trước ngoặc thứ hai): 5x − 10 − 1x − 3 = 7.
+   Bước 2. Gộp các hạng tử đồng dạng: 4x − 13 = 7.
+   Bước 3. Chuyển vế: 4x = 20, suy ra x = 5.
+   ✅ Kết luận: 5
+
+■ ptr2.mau_so · l8ptr · Cơ bản
+Nghiệm của phương trình (x − 1)/(3) − (x + 6)/(4) = −2 là
+   Đáp án đúng: −2  |  Nhiễu: −46 ; −1 ; −3
+   Bước 1. Mẫu chung là BCNN(3, 4) = 12. Nhân hai vế với 12: 4(x − 1) − 3(x + 6) = −24.
+   Bước 2. Bỏ ngoặc: 4x − 4 − 3x − 18 = −24, hay x = −2.
+   Bước 3. Suy ra x = −2.
+   ✅ Kết luận: −2
+
+■ ptr2.tich_he_so · l8ptr · Cơ bản
+Tổng các nghiệm của phương trình (4x − 9)(4x + 5) = 0 là bao nhiêu? (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 1
+   Bước 1. Tích bằng 0 khi một trong hai thừa số bằng 0: 4x − 9 = 0 hoặc 4x + 5 = 0.
+   Bước 2. Giải từng phương trình: x = 9/4 hoặc x = −5/4.
+   Bước 3. Tổng hai nghiệm: 9/4 + (−5/4) = 1.
+   ✅ Kết luận: 1
+
+■ ptr2.nghiem_m · l8ptr · Cơ bản
+Phương trình 3x + m + 1 = 5x + 9 nhận x = −1 làm nghiệm. Giá trị của m là
+   Đáp án đúng: 6  |  Nhiễu: 2 ; 5 ; 7
+   Bước 1. Vì x = −1 là nghiệm nên khi thay x = −1 vào, hai vế của phương trình bằng nhau.
+   Bước 2. Vế trái: 3·(−1) + m + 1 = m − 2.
+   Bước 3. Vế phải: 5·(−1) + 9 = 4.
+   Bước 4. Cho hai vế bằng nhau: m − 2 = 4, suy ra m = 4 + 2 = 6.
+   ✅ Kết luận: 6
+
+■ ptr2.gap_nhau · l8ptr · Cơ bản
+Hai ô tô xuất phát từ hai địa điểm A và B cách nhau 380 km, đi ngược chiều nhau để gặp nhau. Xe thứ nhất đi từ A với vận tốc 40 km/h, xuất phát trước xe thứ hai từ B 2 giờ; xe thứ hai có vận tốc 60 km/h. Hỏi sau bao nhiêu giờ kể từ lúc xe thứ nhất xuất phát thì hai xe gặp nhau?
+   Đáp án (nhập): 5
+   Bước 1. Gọi t (giờ) là thời gian từ lúc xe thứ nhất xuất phát đến lúc hai xe gặp nhau.
+   Bước 2. Xe thứ nhất đi được 40t (km); xe thứ hai đi sau 2 giờ nên đi được 60(t − 2) (km).
+   Bước 3. Khi gặp nhau, tổng quãng đường hai xe đi bằng AB: 40t + 60(t − 2) = 380.
+   Bước 4. Giải: 100t = 500, suy ra t = 5. Vậy sau 5 giờ hai xe gặp nhau.
+   ✅ Kết luận: 5
+
+■ ptr2.nang_suat · l8ptr · Cơ bản
+Một tổ sản xuất dự định mỗi ngày làm 40 sản phẩm. Nhưng thực tế mỗi ngày tổ làm được 50 sản phẩm nên hoàn thành sớm hơn kế hoạch 1 ngày và còn làm thêm được 30 sản phẩm. Hỏi theo kế hoạch, tổ phải làm bao nhiêu sản phẩm?
+   Đáp án (nhập): 320
+   Bước 1. Gọi x là số ngày làm theo kế hoạch (x lớn hơn 1). Số sản phẩm theo kế hoạch là 40x.
+   Bước 2. Thực tế làm trong (x − 1) ngày, mỗi ngày 50 sản phẩm, được 50(x − 1) sản phẩm và nhiều hơn kế hoạch 30 sản phẩm.
+   Bước 3. Phương trình: 50(x − 1) = 40x + 30. Bỏ ngoặc: 50x − 50 = 40x + 30, suy ra 10x = 80, x = 8.
+   Bước 4. Số sản phẩm theo kế hoạch: 40·8 = 320 (sản phẩm).
+   ✅ Kết luận: 320
+
+■ ptr2.lai_suat · l8ptr · Cơ bản
+Bác Hưng đầu tư 500 triệu đồng vào hai khoản: mua trái phiếu với lãi suất 10%/năm và gửi tiết kiệm với lãi suất 5%/năm. Sau một năm, tổng tiền lãi là 30 triệu đồng. Hỏi bác đã đầu tư bao nhiêu triệu đồng vào trái phiếu?
+   Đáp án (nhập): 100
+   Bước 1. Gọi x (triệu đồng) là số tiền mua trái phiếu (x nằm giữa 0 và 500). Số tiền gửi tiết kiệm là 500 − x (triệu đồng).
+   Bước 2. Tiền lãi: trái phiếu 10% · x = 0,1x; tiết kiệm 5% · (500 − x) = 0,05(500 − x).
+   Bước 3. Phương trình: 0,1x + 0,05(500 − x) = 30. Bỏ ngoặc: 0,05x + 25 = 30.
+   Bước 4. Suy ra 0,05x = 5, nên x = 100. Vậy bác đầu tư 100 triệu đồng vào trái phiếu.
+   ✅ Kết luận: 100
+
+■ ptr2.giam_hai_lan · l8ptr · Cơ bản
+Một chiếc điện thoại được giảm 10% so với giá niêm yết, sau đó cửa hàng giảm thêm 20% trên giá đã giảm nên khách chỉ phải trả 1800 nghìn đồng. Giá niêm yết ban đầu là bao nhiêu nghìn đồng?
+   Đáp án (nhập): 2500
+   Bước 1. Gọi x (nghìn đồng) là giá niêm yết. Sau lần giảm thứ nhất, giá còn 90% · x = 0,9x.
+   Bước 2. Sau lần giảm thứ hai (trên giá đã giảm), giá còn 0,9x · 0,8 = 0,72x.
+   Bước 3. Phương trình: 0,72x = 1800, suy ra x = 2500.
+   ✅ Kết luận: 2500
+
+■ ptr2.nhiet_do · l8ptr · Cơ bản
+Công thức đổi nhiệt độ từ độ C sang độ F là F = 1,8C + 32. Nhiệt độ 167 °F ứng với bao nhiêu °C?
+   Đáp án (nhập): 75
+   Bước 1. Thay F = 167 vào công thức, ta có phương trình: 1,8C + 32 = 167.
+   Bước 2. Chuyển vế: 1,8C = 167 − 32 = 135.
+   Bước 3. Suy ra C = 135 : 1,8 = 75 (°C).
+   ✅ Kết luận: 75
+
+■ ptr2.tuoi_tong · l8ptr · Cơ bản
+Hiện nay tuổi của bố gấp 4 lần tuổi của Nam. Sau 9 năm nữa thì tổng số tuổi của hai bố con là 68 tuổi. Hỏi hiện nay Nam bao nhiêu tuổi?
+   Đáp án (nhập): 10
+   Bước 1. Gọi x là tuổi của Nam hiện nay (x là số dương). Tuổi của bố hiện nay là 4x.
+   Bước 2. Sau 9 năm, tuổi Nam là x + 9 và tuổi bố là 4x + 9.
+   Bước 3. Phương trình: (x + 9) + (4x + 9) = 68, hay 5x + 18 = 68.
+   Bước 4. Suy ra 5x = 50, x = 10. Vậy Nam hiện nay 10 tuổi.
+   ✅ Kết luận: 10
+
+■ ptr2.hcn_tang · l8ptr · Cơ bản
+Một mảnh vườn hình chữ nhật có chiều dài hơn chiều rộng 3 m. Nếu tăng cả chiều dài và chiều rộng thêm 5 m thì diện tích tăng thêm 190 m². Tính chiều rộng ban đầu của mảnh vườn (m).
+   Đáp án (nhập): 15
+   Bước 1. Gọi x (m) là chiều rộng ban đầu, thì chiều dài ban đầu là x + 3. Diện tích ban đầu: x(x + 3).
+   Bước 2. Sau khi tăng: chiều rộng x + 5, chiều dài x + 8. Diện tích mới: (x + 5)(x + 8).
+   Bước 3. Diện tích tăng thêm 190: (x + 5)(x + 8) − x(x + 3) = 190. Khai triển: x^2 + 13x + 40 − x^2 − 3x = 190, hay 10x + 40 = 190.
+   Bước 4. Suy ra 10x = 150, x = 15. Vậy chiều rộng ban đầu là 15 m.
+   ✅ Kết luận: 15
+
+■ ptr2.hai_lop · l8ptr · Cơ bản
+Hai lớp 8A và 8B có tất cả 75 học sinh. Trong đợt ủng hộ, mỗi học sinh lớp 8A góp 5 quyển sách, mỗi học sinh lớp 8B góp 2 quyển sách; cả hai lớp góp được 267 quyển. Hỏi lớp 8A có bao nhiêu học sinh?
+   Đáp án (nhập): 39
+   Bước 1. Gọi x là số học sinh lớp 8A (x nằm giữa 0 và 75). Số học sinh lớp 8B là 75 − x.
+   Bước 2. Số sách lớp 8A góp: 5x; lớp 8B góp: 2(75 − x).
+   Bước 3. Phương trình: 5x + 2(75 − x) = 267. Bỏ ngoặc: 3x + 150 = 267.
+   Bước 4. Suy ra 3x = 117, x = 39. Vậy lớp 8A có 39 học sinh.
+   ✅ Kết luận: 39
+
+■ ptr2.mau_nang · l8ptr · Nâng cao
+Giải phương trình (x − 6)/(3) − (x − 2)/(2) = (x − 4)/(2). (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 3/2
+   Bước 1. Mẫu chung là BCNN(3, 2, 2) = 6. Nhân hai vế với 6: 2(x − 6) − 3(x − 2) = 3(x − 4).
+   Bước 2. Bỏ ngoặc: 2x − 12 − 3x + 6 = 3x − 12.
+   Bước 3. Chuyển các hạng tử chứa x sang một vế, hạng tử tự do sang vế kia: (2 − 3 − 3)x = −12 − (−12) + (−6), hay −4x = −6.
+   Bước 4. Vậy x = 6/4 = 3/2.
+   ✅ Kết luận: 3/2
+
+■ ptr2.quang_duong_v · l8ptr · Nâng cao
+Một ô tô đi từ A đến B với vận tốc 50 km/h. Lúc về, ô tô đi với vận tốc 75 km/h nên thời gian về ít hơn thời gian đi 64 phút. Tính quãng đường AB (km).
+   Đáp án (nhập): 160
+   Bước 1. Gọi x (km) là quãng đường AB. Thời gian đi: (x)/(50) giờ; thời gian về: (x)/(75) giờ.
+   Bước 2. 64 phút = 16/15 giờ. Thời gian về ít hơn thời gian đi nên (x)/(50) − (x)/(75) = 16/15.
+   Bước 3. Nhân hai vế với 150: ta được 3x − 2x = 160, hay 1x = 160.
+   Bước 4. Suy ra x = 160. Vậy quãng đường AB dài 160 km.
+   ✅ Kết luận: 160
+
+■ ptr2.xuoi_nguoc · l8ptr · Nâng cao
+Một ca nô đi xuôi dòng từ A đến B hết 6 giờ và đi ngược dòng từ B về A hết 8 giờ. Biết vận tốc dòng nước là 5 km/h. Tính khoảng cách AB (km).
+   Đáp án (nhập): 240
+   Bước 1. Gọi x (km/h) là vận tốc riêng của ca nô (x lớn hơn 5). Vận tốc xuôi dòng là x + 5, vận tốc ngược dòng là x − 5.
+   Bước 2. Quãng đường AB không đổi: 6(x + 5) = 8(x − 5).
+   Bước 3. Bỏ ngoặc: 6x + 30 = 8x − 40, suy ra 2x = 70, x = 35.
+   Bước 4. Khoảng cách AB = 6·(35 + 5) = 240 (km).
+   ✅ Kết luận: 240
+
+■ ptr2.so_hai_chu_so · l8ptr · Nâng cao
+Một số tự nhiên có hai chữ số, tổng hai chữ số bằng 3. Nếu đổi chỗ hai chữ số cho nhau thì được số mới lớn hơn số ban đầu 9 đơn vị. Tìm số ban đầu.
+   Đáp án (nhập): 12
+   Bước 1. Gọi x là chữ số hàng chục, thì chữ số hàng đơn vị là 3 − x. Số ban đầu là 10x + (3 − x) = 9x + 3.
+   Bước 2. Số mới (đổi chỗ) là 10(3 − x) + x = 30 − 9x.
+   Bước 3. Số mới lớn hơn số cũ 9: (30 − 9x) − (9x + 3) = 9, hay 27 − 18x = 9.
+   Bước 4. Suy ra 18x = 18, x = 1. Chữ số hàng đơn vị là 3 − 1 = 2. Số ban đầu là 12.
+   ✅ Kết luận: 12
+
+■ hc2.sxq_tg · l8hc · Cơ bản
+Hình chóp tam giác đều S.ABC có cạnh đáy AB = 16 cm và cạnh bên SA = 17 cm. Tính diện tích xung quanh của hình chóp (cm²).
+   Đáp án (nhập): 360
+   Bước 1. Gọi M là trung điểm AB. Tam giác SAB cân tại S nên SM ⊥ AB và SM là trung đoạn của hình chóp; AM = 8 cm.
+   Bước 2. Tam giác SAM vuông tại M: SM² = SA² − AM² = 17² − 8² = 225, suy ra SM = 15 cm.
+   Bước 3. Nửa chu vi đáy: p = 3 · 16 : 2 = 24 (cm). Diện tích xung quanh: S_xq = p · d = 24 · 15 = 360 (cm²).
+   ✅ Kết luận: 360
+
+■ hc2.v_tg · l8hc · Cơ bản
+Hình chóp S.ABC có đáy là tam giác ABC với cạnh BC = 10 cm và đường cao tương ứng AK = 9 cm. Chiều cao của hình chóp là 7 cm. Tính thể tích hình chóp (cm³).
+   Đáp án (nhập): 105
+   Bước 1. Diện tích đáy: S = 1/2 · BC · AK = 1/2 · 10 · 9 = 45 (cm²).
+   Bước 2. Thể tích hình chóp: V = 1/3 · S · h = 1/3 · 45 · 7.
+   Bước 3. V = 105 (cm³).
+   ✅ Kết luận: 105
+
+■ hc2.v_tu_giac · l8hc · Cơ bản · có hình
+Hình chóp tứ giác đều S.ABCD có cạnh đáy 40 cm và trung đoạn SM = 29 cm (M là trung điểm cạnh đáy, hình vẽ minh họa). Tính thể tích hình chóp (cm³).
+   Đáp án (nhập): 11200
+   Bước 1. Gọi O là tâm của đáy thì SO là chiều cao và OM = 20 cm (bằng nửa cạnh đáy).
+   Bước 2. Tam giác SOM vuông tại O: SO² = SM² − OM² = 29² − 20² = 441, suy ra SO = 21 cm.
+   Bước 3. Diện tích đáy: 40² = 1600 (cm²). Thể tích: V = 1/3 · 1600 · 21 = 11200 (cm³).
+   ✅ Kết luận: 11200
+
+■ hc2.stp_tu_giac · l8hc · Cơ bản
+Hình chóp tứ giác đều S.ABCD có cạnh đáy 12 cm và cạnh bên 10 cm. Tính diện tích toàn phần của hình chóp (cm²).
+   Đáp án (nhập): 336
+   Bước 1. Gọi M là trung điểm cạnh đáy AB. Tam giác SAB cân tại S nên SM là trung đoạn, và AM = 6 cm.
+   Bước 2. SM² = SA² − AM² = 10² − 6² = 64, suy ra SM = 8 cm.
+   Bước 3. Diện tích xung quanh: S_xq = p · d = (2 · 12) · 8 = 192 (cm²). Diện tích đáy: 12² = 144 (cm²).
+   Bước 4. Diện tích toàn phần: 192 + 144 = 336 (cm²).
+   ✅ Kết luận: 336
+
+■ hc2.tim_a_sxq · l8hc · Cơ bản · có hình
+Hình chóp tứ giác đều có trung đoạn bằng 8 cm và diện tích xung quanh bằng 128 cm². Tính độ dài cạnh đáy (cm).
+   Đáp án (nhập): 8
+   Bước 1. Công thức: S_xq = p · d, trong đó p là nửa chu vi đáy. Đáy là hình vuông cạnh a nên p = 2a.
+   Bước 2. Thay số: 128 = 2a · 8 = 16a.
+   Bước 3. Suy ra a = 128 : 16 = 8 (cm).
+   ✅ Kết luận: 8
+
+■ hc2.leu_chi_phi · l8hc · Cơ bản
+Một chiếc lều có dạng hình chóp tứ giác đều với cạnh đáy 5 m và trung đoạn 5 m. Người ta phủ vải bốn mặt bên của lều (không tính đáy), giá vải 30 nghìn đồng/m². Tính chi phí mua vải (nghìn đồng), coi như không hao hụt.
+   Đáp án (nhập): 1500
+   Bước 1. Diện tích vải bằng diện tích xung quanh của hình chóp: S_xq = p_đáy · d, với nửa chu vi đáy là 2 · 5 = 10 (m).
+   Bước 2. S_xq = 10 · 5 = 50 (m²).
+   Bước 3. Chi phí: 50 · 30 = 1500 (nghìn đồng).
+   ✅ Kết luận: 1500
+
+■ hc2.dung_tich_lit · l8hc · Cơ bản
+Một hộp đựng có dạng hình chóp tứ giác đều với cạnh đáy 8 dm và chiều cao 3 dm. Khi đổ đầy nước vào hộp thì hộp chứa được bao nhiêu lít nước? (1 dm³ = 1 lít)
+   Đáp án (nhập): 64
+   Bước 1. Diện tích đáy: 8² = 64 (dm²).
+   Bước 2. Thể tích: V = 1/3 · S · h = 1/3 · 64 · 3 = 64 (dm³).
+   Bước 3. Vì 1 dm³ = 1 lít nên hộp chứa được 64 lít nước.
+   ✅ Kết luận: 64
+
+■ hc2.tim_h_tg · l8hc · Nâng cao
+Hình chóp S.ABC có thể tích 64 cm³ và diện tích đáy ABC bằng 24 cm². Tính chiều cao của hình chóp (cm).
+   Đáp án (nhập): 8
+   Bước 1. Công thức thể tích: V = 1/3 · S · h, suy ra h = (3V)/(S).
+   Bước 2. Thay số: h = (3 · 64)/(24) = (192)/(24).
+   Bước 3. h = 8 (cm).
+   ✅ Kết luận: 8
+
+■ hc2.cao_tu_canh_ben · l8hc · Nâng cao · có hình
+Hình chóp tứ giác đều S.ABCD có cạnh đáy 28 cm và cạnh bên 21 cm. Tính chiều cao SO của hình chóp (cm), với O là tâm của đáy.
+   Đáp án (nhập): 7
+   Bước 1. Đáy ABCD là hình vuông cạnh 28 nên đường chéo AC² = 28² + 28² = 1568. Do O là trung điểm AC nên OA² = (1568)/(4) = 392.
+   Bước 2. Tam giác SOA vuông tại O: SO² = SA² − OA² = 21² − 392 = 441 − 392 = 49.
+   Bước 3. Suy ra SO = 7 (cm).
+   ✅ Kết luận: 7
+
+■ hc2.ti_so_the_tich · l8hc · Nâng cao
+Hình chóp tứ giác đều thứ nhất có cạnh đáy 3 cm, chiều cao 4 cm và thể tích 12 cm³. Hình chóp tứ giác đều thứ hai có cùng chiều cao nhưng cạnh đáy dài gấp 3 lần. Tính thể tích hình chóp thứ hai (cm³).
+   Đáp án (nhập): 108
+   Bước 1. Cạnh đáy hình thứ hai là 9 cm nên diện tích đáy là 9² = 81 (cm²), gấp 9 lần diện tích đáy hình thứ nhất (9 cm²).
+   Bước 2. Chiều cao không đổi (4 cm), nên thể tích gấp 9 lần: 9 · 12 = 108 (cm³).
+   ✅ Kết luận: 108
+
+■ py2.hinh_tim_x · l8py · Cơ bản · có hình
+Cho tam giác ABC vuông tại A với các độ dài như trong hình. Tìm x (đơn vị: cm).
+   Đáp án (nhập): 20
+   Bước 1. Tam giác ABC vuông tại A nên cạnh huyền là BC. Theo định lí Pythagore: BC² = AB² + AC².
+   Bước 2. 29² = 21² + x², suy ra x² = 841 − 441 = 400, nên x = 20.
+   Bước 3. Vậy x = 20 cm.
+   ✅ Kết luận: 20
+
+■ py2.dao_goc · l8py · Cơ bản
+Tam giác ABC có AB = 9 cm, BC = 11 cm, CA = 15 cm. Khẳng định nào sau đây đúng?
+   Đáp án đúng: Tam giác ABC không phải là tam giác vuông  |  Nhiễu: Tam giác ABC vuông tại A ; Tam giác ABC vuông tại C ; Tam giác ABC vuông tại B
+   Bước 1. Dùng định lí Pythagore đảo: tam giác có bình phương một cạnh bằng tổng bình phương hai cạnh còn lại thì là tam giác vuông, cạnh đó là cạnh huyền.
+   Bước 2. Cạnh dài nhất là CA = 15 cm: bình phương là 225. Tổng bình phương hai cạnh còn lại: 202.
+   Bước 3. Vì 225 ≠ 202 nên tam giác ABC không vuông.
+   ✅ Kết luận: Tam giác ABC không phải là tam giác vuông
+
+■ py2.tam_giac_deu · l8py · Cơ bản
+Tam giác đều ABC có cạnh 8 cm. Độ dài đường cao AH là
+   Đáp án đúng: 4√3 cm  |  Nhiễu: 8 cm ; 4 cm ; 8√3 cm
+   Bước 1. Trong tam giác đều, đường cao AH cũng là đường trung tuyến nên H là trung điểm BC, BH = 4 cm.
+   Bước 2. Tam giác AHB vuông tại H: AH² = AB² − BH² = 8² − 4² = 48.
+   Bước 3. AH = √48 = 4√3 cm.
+   ✅ Kết luận: 4√3 cm
+
+■ py2.hcn_cheo · l8py · Cơ bản
+Hình chữ nhật ABCD có AB = 21 cm và đường chéo AC = 29 cm. Tính chu vi hình chữ nhật ABCD (cm).
+   Đáp án (nhập): 82
+   Bước 1. Tam giác ABC vuông tại B nên BC² = AC² − AB² = 29² − 21² = 400, suy ra BC = 20 cm.
+   Bước 2. Chu vi = 2 · (AB + BC) = 2 · (21 + 20) = 82 (cm).
+   ✅ Kết luận: 82
+
+■ py2.ah_ba_canh · l8py · Nâng cao
+Tam giác ABC có AB = 25 cm, AC = 26 cm, BC = 17 cm. Kẻ đường cao AH (H nằm giữa B và C). Tính độ dài AH (cm).
+   Đáp án (nhập): 24
+   Bước 1. Đặt BH = x thì CH = 17 − x. Tam giác AHB vuông tại H: AH² = 25² − x². Tam giác AHC vuông tại H: AH² = 26² − (17 − x)².
+   Bước 2. Cho hai biểu thức bằng nhau: 625 − x² = 676 − (289 − 34x + x²), suy ra 34x = 238, x = 7.
+   Bước 3. AH² = 25² − 7² = 625 − 49 = 576, nên AH = 24 cm.
+   ✅ Kết luận: 24
+
+■ dd2.ky_hieu · l8dd · Cơ bản
+Cho ΔABC ∽ ΔDEF (mỗi tam giác có ba góc đôi một khác nhau). Khẳng định nào sau đây đúng?
+   Đáp án đúng: (AB)/(DE) = (BC)/(EF)  |  Nhiễu: ∠B = ∠D ; (BC)/(EF) = (AB)/(EF) ; (CA)/(FD) = (AB)/(EF)
+   Bước 1. ΔABC ∽ ΔDEF viết theo thứ tự các đỉnh tương ứng: A ứng với D; B ứng với E; C ứng với F.
+   Bước 2. Các góc tương ứng bằng nhau: ∠A = ∠D; ∠B = ∠E; ∠C = ∠F.
+   Bước 3. Các cạnh tương ứng tỉ lệ: (AB)/(DE) = (BC)/(EF) = (CA)/(FD). Khẳng định đúng là (AB)/(DE) = (BC)/(EF).
+   ✅ Kết luận: (AB)/(DE) = (BC)/(EF)
+
+■ dd2.tinh_canh · l8dd · Cơ bản
+Cho ΔABC ∽ ΔMNP (A ứng với M, B ứng với N, C ứng với P) có AB = 9 cm, BC = 9 cm, CA = 6 cm và MN = 3 cm. Tính độ dài NP (đơn vị: cm).
+   Đáp án (nhập): 3
+   Bước 1. Hai tam giác đồng dạng nên các cạnh tương ứng tỉ lệ: (MN)/(AB) = (NP)/(BC) = (PM)/(CA).
+   Bước 2. Tỉ số đồng dạng: (MN)/(AB) = (3)/(9) = 1/3.
+   Bước 3. NP = BC · 1/3 = 9 · 1/3 = 3 (cm).
+   ✅ Kết luận: 3
+
+■ dd2.dien_tich_ti_so · l8dd · Cơ bản
+ΔABC ∽ ΔDEF với tỉ số đồng dạng k = 5/2 (tức là AB : DE = 5 : 2). Biết chu vi tam giác DEF bằng 14 cm. Tính chu vi tam giác ABC (cm).
+   Đáp án (nhập): 35
+   Bước 1. Tỉ số chu vi của hai tam giác đồng dạng bằng tỉ số đồng dạng: (P_ABC)/(P_DEF) = k = 5/2.
+   Bước 2. P_ABC = 14 · 5/2 = 35 (cm).
+   ✅ Kết luận: 35
+
+■ dd2.kiem_tra_ccc · l8dd · Cơ bản
+Tam giác ABC có AB = 18 cm, BC = 12 cm, CA = 15 cm; tam giác DEF có DE = 30 cm, EF = 21 cm, FD = 25 cm. Hai tam giác ABC và DEF có đồng dạng với nhau không? Nếu có thì tỉ số AB : DE bằng bao nhiêu?
+   Đáp án đúng: Không đồng dạng  |  Nhiễu: Đồng dạng, tỉ số 4/5 ; Đồng dạng, tỉ số 5/3 ; Đồng dạng, tỉ số 3/5
+   Bước 1. Xét các tỉ số các cạnh tương ứng: (AB)/(DE) = (18)/(30); (BC)/(EF) = (12)/(21); (CA)/(FD) = (15)/(25).
+   Bước 2. Ba tỉ số này không bằng nhau, nên hai tam giác không đồng dạng theo trường hợp cạnh – cạnh – cạnh.
+   Bước 3. Vậy đáp án là: Không đồng dạng.
+   ✅ Kết luận: Không đồng dạng
+
+■ dd2.goc_ddang · l8dd · Cơ bản
+Cho ΔABC ∽ ΔDEF (A ứng với D, B ứng với E, C ứng với F). Biết ∠C = 31° và ∠D = 64°. Tính số đo ∠E (độ).
+   Đáp án (nhập): 85
+   Bước 1. Hai tam giác đồng dạng nên các góc tương ứng bằng nhau: ∠F = ∠C = 31° và ∠A = ∠D = 64°.
+   Bước 2. Tổng ba góc của một tam giác bằng 180°, nên ∠E = 180° − ∠F − ∠D = 180° − 31° − 64°.
+   Bước 3. ∠E = 85°.
+   ✅ Kết luận: 85
+
+■ dd2.truong_hop · l8dd · Cơ bản
+Tam giác ABC có AB = 5 cm, AC = 3 cm, ∠B = 46°; tam giác DEF có DE = 10 cm, DF = 6 cm, ∠E = 46°. Có thể kết luận hai tam giác đồng dạng theo trường hợp nào?
+   Đáp án đúng: Chưa đủ điều kiện để kết luận hai tam giác đồng dạng  |  Nhiễu: Trường hợp góc – góc (g.g) ; Trường hợp cạnh – cạnh – cạnh (c.c.c) ; Trường hợp cạnh – góc – cạnh (c.g.c)
+   Bước 1. Đối chiếu dữ kiện với các trường hợp đồng dạng: c.c.c (ba cặp cạnh tỉ lệ), c.g.c (hai cặp cạnh tỉ lệ và góc xen giữa bằng nhau), g.g (hai cặp góc bằng nhau).
+   Bước 2. Hai cặp cạnh tỉ lệ nhưng góc đã cho (∠B = ∠E) không phải góc xen giữa hai cạnh AB, AC (góc xen giữa là ∠A và ∠D). Do đó chưa đủ điều kiện để kết luận.
+   ✅ Kết luận: Chưa đủ điều kiện để kết luận hai tam giác đồng dạng
+
+■ dd2.cao_ah · l8dd · Cơ bản
+Cho tam giác ABC vuông tại A có AB = 18 cm, AC = 24 cm. Kẻ đường cao AH (H thuộc BC). Tính độ dài CH (cm). (Nhập số thập phân nếu cần.)
+   Đáp án (nhập): 19.2
+   Bước 1. Theo định lí Pythagore: BC² = AB² + AC² = 18² + 24² = 900, suy ra BC = 30 cm.
+   Bước 2. Hai tam giác vuông HBA và ABC có chung góc B nên ΔHBA ∽ ΔABC (g.g). Suy ra (BH)/(AB) = (AB)/(BC) = (HA)/(AC).
+   Bước 3. Tương tự, ΔHCA ∽ ΔACB nên CH = (AC²)/(BC) = (24²)/(30) = 19,2 (cm).
+   ✅ Kết luận: 19,2
+
+■ dd2.ban_do · l8dd · Cơ bản
+Trên một bản đồ có tỉ lệ 1 : 50000, hai thành phố cách nhau 5,5 km ngoài thực tế. Khoảng cách giữa hai thành phố đó trên bản đồ là bao nhiêu xentimét?
+   Đáp án (nhập): 11
+   Bước 1. Đổi 5,5 km = 550000 cm.
+   Bước 2. Bản đồ tỉ lệ 1 : 50000 nên khoảng cách trên bản đồ là 550000 : 50000 = 11 (cm).
+   ✅ Kết luận: 11
+
+■ dd2.hieu_dien_tich · l8dd · Nâng cao
+ΔA′B′C′ ∽ ΔABC với tỉ số đồng dạng k = 1/3 (k nhỏ hơn 1). Biết diện tích tam giác ABC hơn diện tích tam giác A′B′C′ là 48 cm². Tính diện tích tam giác ABC (cm²).
+   Đáp án (nhập): 54
+   Bước 1. Tỉ số diện tích bằng k² = (1/3)² = 1/9, nên S_A′B′C′ = 1/9 · S_ABC.
+   Bước 2. Hiệu diện tích: S_ABC − S_A′B′C′ = S_ABC · (1 − 1/9) = S_ABC · 8/9 = 48.
+   Bước 3. Suy ra S_ABC = 48 : 8/9 = 48 · 9/8 = 54 (cm²).
+   ✅ Kết luận: 54
+
+■ dd2.hieu_chu_vi · l8dd · Nâng cao
+Hai tam giác đồng dạng có tỉ số đồng dạng 5/3 (tam giác lớn so với tam giác nhỏ). Chu vi tam giác lớn hơn chu vi tam giác nhỏ 16 cm. Tính chu vi tam giác lớn (cm).
+   Đáp án (nhập): 40
+   Bước 1. Tỉ số chu vi bằng tỉ số đồng dạng: (P_lớn)/(P_nhỏ) = 5/3, nên P_lớn = 5/3 · P_nhỏ.
+   Bước 2. P_lớn − P_nhỏ = 16, tức là P_nhỏ · (5/3 − 1) = 16, hay P_nhỏ · 2/3 = 16.
+   Bước 3. Suy ra P_nhỏ = 16 · 3/2 = 24 (cm), và P_lớn = 24 · 5/3 = 40 (cm).
+   ✅ Kết luận: 40
+
+■ xs2.liet_ke_kq · l8xs · Cơ bản
+Chọn ngẫu nhiên một chữ cái trong cụm từ "SON LA". Có bao nhiêu kết quả thuận lợi cho biến cố "chữ cái được chọn là một nguyên âm (A, E, I, O, U)"?
+   Đáp án (nhập): 2
+   Bước 1. Các chữ cái (không tính dấu cách): S, O, N, L, A. Có 5 chữ cái khác nhau.
+   Bước 2. Các nguyên âm trong đó: O, A.
+   Bước 3. Có 2 kết quả thuận lợi.
+   ✅ Kết luận: 2
+
+■ xs2.dem_the · l8xs · Cơ bản
+Một hộp có các tấm thẻ được đánh số lần lượt từ 1 đến 16. Rút ngẫu nhiên một tấm thẻ. Có bao nhiêu kết quả thuận lợi cho biến cố "số ghi trên thẻ có chữ số tận cùng bằng 3"?
+   Đáp án (nhập): 2
+   Bước 1. Các số từ 1 đến 16 có chữ số tận cùng bằng 3 là: 3; 13.
+   Bước 2. Đếm được 2 số, nên có 2 kết quả thuận lợi.
+   ✅ Kết luận: 2
+
+■ xs2.xs_so · l8xs · Cơ bản
+Một hộp có các tấm thẻ được đánh số lần lượt từ 1 đến 22. Rút ngẫu nhiên một tấm thẻ. Tính xác suất của biến cố "số ghi trên thẻ là số chính phương". (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 2/11
+   Bước 1. Số kết quả có thể: 22 − 1 + 1 = 22 (các kết quả đồng khả năng).
+   Bước 2. Các số là số chính phương: 1; 4; 9; 16, có 4 số nên có 4 kết quả thuận lợi.
+   Bước 3. Xác suất là 4/22 = 2/11.
+   ✅ Kết luận: 2/11
+
+■ xs2.vong_quay · l8xs · Cơ bản · có hình
+Một vòng quay có 10 hình quạt bằng nhau (như hình), mỗi hình quạt được đánh số từ 1 đến 10 và tô một màu. Quay vòng quay một lần, mũi tên dừng ngẫu nhiên ở một hình quạt. Tính xác suất mũi tên dừng ở hình quạt màu đỏ. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 3/10
+   Bước 1. Có 10 hình quạt bằng nhau nên có 10 kết quả có thể, đồng khả năng.
+   Bước 2. Đếm các hình quạt màu đỏ trong hình: có 3 hình quạt.
+   Bước 3. Xác suất là 3/10.
+   ✅ Kết luận: 3/10
+
+■ xs2.hai_xx_tich · l8xs · Cơ bản
+Gieo đồng thời hai con xúc xắc cân đối. Tính xác suất của biến cố "tổng hai số chấm chia hết cho 3". (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 1/3
+   Bước 1. Mỗi kết quả là một cặp (số chấm con thứ nhất; số chấm con thứ hai). Có 6·6 = 36 kết quả có thể, đồng khả năng.
+   Bước 2. Các kết quả thuận lợi: (1; 2), (1; 5), (2; 1), (2; 4), (3; 3), (3; 6), (4; 2), (4; 5), (5; 1), (5; 4), (6; 3), (6; 6). Có 12 kết quả.
+   Bước 3. Xác suất là 12/36 = 1/3.
+   ✅ Kết luận: 1/3
+
+■ xs2.hai_bi_chon · l8xs · Cơ bản
+Một hộp có 6 viên bi giống hệt nhau về kích thước, được đánh số từ 1 đến 6. Lấy ngẫu nhiên đồng thời hai viên bi từ hộp. Tính xác suất của biến cố "tổng hai số ghi trên hai viên bi là số chẵn". (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 2/5
+   Bước 1. Lấy đồng thời hai viên nên không phân biệt thứ tự. Số cách chọn hai viên trong 6 viên là 6·5 : 2 = 15, đồng khả năng.
+   Bước 2. Liệt kê các cặp thuận lợi: (1; 3), (1; 5), (2; 4), (2; 6), (3; 5), (4; 6). Có 6 cặp.
+   Bước 3. Xác suất là 6/15 = 2/5.
+   ✅ Kết luận: 2/5
+
+■ xs2.tan_suat_bang · l8xs · Cơ bản
+Gieo một con xúc xắc 120 lần, kết quả thu được: mặt 1: 24 lần; mặt 2: 22 lần; mặt 3: 18 lần; mặt 4: 19 lần; mặt 5: 14 lần; mặt 6: 23 lần. Tính xác suất thực nghiệm của biến cố "xuất hiện mặt 6 chấm". (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 23/120
+   Bước 1. Xác suất thực nghiệm = số lần biến cố xảy ra : tổng số lần gieo.
+   Bước 2. Biến cố xảy ra khi xuất hiện mặt 6: số lần là 23 = 23.
+   Bước 3. Xác suất thực nghiệm là 23/120.
+   ✅ Kết luận: 23/120
+
+■ xs2.uoc_luong · l8xs · Cơ bản
+Kiểm tra ngẫu nhiên 50 sản phẩm của một nhà máy, thấy có 3 sản phẩm không đạt chất lượng. Nếu nhà máy sản xuất 5000 sản phẩm thì ước tính có khoảng bao nhiêu sản phẩm không đạt chất lượng?
+   Đáp án (nhập): 300
+   Bước 1. Xác suất thực nghiệm để một sản phẩm không đạt chất lượng là 3/50.
+   Bước 2. Ước lượng số sản phẩm không đạt trong 5000 sản phẩm: 5000 · 3/50.
+   Bước 3. 5000 · 3 : 50 = 300. Vậy khoảng 300 sản phẩm không đạt chất lượng.
+   ✅ Kết luận: 300
+
+■ xs2.chon_hai_ban · l8xs · Nâng cao
+Một tổ có 5 bạn nam và 3 bạn nữ. Chọn ngẫu nhiên hai bạn của tổ để trực nhật. Tính xác suất để chọn được một bạn nam và một bạn nữ. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 15/28
+   Bước 1. Số cách chọn 2 bạn trong 8 bạn: 8·7 : 2 = 28 cách, đồng khả năng.
+   Bước 2. Chọn một bạn nam (5 cách) và một bạn nữ (3 cách): 5·3 = 15 cách.
+   Bước 3. Xác suất là 15/28.
+   ✅ Kết luận: 15/28
+
+■ xs2.ba_xuc_xac · l8xs · Nâng cao
+Gieo đồng thời ba con xúc xắc cân đối. Tính xác suất của biến cố "tổng số chấm của ba con xúc xắc bằng 18". (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 1/216
+   Bước 1. Mỗi kết quả là bộ ba (số chấm con thứ nhất; thứ hai; thứ ba). Có 6·6·6 = 216 kết quả có thể, đồng khả năng.
+   Bước 2. Các bộ ba có tổng bằng 18: (6; 6; 6). Có 1 kết quả thuận lợi.
+   Bước 3. Xác suất là 1/216.
+   ✅ Kết luận: 1/216
+
+■ xs2.ghep_so · l8xs · Nâng cao
+Từ các chữ số 2, 3, 4, 6, lập các số tự nhiên có hai chữ số khác nhau. Chọn ngẫu nhiên một số trong các số lập được. Tính xác suất để số được chọn là số lẻ. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 1/4
+   Bước 1. Chọn chữ số hàng chục (4 cách), rồi chữ số hàng đơn vị khác chữ số hàng chục (3 cách): 4·3 = 12 số, đồng khả năng.
+   Bước 2. Các số là số lẻ: 23; 43; 63. Có 3 số.
+   Bước 3. Xác suất là 3/12 = 1/4.
+   ✅ Kết luận: 1/4
+
+■ xs2.hai_lan_hoan_lai · l8xs · Nâng cao
+Một hộp có 2 viên bi đỏ và 6 viên bi xanh, cùng kích thước. Lấy ngẫu nhiên một viên bi, ghi lại màu rồi trả viên bi vào hộp, sau đó lấy ngẫu nhiên một viên bi lần hai. Tính xác suất để hai viên bi lấy ra khác màu. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án (nhập): 3/8
+   Bước 1. Vì trả bi lại nên mỗi lần lấy đều có 8 viên trong hộp. Số kết quả có thể: 8·8 = 64, đồng khả năng.
+   Bước 2. Khác màu: đỏ rồi xanh (2·6 = 12 kết quả) hoặc xanh rồi đỏ (6·2 = 12 kết quả). Tổng 24 kết quả.
+   Bước 3. Xác suất là 24/64 = 3/8.
+   ✅ Kết luận: 3/8

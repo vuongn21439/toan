@@ -9,7 +9,7 @@ const path=require('path'),L=require('./load.js')(path.join(__dirname,'..','..')
 const N=+process.argv[2]||300,pref=process.argv.slice(3);
 const {T,ctx}=L;
 let oracles={};
-for(const f of ['oracles8.js','oracles9.js']){try{Object.assign(oracles,require('./'+f)(L))}catch(e){if(e.code!='MODULE_NOT_FOUND')throw e}}
+for(const f of ['oracles8.js','oracles8b.js','oracles8c.js','oracles9.js']){try{Object.assign(oracles,require('./'+f)(L))}catch(e){if(e.code!='MODULE_NOT_FOUND')throw e}}
 const strip=s=>String(s).replace(/<[^>]+>/g,''),nrm=s=>strip(s).replace(/−/g,'-').replace(/\s/g,'');
 const mut={};let gens=0,fail=0,noOracle=[],seenKeys=new Set(),checked=0;
 const bad=(k,msg,q)=>{fail++;if(fail<=40)console.log('✗',k,msg,q?('\n   '+strip(q.q).slice(0,160)+'\n   đáp án: '+strip(q.a)+(q.w?'  | nhiễu: '+q.w.map(strip).join(' ; '):'')):'')};
@@ -21,7 +21,7 @@ for(const t of T){
       for(let i=0;i<N;i++){
         let q;try{q=fn()}catch(e){bad(t.id+'/'+lv+idx,'ném lỗi '+e.message);break}
         key=q.k||('?'+t.id+lv+idx);
-        if(q.k=='fallback'){bad(key,'rơi vào fallback (gen thất bại 14 lần)');break}
+        if(q.k=='fallback'){bad(key,'rơi vào fallback (gen thất bại 14 lần): '+q.fk);break}
         const all=[q.a,...(q.w||[])].map(String);
         if(!q.q||/NaN|undefined|Infinity|null/.test(q.q+all.join('|')+q.e)){bad(key,'có NaN/undefined',q);break}
         if(q.inp){if(String(q.a)===''||q.w.length){bad(key,'câu nhập sai cấu trúc',q);break}}

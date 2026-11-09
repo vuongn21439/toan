@@ -95,7 +95,8 @@ addH('l7bd',
  ()=>{const L=Array.from({length:6},()=>R(3,9));const mn=Math.min(...L);return I(`Dãy số liệu: ${L.join('; ')}. Giá trị nhỏ nhất là:`,mn,'So sánh các giá trị, tìm số bé nhất.')}
 );
 add('l7bd',
- ()=>{const p=R(10,40);return N(`Một phần chiếm ${p}% trên biểu đồ hình quạt tròn. Góc ở tâm (độ):`,p*3.6,'360°×p%=p×3,6.')},
+ ()=>{const p=R(10,40),f=v=>String(v/10).replace('.',','),a=f(p*36); /* p×36 là số nguyên (đơn vị 0,1°) nên không bị sai số dấu phẩy động */
+  return Z(`Một phần chiếm ${p}% trên biểu đồ hình quạt tròn. Góc ở tâm (độ):`,a,[f(p*30),f(p*60),f(p*18),f(p*72),f(p*10)],`Bước 1: Cả hình tròn ứng với 100% và có góc ở tâm 360°. Vậy 1% ứng với 360° : 100 = 3,6°.\nBước 2: ${p}% ứng với ${p} × 3,6° = ${a}°.\n✅ Kết luận: góc ở tâm là ${a}°.`)},
  ()=>{const L=Array.from({length:6},()=>R(3,8));const x=P(L),k=L.filter(v=>v==x).length;return N(`Dãy: ${L.join('; ')}. Tần số của giá trị ${x} là:`,k,'Đếm số lần xuất hiện.')}
 );
 
