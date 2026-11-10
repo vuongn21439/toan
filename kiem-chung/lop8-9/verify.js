@@ -9,7 +9,7 @@ const path=require('path'),L=require('./load.js')(path.join(__dirname,'..','..')
 const N=+process.argv[2]||300,pref=process.argv.slice(3);
 const {T,ctx}=L;
 let oracles={};
-for(const f of ['oracles8.js','oracles8b.js','oracles8c.js','oracles9.js']){try{Object.assign(oracles,require('./'+f)(L))}catch(e){if(e.code!='MODULE_NOT_FOUND')throw e}}
+for(const f of ['oracles8.js','oracles8b.js','oracles8c.js','oracles9.js','oracles9b.js','oracles9c.js']){try{Object.assign(oracles,require('./'+f)(L))}catch(e){if(e.code!='MODULE_NOT_FOUND')throw e}}
 const strip=s=>String(s).replace(/<[^>]+>/g,''),nrm=s=>strip(s).replace(/−/g,'-').replace(/\s/g,'');
 const mut={};let gens=0,fail=0,noOracle=[],seenKeys=new Set(),checked=0;
 const bad=(k,msg,q)=>{fail++;if(fail<=40)console.log('✗',k,msg,q?('\n   '+strip(q.q).slice(0,160)+'\n   đáp án: '+strip(q.a)+(q.w?'  | nhiễu: '+q.w.map(strip).join(' ; '):'')):'')};

@@ -1,0 +1,531 @@
+# Mẫu 1 câu cho mỗi dạng mới v15 – lớp 9 (đề · đáp án · lời giải). Mỗi lần chơi số liệu khác. Phân số hiển thị (tử)/(mẫu), hình vẽ không có trong file này.
+
+■ cb.cbh_ps · l9can · Cơ bản
+Tính √((25)/(64)).
+   Đáp án đúng: 5/8  |  Nhiễu: 25/8 ; 25/64 ; 8/5
+   Bước 1. Căn bậc hai của một phân số bằng căn của tử chia cho căn của mẫu: √((A)/(B)) = (√A)/(√B).
+   Bước 2. 25 = 5² và 64 = 8², nên √((25)/(64)) = (5)/(8).
+   ✅ Kết luận: 5/8
+
+■ cb.can3_tinh · l9can · Cơ bản
+Tính giá trị biểu thức ∛(−27) − ∛(64).
+   Đáp án đúng (tự nhập): -7
+   Bước 1. Căn bậc ba xác định với mọi số thực: ∛(−27) = −3 vì (−3)³ = −27.
+   Bước 2. ∛(64) = 4 vì 4³ = 64.
+   Bước 3. Vậy biểu thức bằng −3 − 4 = −7.
+   ✅ Kết luận: −7
+
+■ cb.so_sanh2 · l9can · Cơ bản
+So sánh hai số 6√14 và 5√6.
+   Đáp án đúng: 6√14 > 5√6  |  Nhiễu: Không so sánh được ; 6√14 < 5√6 ; 6√14 = 5√6
+   Bước 1. Đưa thừa số vào trong dấu căn: 6√14 = √(6²·14) = √504, 5√6 = √(5²·6) = √150.
+   Bước 2. Vì 504 > 150 nên √504 > √150, tức 6√14 > 5√6.
+   ✅ Kết luận: 6√14 > 5√6
+
+■ cb.dua_vao · l9can · Cơ bản
+Đưa thừa số vào trong dấu căn: 4√7 =
+   Đáp án đúng: √112  |  Nhiễu: √196 ; √56 ; √23
+   Bước 1. Với k > 0, ta có k = √(k²) nên 4√7 = √(4²)·√7.
+   Bước 2. Dùng √a·√b = √(ab): 4√7 = √(16·7) = √112.
+   ✅ Kết luận: √112
+
+■ cb.khu_mau · l9can · Cơ bản
+Khử mẫu của biểu thức lấy căn: √((2)/(5)).
+   Đáp án đúng: (√10)/(5)  |  Nhiễu: (√10)/(2) ; (√10)/(25) ; (√7)/(5)
+   Bước 1. Nhân cả tử và mẫu của phân số trong căn với 5 để mẫu thành số chính phương: √((2)/(5)) = √((10)/(25)).
+   Bước 2. Khai căn: √((10)/(25)) = (√10)/(√25) = (√10)/(5).
+   ✅ Kết luận: (√10)/(5)
+
+■ cb.khai_trien · l9can · Cơ bản
+Khai triển và thu gọn (3 − 3√3)^2.
+   Đáp án đúng: 36 − 18√3  |  Nhiễu: 36 − 9√3 ; 18 − 18√3 ; 36 + 18√3
+   Bước 1. Dùng hằng đẳng thức (A − B)² = A² − 2AB + B² với A = 3, B = 3√3.
+   Bước 2. A² = 9; 2AB = 2·3·3√3 = 18√3; B² = 9·3 = 27.
+   Bước 3. Kết quả: 9 − 18√3 + 27 = 36 − 18√3.
+   ✅ Kết luận: 36 − 18√3
+
+■ cb.pt_vn · l9can · Cơ bản
+Tập nghiệm của phương trình √(x − 3) = 1 là
+   Đáp án đúng: x = 4  |  Nhiễu: x = 5 ; Phương trình vô nghiệm ; x = −4
+   Bước 1. Điều kiện: x − 3 ≥ 0. Vế phải 1 > 0 nên bình phương hai vế: x − 3 = 1.
+   Bước 2. x = 4, suy ra x = 4. Kiểm tra: (4) − 3 = 1 ≥ 0 nên nhận.
+   ✅ Kết luận: x = 4
+
+■ cb.pt_d3 · l9can · Cơ bản
+Giải phương trình √(3x + 8) = √(4x).
+   Đáp án đúng (tự nhập): 8
+   Bước 1. Bình phương hai vế (hai vế đều là căn bậc hai): 3x + 8 = 4x.
+   Bước 2. Chuyển vế: −x = −8, suy ra x = 8.
+   Bước 3. Thử lại: 3(8) + 8 = 32 ≥ 0 và 4(8) = 32 ≥ 0 nên x = 8 thỏa mãn.
+   ✅ Kết luận: x = 8
+
+■ cb.gia_tri_bt · l9can · Cơ bản
+Tính giá trị của biểu thức A = (√x + 5)/(√x + 7) khi x = 1. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 3/4
+   Bước 1. Với x = 1 thì √x = √1 = 1.
+   Bước 2. Thay vào: A = (1 + 5)/(1 + 7) = (6)/(8).
+   Bước 3. Rút gọn phân số: A = 3/4.
+   ✅ Kết luận: 3/4
+
+■ cb.rut_gon_phan · l9can · Nâng cao
+Rút gọn biểu thức (14√15 − 15√14)/(√14 − √15).
+   Đáp án đúng: √210  |  Nhiễu: √14 + √15 ; 210 ; √29
+   Bước 1. Ở tử: 14√15 = √14·√14·√15 và 15√14 = √15·√15·√14, nên 14√15 − 15√14 = √14·√15·(√14 − √15).
+   Bước 2. Rút gọn nhân tử (√14 − √15) ở tử và mẫu: biểu thức bằng √14·√15 = √210.
+   ✅ Kết luận: √210
+
+■ cb.tong_lien_hop · l9can · Nâng cao
+Tính S = (1)/(√16 + √17) + (1)/(√17 + √18) + ... + (1)/(√80 + √81).
+   Đáp án đúng (tự nhập): 5
+   Bước 1. Trục căn thức từng số hạng: (1)/(√k + √(k + 1)) = √(k + 1) − √k (nhân tử và mẫu với √(k + 1) − √k, mẫu bằng 1).
+   Bước 2. Khi đó S = (√17 − √16) + (√18 − √17) + ... + (√81 − √80); các số hạng ở giữa triệt tiêu.
+   Bước 3. S = √81 − √16 = 9 − 4 = 5.
+   ✅ Kết luận: 5
+
+■ cb.pt_d2 · l9can · Nâng cao
+Giải phương trình √(−x + 1) = x − 1.
+   Đáp án đúng (tự nhập): 1
+   Bước 1. Điều kiện: vế phải x − 1 ≥ 0, tức x ≥ 1 (khi đó biểu thức dưới căn bằng bình phương nên không âm).
+   Bước 2. Bình phương hai vế: −x + 1 = (x − 1)², tức x² − x + 0 = 0.
+   Bước 3. Phân tích: (x − 1)x = 0, suy ra x = 1 hoặc x = 0.
+   Bước 4. Đối chiếu điều kiện x ≥ 1: nhận x = 1, loại x = 0.
+   ✅ Kết luận: x = 1
+
+■ cb.pt_d4 · l9can · Nâng cao
+Giải phương trình √(x^2 + 8x + 16) = 6.
+   Đáp án đúng: x = −10; x = 2  |  Nhiễu: x = 6 ; x = 2 ; x = −10
+   Bước 1. Nhận xét: x² + 8x + 16 = (x + 4)².
+   Bước 2. Phương trình trở thành |x + 4| = 6, suy ra x + 4 = 6 hoặc x + 4 = −6.
+   Bước 3. Giải ra x = 2 hoặc x = −10.
+   ✅ Kết luận: x = −10; x = 2
+
+■ cb.pt_tich · l9can · Nâng cao
+Giải phương trình (x − 1)√(x + 1) = 0.
+   Đáp án đúng: x = −1; x = 1  |  Nhiễu: x = −1 ; Phương trình vô nghiệm ; x = 1
+   Bước 1. Điều kiện xác định: x + 1 ≥ 0, tức x ≥ −1.
+   Bước 2. Tích bằng 0 khi x − 1 = 0 hoặc √(x + 1) = 0, tức x = 1 hoặc x = −1.
+   Bước 3. Cả hai giá trị đều thỏa x ≥ −1 (vì 1 > −1), nên phương trình có hai nghiệm.
+   ✅ Kết luận: x = −1; x = 1
+
+■ cb.pt_d7 · l9can · Nâng cao
+Giải phương trình √(x + 29) + √(x + 5) = 6.
+   Đáp án đúng (tự nhập): -4
+   Bước 1. Điều kiện: x ≥ −29 và x ≥ −5.
+   Bước 2. Bình phương hai vế: (x + 29) + (x + 5) + 2√((x + 29)(x + 5)) = 36, suy ra 2√((x + 29)(x + 5)) = 2 − 2x.
+   Bước 3. Bình phương lần nữa (vế phải phải không âm): 4(x + 29)(x + 5) = (2 − 2x)². Rút gọn các hạng tử x² được 144x = −576.
+   Bước 4. Suy ra x = −4. Thử lại: √25 + √1 = 5 + 1 = 6, đúng.
+   ✅ Kết luận: x = −4
+
+■ cb.tim_x_bt · l9can · Nâng cao
+Tìm x (x ≥ 0) để (√x + 6)/(√x + 1) = 2.
+   Đáp án đúng (tự nhập): 16
+   Bước 1. Vì √x + 1 > 0 nên có thể nhân hai vế với (√x + 1): √x + 6 = 2(√x + 1).
+   Bước 2. Khai triển: √x + 6 = 2√x + 2, suy ra −1√x = −4, tức √x = 4.
+   Bước 3. Bình phương hai vế: x = 16.
+   ✅ Kết luận: x = 16
+
+■ hp2.la_pt · l9hpt · Cơ bản
+Phương trình nào sau đây KHÔNG phải là phương trình bậc nhất hai ẩn?
+   Đáp án đúng: (2)/(x) + 9y = 6  |  Nhiễu: 2x + 9y = 6 ; y = 2x + 9 ; 2x − 9y = 6
+   Bước 1. Phương trình bậc nhất hai ẩn có dạng ax + by = c, trong đó a, b không đồng thời bằng 0; hai ẩn chỉ có số mũ 1, không nằm ở mẫu và không nhân với nhau.
+   Bước 2. Xét từng phương trình: y = 2x + 9 (viết lại thành −ax + y = b, đúng dạng ax + by = c); 2x − 9y = 6 (có dạng ax + by = c với b âm); 2x + 9y = 6 (có dạng ax + by = c với a, b khác 0); (2)/(x) + 9y = 6 (ẩn x nằm ở mẫu).
+   ✅ Kết luận: (2)/(x) + 9y = 6
+
+■ hp2.nghiem_tq · l9hpt · Cơ bản
+Nghiệm tổng quát của phương trình x − y = 2 là
+   Đáp án đúng: (x; x − 2) với x ∈ ℝ  |  Nhiễu: (x; x + 2) với x ∈ ℝ ; (x; −x + 2) với x ∈ ℝ ; (x; −x − 2) với x ∈ ℝ
+   Bước 1. Coi x là số tùy ý, chuyển vế để rút y theo x từ phương trình x − y = 2: −y = −x + 2.
+   Bước 2. Nhân hai vế với −1 được y = x − 2.
+   Bước 3. Phương trình có vô số nghiệm, nghiệm tổng quát là (x; x − 2) với x ∈ ℝ.
+   ✅ Kết luận: (x; x − 2) với x ∈ ℝ
+
+■ hp2.truc · l9hpt · Cơ bản
+Đường thẳng d: 3x − y = 12 cắt trục hoành Ox và trục tung Oy lần lượt tại hai điểm
+   Đáp án đúng: (4; 0) và (0; −12)  |  Nhiễu: (−12; 0) và (0; 4) ; (−4; 0) và (0; 12) ; (4; 0) và (0; 12)
+   Bước 1. Giao với trục hoành Ox: y = 0, phương trình trở thành 3x = 12, suy ra x = 4. Giao điểm là (4; 0).
+   Bước 2. Giao với trục tung Oy: x = 0, phương trình trở thành −y = 12, suy ra y = −12. Giao điểm là (0; −12).
+   ✅ Kết luận: (4; 0) và (0; −12)
+   ⚠️ Dễ nhầm: Ox: cho y = 0; Oy: cho x = 0.
+
+■ hp2.the_y · l9hpt · Cơ bản
+Từ phương trình −3x + 5y = −6, biểu thị y theo x ta được
+   Đáp án đúng: y = (−6 + 3x)/(5)  |  Nhiễu: y = (−6 + 3x)/(3) ; y = (−3x + 6)/(5) ; y = (−6 − 3x)/(5)
+   Bước 1. Chuyển hạng tử chứa x sang vế phải: 5y = −6 + 3x.
+   Bước 2. Chia hai vế cho 5: y = (−6 + 3x)/(5).
+   ✅ Kết luận: y = (−6 + 3x)/(5)
+
+■ hp2.tim_m · l9hpt · Cơ bản
+Biết cặp số (−3; 3) là một nghiệm của phương trình 4x + my = −9 (m là tham số). Tìm m.
+   Đáp án đúng (tự nhập): 1
+   Bước 1. Thay x = −3, y = 3 vào phương trình: 4·(−3) + m·3 = −9.
+   Bước 2. Tính: −12 + 3m = −9, tức 3m = 3.
+   Bước 3. Suy ra m = 1.
+   ✅ Kết luận: m = 1
+
+■ hp2.rut_gon · l9hpt · Cơ bản
+Giải hệ phương trình { 2(x − 2) − 2y = −4 ; 2x + 3(y − 3) = 6 }. Tính x + y.
+   Đáp án đúng (tự nhập): 6
+   Bước 1. Khai triển và thu gọn: { 2x − 2y = 0 ; 2x + 3y = 15 }.
+   Bước 2. Khử y: nhân phương trình thứ nhất với 3, phương trình thứ hai với −2 rồi trừ vế theo vế: 10x = 30, suy ra x = 3.
+   Bước 3. Thay x = 3 vào phương trình thứ nhất: −2y = −6, suy ra y = 3.
+   Bước 4. Vậy x + y = 3 + 3 = 6.
+   ✅ Kết luận: x + y = 6
+
+■ hp2.tuoi · l9hpt · Cơ bản
+Hiện nay tuổi của cha gấp 5 lần tuổi của con. 3 năm nữa thì tổng số tuổi của hai cha con là 90 tuổi. Hỏi hiện nay con bao nhiêu tuổi?
+   Đáp án đúng (tự nhập): 14
+   Bước 1. Gọi x, y lần lượt là tuổi cha và tuổi con hiện nay (x, y nguyên dương). Theo đề: x = 5y.
+   Bước 2. 3 năm nữa tuổi cha là x + 3, tuổi con là y + 3, nên (x + 3) + (y + 3) = 90, tức x + y = 84.
+   Bước 3. Thế x = 5y vào: 5y + y = 84, suy ra 6y = 84, y = 14. Do đó x = 5·14 = 70.
+   ✅ Kết luận: con 14 tuổi
+
+■ hp2.kinh_te · l9hpt · Cơ bản
+Một người mua hai loại hàng. Tổng số tiền chưa tính thuế VAT của hai loại là 1000 nghìn đồng. Thuế VAT của loại thứ nhất là 5%, của loại thứ hai là 10%. Tổng số tiền phải trả (đã tính VAT) là 1095 nghìn đồng. Hỏi số tiền chưa tính thuế VAT của loại hàng thứ nhất là bao nhiêu nghìn đồng?
+   Đáp án đúng (tự nhập): 100
+   Bước 1. Gọi x, y (nghìn đồng) là số tiền chưa tính thuế của loại thứ nhất và loại thứ hai. Ta có x + y = 1000 (1).
+   Bước 2. Sau khi cộng thuế: 1,05x + 1,1y = 1095. Nhân hai vế với 100: 105x + 110y = 109500 (2).
+   Bước 3. Lấy (2) trừ (1) nhân 105: 5y = 4500, suy ra y = 900; từ (1) có x = 1000 − 900 = 100.
+   ✅ Kết luận: 100 nghìn đồng
+
+■ hp2.tim_mn · l9hpt · Nâng cao
+Biết cặp số (−2; −2) là nghiệm của hệ phương trình { mx + ny = −8 ; mx − ny = 0 }. Tính m + n.
+   Đáp án đúng (tự nhập): 4
+   Bước 1. Thay x = −2, y = −2 vào hệ, ta được hệ ẩn m, n: { −2m − 2n = −8 ; −2m + 2n = 0 }.
+   Bước 2. Cộng hai phương trình: −4m = −8, suy ra m = 2.
+   Bước 3. Trừ hai phương trình: −4n = −8, suy ra n = 2. Vậy m + n = 2 + 2 = 4.
+   ✅ Kết luận: m + n = 4
+
+■ hp2.duy_nhat · l9hpt · Nâng cao
+Tìm m để hệ phương trình { x + y = 2 ; mx + y = 2 } có nghiệm duy nhất.
+   Đáp án đúng: m ≠ 1  |  Nhiễu: m = −1 ; m = 1 ; m ≠ −1
+   Bước 1. Hệ { a₁x + b₁y = c₁ ; a₂x + b₂y = c₂ } có nghiệm duy nhất khi a₁b₂ − a₂b₁ ≠ 0.
+   Bước 2. Ở đây a₁ = 1, b₁ = 1, a₂ = m, b₂ = 1, nên điều kiện là 1·1 − 1m ≠ 0.
+   Bước 3. Suy ra 1m ≠ 1, tức m ≠ 1.
+   ✅ Kết luận: m ≠ 1
+
+■ hp2.an_phu · l9hpt · Nâng cao
+Giải hệ phương trình { (2)/(x) − (2)/(y) = −16/15 ; (−1)/(x) − (3)/(y) = −4/15 }. Tìm x.
+   Đáp án đúng (tự nhập): -3
+   Bước 1. Điều kiện x ≠ 0, y ≠ 0. Đặt u = (1)/(x), v = (1)/(y), hệ trở thành { 2u − 2v = −16/15 ; −u − 3v = −4/15 }.
+   Bước 2. Nhân phương trình thứ nhất với 3, phương trình thứ hai với −2 rồi cộng vế theo vế: 8u = −8/3, suy ra u = −1/3.
+   Bước 3. Thay vào phương trình thứ nhất tính được v = 1/5.
+   Bước 4. Vì u = (1)/(x) nên x = −3; vì v = (1)/(y) nên y = 5. Cả hai thỏa điều kiện.
+   ✅ Kết luận: x = −3
+
+■ hp2.cong_viec · l9hpt · Nâng cao
+Hai vòi nước cùng chảy vào một bể không có nước thì sau 10 giờ đầy bể. Nếu vòi thứ nhất chảy 3 giờ, sau đó vòi thứ hai chảy 2 giờ thì được 7/30 bể. Hỏi nếu chảy một mình, vòi thứ nhất cần bao nhiêu giờ để đầy bể?
+   Đáp án đúng (tự nhập): 30
+   Bước 1. Gọi x, y (giờ) là thời gian vòi thứ nhất, vòi thứ hai chảy một mình đầy bể. Mỗi giờ hai vòi chảy được (1)/(x) và (1)/(y) bể. Đặt u = (1)/(x), v = (1)/(y).
+   Bước 2. Chảy chung 10 giờ đầy bể nên u + v = 1/10 (1). Vòi thứ nhất 3 giờ, vòi thứ hai 2 giờ được 7/30 bể nên 3u + 2v = 7/30 (2).
+   Bước 3. Lấy (2) trừ (1) nhân 2: u = 7/30 − 1/5 = 1/30, suy ra u = 1/30; từ (1) có v = 1/15.
+   Bước 4. Do đó x = 30 giờ, y = 15 giờ.
+   ✅ Kết luận: 30 giờ
+
+■ hp2.hoa_hoc · l9hpt · Nâng cao
+Trộn dung dịch axit nồng độ 5% với dung dịch axit cùng loại nồng độ 60% để được 275 gam dung dịch axit nồng độ 37%. Hỏi cần dùng bao nhiêu gam dung dịch nồng độ 5%?
+   Đáp án đúng (tự nhập): 115
+   Bước 1. Gọi x, y (gam) là khối lượng dung dịch nồng độ 5% và 60%. Khối lượng dung dịch sau khi trộn: x + y = 275 (1).
+   Bước 2. Lượng axit nguyên chất được bảo toàn: 5%·x + 60%·y = 37%·275. Nhân hai vế với 100: 5x + 60y = 10175 (2).
+   Bước 3. Lấy (2) trừ (1) nhân 5: 55y = 8800, suy ra y = 160; từ (1) có x = 275 − 160 = 115.
+   ✅ Kết luận: 115 gam
+
+■ hp2.hcn_dtich · l9hpt · Nâng cao
+Một mảnh vườn hình chữ nhật có chu vi 54 m. Nếu tăng chiều dài thêm 3 m và giảm chiều rộng đi 2 m thì diện tích mảnh vườn không đổi. Tính chiều dài ban đầu (m).
+   Đáp án đúng (tự nhập): 15
+   Bước 1. Gọi x, y (m) là chiều dài và chiều rộng ban đầu (x > y > 0). Nửa chu vi: x + y = 27 (1).
+   Bước 2. Diện tích không đổi: (x + 3)(y − 2) = xy. Khai triển: xy − 2x + 3y − 6 = xy, tức −2x + 3y = 6 (2).
+   Bước 3. Từ (1) có y = 27 − x. Thế vào (2): −2x + 3(27 − x) = 6, suy ra −5x = −75, x = 15.
+   ✅ Kết luận: 15 m
+
+■ hp2.dong_nuoc · l9hpt · Nâng cao
+Một ca nô đi xuôi dòng 72 km hết 3 giờ và đi ngược dòng 32 km hết 2 giờ. Tính vận tốc của ca nô khi nước yên lặng (km/h).
+   Đáp án đúng (tự nhập): 20
+   Bước 1. Gọi v là vận tốc ca nô khi nước yên lặng, w là vận tốc dòng nước (km/h, v > w > 0). Vận tốc xuôi dòng là v + w, ngược dòng là v − w.
+   Bước 2. Xuôi dòng: v + w = 72 : 3 = 24. Ngược dòng: v − w = 32 : 2 = 16.
+   Bước 3. Cộng hai vế: 2v = 40, suy ra v = 20. Trừ hai vế: 2w = 8, suy ra w = 4.
+   ✅ Kết luận: 20 km/h
+
+■ pt1.tich_don · l9pt · Cơ bản
+Giải phương trình (3x + 5)(2x − 8) = 0.
+   Đáp án đúng: x = −5/3; x = 4  |  Nhiễu: x = −4; x = −5/3 ; x = −4; x = 5/3 ; x = −2/3; x = 4
+   Bước 1. Phương trình tích A·B = 0 khi A = 0 hoặc B = 0.
+   Bước 2. 3x + 5 = 0 nên 3x = −5, suy ra x = −5/3.
+   Bước 3. 2x − 8 = 0 nên 2x = 8, suy ra x = 4.
+   ✅ Kết luận: x = −5/3; x = 4
+
+■ pt1.tich_3 · l9pt · Cơ bản
+Phương trình (x + 4)(x − 3)(x − 6) = 0 có nghiệm lớn nhất bằng bao nhiêu?
+   Đáp án đúng (tự nhập): 6
+   Bước 1. Tích bằng 0 khi có một thừa số bằng 0: x + 4 = 0 hoặc x − 3 = 0 hoặc x − 6 = 0.
+   Bước 2. Suy ra các nghiệm là x = −4; x = 3; x = 6.
+   Bước 3. Nghiệm lớn nhất là 6.
+   ✅ Kết luận: 6
+
+■ pt1.hdt_chung · l9pt · Cơ bản
+Giải phương trình x^2 − 4x + 4 = 4(x − 2).
+   Đáp án đúng: x = 2; x = 6  |  Nhiễu: x = −2; x = 6 ; x = −6; x = 2 ; x = −6; x = −2
+   Bước 1. Chuyển vế: x² − 4x + 4 − 4(x − 2) = 0, tức (x − 2)² − 4(x − 2) = 0.
+   Bước 2. Đặt nhân tử chung (x − 2): (x − 2)(x − 6) = 0.
+   Bước 3. x − 2 = 0 nên x = 2; x − 6 = 0 nên x = 6.
+   ✅ Kết luận: x = 2; x = 6
+
+■ pt1.nhom · l9pt · Cơ bản
+Giải phương trình x^2 + 2x − 7x − 14 = 0.
+   Đáp án đúng: x = −2; x = 7  |  Nhiễu: x = −7; x = −2 ; x = −1; x = 7 ; x = 2; x = 7
+   Bước 1. Nhóm các hạng tử: (x² + 2x) − (7x − 14) = 0.
+   Bước 2. Đặt nhân tử chung: x(x + 2) − 7(x + 2) = (x + 2)(x − 7) = 0.
+   Bước 3. x + 2 = 0 nên x = −2; x − 7 = 0 nên x = 7.
+   ✅ Kết luận: x = −2; x = 7
+
+■ pt1.bac_nhat · l9pt · Cơ bản
+Giải phương trình 3(x − 1) − 1 = 2(x − 2) − 3.
+   Đáp án đúng (tự nhập): -3
+   Bước 1. Khai triển hai vế: vế trái = 3x − 4, vế phải = 2x − 7.
+   Bước 2. Chuyển các hạng tử chứa x sang một vế, hằng số sang vế kia: x = −7 − (−4) = −3.
+   Bước 3. Chia hai vế cho 1: x = −3.
+   ✅ Kết luận: x = −3
+
+■ pt1.dkxd · l9pt · Cơ bản
+Điều kiện xác định của phương trình (3)/(x + 7) + (2)/(x − 4) = 4 là
+   Đáp án đúng: x ≠ −7 và x ≠ 4  |  Nhiễu: x ≠ −7 và x ≠ −4 ; x ≠ 4 và x ≠ 7 ; x ≠ −4 và x ≠ 7
+   Bước 1. Phương trình có ẩn ở mẫu xác định khi mọi mẫu thức đều khác 0.
+   Bước 2. x + 7 ≠ 0 nên x ≠ −7; x − 4 ≠ 0 nên x ≠ 4.
+   ✅ Kết luận: x ≠ −7 và x ≠ 4
+
+■ pt1.lam_chung · l9pt · Cơ bản
+Một người làm một mình xong công việc trong 60 giờ, người thứ hai làm một mình xong công việc đó trong 40 giờ. Hỏi nếu hai người cùng làm thì sau bao nhiêu giờ xong công việc?
+   Đáp án đúng (tự nhập): 24
+   Bước 1. Mỗi giờ người thứ nhất làm được (1)/(60) công việc, người thứ hai làm được (1)/(40) công việc.
+   Bước 2. Gọi x (giờ) là thời gian làm chung. Ta có phương trình (x)/(60) + (x)/(40) = 1, tức x·((1)/(60) + (1)/(40)) = 1.
+   Bước 3. Tính (1)/(60) + (1)/(40) = 1/24, nên x = 1 : 1/24 = 24.
+   ✅ Kết luận: 24 giờ
+
+■ pt1.mau_don · l9pt · Nâng cao
+Giải phương trình (x + 9)/(x + 5) = −3.
+   Đáp án đúng (tự nhập): -6
+   Bước 1. Điều kiện xác định: x ≠ −5.
+   Bước 2. Nhân hai vế với (x + 5): x + 9 = −3(x + 5), tức x + 9 = −3x − 15.
+   Bước 3. Chuyển vế: 24 = −4x, suy ra x = −6. Giá trị này thỏa mãn điều kiện x ≠ −5.
+   ✅ Kết luận: x = −6
+
+■ pt1.mau_loai · l9pt · Nâng cao
+Tập nghiệm của phương trình ((x − 5)(x − 3))/(x − 5) = 0 là
+   Đáp án đúng: x = 3  |  Nhiễu: x = 5 ; Phương trình vô nghiệm ; x = 3; x = 5
+   Bước 1. Điều kiện xác định: x − 5 ≠ 0, tức x ≠ 5.
+   Bước 2. Phân thức bằng 0 khi tử bằng 0: (x − 5)(x − 3) = 0, suy ra x = 5 hoặc x = 3.
+   Bước 3. Đối chiếu điều kiện: loại x = 5, nhận x = 3.
+   ✅ Kết luận: x = 3
+
+■ pt1.mau_chung · l9pt · Nâng cao
+Giải phương trình (−2)/(x + 3) − (2)/(x + 5) = (−28)/((x + 3)(x + 5)).
+   Đáp án đúng (tự nhập): 3
+   Bước 1. Điều kiện xác định: x ≠ −3 và x ≠ −5.
+   Bước 2. Quy đồng rồi khử mẫu: −2(x + 5) − 2(x + 3) = −28.
+   Bước 3. Khai triển và thu gọn: −4x − 16 = −28, suy ra −4x = −12.
+   Bước 4. Vậy x = 3, thỏa mãn điều kiện.
+   ✅ Kết luận: x = 3
+
+■ pt1.hai_binh · l9pt · Nâng cao
+Giải phương trình (2x − 6)^2 = (4x + 4)^2.
+   Đáp án đúng: x = −5; x = 1/3  |  Nhiễu: x = −1/3; x = 5 ; x = −5; x = −1/3 ; x = −5
+   Bước 1. Chuyển vế và dùng hằng đẳng thức A² − B² = (A − B)(A + B): (2x − 6 − (4x + 4))(2x − 6 + (4x + 4)) = 0.
+   Bước 2. Thu gọn: (−2x − 10)(6x − 2) = 0.
+   Bước 3. −2x − 10 = 0 nên x = −5; 6x − 2 = 0 nên x = 1/3.
+   ✅ Kết luận: x = −5; x = 1/3
+
+■ pt1.so_nghiem · l9pt · Nâng cao
+Phương trình (x^2 − 9)(x − 3)(x − 3) = 0 có bao nhiêu nghiệm phân biệt?
+   Đáp án đúng (tự nhập): 2
+   Bước 1. Tích bằng 0 khi một thừa số bằng 0. Phân tích x² − 9 = (x − 3)(x + 3).
+   Bước 2. Các nghiệm là x = 3, x = −3, x = 3, x = 3.
+   Bước 3. Các giá trị khác nhau: −3; 3. Vậy có 2 nghiệm phân biệt.
+   ✅ Kết luận: 2 nghiệm
+
+■ bd.dao_dau · l9bpt · Cơ bản
+Cho 4a > 4b. Khẳng định nào sau đây đúng?
+   Đáp án đúng: a > b  |  Nhiễu: a < b ; a ≥ b ; a ≤ b
+   Bước 1. Chia hai vế của bất đẳng thức cho 4.
+   Bước 2. 4 là số dương nên giữ nguyên chiều: a > b.
+   ✅ Kết luận: a > b
+
+■ bd.suy_ra · l9bpt · Cơ bản
+Cho a < −3. Khẳng định nào sau đây đúng?
+   Đáp án đúng: 5a + 5 < −10  |  Nhiễu: 5a + 5 > −10 ; 5a + 5 > −15 ; 5a + 5 < −20
+   Bước 1. Nhân hai vế của a < −3 với 5: giữ nguyên chiều, ta được 5a < −15.
+   Bước 2. Cộng hai vế với 5 (giữ nguyên chiều): 5a + 5 < −15 + 5 = −10.
+   ✅ Kết luận: 5a + 5 < −10
+
+■ bp2.mau_so · l9bpt · Cơ bản
+Giải bất phương trình (−3x − 2)/(4) ≤ (2x + 1)/(3).
+   Đáp án đúng: x ≥ −10/17  |  Nhiễu: x ≥ 10/17 ; x ≤ 10/17 ; x ≤ −10/17
+   Bước 1. Nhân hai vế với 12 (số dương nên giữ nguyên chiều): 3(−3x − 2) ≤ 4(2x + 1).
+   Bước 2. Khai triển: −9x − 6 ≤ 8x + 4. Chuyển vế: −17x ≤ 10.
+   Bước 3. Chia hai vế cho −17 (số âm nên đổi chiều): x ≥ −10/17.
+   ✅ Kết luận: x ≥ −10/17
+
+■ bd.gtnn · l9bpt · Nâng cao
+Tìm giá trị nhỏ nhất của biểu thức A = x^2 − 4x − 9.
+   Đáp án đúng (tự nhập): -13
+   Bước 1. Biến đổi: A = x² − 4x − 9 = (x − 2)² − 13.
+   Bước 2. Vì (x − 2)² ≥ 0 với mọi x nên A ≥ −13.
+   Bước 3. Dấu "=" xảy ra khi x = 2. Vậy giá trị nhỏ nhất của A là −13.
+   ✅ Kết luận: −13
+
+■ bd.co_si · l9bpt · Nâng cao
+Cho x > 0. Tìm giá trị nhỏ nhất của biểu thức A = x + (64)/(x).
+   Đáp án đúng (tự nhập): 16
+   Bước 1. Với x > 0, áp dụng bất đẳng thức Cô-si cho hai số dương x và (64)/(x): A ≥ 2√(x·(64)/(x)) = 2√64.
+   Bước 2. Vì 64 = 8² nên 2√64 = 2·8 = 16.
+   Bước 3. Dấu "=" xảy ra khi x = (64)/(x), tức x² = 64, x = 8 (thỏa x > 0). Vậy giá trị nhỏ nhất của A là 16.
+   ✅ Kết luận: 16
+
+■ bd.max_tich · l9bpt · Nâng cao
+Cho hai số dương a, b có a + b = 44. Tìm giá trị lớn nhất của tích ab.
+   Đáp án đúng (tự nhập): 484
+   Bước 1. Với a, b > 0, ta có (a − b)² ≥ 0, suy ra (a + b)² ≥ 4ab, tức ab ≤ ((a + b)^2)/(4).
+   Bước 2. Thay a + b = 44: ab ≤ (1936)/(4) = 484.
+   Bước 3. Dấu "=" xảy ra khi a = b = 22. Vậy giá trị lớn nhất của ab là 484.
+   ✅ Kết luận: 484
+
+■ bp2.kep · l9bpt · Nâng cao
+Tính tổng các số nguyên x thỏa mãn −9 ≤ 3x + 1 < 3.
+   Đáp án đúng (tự nhập): -6
+   Bước 1. Trừ cả ba vế cho 1: −10 ≤ 3x < 2.
+   Bước 2. Chia cả ba vế cho 3: −10/3 ≤ x < 2/3.
+   Bước 3. Các số nguyên x thỏa mãn là −3; −2; −1; 0.
+   Bước 4. Tổng: (−3) + (−2) + (−1) + 0 = −6.
+   ✅ Kết luận: −6
+
+■ lg.bieu_thuc · l9htl · Cơ bản
+Tính giá trị biểu thức A = tan 55°·tan 35° + sin^2 43° + cos^2 43° + sin 36° − cos 54°.
+   Đáp án đúng (tự nhập): 2
+   Bước 1. Dùng các hệ thức: sin² α + cos² α = 1; tan α·cot α = 1; sin α = cos(90° − α); tan α = cot(90° − α).
+   Bước 2. Tính từng nhóm: tan 35° = cot 55° nên tan 55°·tan 35° = tan 55°·cot 55° = 1; sin² 43° + cos² 43° = 1; sin 36° = cos 54° (hai góc phụ nhau) nên sin 36° − cos 54° = 0.
+   Bước 3. Vậy A = 1 + 1 + 0 = 2.
+   ✅ Kết luận: A = 2
+
+■ lg.lon_nhat · l9htl · Cơ bản
+Trong các số cos 75°; sin 5°; cos 10°; cos 35°, số nào nhỏ nhất?
+   Đáp án đúng: sin 5°  |  Nhiễu: cos 35° ; cos 10° ; cos 75°
+   Bước 1. Đổi tất cả về sin bằng công thức cos α = sin(90° − α): cos 75° = sin 15°; sin 5°; cos 10° = sin 80°; cos 35° = sin 55°.
+   Bước 2. Với góc nhọn, góc càng lớn thì sin càng lớn. Các góc là 15°; 5°; 80°; 55°, nên số nhỏ nhất ứng với góc 5°, tức sin 5°.
+   ✅ Kết luận: sin 5°
+
+■ lg.canh_goc_db · l9htl · Cơ bản
+Tam giác ABC vuông tại A có BC = 4 cm và ∠B = 45°. Độ dài AC là (cm)
+   Đáp án đúng: 2√2  |  Nhiễu: 4 ; 2 ; 2√3
+   Bước 1. Trong tam giác ABC vuông tại A: sin B = AC : BC, nên AC = BC·sin 45°.
+   Bước 2. Với B = 45° ta có sin 45° = √2/2.
+   Bước 3. Do đó AC = 4·√2/2 = 2√2 (cm).
+   ✅ Kết luận: 2√2
+
+■ lg.tan_cho_truoc · l9htl · Cơ bản
+Tại một thời điểm, tia nắng mặt trời tạo với mặt đất góc α có tan α = (3)/(4). Một cái cây có bóng trên mặt đất dài 12 m. Chiều cao của cây là bao nhiêu mét?
+   Đáp án đúng (tự nhập): 9
+   Bước 1. Cây vuông góc với mặt đất nên cây, bóng cây và tia nắng tạo thành tam giác vuông; góc α đối diện với cây.
+   Bước 2. tan α = chiều cao : độ dài bóng, nên chiều cao = 12·tan α = 12·(3)/(4).
+   Bước 3. Tính: 12·3 : 4 = 9 (m).
+   ✅ Kết luận: 9 m
+
+■ lg.biet_mot_tsln · l9htl · Cơ bản
+Cho góc nhọn α có sin α = (20)/(29). Giá trị của cos α là
+   Đáp án đúng: 21/29  |  Nhiễu: 20/21 ; 29/20 ; 21/20
+   Bước 1. Xét tam giác vuông có góc nhọn α với cạnh đối = 20, cạnh huyền = 29 (tỉ lệ). Cạnh còn lại = √(29² − 20²) = 21.
+   Bước 2. Vậy cạnh đối = 20, cạnh kề = 21, cạnh huyền = 29.
+   Bước 3. cos α = kề : huyền = (21)/(29).
+   ✅ Kết luận: 21/29
+
+■ lg.ti_so_tan · l9htl · Nâng cao
+Cho góc nhọn α có tan α = (6)/(1). Tính giá trị biểu thức A = (2sin α − 2cos α)/(3sin α + cos α). (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 10/19
+   Bước 1. Vì α nhọn nên cos α > 0. Chia cả tử và mẫu của A cho cos α, dùng sin α : cos α = tan α: A = (2tan α − 2)/(3tan α + 1).
+   Bước 2. Thay tan α = (6)/(1): tử số = 2·(6)/(1) − 2 = 10; mẫu số = 3·(6)/(1) + 1 = 19.
+   Bước 3. Chia hai phân số: A = 10 : 19 = 10/19.
+   ✅ Kết luận: 10/19
+
+■ lg.dien_tich_sin · l9htl · Nâng cao
+Tam giác ABC có AB = 7 cm, AC = 4 cm và ∠A = 30°. Diện tích tam giác ABC là (cm²)
+   Đáp án đúng: 7  |  Nhiễu: 7√3 ; 7√2 ; 14√3
+   Bước 1. Kẻ đường cao BH xuống AC: BH = AB·sin A = 7·sin 30°. Diện tích S = (1)/(2)·AC·BH = (1)/(2)·AB·AC·sin A.
+   Bước 2. Với A = 30° ta có sin 30° = 1/2.
+   Bước 3. S = (1)/(2)·7·4·1/2 = 7 (cm²).
+   ✅ Kết luận: 7
+
+■ dc.dai_cung · l9dt1 · Cơ bản
+Tính độ dài cung 20° của đường tròn có bán kính 18 cm.
+   Đáp án đúng: 2π cm  |  Nhiễu: 20π cm ; 3π cm ; 18π cm
+   Bước 1. Độ dài cung n° của đường tròn bán kính R là l = (πRn)/(180).
+   Bước 2. Thay R = 18, n = 20: l = (π·18·20)/(180) = (360π)/(180).
+   Bước 3. Rút gọn: l = 2π (cm).
+   ✅ Kết luận: 2π cm
+
+■ dc.dien_quat · l9dt1 · Cơ bản
+Tính diện tích hình quạt tròn có số đo cung 45° của đường tròn bán kính 12 cm.
+   Đáp án đúng: 18π cm²  |  Nhiễu: 19π cm² ; 36π cm² ; 30π cm²
+   Bước 1. Diện tích hình quạt tròn bán kính R, cung n° là S = (πR²n)/(360).
+   Bước 2. Thay R = 12, n = 45: S = (π·144·45)/(360) = (6480π)/(360).
+   Bước 3. Rút gọn: S = 18π (cm²).
+   ✅ Kết luận: 18π cm²
+
+■ dc.hinh_vanh · l9dt1 · Cơ bản
+Hình vành khuyên được giới hạn bởi hai đường tròn đồng tâm có bán kính 20 cm và 12 cm. Diện tích hình vành khuyên là
+   Đáp án đúng: 256π cm²  |  Nhiễu: 257π cm² ; 8π cm² ; 64π cm²
+   Bước 1. Diện tích hình vành khuyên bằng hiệu diện tích hai hình tròn: S = πR² − πr² = π(R² − r²).
+   Bước 2. Thay R = 20, r = 12: S = π(400 − 144).
+   Bước 3. Vậy S = 256π (cm²).
+   ✅ Kết luận: 256π cm²
+
+■ dc.d_nguyen · l9dt1 · Nâng cao
+Hai đường tròn (O; 14 cm) và (O′; 8 cm) cắt nhau. Hỏi khoảng cách OO′ (đơn vị cm) có thể nhận bao nhiêu giá trị nguyên?
+   Đáp án đúng (tự nhập): 15
+   Bước 1. Hai đường tròn (R > r) cắt nhau khi R − r < OO′ < R + r, tức 6 < OO′ < 22.
+   Bước 2. Các giá trị nguyên của OO′ là 7; 8; ...; 21, có 21 − 7 + 1 = 15 giá trị.
+   Bước 3. Vậy OO′ nhận 15 giá trị nguyên.
+   ✅ Kết luận: 15
+
+■ dc.tt_goc60 · l9dt1 · Nâng cao
+Từ điểm M nằm ngoài đường tròn (O; 8 cm) kẻ hai tiếp tuyến MA, MB (A, B là các tiếp điểm) sao cho ∠AMB = 60°. Độ dài MA là (cm)
+   Đáp án đúng: 8√3  |  Nhiễu: 16√3 ; 24 ; 24√3
+   Bước 1. MO là tia phân giác của ∠AMB nên ∠AMO = 30°. Tam giác OAM vuông tại A (tiếp tuyến vuông góc bán kính) nên OA = OM·sin 30° = (OM)/(2), suy ra OM = 16.
+   Bước 2. MA = √(OM² − OA²) = √(256 − 64) = √192 = 8√3.
+   Bước 3. Vậy MA = 8√3 (cm).
+   ✅ Kết luận: 8√3
+
+■ dc.tim_R_cung · l9dt1 · Nâng cao
+Một cung tròn có số đo 45° và độ dài 3π cm. Tính bán kính của đường tròn chứa cung đó (cm).
+   Đáp án đúng (tự nhập): 12
+   Bước 1. Dùng công thức độ dài cung l = (πRn)/(180), suy ra R = (180·l)/(πn).
+   Bước 2. Thay l = 3π, n = 45: R = (180·3π)/(π·45) = (540)/(45).
+   Bước 3. Vậy R = 12 cm.
+   ✅ Kết luận: 12 cm
+
+■ dc.cung_lon · l9dt2 · Cơ bản
+Cung lớn AB của đường tròn (O) có số đo 194°. Số đo góc ở tâm ∠AOB (chắn cung nhỏ AB) là
+   Đáp án đúng: 166°  |  Nhiễu: 14° ; 97° ; 194°
+   Bước 1. Cung nhỏ AB và cung lớn AB hợp thành cả đường tròn nên sđ cung nhỏ AB = 360° − 194° = 166°.
+   Bước 2. Số đo góc ở tâm bằng số đo cung nhỏ bị chắn nên ∠AOB = 166°.
+   ✅ Kết luận: 166°
+
+■ dc.cong_cung · l9dt2 · Cơ bản
+Điểm C nằm trên cung nhỏ AB của đường tròn (O). Biết số đo cung AB bằng 64° và số đo cung AC bằng 39°. Tính số đo cung CB (độ).
+   Đáp án đúng (tự nhập): 25
+   Bước 1. Vì C nằm trên cung nhỏ AB nên sđ cung AB = sđ cung AC + sđ cung CB.
+   Bước 2. Suy ra sđ cung CB = 64° − 39° = 25°.
+   ✅ Kết luận: 25°
+
+■ dc.hcn_noi_tiep · l9dt2 · Cơ bản
+Hình chữ nhật ABCD có AB = 10 cm, BC = 24 cm. Bốn đỉnh A, B, C, D cùng nằm trên một đường tròn. Tính bán kính của đường tròn đó (cm).
+   Đáp án đúng (tự nhập): 13
+   Bước 1. Hai đường chéo AC và BD của hình chữ nhật cắt nhau tại O, ta có OA = OB = OC = OD nên A, B, C, D cùng nằm trên đường tròn tâm O, đường kính AC.
+   Bước 2. Tam giác ABC vuông tại B: AC² = AB² + BC² = 100 + 576 = 676, suy ra AC = 26 cm.
+   Bước 3. Bán kính R = AC : 2 = 13 (cm).
+   ✅ Kết luận: 13 cm
+
+■ dc.tg_deu · l9dt2 · Nâng cao
+Tam giác đều ABC có cạnh 48 cm nội tiếp đường tròn (O; R). Bán kính R bằng (cm)
+   Đáp án đúng: 16√3  |  Nhiễu: 32√3 ; 24 ; 48√3
+   Bước 1. Đường cao của tam giác đều cạnh a là (a√3)/(2) = (48√3)/(2) = 24√3 cm.
+   Bước 2. Tâm O của đường tròn ngoại tiếp là trọng tâm tam giác nên R = OA = (2)/(3) đường cao.
+   Bước 3. R = (2)/(3)·24√3 = 16√3 (cm).
+   ✅ Kết luận: 16√3
+

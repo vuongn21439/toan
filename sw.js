@@ -4,8 +4,10 @@
    v12: thêm 48 dạng câu lớp 7 (cbnc-*.js) → đổi V để máy học sinh tải lại.
    v13: thêm 65 dạng câu lớp 8 (cbt1-*.js) → đổi V để máy học sinh tải lại.
    v14: thêm 95 dạng câu lớp 8 (cbt2-*.js, bám tập 2) → đổi V để máy học sinh tải lại.
+   v15: thêm 67 dạng câu lớp 9 (cbt1-*.js, bám tập 1) + chủ đề mới "Phương trình quy về bậc nhất" → đổi V để máy học sinh tải lại.
+   v16: thêm 89 dạng câu lớp 9 (cbt2-*.js, bám tập 2: hàm số y = ax², phương trình bậc hai, Viète, lập phương trình, tần số, xác suất, góc nội tiếp, tứ giác nội tiếp, hình trụ – nón – cầu) → đổi V để máy học sinh tải lại.
    Đổi V mỗi khi muốn ép máy học sinh tải bản mới. */
-const V='thcs-v14',
+const V='thcs-v16',
 /* file không nằm trong index.html nhưng vẫn cần khi offline (icon trong manifest) */
 EXTRA=['./','index.html','manifest.webmanifest','assets/icons/icon-192.png','assets/icons/icon-512.png','assets/icons/icon-maskable-512.png','assets/icons/apple-touch-icon.png'],
 HOSTS=['fonts.googleapis.com','fonts.gstatic.com','cdn.jsdelivr.net','www.gstatic.com'];

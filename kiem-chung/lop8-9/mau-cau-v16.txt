@@ -1,0 +1,743 @@
+# Mẫu 1 câu cho mỗi dạng mới v16 – lớp 9 học kì II (đề · đáp án · lời giải). Mỗi lần chơi số liệu khác. Phân số hiển thị (tử)/(mẫu); các dạng có hình ghi "(có hình)", hình vẽ không có trong file này.
+
+■ hs3.nhan_dang · l9hsb2 · Cơ bản
+Cho các hàm số: (1) y = 4x^3; (2) y = 4x^2; (3) y = 2x^2 + 2; (4) y = 2x^3. Có bao nhiêu hàm số có dạng y = ax^2 (a ≠ 0)?
+   Đáp án đúng: 1  |  Nhiễu: 0 ; 2 ; 3
+   Bước 1. Hàm số có dạng y = ax^2 (a ≠ 0) khi y bằng một số khác 0 nhân với x^2 và không có hạng tử nào khác.
+   Bước 2. (1) y = 4x^3: không phải dạng y = ax^2, là hàm số bậc ba.
+   Bước 3. (2) y = 4x^2: đúng dạng, có dạng ax^2 với a = 4.
+   Bước 4. (3) y = 2x^2 + 2: không phải dạng y = ax^2, có thêm hạng tử tự do.
+   Bước 5. (4) y = 2x^3: không phải dạng y = ax^2, là hàm số bậc ba.
+   Bước 6. Có 1 hàm số có dạng y = ax^2.
+   ✅ Kết luận: 1
+
+■ hs3.he_so_a · l9hsb2 · Cơ bản
+Hàm số y = −4x^2 có hệ số a bằng
+   Đáp án đúng: −4  |  Nhiễu: −2 ; −1/4 ; 1
+   Bước 1. Viết hàm số về dạng y = ax^2 và đối chiếu: y = −4x^2.
+   Bước 2. Hệ số đứng trước x^2 chính là a, nên a = −4.
+   ✅ Kết luận: −4
+
+■ hs3.ct_thuc_te · l9hsb2 · Cơ bản
+Động năng W (jun) của vật khối lượng 8 kg chuyển động với tốc độ v (m/s) là W = (1)/(2)·m·v^2. Vật có động năng 36 J thì tốc độ của nó là bao nhiêu m/s?
+   Đáp án đúng (tự nhập): 3
+   Bước 1. Với m = 8: W = (1)/(2)·8·v^2 = 4v^2.
+   Bước 2. Từ 4v^2 = 36 suy ra v^2 = 9.
+   Bước 3. Vì v > 0 nên v = √9 = 3 (m/s).
+   ✅ Kết luận: 3 m/s
+
+■ hs3.chop · l9hsb2 · Cơ bản
+Một hình chóp tứ giác đều có đáy là hình vuông cạnh a (cm), chiều cao h (cm); thể tích V = (1)/(3)·a^2·h. Với h = 12 cm, công thức tính thể tích V theo a là
+   Đáp án đúng: V = 4a^2  |  Nhiễu: V = 4a ; V = 5a^2 ; V = 12a^2
+   Bước 1. Thay h = 12 vào V = (1)/(3)·a^2·h.
+   Bước 2. V = (1)/(3)·a^2·12 = 4a^2.
+   ✅ Kết luận: V = 4a^2
+
+■ hs3.bang_suy · l9hsb2 · Cơ bản
+Đồ thị hàm số y = ax^2 đi qua điểm A(−3; −9). Điểm B(1; m) cũng thuộc đồ thị hàm số đó. Tìm m.
+   Đáp án đúng (tự nhập): -1
+   Bước 1. Vì A thuộc đồ thị nên −9 = a·(−3)^2 = 9a, suy ra a = −1.
+   Bước 2. Hàm số là y = −x^2.
+   Bước 3. B thuộc đồ thị nên m = −1·1^2 = −1·1 = −1.
+   ✅ Kết luận: m = −1
+
+■ hs3.so_sanh · l9hsb2 · Cơ bản
+Cho hàm số y = −2x^2. So sánh y(−2) và y(−1), ta được
+   Đáp án đúng: y(−2) < y(−1)  |  Nhiễu: y(−2) > y(−1) ; Không so sánh được ; y(−2) = y(−1)
+   Bước 1. Tính y(−2) = −2·(−2)^2 = −2·4 = −8.
+   Bước 2. Tính y(−1) = −2·(−1)^2 = −2·1 = −2.
+   Bước 3. Vì −8 < −2 nên y(−2) < y(−1).
+   ✅ Kết luận: y(−2) < y(−1)
+
+■ hs3.so_giao · l9hsb2 · Cơ bản
+Số giao điểm của parabol (P): y = 3x^2 và đường thẳng (d): y = 6x − 6 là
+   Đáp án đúng: Không có giao điểm  |  Nhiễu: Có đúng 1 giao điểm ; Có vô số giao điểm ; Có đúng 2 giao điểm
+   Bước 1. Phương trình hoành độ giao điểm: 3x^2 = 6x − 6, tức 3x^2 − 6x + 6 = 0.
+   Bước 2. Δ = (−6)^2 − 4·3·6 = −36.
+   Bước 3. Δ < 0 nên phương trình vô nghiệm, do đó (P) và (d) không có giao điểm.
+   ✅ Kết luận: Không có giao điểm
+
+■ hs3.toa_do_giao · l9hsb2 · Cơ bản
+Tìm tọa độ các giao điểm của parabol (P): y = 2x^2 và đường thẳng (d): y = 6x + 20.
+   Đáp án đúng: (−2; 8) và (5; 50)  |  Nhiễu: (−2; 4) và (5; 25) ; (−5; 50) và (2; 8) ; (−2; −8) và (5; −50)
+   Bước 1. Phương trình hoành độ giao điểm: 2x^2 = 6x + 20, tức 2x^2 − 6x − 20 = 0.
+   Bước 2. Giải phương trình: x = −2 hoặc x = 5.
+   Bước 3. Thay vào y = 2x^2: x = −2 thì y = 8; x = 5 thì y = 50.
+   ✅ Kết luận: (−2; 8) và (5; 50)
+
+■ hs3.nhan_dang_do_thi · l9hsb2 · Cơ bản (có hình)
+Parabol trong hình có đỉnh O, trục đối xứng là trục Oy và đi qua điểm A(2; −8). Đó là đồ thị của hàm số
+   Đáp án đúng: y = −2x^2  |  Nhiễu: y = −8x^2 ; y = −4x^2 ; y = 2x^2
+   Bước 1. Parabol nằm phía dưới trục hoành nên a < 0.
+   Bước 2. A thuộc đồ thị nên −8 = a·2^2 = 4a, suy ra a = −2.
+   Bước 3. Vậy hàm số là y = −2x^2.
+   ✅ Kết luận: y = −2x^2
+
+■ hs3.tiep_xuc_m · l9hsb2 · Nâng cao
+Cho parabol (P): y = x^2 và đường thẳng (d): y = −3x + m. Tìm m để (d) không có điểm chung với (P).
+   Đáp án đúng: m < −9/4  |  Nhiễu: m ≥ −9/4 ; m > −9/4 ; m ≤ −9/4
+   Bước 1. Phương trình hoành độ giao điểm: x^2 = −3x + m, tức x^2 + 3x − m = 0.
+   Bước 2. Δ = 3^2 − 4·1·(−m) = 9 + 4m.
+   Bước 3. Không có điểm chung khi Δ < 0, tức 9 + 4m < 0. Giải ra m < −9/4.
+   ✅ Kết luận: m < −9/4
+
+■ hs3.dien_tich_giao · l9hsb2 · Nâng cao
+Parabol (P): y = x^2 cắt đường thẳng (d): y = 5x − 4 tại hai điểm A, B. Tính diện tích tam giác OAB (O là gốc tọa độ, đơn vị diện tích).
+   Đáp án đúng (tự nhập): 6
+   Bước 1. Phương trình hoành độ giao điểm x^2 − 5x + 4 = 0 có hai nghiệm x = 1 và x = 4.
+   Bước 2. Tung độ tương ứng (thay vào y = x^2): A(1; 1), B(4; 16).
+   Bước 3. Với A(x₁; y₁), B(x₂; y₂), diện tích tam giác OAB là S = (1)/(2)·|x₁y₂ − x₂y₁|.
+   Bước 4. S = (1)/(2)·|1·16 − 4·1| = (1)/(2)·12 = 6.
+   ✅ Kết luận: 6
+
+■ pb2.nhan_biet · l9ptb2 · Cơ bản
+Cho các phương trình: (1) x^2 − 2x − 9 = x^2 + 3; (2) −4x^2 = 8; (3) −2x^2 = −3; (4) x^3 + x − 8 = 0. Có bao nhiêu phương trình là phương trình bậc hai một ẩn?
+   Đáp án đúng: 2  |  Nhiễu: 0 ; 4 ; 3
+   Bước 1. Phương trình bậc hai một ẩn x có dạng ax^2 + bx + c = 0 với a ≠ 0.
+   Bước 2. (1) x^2 − 2x − 9 = x^2 + 3: không phải, sau khi chuyển vế, x^2 triệt tiêu nên là phương trình bậc nhất.
+   Bước 3. (2) −4x^2 = 8: là phương trình bậc hai, đưa được về dạng ax^2 + c = 0 với a ≠ 0.
+   Bước 4. (3) −2x^2 = −3: là phương trình bậc hai, đưa được về dạng ax^2 + c = 0 với a ≠ 0.
+   Bước 5. (4) x^3 + x − 8 = 0: không phải, chứa x^3 nên là phương trình bậc ba.
+   Bước 6. Có 2 phương trình bậc hai một ẩn.
+   ✅ Kết luận: 2
+
+■ pb2.dk_bac_hai · l9ptb2 · Cơ bản
+Phương trình (−m + 4)x^2 − 8x + 3 = 0 (m là tham số) là phương trình bậc hai một ẩn x khi
+   Đáp án đúng: m ≠ 4  |  Nhiễu: m > 4 ; m ≠ −4 ; m < 4
+   Bước 1. Phương trình ax^2 + bx + c = 0 là bậc hai khi a ≠ 0.
+   Bước 2. Ở đây hệ số của x^2 là a = −m + 4, nên cần −m + 4 ≠ 0.
+   Bước 3. −m + 4 = 0 khi m = 4. Vậy m ≠ 4.
+   ✅ Kết luận: m ≠ 4
+
+■ pb2.thu_gon · l9ptb2 · Cơ bản
+Giải phương trình x^2 + 6x − 4 = 0 bằng công thức nghiệm thu gọn.
+   Đáp án đúng: x = −3 + √13; x = −3 − √13  |  Nhiễu: x = 3 + √13; x = 3 − √13 ; x = (3 + √13)/(2); x = (3 − √13)/(2) ; x = −3 + 2√13; x = −3 − 2√13
+   Bước 1. Phương trình có a = 1, b = 6 nên b′ = 3, c = −4.
+   Bước 2. Δ′ = b′^2 − ac = 3^2 − 1·(−4) = 13 > 0 nên phương trình có hai nghiệm phân biệt.
+   Bước 3. x = −b′ ± √Δ′ = −3 ± √13.
+   Bước 4. Hai nghiệm: x = −3 + √13; x = −3 − √13.
+   ✅ Kết luận: x = −3 + √13; x = −3 − √13
+
+■ pb2.viet_cap · l9ptb2 · Cơ bản
+Gọi x₁, x₂ là hai nghiệm của phương trình 4x^2 − 4x − 5 = 0. Không giải phương trình, ta có
+   Đáp án đúng: x₁ + x₂ = 1; x₁x₂ = −5/4  |  Nhiễu: x₁ + x₂ = 1; x₁x₂ = 5/4 ; x₁ + x₂ = −1; x₁x₂ = 5/4 ; x₁ + x₂ = −1; x₁x₂ = −5/4
+   Bước 1. Δ = (−4)^2 − 4·4·(−5) = 96 > 0 nên phương trình có hai nghiệm phân biệt x₁, x₂.
+   Bước 2. Theo hệ thức Viète: x₁ + x₂ = (−b)/(a) = 1.
+   Bước 3. x₁x₂ = (c)/(a) = −5/4.
+   ✅ Kết luận: x₁ + x₂ = 1; x₁x₂ = −5/4
+
+■ pb2.nham_abc · l9ptb2 · Cơ bản
+Không tính biệt thức Δ, hãy nhẩm nghiệm của phương trình 458x^2 + 475x + 17 = 0.
+   Đáp án đúng: x = −1; x = −17/458  |  Nhiễu: x = −458/17; x = −1 ; x = −1; x = 17/458 ; x = −17/458; x = 1
+   Bước 1. Ta có a − b + c = 458 − 475 + 17 = 0.
+   Bước 2. Do đó phương trình có hai nghiệm x₁ = −1 và x₂ = (−c)/(a).
+   Bước 3. Tính x₂ = −17/458. Vậy x = −1; x = −17/458.
+   ✅ Kết luận: x = −1; x = −17/458
+
+■ pb2.lap_tong_tich · l9ptb2 · Cơ bản
+Hai số có tổng bằng −5 và tích bằng −6 là hai nghiệm của phương trình nào sau đây?
+   Đáp án đúng: x^2 + 5x − 6 = 0  |  Nhiễu: x^2 − 5x − 6 = 0 ; x^2 + 5x + 6 = 0 ; x^2 − 5x + 6 = 0
+   Bước 1. Hai số u, v có tổng S = u + v và tích P = uv là hai nghiệm của phương trình x^2 − Sx + P = 0.
+   Bước 2. Ở đây S = −5, P = −6.
+   Bước 3. Phương trình cần tìm: x^2 − (−5)x + (−6) = 0, tức x^2 + 5x − 6 = 0.
+   ✅ Kết luận: x^2 + 5x − 6 = 0
+
+■ pb2.hai_so_uv · l9ptb2 · Cơ bản
+Tìm hai số u và v (u < v), biết u + v = −14 và uv = 45.
+   Đáp án đúng: u = −9; v = −5  |  Nhiễu: u = −8; v = −6 ; u = 5; v = 9 ; u = −7; v = −7
+   Bước 1. u và v là hai nghiệm của phương trình x^2 − Sx + P = 0, tức x^2 + 14x + 45 = 0.
+   Bước 2. Δ = 14^2 − 4·45 = 16 = 4^2.
+   Bước 3. Hai nghiệm là −9 và −5; vì u < v nên u = −9, v = −5.
+   ✅ Kết luận: u = −9; v = −5
+
+■ pb2.nghiem_con_lai · l9ptb2 · Cơ bản
+Biết phương trình x^2 − 12x + m = 0 có một nghiệm bằng −1. Tìm nghiệm còn lại.
+   Đáp án đúng (tự nhập): 13
+   Bước 1. Gọi nghiệm còn lại là x₂, theo Viète: x₁ + x₂ = 12.
+   Bước 2. Với x₁ = −1 ta có x₂ = 12 − (−1) = 13.
+   ✅ Kết luận: x = 13
+
+■ lp.chon_pt · l9ptb2 · Cơ bản
+Một ô tô đi quãng đường AB dài 360 km với vận tốc dự định x (km/h). Nếu tăng vận tốc thêm 5 km/h thì đến B sớm hơn 1 giờ. Phương trình nào sau đây biểu thị bài toán?
+   Đáp án đúng: x^2 + 5x − 1800 = 0  |  Nhiễu: x^2 + 5x + 1800 = 0 ; x^2 − 5x − 1800 = 0 ; x^2 + 5x − 360 = 0
+   Bước 1. Thời gian dự định là (360)/(x) giờ; thời gian thực tế là (360)/(x + 5) giờ.
+   Bước 2. Đến sớm hơn 1 giờ nên (360)/(x) − (360)/(x + 5) = 1.
+   Bước 3. Quy đồng, khử mẫu: 360(x + 5) − 360x = x(x + 5), tức 1800 = x^2 + 5x.
+   Bước 4. Chuyển vế và rút gọn: x^2 + 5x − 1800 = 0.
+   ✅ Kết luận: x^2 + 5x − 1800 = 0
+
+■ lp.hcn_hon_kem · l9ptb2 · Cơ bản
+Một sân trường hình chữ nhật có chiều dài hơn chiều rộng 7 m và có diện tích 260 m^2. Tính chu vi của sân trường (đơn vị: mét).
+   Đáp án đúng (tự nhập): 66
+   Bước 1. Gọi x (m) là chiều rộng, x > 0. Khi đó chiều dài là x + 7 (m).
+   Bước 2. Diện tích bằng 260 m^2 nên x(x + 7) = 260, tức x^2 + 7x − 260 = 0.
+   Bước 3. Δ = 7^2 + 4·260 = 1089 = 33^2 nên x = (−7 ± 33)/(2), tức x = 13 hoặc x = −20.
+   Bước 4. Điều kiện x > 0 nên chỉ nhận x = 13. Vậy chiều rộng là 13 m, chiều dài là 20 m.
+   Bước 5. Chu vi = 2·(13 + 20) = 66 (m).
+   ✅ Kết luận: 66 m
+
+■ lp.chu_vi_dien_tich · l9ptb2 · Cơ bản
+Một mảnh đất hình chữ nhật có chu vi 62 m và diện tích 234 m^2. Tính chiều dài của mảnh đất (đơn vị: mét).
+   Đáp án đúng (tự nhập): 18
+   Bước 1. Nửa chu vi là 62 : 2 = 31 (m). Gọi x (m) là một kích thước, kích thước kia là 31 − x.
+   Bước 2. Diện tích: x(31 − x) = 234, tức x^2 − 31x + 234 = 0.
+   Bước 3. Δ = 31^2 − 4·234 = 25 = 5^2 nên x = (31 ± 5)/(2), tức x = 18 hoặc x = 13.
+   Bước 4. Hai kích thước là 18 m và 13 m. Chiều dài là số lớn hơn nên bằng 18 m.
+   ✅ Kết luận: 18 m
+
+■ lp.so_tu_nhien · l9ptb2 · Cơ bản
+Tổng bình phương của hai số tự nhiên liên tiếp bằng 421. Tìm số lớn hơn trong hai số đó.
+   Đáp án đúng (tự nhập): 15
+   Bước 1. Gọi x là số nhỏ hơn (x là số tự nhiên). Số lớn hơn là x + 1.
+   Bước 2. Ta có x^2 + (x + 1)^2 = 421, tức 2x^2 + 2x − 420 = 0.
+   Bước 3. Δ′ = 1^2 − 2·(−420) = 841 = 29^2 nên x = (−1 ± 29)/(2), tức x = 14 hoặc x = −15.
+   Bước 4. x phải là số tự nhiên nên nhận x = 14. Hai số là 14 và 15.
+   ✅ Kết luận: 15
+
+■ lp.tam_giac_vuong · l9ptb2 · Cơ bản
+Một tam giác vuông có cạnh huyền dài 39 cm, hai cạnh góc vuông hơn kém nhau 21 cm. Tính độ dài cạnh góc vuông lớn hơn (cm) của tam giác đó.
+   Đáp án đúng (tự nhập): 36
+   Bước 1. Gọi x (cm) là cạnh góc vuông nhỏ, x > 0. Cạnh góc vuông còn lại là x + 21 (cm).
+   Bước 2. Theo định lý Pythagore: x^2 + (x + 21)^2 = 39^2, tức 2x^2 + 42x − 1080 = 0.
+   Bước 3. Δ′ = 21^2 − 2·(−1080) = 2601 = 51^2 nên x = (−21 ± 51)/(2), tức x = 15 hoặc x = −36.
+   Bước 4. Điều kiện x > 0 nên x = 15. Hai cạnh góc vuông là 15 cm và 36 cm.
+   Bước 5. Cạnh góc vuông lớn hơn dài 36 cm.
+   ✅ Kết luận: 36 cm
+
+■ pb2.dx_bt · l9ptb2 · Nâng cao
+Gọi x₁, x₂ là hai nghiệm của phương trình x^2 − 5x − 1 = 0. Không giải phương trình, tính giá trị biểu thức A = (1)/(x₁) + (1)/(x₂).
+   Đáp án đúng (tự nhập): -5
+   Bước 1. Δ = (−5)^2 − 4·1·(−1) = 29 > 0 nên phương trình có hai nghiệm phân biệt x₁, x₂.
+   Bước 2. Theo Viète: S = x₁ + x₂ = 5; P = x₁x₂ = −1.
+   Bước 3. Biến đổi: A = (x₁ + x₂)/(x₁x₂) = S : P.
+   Bước 4. Thay S = 5, P = −1: A = 5 : (−1) = −5.
+   ✅ Kết luận: A = −5
+
+■ pb2.viet_m_tong · l9ptb2 · Nâng cao
+Cho phương trình x^2 − 2(m + 3)x + m^2 + 2 = 0 (m là tham số). Tìm giá trị của m để phương trình có hai nghiệm x₁, x₂ thỏa mãn x₁^2 + x₂^2 = 248.
+   Đáp án đúng (tự nhập): 6
+   Bước 1. Δ′ = (m + 3)^2 − (m^2 + 2) = 6m + 7. Phương trình có nghiệm khi Δ′ ≥ 0, tức m ≥ −7/6.
+   Bước 2. Theo Viète: x₁ + x₂ = 2(m + 3); x₁x₂ = m^2 + 2.
+   Bước 3. x₁^2 + x₂^2 = (x₁ + x₂)^2 − 2x₁x₂ = 4(m + 3)^2 − 2(m^2 + 2) = 2m^2 + 24m + 32.
+   Bước 4. Từ 2m^2 + 24m + 32 = 248 ta có 2m^2 + 24m − 216 = 0, tức m^2 + 12m − 108 = 0. Giải ra m = −18 hoặc m = 6.
+   Bước 5. Kiểm tra điều kiện: m = 6 thì Δ′ = 43 > 0 (nhận); m = −18 thì Δ′ = −101 < 0 (loại).
+   ✅ Kết luận: m = 6
+
+■ pb2.he_thuc · l9ptb2 · Nâng cao
+Cho phương trình x^2 − 8x + m − 1 = 0 (m là tham số) có hai nghiệm x₁, x₂. Tìm m để x₁ + 3x₂ = 18.
+   Đáp án đúng (tự nhập): 16
+   Bước 1. Theo Viète: x₁ + x₂ = S = 8; x₁x₂ = m − 1.
+   Bước 2. Trừ vế theo vế hai phương trình x₁ + 3x₂ = 18 và x₁ + x₂ = 8: 2x₂ = 10, suy ra x₂ = 5.
+   Bước 3. Từ x₁ + x₂ = 8 ta được x₁ = 3.
+   Bước 4. Do đó x₁x₂ = 3·5 = 15, nên m − 1 = 15, suy ra m = 16.
+   Bước 5. Kiểm tra: Δ = 8^2 − 4·15 = 4 = (−2)^2 > 0 nên phương trình có hai nghiệm phân biệt.
+   ✅ Kết luận: m = 16
+
+■ pb2.dau_nghiem · l9ptb2 · Nâng cao
+Tìm m để phương trình x^2 + 2x + m − 5 = 0 có hai nghiệm âm phân biệt.
+   Đáp án đúng: 5 < m < 6  |  Nhiễu: m < 6 ; 5 < m ≤ 6 ; m > 5
+   Bước 1. Cần Δ′ > 0, x₁x₂ > 0 và x₁ + x₂ < 0.
+   Bước 2. Δ′ = (−1)^2 − (m − 5) = 6 − m > 0 ⟺ m < 6.
+   Bước 3. x₁ + x₂ = −2 < 0 (luôn đúng); x₁x₂ = m − 5 > 0 ⟺ m > 5.
+   Bước 4. Kết hợp: 5 < m < 6.
+   ✅ Kết luận: 5 < m < 6
+
+■ pb2.delta_m · l9ptb2 · Nâng cao
+Tìm m để phương trình x^2 − 2(m + 2)x + m^2 − 2 = 0 có nghiệm.
+   Đáp án đúng: m ≥ −3/2  |  Nhiễu: m > −3/2 ; m < −3/2 ; m ≤ −3/2
+   Bước 1. Phương trình có a = 1, b′ = −(m + 2), c = m^2 − 2.
+   Bước 2. Δ′ = (m + 2)^2 − (m^2 − 2) = 4m + 6.
+   Bước 3. Phương trình có nghiệm khi Δ′ ≥ 0, tức 4m + 6 ≥ 0.
+   Bước 4. 4m ≥ −6. Chia hai vế cho 4: m ≥ −3/2.
+   ✅ Kết luận: m ≥ −3/2
+
+■ pb2.tuyet_doi · l9ptb2 · Nâng cao
+Cho phương trình 2x^2 − 7x − 1 = 0 có hai nghiệm x₁, x₂ với x₁ > x₂. Tính giá trị biểu thức T = 4|x₁| + 4|x₂| − 6x₁ + 2x₂.
+   Đáp án đúng (tự nhập): -7
+   Bước 1. Δ = (−7)^2 − 4·2·(−1) = 57 > 0. Theo Viète: x₁ + x₂ = 7/2; x₁x₂ = −1/2.
+   Bước 2. Xét dấu: x₁x₂ = −1/2 < 0 nên hai nghiệm trái dấu; vì x₁ > x₂ nên x₁ > 0 > x₂, do đó |x₁| = x₁ và |x₂| = −x₂.
+   Bước 3. Bỏ dấu giá trị tuyệt đối: T = 4x₁ + 4(−x₂) − 6x₁ + 2x₂ = −2x₁ − 2x₂ = −2(x₁ + x₂).
+   Bước 4. Thay x₁ + x₂ = 7/2: T = −2·(7/2) = −7.
+   ✅ Kết luận: T = −7
+
+■ pb2.ct_can · l9ptb2 · Nâng cao
+Cho phương trình x^2 − 49x + 144 = 0 có hai nghiệm dương phân biệt x₁, x₂ với x₁ > x₂. Tính giá trị biểu thức B = √x₁ − √x₂.
+   Đáp án đúng (tự nhập): 5
+   Bước 1. Theo Viète: x₁ + x₂ = 49; x₁x₂ = 144, suy ra √(x₁x₂) = 12.
+   Bước 2. Vì x₁ > x₂ > 0 nên B > 0 và B^2 = x₁ + x₂ − 2√(x₁x₂) = 49 − 2√144 = 49 − 2·12 = 25.
+   Bước 3. Vì B > 0 nên B = √25 = 5.
+   ✅ Kết luận: B = 5
+
+■ pb2.min_tong_bp · l9ptb2 · Nâng cao
+Cho phương trình x^2 − 2(m + 1)x + 3m − 3 = 0 (m là tham số) luôn có hai nghiệm x₁, x₂. Tìm giá trị của m để A = x₁^2 + x₂^2 có giá trị nhỏ nhất. (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): -1/4
+   Bước 1. Δ′ = (m + 1)^2 − (3m − 3) = m^2 − m + 4. Tam thức này có Δ = (−1)^2 − 4·4 = −15 < 0 nên Δ′ > 0 với mọi m.
+   Bước 2. Theo Viète: x₁ + x₂ = 2(m + 1); x₁x₂ = 3m − 3.
+   Bước 3. A = (x₁ + x₂)^2 − 2x₁x₂ = 4(m + 1)^2 − 2(3m − 3) = 4m^2 + 2m + 10.
+   Bước 4. Hoàn thiện bình phương: A = 4(m + 1/4)^2 + 39/4.
+   Bước 5. Vì 4(m + 1/4)^2 ≥ 0 nên A ≥ 39/4; dấu "=" xảy ra khi m = −1/4.
+   ✅ Kết luận: m = −1/4
+
+■ pb2.mau_hai_phan · l9ptb2 · Nâng cao
+Giải phương trình (4)/(x + 1) + (4)/(x + 4) = 2.
+   Đáp án đúng: x = −3; x = 2  |  Nhiễu: x = −4; x = −1 ; x = 2 ; x = −3
+   Bước 1. Điều kiện xác định: x ≠ −4 và x ≠ −1.
+   Bước 2. Nhân hai vế với (x + 1)(x + 4) để khử mẫu: 4(x + 4) + 4(x + 1) = 2(x + 1)(x + 4).
+   Bước 3. Khai triển và thu gọn, ta được 2x^2 + 2x − 12 = 0.
+   Bước 4. Δ = 2^2 − 4·2·(−12) = 100 = 10^2 nên phương trình có hai nghiệm x = −3 và x = 2.
+   Bước 5. Cả hai nghiệm đều thỏa điều kiện xác định. Vậy x = −3; x = 2.
+   ✅ Kết luận: x = −3; x = 2
+
+■ pb2.mau_loai · l9ptb2 · Nâng cao
+Giải phương trình (x^2 + 13x + 42)/(x + 6) = −2.
+   Đáp án đúng: x = −9  |  Nhiễu: x = −6 ; x = −9; x = −6 ; Phương trình vô nghiệm
+   Bước 1. Điều kiện xác định: x ≠ −6.
+   Bước 2. Phân tích tử số: x^2 + 13x + 42 = (x + 6)(x + 7).
+   Bước 3. Nhân hai vế với (x + 6): (x + 6)(x + 7) = −2(x + 6), tức (x + 6)(x + 9) = 0, nên x = −6 hoặc x = −9.
+   Bước 4. Đối chiếu điều kiện: x = −6 bị loại. Vậy x = −9.
+   ✅ Kết luận: x = −9
+
+■ lp.hcn_thay_doi · l9ptb2 · Nâng cao
+Một mảnh đất hình chữ nhật có diện tích 552 m^2. Nếu tăng chiều rộng thêm 1 m và giảm chiều dài 1 m thì diện tích mảnh đất không đổi. Tính chiều rộng ban đầu của mảnh đất (đơn vị: mét).
+   Đáp án đúng (tự nhập): 23
+   Bước 1. Gọi x (m) là chiều rộng ban đầu, x > 0. Chiều dài ban đầu là (552)/(x) (m).
+   Bước 2. Kích thước mới: chiều rộng x + 1, chiều dài (552)/(x) − 1. Diện tích không đổi nên (x + 1)((552)/(x) − 1) = 552.
+   Bước 3. Khai triển: 552 − x + (552)/(x) − 1 = 552. Nhân hai vế với x rồi rút gọn: x^2 + 1x − 552 = 0.
+   Bước 4. Δ = 1^2 + 4·1·552 = 2209 = 47^2 nên x = 23 (nhận) hoặc x = −24 (loại vì âm).
+   Bước 5. Chiều rộng ban đầu là 23 m, chiều dài ban đầu là 552 : 23 = 24 (m).
+   ✅ Kết luận: 23 m
+
+■ lp.chuyen_dong · l9ptb2 · Nâng cao
+Một ô tô đi từ A đến B dài 100 km rồi quay về A trên cùng quãng đường đó. Vận tốc lúc về nhỏ hơn vận tốc lúc đi 5 km/h nên thời gian về nhiều hơn thời gian đi 1 giờ. Tính vận tốc lúc đi của ô tô (km/h).
+   Đáp án đúng (tự nhập): 25
+   Bước 1. Gọi x (km/h) là vận tốc lúc đi, x > 5. Thời gian đi là (100)/(x) giờ, thời gian về là (100)/(x − 5) giờ.
+   Bước 2. Thời gian về nhiều hơn 1 giờ nên (100)/(x − 5) − (100)/(x) = 1.
+   Bước 3. Quy đồng, khử mẫu và rút gọn ta được phương trình x^2 − 5x − 500 = 0.
+   Bước 4. Δ = (−5)^2 − 4·1·(−500) = 2025 = 45^2, giải ra x = 25 hoặc x = −20.
+   Bước 5. Điều kiện x > 5 nên loại x = −20. Vậy vận tốc lúc đi là 25 km/h.
+   ✅ Kết luận: 25 km/h
+
+■ lp.dong_nuoc · l9ptb2 · Nâng cao
+Một ca nô xuôi dòng 45 km rồi ngược dòng quay lại điểm xuất phát hết tổng cộng 6 giờ. Biết vận tốc dòng nước là 18 km/h. Tính vận tốc riêng của ca nô (km/h).
+   Đáp án đúng (tự nhập): 27
+   Bước 1. Gọi x (km/h) là vận tốc riêng của ca nô, x > 18. Vận tốc xuôi dòng là x + 18, vận tốc ngược dòng là x − 18.
+   Bước 2. Tổng thời gian: (45)/(x + 18) + (45)/(x − 18) = 6.
+   Bước 3. Quy đồng, khử mẫu: 45(x − 18) + 45(x + 18) = 6(x^2 − 324), tức 6x^2 − 90x − 1944 = 0.
+   Bước 4. Δ′ = (−45)^2 + 6·1944 = 13689 = 117^2 nên x = (45 ± 117)/(6), tức x = 27 hoặc x = −12.
+   Bước 5. Điều kiện x > 18 nên nhận x = 27. Vậy vận tốc riêng của ca nô là 27 km/h.
+   ✅ Kết luận: 27 km/h
+
+■ lp.nang_suat · l9ptb2 · Nâng cao
+Một phân xưởng phải làm 624 sản phẩm trong thời gian quy định. Do mỗi ngày làm thêm 2 sản phẩm so với kế hoạch nên hoàn thành sớm hơn kế hoạch 2 ngày. Hỏi theo kế hoạch, mỗi ngày phải làm bao nhiêu sản phẩm?
+   Đáp án đúng (tự nhập): 24
+   Bước 1. Gọi x là số sản phẩm phải làm mỗi ngày theo kế hoạch (x nguyên dương). Thời gian theo kế hoạch là (624)/(x) ngày; thực tế mỗi ngày làm x + 2 nên thời gian là (624)/(x + 2) ngày.
+   Bước 2. Sớm hơn 2 ngày nên (624)/(x) − (624)/(x + 2) = 2.
+   Bước 3. Quy đồng, khử mẫu: 624(x + 2) − 624x = 2x(x + 2), tức 2x^2 + 4x − 1248 = 0.
+   Bước 4. Δ = 4^2 + 4·2·1248 = 10000 = 100^2 nên x = 24 hoặc x = −26.
+   Bước 5. x > 0 nên nhận x = 24. Theo kế hoạch, mỗi ngày phải làm 24 sản phẩm.
+   ✅ Kết luận: 24
+
+■ lp.hai_voi · l9ptb2 · Nâng cao
+Nếu hai đội công nhân cùng làm chung một công việc thì sau 8 giờ xong việc. Nếu làm riêng một mình thì đội thứ nhất làm nhanh hơn đội thứ hai 63 giờ. Hỏi đội thứ nhất làm riêng một mình thì sau bao lâu xong việc? (đơn vị: giờ)
+   Đáp án đúng (tự nhập): 9
+   Bước 1. Gọi x (giờ) là thời gian đội thứ nhất làm riêng một mình xong việc, x > 0. Thời gian đội thứ hai là x + 63 (giờ).
+   Bước 2. Trong 1 giờ, hai đội làm được (1)/(x) và (1)/(x + 63) (phần việc); cả hai cùng làm được (1)/(8) phần việc. Ta có (1)/(x) + (1)/(x + 63) = (1)/(8).
+   Bước 3. Quy đồng, khử mẫu: 8(x + 63) + 8x = x(x + 63), tức x^2 + 47x − 504 = 0.
+   Bước 4. Δ = 47^2 − 4·(−504) = 4225 = 65^2, giải ra x = 9 hoặc x = −56.
+   Bước 5. x > 0 nên loại x = −56. Vậy đội thứ nhất làm riêng một mình hết 9 giờ.
+   ✅ Kết luận: 9 giờ
+
+■ lp.chia_deu · l9ptb2 · Nâng cao
+Một nhóm học sinh dự định chia đều 168 quyển vở. Nếu bớt đi 4 học sinh thì mỗi bạn còn lại nhận thêm 1 quyển vở. Hỏi nhóm ban đầu có bao nhiêu học sinh?
+   Đáp án đúng (tự nhập): 28
+   Bước 1. Gọi x là số học sinh ban đầu (x nguyên, x > 4). Lúc đầu mỗi bạn nhận (168)/(x) quyển vở; sau khi bớt 4 bạn, mỗi bạn nhận (168)/(x − 4) quyển vở.
+   Bước 2. Mỗi bạn nhận thêm 1 nên (168)/(x − 4) − (168)/(x) = 1.
+   Bước 3. Quy đồng, khử mẫu: 168x − 168(x − 4) = x(x − 4), tức x^2 − 4x − 672 = 0.
+   Bước 4. Δ = 4^2 + 4·1·672 = 2704 = 52^2 nên x = 28 hoặc x = −24.
+   Bước 5. Điều kiện x > 4 nên nhận x = 28. Vậy nhóm ban đầu có 28 học sinh.
+   ✅ Kết luận: 28
+
+■ lp.giam_gia_kep · l9ptb2 · Nâng cao
+Dân số của một thị trấn năm 2024 là 6750 người, đến năm 2026 là 9720 người. Biết tỉ lệ tăng dân số mỗi năm là x% như nhau. Tìm x.
+   Đáp án đúng (tự nhập): 20
+   Bước 1. Đặt y = (x)/(100) (y > 0). Sau mỗi năm, số lượng được nhân thêm (1 + y) lần so với trước đó. Sau hai năm: 6750(1 + y)^2 = 9720.
+   Bước 2. Suy ra (1 + y)^2 = 36/25.
+   Bước 3. Lấy căn bậc hai hai vế: 1 + y = 6/5 hoặc 1 + y = −6/5.
+   Bước 4. Với 1 + y = 6/5 ta được y = 1/5 (nhận). Với 1 + y = −6/5 ta được y < 0 (loại).
+   Bước 5. Vậy x = 100y = 20.
+   ✅ Kết luận: x = 20
+
+■ tg.cung_chan · l9dt2 · Cơ bản (có hình)
+Các điểm A, B, C cùng thuộc đường tròn (O) như hình vẽ, biết ∠ACB = 24°. Số đo ∠AOB là
+   Đáp án đúng: 48°  |  Nhiễu: 24° ; 132° ; 312°
+   Bước 1. ∠ACB là góc nội tiếp, ∠AOB là góc ở tâm, cùng chắn cung AB.
+   Bước 2. Góc ở tâm có số đo gấp đôi góc nội tiếp cùng chắn một cung: ∠AOB = 2·∠ACB.
+   Bước 3. ∠AOB = 2·24° = 48°.
+   ✅ Kết luận: 48°
+
+■ tg.cung_nho_lon · l9dt2 · Cơ bản
+Cho đường tròn (O) và hai điểm A, B thuộc đường tròn sao cho cung nhỏ AB có số đo 72°. Điểm C thuộc cung lớn AB. Số đo ∠ACB là
+   Đáp án đúng: 36°  |  Nhiễu: 72° ; 144° ; 46°
+   Bước 1. Góc nội tiếp có số đo bằng nửa số đo cung bị chắn. C thuộc cung lớn nên ∠ACB chắn cung nhỏ AB.
+   Bước 2. ∠ACB = 72° : 2 = 36°.
+   ✅ Kết luận: 36°
+
+■ tg.tu_giac_goc · l9dt2 · Cơ bản (có hình)
+Tứ giác ABCD nội tiếp đường tròn (O) như hình vẽ, biết ∠A = 95° và ∠B = 95°. Tính số đo ∠D (đơn vị: độ).
+   Đáp án đúng (tự nhập): 85
+   Bước 1. Tứ giác nội tiếp có tổng hai góc đối bằng 180°.
+   Bước 2. ∠D đối với ∠B nên ∠D = 180° − ∠B = 180° − 95° = 85°.
+   ✅ Kết luận: 85°
+
+■ tg.nhan_biet_goc · l9dt2 · Cơ bản
+Tứ giác ABCD có ∠A = 90° và ∠B = 100°. Tứ giác ABCD nội tiếp được đường tròn khi
+   Đáp án đúng: ∠C = 90°; ∠D = 80°  |  Nhiễu: ∠C = 90°; ∠D = 100° ; ∠C = 100°; ∠D = 90° ; ∠C = 80°; ∠D = 90°
+   Bước 1. Tứ giác nội tiếp được đường tròn khi tổng hai góc đối bằng 180°: ∠A + ∠C = 180° và ∠B + ∠D = 180°.
+   Bước 2. ∠C = 180° − ∠A = 180° − 90° = 90°.
+   Bước 3. ∠D = 180° − ∠B = 180° − 100° = 80°.
+   ✅ Kết luận: ∠C = 90°; ∠D = 80°
+
+■ tg.tam_nt · l9dt2 · Cơ bản
+Tâm đường tròn ngoại tiếp một tam giác là giao điểm của ba đường nào?
+   Đáp án đúng: ba đường trung trực  |  Nhiễu: ba đường cao ; ba đường phân giác ; ba đường trung tuyến
+   Bước 1. Đường tròn ngoại tiếp tam giác đi qua ba đỉnh nên tâm cách đều ba đỉnh.
+   Bước 2. Điểm cách đều hai đỉnh nằm trên đường trung trực của cạnh nối hai đỉnh đó.
+   Bước 3. Vậy tâm là giao điểm của ba đường trung trực.
+   ✅ Kết luận: ba đường trung trực
+
+■ nt.deu_r · l9dt2 · Cơ bản
+Tam giác đều có cạnh 36 cm. Bán kính đường tròn nội tiếp tam giác đó là (cm)
+   Đáp án đúng: 6√3  |  Nhiễu: 18√3 ; 6 ; 12√3
+   Bước 1. Trong tam giác đều cạnh a, bán kính đường tròn nội tiếp là r = (a√3)/(6).
+   Bước 2. Với a = 36: r = (36√3)/(6) = 6√3 (cm).
+   ✅ Kết luận: 6√3
+
+■ nt.hv_R · l9dt2 · Cơ bản
+Hình vuông nội tiếp đường tròn (O) có bán kính 4 cm. Cạnh của hình vuông là (cm)
+   Đáp án đúng: 4√2  |  Nhiễu: 8√2 ; 8 ; 4
+   Bước 1. Đường chéo của hình vuông là đường kính của đường tròn: 8 cm.
+   Bước 2. Gọi cạnh là a thì a√2 = 8, suy ra a = (8)/(√2) = 4√2 (cm).
+   ✅ Kết luận: 4√2
+
+■ nt.vuong_R · l9dt2 · Cơ bản
+Tam giác ABC vuông tại A có AB = 3 cm, AC = 4 cm. Tính bán kính đường tròn ngoại tiếp tam giác ABC (cm).
+   Đáp án đúng (tự nhập): 2.5
+   Bước 1. Tính cạnh huyền: BC = √(3^2 + 4^2) = √25 = 5 (cm).
+   Bước 2. Tam giác vuông nội tiếp đường tròn có cạnh huyền là đường kính nên đường kính = BC = 5 cm, bán kính R = 5 : 2 = 2,5 cm.
+   Bước 3. Vậy bán kính là 2,5 cm.
+   ✅ Kết luận: 2,5 cm
+
+■ tg.goc_tam_giac_nt · l9dt2 · Nâng cao (có hình)
+Tam giác ABC nhọn nội tiếp đường tròn (O) có ∠A = 60° và ∠B = 80°. Tính số đo ∠COA (đơn vị: độ).
+   Đáp án đúng (tự nhập): 160
+   Bước 1. Tổng ba góc của tam giác bằng 180° nên ∠C = 180° − 60° − 80° = 40°.
+   Bước 2. ∠COA là góc ở tâm, cùng chắn cung với góc nội tiếp ∠B.
+   Bước 3. ∠COA = 2·∠B = 2·80° = 160°.
+   ✅ Kết luận: 160°
+
+■ tg.ti_le_doi · l9dt2 · Nâng cao
+Tứ giác ABCD nội tiếp được đường tròn, có ∠A : ∠C = 1 : 8. Tính số đo góc lớn hơn trong hai góc ∠A và ∠C (độ).
+   Đáp án đúng (tự nhập): 160
+   Bước 1. Tứ giác nội tiếp nên ∠A + ∠C = 180°.
+   Bước 2. Gọi ∠A = 1k, ∠C = 8k, ta có 1k + 8k = 180°, tức 9k = 180°, suy ra k = 20°.
+   Bước 3. ∠A = 1·20° = 20°; ∠C = 8·20° = 160°.
+   Bước 4. Góc lớn hơn là 160°.
+   ✅ Kết luận: 160°
+
+■ tg.mo_hinh · l9dt2 · Nâng cao
+Tứ giác ABCK nội tiếp đường tròn và có ∠ABC = 80°. Số đo góc ngoài của tứ giác tại đỉnh K (kề bù với ∠AKC) là
+   Đáp án đúng: 80°  |  Nhiễu: 90° ; 160° ; 100°
+   Bước 1. Tứ giác nội tiếp nên ∠ABC + ∠AKC = 180°, suy ra ∠AKC = 180° − 80° = 100°.
+   Bước 2. Góc ngoài tại K kề bù với ∠AKC nên bằng 180° − 100° = 80°.
+   Bước 3. Vậy góc ngoài tại một đỉnh của tứ giác nội tiếp bằng góc trong của đỉnh đối diện.
+   ✅ Kết luận: 80°
+
+■ nt.dt_ngoai · l9dt2 · Nâng cao
+Tam giác ABC vuông tại A có AB = 12 cm, AC = 16 cm. Chu vi hình tròn ngoại tiếp tam giác ABC là kπ cm. Tìm k.
+   Đáp án đúng (tự nhập): 20
+   Bước 1. BC = √(12^2 + 16^2) = 20 cm. Tam giác vuông nên bán kính đường tròn ngoại tiếp R = BC : 2 = 10 cm.
+   Bước 2. Chu vi = 2πR = 2π·10 = 20π (cm).
+   ✅ Kết luận: k = 20
+
+■ nt.deu_cao · l9dt2 · Nâng cao
+Tam giác đều có đường cao bằng 30 cm. Tính bán kính đường tròn ngoại tiếp tam giác đó (cm).
+   Đáp án đúng (tự nhập): 20
+   Bước 1. Trong tam giác đều, tâm đường tròn ngoại tiếp và nội tiếp trùng với trọng tâm G, nên G chia mỗi đường cao theo tỉ lệ 2 : 1 (kể từ đỉnh).
+   Bước 2. Bán kính đường tròn ngoại tiếp R = (2)/(3)·30 = 20 cm; bán kính đường tròn nội tiếp r = (1)/(3)·30 = 10 cm.
+   ✅ Kết luận: 20 cm
+
+■ kg3.quay_hcn · l9kg · Cơ bản
+Quay hình chữ nhật ABCD có AB = 7 cm, AD = 11 cm một vòng quanh cạnh AD, ta được một hình trụ. Bán kính đáy và chiều cao của hình trụ lần lượt là
+   Đáp án đúng: 7 cm và 11 cm  |  Nhiễu: 18 cm và 7 cm ; 7 cm và 18 cm ; 11 cm và 7 cm
+   Bước 1. Cạnh AD là trục quay nên chính là chiều cao của hình trụ: h = 11 cm.
+   Bước 2. Cạnh vuông góc với trục quay (AB) vạch nên đường tròn đáy, nên bán kính đáy r = 7 cm.
+   ✅ Kết luận: 7 cm và 11 cm
+
+■ kg3.quay_hcn_tinh · l9kg · Cơ bản
+Quay hình chữ nhật ABCD có AB = 6 cm, AD = 9 cm một vòng quanh cạnh AB, ta được một hình trụ. Diện tích toàn phần của hình trụ là kπ cm². Tìm k.
+   Đáp án đúng (tự nhập): 270
+   Bước 1. Trục quay là AB nên chiều cao h = AB = 6 cm và bán kính đáy r = AD = 9 cm.
+   Bước 2. S_tp = 2πr(r + h) = 2π·9·(9 + 6) = 270π (cm²).
+   ✅ Kết luận: k = 270
+
+■ kg3.quay_tam_giac · l9kg · Cơ bản (có hình)
+Tam giác ABC vuông tại A có AB = 10 cm, AC = 24 cm. Quay tam giác ABC một vòng quanh cạnh AB, ta được một hình nón. Tính diện tích xung quanh (kπ cm², tìm k).
+   Đáp án đúng (tự nhập): 624
+   Bước 1. Quay quanh cạnh AB nên chiều cao h = AB = 10 cm, bán kính đáy r = AC = 24 cm.
+   Bước 2. Đường sinh là cạnh huyền BC = √(24^2 + 10^2) = 26 cm.
+   Bước 3. S_xq = πrl = π·24·26 = 624π (cm²).
+   ✅ Kết luận: k = 624
+
+■ kg3.non_stp · l9kg · Cơ bản
+Hình nón có bán kính đáy 48 cm và chiều cao 36 cm. Diện tích toàn phần của hình nón là kπ cm². Tìm k.
+   Đáp án đúng (tự nhập): 5184
+   Bước 1. Đường sinh l = √(48^2 + 36^2) = 60 cm.
+   Bước 2. Diện tích toàn phần S_tp = πrl + πr^2 = πr(l + r).
+   Bước 3. S_tp = π·48·(60 + 48) = 5184π (cm²).
+   ✅ Kết luận: k = 5184
+
+■ kg3.cau_dk · l9kg · Cơ bản
+Một hình cầu có đường kính 24 cm. Thể tích của hình cầu là kπ cm³. Tìm k.
+   Đáp án đúng (tự nhập): 2304
+   Bước 1. Bán kính R = 24 : 2 = 12 cm.
+   Bước 2. V = (4)/(3)πR^3 = (4)/(3)π·12^3 = (4)/(3)π·1728 = 2304π (cm³).
+   ✅ Kết luận: k = 2304
+
+■ kg3.cau_tu_S · l9kg · Cơ bản
+Một mặt cầu có diện tích 324π cm². Tính bán kính của mặt cầu (cm).
+   Đáp án đúng (tự nhập): 9
+   Bước 1. Diện tích mặt cầu S = 4πR^2 nên 4πR^2 = 324π.
+   Bước 2. Suy ra R^2 = 81, vì R > 0 nên R = 9 (cm).
+   ✅ Kết luận: 9 cm
+
+■ kg3.lit · l9kg · Cơ bản
+Một chiếc thùng hình trụ có bán kính đáy 3 dm và chiều cao 8 dm. Lấy π ≈ 3,14. Thùng đó chứa được tối đa bao nhiêu lít nước? (1 dm³ = 1 lít)
+   Đáp án đúng (tự nhập): 226.08
+   Bước 1. Thể tích thùng: V = πr^2h ≈ 3,14·3^2·8.
+   Bước 2. 3^2 = 9 nên V ≈ 3,14·9·8 = 3,14·72 = 226,08 (dm³).
+   Bước 3. Vì 1 dm³ = 1 lít nên thùng chứa được 226,08 lít.
+   ✅ Kết luận: 226,08 lít
+
+■ kg3.tru_tim_r · l9kg · Nâng cao
+Một hình trụ có diện tích xung quanh bằng 100π cm² và bán kính đáy bằng 10 cm. Tính chiều cao của hình trụ (cm).
+   Đáp án đúng (tự nhập): 5
+   Bước 1. Diện tích xung quanh của hình trụ: S_xq = 2πrh.
+   Bước 2. Thay số: 2π·10·h = 100π, tức 20h = 100.
+   Bước 3. Suy ra h = 100 : 20 = 5 (cm).
+   ✅ Kết luận: 5 cm
+
+■ kg3.non_h_tu_V · l9kg · Nâng cao
+Một hình nón có thể tích 64π cm³ và chiều cao 3 cm. Tính bán kính đáy của hình nón (cm).
+   Đáp án đúng (tự nhập): 8
+   Bước 1. Thể tích hình nón V = (1)/(3)πr^2h.
+   Bước 2. Thay số: (1)/(3)π·r^2·3 = 64π, suy ra r^2 = 192 : 3 = 64.
+   Bước 3. Vì r > 0 nên r = √64 = 8 (cm).
+   ✅ Kết luận: 8 cm
+
+■ kg3.non_h_bang_r · l9kg · Nâng cao
+Một hình nón có chiều cao bằng bán kính đáy và có thể tích 576π cm³. Tính chiều cao của hình nón (cm).
+   Đáp án đúng (tự nhập): 12
+   Bước 1. Gọi r (cm) là bán kính đáy, khi đó chiều cao là h = r.
+   Bước 2. V = (1)/(3)πr^2h = (1)/(3)π·r^2·r = (1)/(3)πr^3.
+   Bước 3. Từ (1)/(3)πr^3 = 576π suy ra r^3 = 1728, nên r = 12 cm.
+   Bước 4. Chiều cao h = r = 12 (cm).
+   ✅ Kết luận: 12 cm
+
+■ kg3.tru_gap · l9kg · Nâng cao
+Một hình trụ có bán kính đáy tăng 3 lần và chiều cao giảm 3 lần. Thể tích của hình trụ mới bằng bao nhiêu lần thể tích hình trụ ban đầu? (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 3
+   Bước 1. Hình trụ ban đầu: V = πr^2h.
+   Bước 2. Hình trụ mới có bán kính 3r, chiều cao (h)/(3): V′ = π(3r)^2·(h)/(3) = (9πr^2h)/(3).
+   Bước 3. Vậy V′ = 3 V.
+   ✅ Kết luận: 3
+
+■ kg3.archimedes · l9kg · Nâng cao
+Một hình cầu có bán kính 12 cm nội tiếp trong một hình trụ (hình trụ có bán kính đáy 12 cm và chiều cao 24 cm). Diện tích mặt cầu bằng bao nhiêu phần diện tích toàn phần của hình trụ? (Nhập số nguyên hoặc phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 2/3
+   Bước 1. Hình cầu: V = (4)/(3)πR^3, S = 4πR^2. Hình trụ: r = R, h = 2R.
+   Bước 2. S_tp của trụ = 2πR·2R + 2πR^2 = 6πR^2. Tỉ số S_cầu : S_tp = 4πR^2 : 6πR^2 = (2)/(3).
+   ✅ Kết luận: 2/3
+
+■ kg3.do_nuoc · l9kg · Nâng cao
+Một cốc hình nón có bán kính đáy 4 cm, chiều cao 6 cm đang chứa đầy nước. Đổ toàn bộ nước đó sang một bình hình trụ có bán kính đáy 2 cm. Mực nước trong bình hình trụ cao bao nhiêu xentimét?
+   Đáp án đúng (tự nhập): 8
+   Bước 1. Thể tích nước trong cốc hình nón: V = (1)/(3)π·4^2·6 = 32π (cm³).
+   Bước 2. Gọi x (cm) là mực nước trong bình trụ: V = π·2^2·x = 4πx.
+   Bước 3. Hai thể tích bằng nhau nên 4πx = 32π, suy ra x = 32 : 4 = 8 (cm).
+   ✅ Kết luận: 8 cm
+
+■ kg3.khoi_go · l9kg · Nâng cao
+Một khối gỗ hình trụ có bán kính đáy 2 cm, chiều cao 3 cm được gọt thành một khối hình nón có cùng đáy và cùng chiều cao với khối trụ. Thể tích phần gỗ bị gọt đi là kπ cm³. Tìm k.
+   Đáp án đúng (tự nhập): 8
+   Bước 1. Thể tích khối trụ: V₁ = πr^2h = π·2^2·3 = 12π (cm³).
+   Bước 2. Thể tích khối nón: V₂ = (1)/(3)πr^2h = (1)/(3)·12π = 4π (cm³).
+   Bước 3. Thể tích phần gỗ bị gọt đi: V₁ − V₂ = 12π − 4π = 8π (cm³).
+   ✅ Kết luận: k = 8
+
+■ tk3.dem_mau · l9tk · Cơ bản
+Điểm kiểm tra của 25 học sinh: 8; 10; 6; 9; 8; 9; 5; 9; 8; 9; 7; 6; 7; 7; 8; 8; 8; 5; 6; 10; 10; 8; 7; 7; 7. Có bao nhiêu học sinh được điểm 7?
+   Đáp án đúng (tự nhập): 6
+   Bước 1. Đếm số lần xuất hiện của từng giá trị trong mẫu: điểm 5: 2 lần; điểm 6: 3 lần; điểm 7: 6 lần; điểm 8: 7 lần; điểm 9: 4 lần; điểm 10: 3 lần. (Tổng 25 giá trị.)
+   Bước 2. Tần số của giá trị 7 là 6.
+   ✅ Kết luận: 6 học sinh
+
+■ tk3.tstd_bang · l9tk · Cơ bản
+Bảng tần số điểm kiểm tra của 50 học sinh: điểm 5 có 17 học sinh; điểm 6 có 10 học sinh; điểm 7 có 11 học sinh; điểm 8 có 9 học sinh; điểm 9 có 3 học sinh. Tần số tương đối của điểm 7 là
+   Đáp án đúng: 22%  |  Nhiễu: 27% ; 78% ; 44%
+   Bước 1. Tổng số học sinh là 17 + 10 + 11 + 9 + 3 = 50.
+   Bước 2. Tần số tương đối = (tần số)/(tổng số học sinh)·100%.
+   Bước 3. Với điểm 7: (11)/(50)·100% = 22%.
+   ✅ Kết luận: 22%
+
+■ tk3.tstd_thieu · l9tk · Cơ bản
+Bảng tần số tương đối điểm kiểm tra của một lớp: điểm 5: 25%; điểm 6: 15%; điểm 7: 10%; điểm 8: x%; điểm 9: 5%. Tìm x.
+   Đáp án đúng (tự nhập): 45
+   Bước 1. Tổng các tần số tương đối bằng 100%.
+   Bước 2. Ta có 25 + 15 + 10 + 5 + x = 100, tức 55 + x = 100.
+   Bước 3. Suy ra x = 100 − 55 = 45.
+   ✅ Kết luận: x = 45
+
+■ tk3.nhom_dem · l9tk · Cơ bản
+Chiều cao (cm) của 15 học sinh: 173; 177; 184; 167; 162; 183; 173; 154; 161; 176; 161; 182; 189; 159; 186. Chia số liệu thành các nhóm [150;160), [160;170), [170;180), [180;190). Có bao nhiêu học sinh thuộc nhóm [160;170)?
+   Đáp án đúng (tự nhập): 4
+   Bước 1. Nhóm [160;170) gồm các giá trị x thỏa 160 ≤ x < 170 (lấy 160, không lấy 170).
+   Bước 2. Các giá trị thuộc nhóm: 161; 161; 162; 167.
+   Bước 3. Có 4 giá trị nên tần số của nhóm là 4.
+   ✅ Kết luận: 4 học sinh
+
+■ tk3.so_nhom · l9tk · Cơ bản
+Số liệu về cân nặng (kg) của một nhóm học sinh có giá trị nhỏ nhất là 10 và lớn nhất là 18. Người ta chia thành các nhóm có độ rộng 2 dạng [10; 12), [12; 14), ... Cần ít nhất bao nhiêu nhóm để chứa hết các số liệu?
+   Đáp án đúng: 5  |  Nhiễu: 7 ; 4 ; 6
+   Bước 1. Các nhóm bắt đầu từ 10: nhóm thứ k là [10+2(k−1); 10+2k).
+   Bước 2. Giá trị lớn nhất 18 nằm trong nhóm thứ 5: [18; 20).
+   Bước 3. Do đó cần 5 nhóm (tính từ nhóm chứa 10 đến nhóm chứa 18).
+   ✅ Kết luận: 5
+
+■ tk3.tstd_nhom_bang · l9tk · Cơ bản
+Bảng tần số ghép nhóm chiều cao của 50 học sinh: [140;150): 6; [150;160): 13; [160;170): 12; [170;180): 19. Tần số tương đối của nhóm [150;160) là
+   Đáp án đúng: 26%  |  Nhiễu: 74% ; 13% ; 36%
+   Bước 1. Tổng số học sinh là 6 + 13 + 12 + 19 = 50.
+   Bước 2. Tần số tương đối của nhóm [150;160) là (13)/(50)·100% = 26%.
+   ✅ Kết luận: 26%
+
+■ tk3.cot_doc · l9tk · Cơ bản (có hình)
+Biểu đồ cột cho biết tần số của số bàn thắng một đội bóng ghi được trong mỗi trận (trục ngang: số bàn thắng, đầu mỗi cột ghi số trận đấu). Tính tần số tương đối của giá trị 4 (đơn vị: %, nhập số thập phân nếu cần).
+   Đáp án đúng (tự nhập): 20
+   Bước 1. Đọc các tần số: 8; 9; 4; 11; 8. Tổng số trận đấu là 8 + 9 + 4 + 11 + 8 = 40.
+   Bước 2. Tần số của giá trị 4 là 8.
+   Bước 3. Tần số tương đối = (8)/(40)·100% = 20%.
+   ✅ Kết luận: 20%
+
+■ tk3.hist_tu_n · l9tk · Nâng cao (có hình)
+Biểu đồ tần số tương đối ghép nhóm cho biết chiều cao của 100 học sinh. Có bao nhiêu học sinh cao từ 160 cm trở lên?
+   Đáp án đúng (tự nhập): 45
+   Bước 1. Các nhóm có chiều cao từ 160 cm trở lên: [160;170); [170;180).
+   Bước 2. Tổng tần số tương đối của các nhóm này: 5% + 40% = 45%.
+   Bước 3. Số học sinh = 100·45% = 45.
+   ✅ Kết luận: 45 học sinh
+
+■ tk3.nhom_thieu_tstd · l9tk · Nâng cao
+Bảng tần số ghép nhóm chiều cao của 200 học sinh có bốn nhóm: [160;170): 49; [170;180): 28; [180;190): x; [190;200): 86. Tìm tần số tương đối của nhóm [180;190) (đơn vị: %, nhập số thập phân nếu cần).
+   Đáp án đúng (tự nhập): 18.5
+   Bước 1. Tổng các tần số bằng số học sinh: 49 + 28 + 86 + x = 200.
+   Bước 2. Suy ra x = 200 − 163 = 37.
+   Bước 3. Tần số tương đối của nhóm [180;190) là (37)/(200)·100% = 18,5%.
+   ✅ Kết luận: 18,5%
+
+■ tk3.so_sanh_nhom · l9tk · Nâng cao
+Bảng tần số ghép nhóm chiều cao của 40 học sinh: [160;170): 7; [170;180): 11; [180;190): 7; [190;200): 15. Tần số tương đối của nhóm [190;200) lớn hơn tần số tương đối của nhóm [160;170) bao nhiêu phần trăm? (đơn vị: %; nhập số thập phân nếu cần)
+   Đáp án đúng (tự nhập): 20
+   Bước 1. Tần số tương đối của nhóm [190;200): (15)/(40)·100% = 37,5%.
+   Bước 2. Tần số tương đối của nhóm [160;170): (7)/(40)·100% = 17,5%.
+   Bước 3. Hiệu: 37,5% − 17,5% = 20%.
+   ✅ Kết luận: 20%
+
+■ xs3.kgm_rut · l9xs · Cơ bản
+Một hộp có 3 quả bóng đánh số từ 1 đến 3. Lấy ngẫu nhiên lần lượt hai quả bóng, quả thứ nhất lấy ra không trả lại hộp. Số phần tử của không gian mẫu là
+   Đáp án đúng: 6  |  Nhiễu: 7 ; 9 ; 12
+   Bước 1. Mỗi kết quả là một cặp (a; b) có thứ tự với a ≠ b.
+   Bước 2. Quả thứ nhất có 3 cách chọn, quả thứ hai có 2 cách chọn.
+   Bước 3. Số phần tử của không gian mẫu: 3·2 = 6.
+   ✅ Kết luận: 6
+
+■ xs3.xx4mat · l9xs · Cơ bản
+Tung đồng thời hai con xúc xắc 4 mặt cân đối, đồng chất, các mặt ghi số 1; 2; 3; 4. Xác suất của biến cố "tổng số chấm lớn hơn hoặc bằng 5" là
+   Đáp án đúng: 5/8  |  Nhiễu: 11/16 ; 3/4 ; 3/8
+   Bước 1. Mỗi con xúc xắc có 4 kết quả nên không gian mẫu có 4·4 = 16 phần tử (a; b) đồng khả năng, với a, b là số chấm của hai con.
+   Bước 2. Đếm số kết quả thuận lợi theo số chấm a của con thứ nhất: a = 1: 1; a = 2: 2; a = 3: 3; a = 4: 4.
+   Bước 3. Số kết quả thuận lợi là 1 + 2 + 3 + 4 = 10.
+   Bước 4. Xác suất = (10)/(16) = 5/8.
+   ✅ Kết luận: 5/8
+
+■ xs3.xx6mat · l9xs · Cơ bản
+Tung đồng thời hai con xúc xắc 6 mặt cân đối, đồng chất. Xác suất của biến cố "tích số chấm lớn hơn hoặc bằng 23" là
+   Đáp án đúng: 1/6  |  Nhiễu: 7/36 ; 5/36 ; 5/6
+   Bước 1. Mỗi con xúc xắc có 6 kết quả nên không gian mẫu có 6·6 = 36 phần tử (a; b) đồng khả năng, với a, b là số chấm của hai con.
+   Bước 2. Đếm số kết quả thuận lợi theo số chấm a của con thứ nhất: a = 1: 0; a = 2: 0; a = 3: 0; a = 4: 1; a = 5: 2; a = 6: 3.
+   Bước 3. Số kết quả thuận lợi là 0 + 0 + 0 + 1 + 2 + 3 = 6.
+   Bước 4. Xác suất = (6)/(36) = 1/6.
+   ✅ Kết luận: 1/6
+
+■ xs3.vong_quay · l9xs · Cơ bản
+Một vòng quay có 12 ô bằng nhau được đánh số từ 1 đến 12. Quay vòng quay một lần, kim chỉ ngẫu nhiên vào một ô. Xác suất để kim chỉ vào ô ghi số nguyên tố là
+   Đáp án đúng: 5/12  |  Nhiễu: 7/12 ; 1/2 ; 1/3
+   Bước 1. Có 12 ô đồng khả năng nên không gian mẫu có 12 phần tử.
+   Bước 2. Các ô thuận lợi (số nguyên tố): 2; 3; 5; 7; 11. Có 5 ô.
+   Bước 3. Xác suất = (5)/(12).
+   ✅ Kết luận: 5/12
+
+■ xs3.hai_tui · l9xs · Cơ bản
+Hai túi I và II, túi I có 3 tấm thẻ ghi các số 5; 7; 8, túi II có 3 tấm thẻ ghi các số 2; 3; 8. Rút ngẫu nhiên từ mỗi túi một tấm thẻ. Xác suất để tích hai số là số lẻ là
+   Đáp án đúng: 2/9  |  Nhiễu: 7/9 ; 1/3 ; 2/3
+   Bước 1. Mỗi túi có 3 cách rút nên không gian mẫu có 3·3 = 9 kết quả (a; b) đồng khả năng, với a là số ở túi I, b là số ở túi II.
+   Bước 2. Các kết quả thuận lợi: (5; 3), (7; 3). Có 2 kết quả.
+   Bước 3. Xác suất = (2)/(9).
+   ✅ Kết luận: 2/9
+
+■ xs3.mau_bi · l9xs · Cơ bản
+Một túi đựng 5 viên bi đỏ, 2 viên bi xanh và 4 viên bi vàng, các viên bi có cùng kích thước và khối lượng. Lấy ngẫu nhiên một viên bi từ túi. Xác suất để lấy được viên bi màu đỏ là
+   Đáp án đúng: 5/11  |  Nhiễu: 6/11 ; 5/12 ; 1/2
+   Bước 1. Túi có 5 + 2 + 4 = 11 viên bi nên không gian mẫu có 11 phần tử đồng khả năng.
+   Bước 2. Số kết quả thuận lợi cho "viên bi màu đỏ" là 5.
+   Bước 3. Xác suất = (5)/(11).
+   ✅ Kết luận: 5/11
+
+■ xs3.xep_hang · l9xs · Nâng cao
+Xếp ngẫu nhiên 4 bạn học sinh (trong đó có An và Bình) thành một hàng ngang. Tính xác suất để hai bạn An và Bình đứng cạnh nhau. (Nhập phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 1/2
+   Bước 1. Số cách xếp 4 bạn thành một hàng là 4! = 24, đó là số phần tử của không gian mẫu.
+   Bước 2. Coi An và Bình là một "nhóm": xếp 3 phần tử có 3! = 6 cách, và trong nhóm có 2 cách đổi chỗ. Số kết quả thuận lợi là 2·6 = 12.
+   Bước 3. Xác suất = (12)/(24) = 1/2.
+   ✅ Kết luận: 1/2
+
+■ xs3.hai_the_cung_luc · l9xs · Nâng cao
+Một hộp có 11 tấm thẻ đánh số từ 1 đến 11. Rút ngẫu nhiên đồng thời hai tấm thẻ. Tính xác suất để tổng hai số trên hai thẻ là số chẵn. (Nhập phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 5/11
+   Bước 1. Rút đồng thời hai thẻ nên không phân biệt thứ tự: không gian mẫu có (11·10)/(2) = 55 phần tử.
+   Bước 2. Tổng chẵn khi hai số cùng chẵn hoặc cùng lẻ. Có 5 thẻ chẵn và 6 thẻ lẻ: (5·4)/(2) + (6·5)/(2) = 25.
+   Bước 3. Xác suất = (25)/(55) = 5/11.
+   ✅ Kết luận: 5/11
+
+■ xs3.khong_hoan_lai · l9xs · Nâng cao
+Một túi có 2 viên bi đỏ và 7 viên bi xanh có cùng kích thước. Lấy ngẫu nhiên lần lượt hai viên bi, viên thứ nhất không được trả lại túi. Tính xác suất để cả hai viên đều màu xanh. (Nhập phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 7/12
+   Bước 1. Viên thứ nhất có 9 cách lấy, viên thứ hai có 8 cách lấy nên không gian mẫu có 9·8 = 72 kết quả.
+   Bước 2. Số kết quả thuận lợi: 7·6 = 42.
+   Bước 3. Xác suất = (42)/(72) = 7/12.
+   ✅ Kết luận: 7/12
+
+■ xs3.so_hai_chu_so · l9xs · Nâng cao
+Chọn ngẫu nhiên một số tự nhiên có hai chữ số. Tính xác suất để số được chọn có hai chữ số giống nhau. (Nhập phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 1/10
+   Bước 1. Có 90 số tự nhiên có hai chữ số (từ 10 đến 99), đó là số phần tử của không gian mẫu.
+   Bước 2. Số các số thuận lợi cho biến cố (có hai chữ số giống nhau) là 9.
+   Bước 3. Xác suất = (9)/(90) = 1/10.
+   ✅ Kết luận: 1/10
+
+■ xs3.it_nhat · l9xs · Nâng cao
+Tung 4 đồng xu cân đối. Tính xác suất để có ít nhất một đồng xu xuất hiện mặt sấp. (Nhập phân số a/b tối giản.)
+   Đáp án đúng (tự nhập): 15/16
+   Bước 1. Mỗi đồng xu có 2 kết quả nên không gian mẫu có 2^4 = 16 phần tử.
+   Bước 2. Biến cố đối: "không có đồng xu nào sấp" (tất cả đều ngửa), chỉ có 1 kết quả.
+   Bước 3. Xác suất của biến cố đối là (1)/(16), nên xác suất cần tìm là 1 − (1)/(16) = 15/16.
+   ✅ Kết luận: 15/16
