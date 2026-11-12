@@ -138,21 +138,32 @@ input:disabled{opacity:1;color:var(--tx)}
 #mini{margin-bottom:6px}
 .mh{display:flex;align-items:center;justify-content:space-between;margin:6px 2px 8px;font:700 19px "Baloo 2",sans-serif}
 .mh button{min-height:44px;padding:0 4px;font:700 13px "Be Vietnam Pro",sans-serif;color:var(--sun)}
-.lbr{display:flex;align-items:center;gap:10px;margin-bottom:6px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.06);border:1.5px solid transparent}
-.lbr.t1{background:linear-gradient(90deg,rgba(255,210,94,.24),rgba(255,255,255,.05))}
-.lbr.t2{background:linear-gradient(90deg,rgba(190,205,255,.2),rgba(255,255,255,.05))}
-.lbr.t3{background:linear-gradient(90deg,rgba(255,150,90,.2),rgba(255,255,255,.05))}
-.lbr.me1{border-color:var(--sun)}
-.lbr .rk{width:32px;text-align:center;font:800 19px "Baloo 2",sans-serif}
-.lbr .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
-.lbr .lv,.lbh .lv{flex:none;width:92px;text-align:right;white-space:nowrap}
-.lbr .lv{font-weight:800;color:var(--sun);font-variant-numeric:tabular-nums}
-.lbr .lv small{font-weight:600;font-size:.78em;color:rgba(255,255,255,.7)}
-.lbr .st,.lbh .st{flex:none;width:54px;text-align:right;white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
-.lbh{display:flex;align-items:center;gap:10px;margin:0 0 4px;padding:0 12px;font-size:12px;font-weight:700;color:rgba(255,255,255,.6)}
-.lbh .rk{width:32px}.lbh .nm{flex:1;min-width:0}
-#mini .lbr{padding:7px 12px;font-size:14px}
-@media(max-width:360px){.lbr .lv,.lbh .lv{width:82px}.lbr .st,.lbh .st{width:46px}.lbr,.lbh{gap:6px}}
+/* Bảng xếp hạng: lưới chung cho cả bảng, mỗi hàng là display:contents nên các ô cùng cột luôn thẳng hàng.
+   Cột Tên lấy phần còn lại và cắt "…"; cột Lv/Chuỗi tự rộng ra theo số chữ số, không bị đè lên cột bên cạnh. */
+.lbt{display:grid;grid-template-columns:max-content minmax(4.5em,1fr) max-content max-content;row-gap:6px;align-items:stretch;overflow:hidden}
+.lbr,.lbh{display:contents}
+.lbr>*{display:flex;align-items:center;min-width:0;padding:10px 0;background:rgba(255,255,255,.06);border:1.5px solid transparent;border-width:1.5px 0}
+.lbr>*+*{padding-left:10px}
+.lbr>:first-child{padding-left:12px;border-radius:14px 0 0 14px;border-left-width:1.5px}
+.lbr>:last-child{padding-right:12px;border-radius:0 14px 14px 0;border-right-width:1.5px}
+.lbr.t1>*{background:rgba(255,210,94,.2)}.lbr.t2>*{background:rgba(190,205,255,.17)}.lbr.t3>*{background:rgba(255,150,90,.17)}
+.lbr.mine>*{border-top-color:var(--sun);border-bottom-color:var(--sun)}
+.lbr.mine>:first-child{border-left-color:var(--sun)}.lbr.mine>:last-child{border-right-color:var(--sun)}
+.lbh>*{display:block;padding:0 0 4px;font-size:12px;font-weight:700;color:rgba(255,255,255,.6)}
+.lbh>*+*{padding-left:10px}.lbh>:first-child{padding-left:12px}.lbh>:last-child{padding-right:12px}
+.lbt .r{text-align:right}
+.lbk{justify-content:center;min-width:32px;font:800 19px "Baloo 2",sans-serif;font-variant-numeric:tabular-nums}
+.lbn{font-weight:600}
+.lbn bdi{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lbv{flex-direction:column;justify-content:center;align-items:flex-end;gap:1px;line-height:1.15;white-space:nowrap;font-variant-numeric:tabular-nums}
+.lbv b{font-weight:800;color:var(--sun)}
+.lbv small{font-size:12px;font-weight:600;color:rgba(255,255,255,.7)}
+.lbp{display:block;align-self:stretch;height:3px;margin-top:3px;border-radius:99px;background:rgba(255,255,255,.16);overflow:hidden}
+.lbp u{display:block;height:100%;border-radius:99px;background:var(--sun)}
+.lbs{justify-content:flex-end;gap:4px;white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
+.lbs i{font-style:normal}
+#mini .lbr>*{padding-top:7px;padding-bottom:7px;font-size:14px}
+#mini .lbr>*+*{padding-left:10px}#mini .lbr>:first-child{padding-left:12px}
 
 /* --- v6: hub 5 tab, thanh trên gọn, thanh điều hướng dưới --- */
 .hero{padding:10px 12px;gap:12px;margin-bottom:10px}
