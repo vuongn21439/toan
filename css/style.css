@@ -145,8 +145,14 @@ input:disabled{opacity:1;color:var(--tx)}
 .lbr.me1{border-color:var(--sun)}
 .lbr .rk{width:32px;text-align:center;font:800 19px "Baloo 2",sans-serif}
 .lbr .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
-.lbr .xp{font-weight:800;color:var(--sun);font-variant-numeric:tabular-nums}
+.lbr .lv,.lbh .lv{flex:none;width:92px;text-align:right;white-space:nowrap}
+.lbr .lv{font-weight:800;color:var(--sun);font-variant-numeric:tabular-nums}
+.lbr .lv small{font-weight:600;font-size:.78em;color:rgba(255,255,255,.7)}
+.lbr .st,.lbh .st{flex:none;width:54px;text-align:right;white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
+.lbh{display:flex;align-items:center;gap:10px;margin:0 0 4px;padding:0 12px;font-size:12px;font-weight:700;color:rgba(255,255,255,.6)}
+.lbh .rk{width:32px}.lbh .nm{flex:1;min-width:0}
 #mini .lbr{padding:7px 12px;font-size:14px}
+@media(max-width:360px){.lbr .lv,.lbh .lv{width:82px}.lbr .st,.lbh .st{width:46px}.lbr,.lbh{gap:6px}}
 
 /* --- v6: hub 5 tab, thanh trên gọn, thanh điều hướng dưới --- */
 .hero{padding:10px 12px;gap:12px;margin-bottom:10px}
